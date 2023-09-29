@@ -1,0 +1,84 @@
+ejemplo_fork1:
+
+Soy el proceso 6887 - Padre
+Soy el proceso 6888 - Hijo
+
+ejemplo_fork2:
+
+Antes del fork: Soy el proceso 7781
+PADRE: Soy el proceso 7781
+Los DOS: Soy el proceso 7781
+HIJO: Soy el proceso 7782
+Los DOS: Soy el proceso 7782
+
+Como pone el padre es el 7781, en el caso del padre ejecuta el default
+porque como resultado del fork tiene el pid del Hijo.
+Mientras que el hijo tiene como pid 0, entonces ejecuta el caso 0 y 
+finamlente ambos ejecutan el ultimo sprintf.
+
+ejemplo_fork3:
+
+Antes del fork: Soy el proceso 9247
+PADRE: Soy el proceso 9247
+Solo lo ejecuta el padre: Soy el proceso 9247
+HIJO: Soy el proceso 9248
+
+En este programa primero tenemos el pid del padre, al hacer el fork despues
+volvemos a tener que la variable pid del padre es el pid del proceso Hijo.
+Mientras que el hijo tiene la variable pid a 0 entonces ejecuta la linea del case 0,
+pero como esta linea tiene exit no acaba de ejecutar el codigo del final de switch.
+
+ejemplo_fork4:
+
+Antes del fork: Soy el proceso 11151
+PADRE: Soy el proceso 11151
+Solo lo ejecuta el padre: Soy el proceso 11151
+HIJO: Soy el proceso 11152
+HIJO acaba: Soy el proceso 11152
+
+Supondre que el padre acaba antes porque el hijo tiene el for y en este caso no hay ningun waitpid
+o similar para esperar a que acabe el hijo para que acabe el padre.
+Para que el padre espere a que acabe el hijo, añadimos la libreria #include <sys/wait.h>
+y antes del ultimo sprintf ponemos un waitpid(-1, NULL, 0);
+
+ejemplo_fork5:
+
+Antes del fork: Soy el proceso 14834
+PADRE: Soy el proceso 14834
+HIJO: Soy el proceso 14835
+HIJO:La variable_global vale A y la local a
+PADRE:La variable_global vale A y la local a
+Solo lo ejecuta el padre: Soy el proceso 14834
+
+Lo que pasa es que al hacer el fork se hace una copia del proceso padre al hijo entonces,
+el hijo tiene las mismas variables declaradas en el proceso padre.
+Para cambiar el valor de las variables solo en el hijo, tenemos que modificarlas
+solo en el case 0, antes de imprimir las variables podemos modificar su valor solo en el hijo.
+
+ejemplo_fork6:
+
+Podemos ver como el padre escribe las letras del abecedario hasta la k en minuscula, mientras que el hijo
+escribe las mismas letras y hasta el mismo punto que el padre pero en mayuscula.
+El contenido puede ser similar pero no sera siempre el mismo ya que depende cuando se cree el hijo
+por lo que la diferencia sera las lineas del output en las que se encuentra cada letra, pero siempre va a 
+ir hasta la k.
+
+ejemplo_fork7:
+
+No compila porque desde la funcion Escribe_variables no tenemos acceso a las variables locales de la funcion 
+main. No tiene nada que ver con la creacion de procesos. Para hacer que el programa compile tenemos que 
+añadir un parametro a la funcion en el que le podamos pasar la variable_local.
+
+ejemplo_exec1:
+
+Lo que se ve por pantalla es primero el PID de un proceso y luego se ejecuta el comando ls -l.
+Pero al hacer el execlp se borra el programa que havia entonces la ultimas lineas del programa
+no se ejecutan.
+
+ejemplo_exec2:
+Este programa lo que hace es primero enseñar el PID del proceso en el que estamos,
+luego ejecuta el archivo ejemplo_fork1 del directorio en el que estamos por lo que vuelve
+a enseñar el mismo PID y crea un hijo que es lo que hace ejemplo_fork1
+
+Casi todas las paginas del man que he consultado eran de la seccion 2, aun que algunas
+tambien eran de la 1, 3, 5

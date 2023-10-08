@@ -20,7 +20,7 @@ S hijk
 S a
 S y
 S z
-S z
+S 
 T
 T
 T

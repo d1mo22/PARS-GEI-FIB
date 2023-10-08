@@ -3,19 +3,48 @@
 #include <queue>
 using namespace std;
 
-int main() {
-    priority_queue<pair<int,string>> espera; 
-    string id;
-    int i = 7;
-    while (i != 0)  {
-        cin >> id;
-        espera.push(make_pair(id.length(), id));
-        --i;
+string s;
+
+struct comp {
+    bool operator()(const string& a, const string& b) {
+        if (a.length() == b.length()) {
+            string new_char = s.substr(0, a.length());
+            if (a == new_char) return false;
+            if (b == new_char) return true;
+            if (a < b) {
+                if (a < new_char and b > new_char) return true;
+                return false;
+            }
+            else {
+                if (a > new_char and b < new_char) return false;
+                return true;
+            }
+        }
+        else return a.length() > b.length();
     }
-    while (!espera.empty()) {
-        pair<int, string> par = espera.top();
-        cout << par.first << " " << par.second << endl;
-        espera.pop();
+};
+
+int main() {
+    while (cin >> s) {
+        priority_queue<string, vector<string>, comp> espera; 
+        string id;
+        char accio;
+        int tiquets = 0;
+        while (cin >> accio and accio != 'E') {
+            if (accio == 'S') {
+                cin >> id;
+                espera.push(id);
+            }
+            else if (accio == 'T') ++tiquets;
+
+            while (tiquets > 0 and (!espera.empty())) {
+                cout << espera.top() << endl;
+                espera.pop();
+                --tiquets;
+            }
+        }
+        cout << tiquets << " ticket(s) left" << endl;
+        cout << espera.size() << " supporter(s) with no ticket" << endl << endl;
     }
      
 }

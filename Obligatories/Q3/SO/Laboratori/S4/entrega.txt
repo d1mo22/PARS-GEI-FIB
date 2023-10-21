@@ -1,0 +1,17 @@
+alarm1
+    1- Cuando pasan 5 segundos no pasa nada ya que la alarm esta puesta a 10
+    2- Cuando hacemos el Kill recibimos un error diferente en vez de alarm pone killed
+    3-  ?
+    4- El exit no hace falta porque al llegar la alarm tiene por defecto acabar el programa
+
+alarm2
+    1- Al hacer el kill podemos ver como "avanzamos" el tiempo para el programa y nos da
+    el resultado como su hubiera recibido un SIGALRM de alarm() pero es desde el kill
+    El control de tiempo no funciona
+    2- A la mayoria si menos a algunas en concreto com SIGKILL y SIGSTOP
+    3- Podriamos comprovar el valor que retona la llamada alarm y comprovar si es igual
+    a 0, en este caso seria que ha pasado el tiempo de la alarma, mientras que si es != 0
+    quere decir que ha llegado un SIGALRM antes de que se acabase el tiempo.
+
+alarm3
+    1-

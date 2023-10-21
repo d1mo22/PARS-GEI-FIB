@@ -18,4 +18,11 @@ alarm3
     como del hijo y ambos reciben el alarm en el mismo momento
 
 alarm4
+    1- Como podemos ver en el fork el hijo antes de entrar al while programa un alarm
+    pero como en el resultado del fork el padre se queda bloqueado en el sigsuspend
+    porque nunca ha progamado un alarm entonces estara por siempre bloqueado,
+    mientras que el hijo va programando un alarm cada vez que sale del sigsuspend.
+    Lo he comprovando mirando el parent PID del proceso que estava haciendo los print
+
+ejemplo_waitpid
     1- 

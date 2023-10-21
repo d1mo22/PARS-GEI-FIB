@@ -32,14 +32,15 @@ int main (int argc, char *argv[]) {
   sa.sa_handler = &funcion_alarma;
   sa.sa_flags = SA_RESTART;
   sigfillset (&sa.sa_mask);
-
+  //programamos la alarma para que la ponga el padre antes del sigsuspend
+  alarm(1);
   if (sigaction (SIGALRM, &sa, NULL) < 0) error_y_exit ("sigaction", 1);
 
   switch (fork ()) {
     case -1:
       error_y_exit ("fork", 1);
     case 0:
-      alarm (10);
+      alarm (1);
   }
 
   while (segundos < 100) {
@@ -47,7 +48,9 @@ int main (int argc, char *argv[]) {
     sigdelset (&mask, SIGALRM);
     sigdelset (&mask, SIGINT);
     sigsuspend (&mask);
-    alarm (10);
+    alarm (1);
+    printf("segundos: %d\n", segundos);
+    printf("PPID: %d\n", getppid());
   }
   exit (1);
 }

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "ostream": "c"
+        "ostream": "c",
+        "signal.h": "c",
+        "unistd.h": "c"
     }
 }

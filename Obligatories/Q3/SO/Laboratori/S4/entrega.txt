@@ -23,6 +23,3 @@ alarm4
     porque nunca ha progamado un alarm entonces estara por siempre bloqueado,
     mientras que el hijo va programando un alarm cada vez que sale del sigsuspend.
     Lo he comprovando mirando el parent PID del proceso que estava haciendo los print
-
-ejemplo_waitpid
-    1- 

@@ -1,0 +1,20 @@
+1-
+                    U ___sprintf_chk
+    0000000100000000 T __mh_execute_header
+                    U _atoi
+                    U _exit
+    0000000100008000 S _j
+    0000000100003e50 T _main
+                    U _strlen
+    0000000100003e30 T _suma
+                    U _write
+
+2-
+    Es possible saber la direccion de la variable j 
+    porque es una variable global. Pero como la variable
+    i es local no se guarda en memoria.
+    En el caso de la varibale j esta guardada seguarmente en
+    el apartado data del programa.
+    La direccion de la funcion suma es: 0000000100003E30
+
+3-

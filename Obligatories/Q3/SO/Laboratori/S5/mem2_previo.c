@@ -5,9 +5,7 @@
 
 
 /* readint - Devuelve un entero leido desde teclado */
-int
-readint (void)
-{
+int readint (void) {
   char buff[100];
   int x;
   x = read (0, &buff, sizeof (buff));
@@ -21,9 +19,7 @@ readint (void)
   return x;
 }
 
-void
-fillvector (int *vector, int num_elems)
-{
+void fillvector (int *vector, int num_elems) {
   int i;
   for (i = 0; i < num_elems; i++)
     {
@@ -33,9 +29,7 @@ fillvector (int *vector, int num_elems)
 
 int vector[40960];
 
-int
-main (int argc, char *argv[])
-{
+int main (int argc, char *argv[]) {
   int i;
   int n;
   int s = 0;

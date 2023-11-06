@@ -1,10 +1,13 @@
-all: mem1_previo mem2_previo mem3_previo mem1 mem2
+all: mem1_previo mem2_previo mem2_previo_v2 mem3_previo mem1 mem2
 
 mem1_previo: mem1_previo.c
 	gcc -o mem1_previo mem1_previo.c
 
 mem2_previo: mem2_previo.c
-	gcc -o mem2_previo mem2_previo.c
+	gcc -o mem2_previo mem2_previo.c -static
+
+mem2_previo_v2: mem2_previo_v2.c
+	gcc -o mem2_previo_v2 mem2_previo_v2.c -static
 
 mem3_previo: mem3_previo.c
 	gcc -o mem3_previo mem3_previo.c

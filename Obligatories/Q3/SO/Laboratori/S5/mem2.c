@@ -8,9 +8,7 @@
 
 int *p;
 
-int
-main (int argc, char *argv[])
-{
+int main (int argc, char *argv[]) {
   int i = 0;
   char buff[256];
 

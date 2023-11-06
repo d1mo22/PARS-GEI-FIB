@@ -19,4 +19,15 @@
 
 3- gcc -static mem1_previo.c
 
-4-
+4- Para el programa mem2_previo tenemos 4 regiones
+ -[heap] 022ca000-022ec000
+ -[stack] 7ffe41371000-7ffe41392000
+ - [vvar] 7ffe413e8000-7ffe413ec000 que esta no tiene permisos de ejecucion
+ - [vdso] 7ffe413ec000-7ffe413ee000 que esta si que tiene permisos de ejecucion
+
+Para el programa me_v2
+Tenemos lo mismo pero en zonas diferentes de memoria
+ -[heap] 02340000-02366000
+ -[stack] 7fffa9ce7000-7fffa9d08000
+ - [vvar] 7fffa9df9000-7fffa9dfd000 que esta no tiene permisos de ejecucion
+ - [vdso] 7fffa9dfd000-7fffa9dff000 que esta si que tiene permisos de ejecucion

@@ -25,7 +25,7 @@ void fillvector (int *vector, int num_elems) {
     
 }
 
-int vector[40960];
+int *vector;
 
 int main (int argc, char *argv[]) {
   int i;
@@ -44,6 +44,7 @@ int main (int argc, char *argv[]) {
   sprintf (buff,"Introduce el numero de elementos del vector y pulsa Return:");
   write (1, buff, strlen (buff));
   n = readint ();
+  vector = sbrk(n*4);
   fillvector (vector, n);
 
   for (i = 0; i < n; i++) s += vector[i];

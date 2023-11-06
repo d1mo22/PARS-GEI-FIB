@@ -17,4 +17,8 @@
     el apartado data del programa.
     La direccion de la funcion suma es: 0000000100003E30
 
-3-
+3- Falta la compilacion estataica
+
+4- Falta la compilacion estataica
+
+5- 

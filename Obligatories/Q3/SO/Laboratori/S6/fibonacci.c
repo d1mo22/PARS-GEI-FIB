@@ -3,9 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-long
-fibonacci (unsigned i)
-{
+long fibonacci (unsigned i) {
   if (i == 0)
     return 0;
   if (i == 1)
@@ -13,9 +11,7 @@ fibonacci (unsigned i)
   return fibonacci (i - 1) + fibonacci (i - 2);
 }
 
-void
-usage ()
-{
+void usage () {
   char buffer[80];
 
   strcpy (buffer, "fib n\n");
@@ -23,15 +19,12 @@ usage ()
   exit (1);
 }
 
-void
-main (int argc, char *argv[])
-{
+void main (int argc, char *argv[]) {
   unsigned n;
   long f;
   char buffer[80];
 
-  if (argc != 2)
-    usage ();
+  if (argc != 2) usage ();
   n = atoi (argv[1]);
   f = fibonacci (n);
   sprintf (buffer, "El fibonacci de %u es %ld\n", n, f);

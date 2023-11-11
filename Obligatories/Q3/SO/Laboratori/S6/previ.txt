@@ -1,0 +1,16 @@
+1- Al /proc/pid/smaps tenim una linea que es VmFlags
+que amb les seguents lletres podem veure els page faults (sf)
+
+2- Para poder actualizar cada segundo ponemos un 1 despues del comando
+(vmstat 1). Tenemos una titulo que se llama swap, este tiene 2 columnas
+si y so. Durante todo el tiempo de ejecucion han estado siempre a 0.
+
+6-
+10) 0.00 user 0.00 system 0:00.00 elapsed
+20) 0.00 user 0.00 system 0:00.00 elapsed
+30) 0.00 user 0.00 system 0:00.00 elapsed
+40) 0.49 user 0.00 system 0:00.49 elapsed
+50) 62.93 user 0.00 system 1:02.93 elapsed
+
+7- Hace servir el 10 que es el valor por defecto ya que no le pasamos
+ningun parametro

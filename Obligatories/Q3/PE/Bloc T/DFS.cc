@@ -64,11 +64,13 @@ void printMaze(const vector<vector<char> >& maze) {
 
 
 int main() {
+    int x, y;
+    cin >> x >> y;
     // Crear el laberinto
     vector<vector<char> > maze(ROWS,vector<char>(COLS));
     readMaze(maze);
 
     // Llamada a la función DFS para encontrar 't' con longitud del camino
-    int lengthDFS = DFS(maze, 1, 1, 't');
+    int lengthDFS = DFS(maze, x, y, 't');
     cout << "Longitud del camino: " << lengthDFS << endl;
 }

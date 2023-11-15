@@ -65,10 +65,12 @@ void printMaze(const vector<vector<char> >& maze) {
 
 int main() {
     // Crear el laberinto
+    int x, y;
+    cin >> x >> y;
     vector<vector<char> > maze(ROWS,vector<char>(COLS));
     readMaze(maze);
 
     // Llamada a la función BFS para encontrar 't' con longitud del camino
-    int lengthBFS = BFS(maze, 1, 1, 't');
+    int lengthBFS = BFS(maze, x, y, 't');
     cout << "Longitud del camino: " << lengthBFS << endl;
 }

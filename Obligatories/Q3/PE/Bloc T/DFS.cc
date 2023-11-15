@@ -10,7 +10,7 @@ using namespace std;
 const int ROWS = 100; // Número de filas en el laberinto
 const int COLS = 100; // Número de columnas en el laberinto
 
-int findSymbolDFSWithPathLength(const vector<vector<char>>& maze, int startRow, int startCol, char symbol) {
+int DFS(const vector<vector<char>>& maze, int startRow, int startCol, char symbol) {
     vector<vector<bool>> visited(ROWS, vector<bool>(COLS, false));
     stack<pair<int, int>> s;
     int pathLength = 0;
@@ -69,10 +69,6 @@ int main() {
     readMaze(maze);
 
     // Llamada a la función DFS para encontrar 't' con longitud del camino
-    int lengthDFS = findSymbolDFSWithPathLength(maze, 1, 1, 't');
-    if (lengthDFS != -1) {
-        cout << "Se encontró el símbolo 't' usando DFS. Longitud del camino: " << lengthDFS << endl;
-    } else {
-        cout << "No se encontró el símbolo 't' usando DFS." << endl;
-    }
+    int lengthDFS = DFS(maze, 1, 1, 't');
+    cout << "Longitud del camino: " << lengthDFS << endl;
 }

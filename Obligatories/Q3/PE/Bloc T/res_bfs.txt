@@ -1,1 +1,0 @@
-Se encontró el símbolo 't' usando BFS. Longitud del camino: 5937

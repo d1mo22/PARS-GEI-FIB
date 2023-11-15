@@ -20,6 +20,7 @@ void printMaze(const vector<vector<char> >& maze) {
     }
 }
 
+//Funcion para generar un laberinto con 'X'
 void newMaze(vector<vector<char>>& maze) {
     for (int i = 0; i < ROWS; ++i) {
         for (int j = 0; j < COLS; ++j) {
@@ -90,10 +91,12 @@ bool isPathExistsDFS(const vector<vector<char> >& maze, int startRow, int startC
 int main() {
     // Crear el laberinto
     vector<vector<char> > maze;
+    srand(time(NULL));
 
     // Generar el laberinto con camino
     generateMaze(maze, 1, 1, ROWS - 2, COLS - 2);
     while(!isPathExistsDFS(maze, 1, 1, ROWS - 2, COLS - 2)) {
+        srand(time(NULL));
         newMaze(maze);
         generateMaze(maze, 1, 1, ROWS - 2, COLS - 2);
     } 

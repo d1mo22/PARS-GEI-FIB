@@ -14,6 +14,7 @@ num_executions=2
 
 # Bucle para ejecutar el programa 100 veces
 for ((i=1; i<=$num_executions; i++)); do
+    sleep 1
     # Nombre del archivo de resultado
     result_file="$results_dir/laberinto_$i.txt"
 

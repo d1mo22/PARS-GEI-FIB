@@ -10,7 +10,7 @@ using namespace std;
 const int ROWS = 100; // Número de filas en el laberinto
 const int COLS = 100; // Número de columnas en el laberinto
 
-int findSymbolBFSWithPathLength(const vector<vector<char>>& maze, int startRow, int startCol, char symbol) {
+int BFS(const vector<vector<char>>& maze, int startRow, int startCol, char symbol) {
     vector<vector<bool>> visited(ROWS, vector<bool>(COLS, false));
     queue<pair<int, int>> q;
     int pathLength = 0;
@@ -69,10 +69,6 @@ int main() {
     readMaze(maze);
 
     // Llamada a la función BFS para encontrar 't' con longitud del camino
-    int lengthBFS = findSymbolBFSWithPathLength(maze, 1, 1, 't');
-    if (lengthBFS != -1) {
-        cout << "Se encontró el símbolo 't' usando BFS. Longitud del camino: " << lengthBFS << endl;
-    } else {
-        cout << "No se encontró el símbolo 't' usando BFS." << endl;
-    }
+    int lengthBFS = BFS(maze, 1, 1, 't');
+    cout << "Longitud del camino: " << lengthBFS << endl;
 }

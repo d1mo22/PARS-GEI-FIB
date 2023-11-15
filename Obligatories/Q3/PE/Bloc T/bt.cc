@@ -1,4 +1,4 @@
-//Caminos de una largada minima
+//Caminos de una largada cualquiera
 #include <iostream>
 #include <vector>
 #include <queue>

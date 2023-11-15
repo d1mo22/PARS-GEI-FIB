@@ -1,3 +1,4 @@
+//Caminos de una largada minima
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -7,8 +8,38 @@
 
 using namespace std;
 
-const int ROWS = 20; // Número de filas en el laberinto
-const int COLS = 20; // Número de columnas en el laberinto
+const int ROWS = 100; // Número de filas en el laberinto
+const int COLS = 100; // Número de columnas en el laberinto
+
+bool isPathExistsDFS(const vector<vector<char> >& maze, int startRow, int startCol, int endRow, int endCol) {
+    vector<vector<bool> > visited(ROWS, vector<bool>(COLS, false));
+    stack<pair<int, int> > s;
+    s.push(make_pair(startRow, startCol));
+
+    while (!s.empty()) {
+        int currentRow = s.top().first;
+        int currentCol = s.top().second;
+        s.pop();
+
+        if (currentRow == endRow && currentCol == endCol) {
+            return true; // Se encontró un camino
+        }
+
+        if (currentRow < 0 || currentRow >= ROWS || currentCol < 0 || currentCol >= COLS || maze[currentRow][currentCol] == 'X' || visited[currentRow][currentCol]) {
+            continue;
+        }
+
+        visited[currentRow][currentCol] = true;
+
+        // Agregar vecinos
+        s.push(make_pair(currentRow - 1, currentCol));
+        s.push(make_pair(currentRow + 1, currentCol));
+        s.push(make_pair(currentRow, currentCol - 1));
+        s.push(make_pair(currentRow, currentCol + 1));
+    }
+
+    return false; // No hay camino
+}
 
 // Función para imprimir el laberinto
 void printMaze(const vector<vector<char> >& maze) {
@@ -47,7 +78,7 @@ void generateMaze(vector<vector<char> >& maze, int startRow, int startCol, int e
     maze[startRow][startCol] = 'S';
 
     // Generar caminos aleatorios en el laberinto
-    for (int i = 0; i < (ROWS * COLS) - 50; ++i) {
+    for (int i = 0; i < (ROWS * COLS) - 10; ++i) {
         int row = rand() % (ROWS - 2) + 1; // Generar una fila aleatoria, evitando el borde
         int col = rand() % (COLS - 2) + 1; // Generar una columna aleatoria, evitando el borde
 
@@ -57,54 +88,29 @@ void generateMaze(vector<vector<char> >& maze, int startRow, int startCol, int e
     maze[endRow][endCol] = 't';
 }
 
-// Función para verificar la conectividad usando DFS
-bool isPathExistsDFS(const vector<vector<char> >& maze, int startRow, int startCol, int endRow, int endCol) {
-    vector<vector<bool> > visited(ROWS, vector<bool>(COLS, false));
-    stack<pair<int, int> > s;
-    s.push(make_pair(startRow, startCol));
-
-    while (!s.empty()) {
-        int currentRow = s.top().first;
-        int currentCol = s.top().second;
-        s.pop();
-
-        if (currentRow == endRow && currentCol == endCol) {
-            return true; // Se encontró un camino
-        }
-
-        if (currentRow < 0 || currentRow >= ROWS || currentCol < 0 || currentCol >= COLS || maze[currentRow][currentCol] == 'X' || visited[currentRow][currentCol]) {
-            continue;
-        }
-
-        visited[currentRow][currentCol] = true;
-
-        // Agregar vecinos
-        s.push(make_pair(currentRow - 1, currentCol));
-        s.push(make_pair(currentRow + 1, currentCol));
-        s.push(make_pair(currentRow, currentCol - 1));
-        s.push(make_pair(currentRow, currentCol + 1));
-    }
-
-    return false; // No hay camino
-}
-
 int main() {
     // Crear el laberinto
     vector<vector<char> > maze;
     srand(time(NULL));
-    int i_start = rand()%ROWS - 2;
-    int j_start = rand()%COLS - 2;
-    int i_end = rand()%ROWS - 2;
-    int j_end = rand()%COLS - 2;
-
+    int i_start = rand() % (ROWS - 3) + 1;
+    int j_start = rand() % (COLS - 3) + 1;
+    int i_end = rand() % (ROWS - 3) + 1;
+    int j_end = rand() % (COLS - 3) + 1;
+    int i = 0;
     // Generar el laberinto con camino
-    generateMaze(maze, 1, 1, ROWS - 2, COLS - 2);
-    while(!isPathExistsDFS(maze, 1, 1, ROWS - 2, COLS - 2)) {
-        srand(time(NULL));
+    generateMaze(maze, i_start, j_start, i_end, j_end);
+    while(!isPathExistsDFS(maze,i_start, j_start, i_end, j_end)) {
+        srand(time(NULL) + i);
         newMaze(maze);
-        generateMaze(maze, 1, 1, ROWS - 2, COLS - 2);
+        i_start = rand() % (ROWS - 3) + 1;
+        j_start = rand() % (COLS - 3) + 1;
+        i_end = rand() % (ROWS - 3) + 1;
+        j_end = rand() % (COLS - 3) + 1;
+        generateMaze(maze, i_start, j_start, i_end, j_end);
+        ++i;
     } 
     // Imprimir el laberinto
+    cout << i_start << " " << j_start << endl;
     printMaze(maze);
     return 0;
 }

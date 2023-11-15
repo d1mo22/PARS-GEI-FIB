@@ -1,0 +1,1 @@
+Se encontró el símbolo 't' usando DFS. Longitud del camino: 2163

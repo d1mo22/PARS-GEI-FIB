@@ -2,9 +2,17 @@
 
 2- ./es1 < input.txt  
 
-3- ps | grep bash
+3- ps -eo pid,user,command | grep bash
 
 5- En el primer caso se esriben 4 bytes mientras que en
 el segundo se escriben 5.
 En el primer output vemos un B), minetras que en el segundo vemos 
 el numero
+
+6a- La función read_driver_1 para el driver 1.
+La función read_driver_2 para el driver 2.
+
+6b- El major representa que tipo de dispositivo es, mientras que el minor
+es una instancia concreta respecto al major.
+El driver1 usa Major:249   Minor:0
+El driver2 usa Major:250   Minor:0 

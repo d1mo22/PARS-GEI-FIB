@@ -1,0 +1,10 @@
+1- El valor que devuelve la llamada ret despues del ^D es 0
+
+2- ./es1 < input.txt  
+
+3- ps | grep bash
+
+5- En el primer caso se esriben 4 bytes mientras que en
+el segundo se escriben 5.
+En el primer output vemos un B), minetras que en el segundo vemos 
+el numero

@@ -4,13 +4,13 @@
 # g++ tu_programa.cpp -o tu_programa
 
 # Directorio para guardar los resultados
-results_dir="Laberintos"
+results_dir="Laberintos_100"
 
 # Crear el directorio si no existe
 mkdir -p "$results_dir"
 
 # Número de ejecuciones
-num_executions=2
+num_executions=100
 
 # Bucle para ejecutar el programa 100 veces
 for ((i=1; i<=$num_executions; i++)); do

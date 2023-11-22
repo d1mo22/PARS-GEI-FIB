@@ -62,7 +62,6 @@ void printMaze(const vector<vector<char> >& maze) {
     }
 }
 
-
 int main() {
     int x, y;
     cin >> x >> y;
@@ -72,5 +71,5 @@ int main() {
 
     // Llamada a la función DFS para encontrar 't' con longitud del camino
     int lengthDFS = DFS(maze, x, y, 't');
-    cout << "Longitud del camino: " << lengthDFS << endl;
+    cout << "Nodos visitados: " << lengthDFS << endl;
 }

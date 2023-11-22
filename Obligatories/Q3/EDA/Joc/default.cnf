@@ -1,0 +1,14 @@
+Crematoria 1.2
+nb_players             4
+nb_rounds            120
+nb_furyans             5
+nb_pioneers           15
+max_nb_necromongers   10
+nb_hellhounds          3
+nb_elevators          20
+gem_value             30
+turns_to_land          2
+rows                  40
+cols                  80
+
+GENERATOR

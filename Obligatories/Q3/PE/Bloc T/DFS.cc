@@ -71,5 +71,5 @@ int main() {
 
     // Llamada a la función DFS para encontrar 't' con longitud del camino
     int lengthDFS = DFS(maze, x, y, 't');
-    cout << "Nodos visitados: " << lengthDFS << endl;
+    cout << lengthDFS << endl;
 }

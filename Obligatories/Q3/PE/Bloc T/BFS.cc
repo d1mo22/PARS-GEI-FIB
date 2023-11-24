@@ -72,5 +72,5 @@ int main() {
 
     // Llamada a la función BFS para encontrar 't' con longitud del camino
     int lengthBFS = BFS(maze, x, y, 't');
-    cout << "Nodos visitados: " << lengthBFS << endl;
+    cout << lengthBFS << endl;
 }

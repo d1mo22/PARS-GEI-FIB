@@ -1,16 +1,13 @@
-all: bt bt_v2 DFS BFS
+all: Lab_gen DFS BFS
 
-bt: bt.cc
-	g++ -std=c++17 -o bt bt.cc
-
-bt_v2: bt_v2.cc
-	g++ -std=c++17 -o bt_v2 bt_v2.cc
+Lab_gen: Lab_gen.cc
+	g++ -std=c++17 -o Lab_gen Lab_gen.cc
 
 BFS: BFS.cc
-	g++ -std=c++17 -o BFS_algo BFS.cc
+	g++ -std=c++17 -o BFS BFS.cc
 
 DFS: DFS.cc
-	g++ -std=c++17 -o DFS_algo DFS.cc
+	g++ -std=c++17 -o DFS DFS.cc
 
 clean:
-	rm -f DFS_algo BFS_algo bt
+	rm -f DFS BFS Lab_gen

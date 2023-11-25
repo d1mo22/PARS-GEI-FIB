@@ -1,0 +1,27 @@
+2-temp.o: 2-temp.cc
+AIDM1.o: AIDM1.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+AIDM2.o: AIDM2.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+AIDM3.o: AIDM3.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+AIDemo.o: AIDemo.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+AINull.o: AINull.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+Action.o: Action.cc Action.hh Structs.hh Utils.hh
+DM30.o: DM30.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+Game.o: Game.cc Game.hh Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh Board.hh
+Info.o: Info.cc Info.hh Settings.hh Structs.hh Utils.hh State.hh
+Main.o: Main.cc Game.hh Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh Board.hh
+Player.o: Player.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
+ State.hh Action.hh Random.hh Registry.hh
+Random.o: Random.cc Random.hh Utils.hh
+Registry.o: Registry.cc Registry.hh Utils.hh
+Settings.o: Settings.cc Settings.hh Structs.hh Utils.hh
+State.o: State.cc State.hh Structs.hh Utils.hh
+Structs.o: Structs.cc Structs.hh Utils.hh
+Utils.o: Utils.cc Utils.hh

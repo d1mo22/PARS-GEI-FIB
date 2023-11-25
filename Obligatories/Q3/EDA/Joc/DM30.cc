@@ -1,5 +1,5 @@
 #include "Player.hh"
-
+#include <map>
 
 /**
  * Write the name of your player and save this file
@@ -52,6 +52,60 @@ struct PLAYER_NAME : public Player {
   /**
    * Types and attributes for your player can be defined here.
    */
+  typedef vector<int> VI;
+  typedef vector<char> VC;
+  typedef vector<bool> VB;
+  typedef vector<VC> mapa;
+  typedef vector<VI> matrix;
+
+  //Llegeix tota la informacio del mapa subterrani
+  //Cave camino | Rock pared
+  void llegir_mapa(mapa& m) {
+    int n = rows();
+    int t = cols();
+    m.resize(n);
+    for (int i = 0; i < n; ++i) {
+      m[i].resize(t);
+      for (int j = 0; j < t; ++j) {
+        Cell c = cell(i,j,0);
+        m[i][j] = c.type;
+      }
+    }
+  }
+
+  vector<Pos> bfs(const mapa& mp, int i, int j, VI& helldogs) {
+    int n = rows();
+    int m = cols();
+    unordered_map<int, Pos> pare;
+    queue<Pos> q;
+    q.push(Pos(i,j,0));
+
+    while(!q.empty()) {
+      Pos p = q.front();
+      q.pop();
+      int x = p.i, y = p.j;
+
+      if (mp[x][y] == Elevator) {
+        vector<Pos> cami;
+        while (pare.count(x*m+y)) {
+          cami.push_back(Pos(x,y,0));
+          Pos prev = pare[x*m+y];
+          x = prev.i;
+          y = prev.j;
+        }
+        reverse(cami.begin(), cami.end());
+        return cami;
+      }
+
+      for (int k = Bottom; k <= LB; ++k) {
+        Dir d = Dir(k);
+        Pos next = p + d;
+        Cell c = cell(next);
+        if (pos_ok(next) && c.owner != me()) q.push(p += d);
+      }
+    }
+  }
+
 
   /**
    * Play method, invoked once per each round.

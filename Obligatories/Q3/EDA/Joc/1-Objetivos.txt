@@ -1,0 +1,9 @@
+1- Conseguir que las unidades se escapen de los hellhounds
+
+2- Conseguir que los Furyan vayan a buscar unidades rivales
+
+3- Conseguir buscar el ascensor mas cercano y decidir si subir o no dependiendo de la posicion del sol
+
+4- En la superficice, buscar el ascensor mas cercano y por el camino buscar gemas.
+
+

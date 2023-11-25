@@ -72,7 +72,7 @@ struct PLAYER_NAME : public Player {
           else if (cell(Pos(20, 30, 0)).type == Cave) command(id, Bottom);
           else if (cell(Pos(2, 2, 1)).gem) command(id, Top);
           else if (daylight(Pos(0, 0, 1))) command(id, RT);
-          else cerr << unit(id).pos << endl; // You can print to cerr to debug.
+          //else cerr << unit(id).pos << endl; // You can print to cerr to debug.
         }
       }
     }
@@ -81,7 +81,7 @@ struct PLAYER_NAME : public Player {
   void move_pioneers() {
     vector<int> P = pioneers(me());
     for (int id : P) {
-      cerr << unit(id) << endl; // You can print to cerr to debug.
+      //cerr << unit(id) << endl; // You can print to cerr to debug.
       if (kind.find(id) == kind.end()) kind[id] = random(0, 1);
       if (kind[id] == 0) command(id, Dir(random(0, 7)));
       else command(id, Dir(2*(round()%4)));

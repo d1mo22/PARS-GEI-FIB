@@ -45,7 +45,7 @@ struct PLAYER_NAME : public Player {
   /*
     IDEAS:
       Como los guerreros no pueden conquistar celdas ni gemas
-      Pueden protejer los ascencores o acompanyar al explorador
+      pueden protejer los ascencores o acompanyar al explorador.
       Dar ordenes de mas urgente a menos urgente ya que se ejecutan en orden
   */
 

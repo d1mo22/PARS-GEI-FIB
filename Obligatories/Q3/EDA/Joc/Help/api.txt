@@ -1,0 +1,34 @@
+1.Enumeraciones y Estructuras de Datos:
+    Dir: Enum que define las direcciones para el movimiento de unidades.
+    CellType: Enum que define los tipos de celdas (Exterior, Cueva, Roca, Elevador).
+    UnitType: Enum que define los tipos de unidades (Pionero, Furia, Necromonger, Sabueso Infernal).
+    Pos: Struct que representa una posición en el tablero (coordenadas i, j, k).
+    Cell: Struct que representa una celda en el tablero (tipo, propietario, id, gema).
+    Unit: Struct que representa una unidad en el tablero (tipo, id, jugador, salud, turnos, pos).
+
+2. Funciones de Acceso a Celdas:
+    cell(Pos p): Devuelve una copia de la celda en la posición p.
+    cell(int i, int j, int k): Devuelve una copia de la celda en (i, j, k).
+
+3. Funciones de Acceso a Unidades:
+    unit(int id): Devuelve la información de la unidad con identificador id.
+
+4. Funciones de Información del Jugador:
+    me(): Devuelve el identificador de tu jugador (0-3).
+    furyans(int player): Devuelve los identificadores de todos los Furyans de un jugador.
+    pioneers(int player): Devuelve los identificadores de todos los Pioneros de un jugador.
+    necromongers(): Devuelve los identificadores de todos los Necromongers vivos.
+    hellhounds(): Devuelve los identificadores de todos los Sabuesos Infernales.
+
+5. Funciones de Información del Estado del Juego:
+    round(): Devuelve el número de ronda actual.
+    nb_cells(int player): Devuelve el número actual de celdas propiedad de un jugador.
+    nb_gems(int player): Devuelve el número de gemas acumuladas por un jugador.
+    status(int player): Devuelve el porcentaje de tiempo de CPU utilizado por un jugador.
+    random(int l, int u): Genera un entero aleatorio en el rango [l, u].
+    random_permutation(int n): Genera una permutación aleatoria de [0, n-1].
+
+6. Función de Movimiento de Unidad:
+    command(int id, Dir dir): Ejecuta un comando de movimiento para una unidad.
+
+

@@ -54,7 +54,7 @@ const char * s4 = "(";
 const char * s5 = ")";
 state_t nom = Curt; 
 state_t nom_ant = Curt;
-int cafe = 23, cafe_ant = 3; 
+int cafe = 3, cafe_ant = 3; 
 char taza = 'c', taza_ant = 'c';
 
 void interrupt RSI_high() {
@@ -234,7 +234,7 @@ void clear_progress(byte p, byte y) {
     int i;
     y = y*5+1+cafe_ant;
     int aux;
-    for (i = cafe_ant; i >= cafe; --i) {
+    for (i = cafe_ant; i > cafe; --i) {
         if (fontPos > 0) {
             writeTxt(7,20, s5);
             y -= fontPos;
@@ -282,20 +282,19 @@ void main(void) {
     setStartLine(0);        //Definim linia d'inici
 
     start();
-
+    
     print_barra();
     print_symbol(1,20,'+');
     print_symbol(1,4,'-');
     print_taza(4, 12);
     writeTxt(1,11,"Curt");
-    
     int ready = 0;
     int cafe_prev;
     
 
     while (1) { 
         taza_ant = taza;
-        cafe_ant = cafe;
+	cafe_ant = cafe;
         if (ready) {
             if (cafe_ant < cafe) print_progress(7,4);
             if (cafe > 80) {
@@ -303,21 +302,22 @@ void main(void) {
                 clearGLCD(1,1,30, 95);
                 writeTxt(1,10,"Llest");
                 __delay_ms(1000);
-                cafe_ant = cafe;
+		cafe_ant = cafe;
                 cafe = cafe_prev;
                 clearGLCD(1,1,30, 95);
                 actualitzar_nom(ready);
-                print_taza(4, 12);
+		print_taza(4, 12);
                 clear_progress(7,4);
-                ready = 0;
+		     SetDot(63, 21+cafe);
+		 ready = 0;
             }
         }
         else {
             if (PORTAbits.RA2) {
-                cafe_prev = cafe;
+		cafe_prev = cafe;
                 ready = 1;
-                cafe = 3;
-                clearGLCD(1,1,30, 95);
+		cafe = 3;
+		clearGLCD(1,1,30, 95);
                 writeTxt(1,8,"Esperi...");
                 switch (nom) {
                 case (Curt):
@@ -333,7 +333,7 @@ void main(void) {
                     TMR0 = 29536;
                     break;
                 }
-                clear_progress(7,4);
+		clear_progress(7,4);
                 TMR0ON = 1;
             }
             if (PORTAbits.RA0 && !PORTAbits.RA1) {

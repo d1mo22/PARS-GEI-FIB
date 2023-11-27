@@ -9,18 +9,17 @@
 #include "GLCD.h"
 #define _XTAL_FREQ 8000000  
 
-const char * s1 = "L5 Individual";
-const char * s2 = "--------";
-const char * s3 = "David Morais";
-const char * s4 = "(";
+const char * s1 = "Frequencia: 500Hz";
+const char * s2 = "Periode: 2ms";
+const char * s3 = "Duty: 25%";
+const char * s4 = "Amplada del pols: 0.5ms";
 const char * s5 = ")";
 int dc = 250;
 
-
-
 void interrupt RSI_high() {
     if (TMR2IE && TMR2IF) {
-
+      TRISE&=0xFE;
+      TMR2IF = 0;
     }
 }
 
@@ -47,24 +46,23 @@ void config_PWM() {
     CCP3CON|=0x0C;
     Escriu_DC(dc);
     TMR2IF = 0;
-    TMR2IE = 1
+    TMR2IE = 1;
     TMR2IP = 1;
-    TMR2CON = 0x06;
+    T2CON = 0x06;
     TRISE &=0xFE;
 }
 
 void config_PIC() {
-    ANSELA=0x00; 
-    ANSELB=0x00;                  
-    ANSELC=0x00;                  
-    ANSELD=0x00;                  
-    
-    TRISD=0x00;   
-    TRISB=0x00;
-    TRISA=0x0F;
-        
-    PORTD=0x00;
-    PORTB=0x00; 
+   ANSELB=0x00;
+   ANSELD=0x00;
+   ANSELE=0x00;
+
+   TRISB=0x00;
+   TRISD=0x00;
+
+   PORTB=0x00;
+   PORTD=0x00;
+   PORTE=0x00;
 
     IPEN = 1;
     GIEH = 1;
@@ -72,36 +70,24 @@ void config_PIC() {
 }
 
 void start() {
-    writeTxt(2, 6, s1);	//Nom de la practica
-    writeTxt(3, 9, s2);	//Linia de separacio
-    writeTxt(4, 7, s3);	//Nom David
-    __delay_ms(2000);
-    clearGLCD(0,7,0,127); //Esborrem la pantalla
-}
-
-void print_barra() {
-    clearGLCD(7,7,0,127);
-    writeTxt(7, 4, s4);
-    writeTxt(7,20, s5);
-    for (int i = 0; i <= 76; ++i) {
-      SetDot(55,24+i);
-      SetDot(63, 24+i);
-    }
-    print_progress(7, 4);
+    writeTxt(0, 0, s1);	
+    writeTxt(2, 0, s2);	
+    writeTxt(4, 0, s3);	
+    writeTxt(6, 0, s4);	
 }
 
 void main(void) {
     config_PIC();
-    
+        
     GLCDinit();             //Inicialitzem la pantalla
     clearGLCD(0,7,0,127);   //Esborrem pantalla
     setStartLine(0);        //Definim linia d'inici
-
-    start();
+    start();    
+    config_PWM();
+    
+  
     
     while (1) { 
-        taza_ant = taza;
-	cafe_ant = cafe;
 
-     }        
+    }        
 }

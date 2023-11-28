@@ -6,4 +6,5 @@
 
 4- En la superficice, buscar el ascensor mas cercano y por el camino buscar gemas.
 
-
+Probar hacer un BFS y guardar la primera posicion del camino mas corto
+Hacer una funcion para ver si hay algun hellhound cerca con un booleano

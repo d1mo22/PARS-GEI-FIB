@@ -6,5 +6,9 @@
 
 4- En la superficice, buscar el ascensor mas cercano y por el camino buscar gemas.
 
+Se puede hacer una funcion para saber en que posicion esta el sol
+pair<int,int> sol() {
+    return {(40+2*round())%80,(79+2*round())%80}
+}
 Probar hacer un BFS y guardar la primera posicion del camino mas corto
 Hacer una funcion para ver si hay algun hellhound cerca con un booleano

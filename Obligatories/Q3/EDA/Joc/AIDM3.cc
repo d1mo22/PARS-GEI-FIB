@@ -187,6 +187,12 @@ struct PLAYER_NAME : public Player {
     return Pos(-1,-1,0);
   }
 
+  Dir conquistar(const matrix& mat, const Pos& p) {
+    VVI visitat(rows(), vector<int>(cols(), false));
+    queue<
+
+  }
+
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     /* 

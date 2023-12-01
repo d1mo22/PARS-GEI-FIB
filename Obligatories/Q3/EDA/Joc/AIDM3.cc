@@ -189,6 +189,13 @@ struct PLAYER_NAME : public Player {
 
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
+    /* 
+      Primero miramos si hay algun hellhound cerca (3x3)
+      En el caso que no
+        -Priorizamos las celdas que son de un enemigo antes que las que
+        no tienen dueño, si no hay ninguna vamos a una que no sea nuestra
+      En el caso que haya algun hellhoun cerca --> Huimos
+    */
     VI expo = pioneers(me());
     for (int id : expo) {
       Unit u = unit(id);
@@ -222,15 +229,12 @@ struct PLAYER_NAME : public Player {
           }
         }
       }
-        //En el cas que ja tinguem mes de 300 assegurades busquem gemes
-         
-      
+      //En el cas que ja tinguem mes de 300 assegurades busquem gemes
       //Si esta a la superficie
       else {
-
       };
     }
-}
+  }
 
   Dir desicio(const Pos& p, const Pos& next) {
     if (next.i > p.i and next.j > p.j) return BR;
@@ -251,6 +255,14 @@ struct PLAYER_NAME : public Player {
   }
 
   void move_furyans(const mapa& m, const matrix& mat) {
+    /*
+      Primero mirar si hay algun hellhound a una distancia de 3x3
+      En el caso que no
+        -Si la vida del guerrero es > 50 vamos a buscar otros guerreros
+        -Si la vida es menor vamos a buscar exploradores hasta que nos recuperemos
+      Si hay hellhounds cerca --> Huir de ellos
+    */
+
     VI expo = furyans(me());
     for (int id : expo) {
       Unit u = unit(id);
@@ -275,10 +287,9 @@ struct PLAYER_NAME : public Player {
   virtual void play () {
     mapa m;
     matrix mat;
-    cerr << sol().first << " " << sol().second << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);
-    //move_furyans(m, mat);
+    move_furyans(m, mat);
   }
 
 };

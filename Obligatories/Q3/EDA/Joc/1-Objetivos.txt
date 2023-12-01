@@ -8,3 +8,5 @@
 
 Probar hacer un BFS y guardar la primera posicion del camino mas corto
 Hacer una funcion para ver si hay algun hellhound cerca con un booleano
+
+Se puede sacar verde solo con la parte de abajo

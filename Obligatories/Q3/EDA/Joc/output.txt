@@ -1,4 +1,4 @@
-info: seed 219848
+info: seed 1111883
 info: loading game
 info: loaded game
 info: loading player DM2
@@ -23,7 +23,7 @@ info:     start player 2
 1
 1
 1
-1
+79
 1
 1
 1
@@ -39,6 +39,7 @@ info:     end player 1
 info:     start player 2
 1
 1
+79
 1
 1
 1
@@ -47,8 +48,7 @@ info:     start player 2
 1
 1
 1
-1
-1
+79
 1
 1
 1
@@ -63,8 +63,7 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
+79
 1
 1
 1
@@ -74,6 +73,8 @@ info:     start player 2
 1
 1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -86,17 +87,18 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
-1
-1
-1
-1
-0
 79
 1
 1
+1
+1
+1
+1
 79
+1
+79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -109,6 +111,7 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+79
 1
 1
 1
@@ -117,8 +120,9 @@ info:     start player 2
 1
 79
 1
-1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -131,17 +135,18 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+79
 1
 1
 1
-0
 1
 1
 1
 79
 1
-1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -158,14 +163,13 @@ info:     start player 2
 1
 1
 1
-0
-1
 1
 1
 79
 1
 79
-79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -182,14 +186,13 @@ info:     start player 2
 1
 1
 1
-0
-1
 1
 1
 79
 1
-78
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -207,14 +210,12 @@ info:     start player 2
 1
 1
 1
-0
-1
-1
 1
 79
 1
-78
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -233,14 +234,11 @@ info:     start player 2
 1
 1
 1
-1
-0
-1
-1
+79
 1
 79
-78
-79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -255,18 +253,17 @@ info:     start player 2
 1
 1
 1
-2
 1
 1
-1
-1
-0
 1
 1
 1
 79
-78
+1
 79
+1
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -281,18 +278,17 @@ info:     start player 2
 1
 1
 1
-2
 1
 1
-1
-1
-0
 1
 1
 1
 79
-78
+1
 79
+1
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -306,20 +302,18 @@ info:     end player 1
 info:     start player 2
 1
 1
-1
 2
 1
 1
 1
 1
 1
-0
-1
-1
+79
 1
 79
-78
-79
+1
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -334,19 +328,16 @@ info:     start player 2
 1
 1
 1
-2
 1
-1
-1
-1
-0
 1
 1
 1
 1
 79
-78
+1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -361,19 +352,16 @@ info:     start player 2
 1
 1
 1
-2
 1
-1
-1
-1
-0
 1
 1
 1
 1
 79
-78
+1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -388,19 +376,16 @@ info:     start player 2
 1
 1
 1
-2
 1
-1
-1
-1
-0
 1
 1
 1
 1
 79
-78
+1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -415,18 +400,17 @@ info:     start player 2
 1
 1
 1
-2
 1
 1
 1
-1
-0
 1
 1
 1
 79
-78
+1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -441,18 +425,17 @@ info:     start player 2
 1
 1
 1
-2
 1
 1
 1
-1
-0
 1
 1
 1
 79
-78
+1
 79
+1
+1
 1
 info:     end player 2
 info:     start player 3
@@ -468,20 +451,19 @@ info:     start player 2
 1
 1
 1
+1
+1
+1
+1
+1
+1
+1
+79
+1
+79
+1
+1
 2
-1
-1
-1
-1
-0
-1
-1
-1
-79
-78
-79
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -500,13 +482,13 @@ info:     start player 2
 1
 1
 1
-0
+1
 1
 1
 1
 79
-78
 1
+79
 1
 1
 info:     end player 2
@@ -527,14 +509,14 @@ info:     start player 2
 1
 1
 1
-0
+1
 1
 1
 1
 79
-78
 1
-2
+79
+1
 1
 info:     end player 2
 info:     start player 3
@@ -553,15 +535,17 @@ info:     start player 2
 1
 1
 1
-0
+1
+1
+1
+1
+1
+1
 1
 79
-0
+1
 79
-78
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -573,19 +557,22 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
-1
-1
-1
-1
 0
 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 79
-78
 1
+79
 1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -597,19 +584,21 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
-1
-79
-1
-1
 0
 1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 79
-78
+0
+79
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -624,16 +613,17 @@ info:     start player 2
 1
 1
 1
+1
+1
+1
+1
+1
+1
+1
 79
-1
-1
 0
-1
 79
-78
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -649,15 +639,15 @@ info:     start player 2
 1
 1
 1
+2
 1
 1
-0
+1
 1
 79
-78
+0
+79
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -672,16 +662,16 @@ info:     start player 2
 1
 1
 1
+1
+1
+1
+1
+1
+1
 79
-1
-1
 0
-1
 79
-78
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -694,18 +684,19 @@ info:     end player 1
 info:     start player 2
 1
 1
+1
+1
+1
+1
+1
+1
 2
-1
-1
-1
-1
-0
 1
 79
-78
+0
+79
 1
 1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -719,19 +710,18 @@ info:     start player 2
 1
 1
 1
-2
-1
-1
-1
 1
 0
 1
+1
+1
+1
+1
 79
-78
+0
+79
 1
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -745,19 +735,19 @@ info:     start player 2
 1
 1
 1
-2
 1
-1
-2
 1
 0
-2
+1
+1
+1
+1
+1
 79
-78
+0
+79
 1
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -769,21 +759,23 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+3
 1
 1
-2
 1
-79
-2
 1
 0
 1
+1
+1
+1
+1
 79
-78
+0
+79
 1
 1
 1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -795,21 +787,24 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
 2
 1
-79
+1
+1
 1
 1
 0
 1
+1
+1
+1
+1
 79
-78
+0
+79
 1
 1
 1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -821,7 +816,7 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
+2
 1
 1
 1
@@ -829,12 +824,16 @@ info:     start player 2
 1
 0
 1
-79
-78
-1
-1
-1
 2
+1
+1
+1
+79
+0
+79
+1
+1
+1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -846,20 +845,22 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
+2
 1
 1
 1
 1
 0
+1
 2
+1
+1
+1
 79
-78
+0
+79
 1
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -870,21 +871,23 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
+3
 2
-1
 1
 1
 0
 1
-79
-78
-1
-1
+0
 1
 2
+1
+1
+1
+79
+0
+79
+1
+1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -895,21 +898,22 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
+3
 2
-1
 1
 1
 0
 1
-79
-78
-1
-1
+0
 1
 2
+1
+2
+1
+79
+0
+1
+1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -922,18 +926,21 @@ info:     end player 1
 info:     start player 2
 1
 1
-1
 2
+1
+1
 1
 1
 0
 1
-79
-78
-1
-1
+2
 1
 2
+1
+79
+0
+1
+1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -946,18 +953,20 @@ info:     end player 1
 info:     start player 2
 1
 1
-1
 2
 1
+1
+1
+1
 0
 0
+2
+1
 1
 79
-78
+0
 1
 1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -970,17 +979,20 @@ info:     end player 1
 info:     start player 2
 1
 1
-1
 2
 1
+1
+1
+1
 0
 0
+2
+1
 1
 79
-78
+0
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -993,18 +1005,20 @@ info:     end player 1
 info:     start player 2
 1
 1
-1
 2
+1
+1
+1
+1
 0
 0
-0
+2
+1
 1
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1016,20 +1030,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
 2
-0
-0
+1
+1
 0
 1
-3
+0
+0
+2
+1
+1
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1041,21 +1055,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
 2
 1
-0
+1
 0
 1
+0
+0
+2
 1
-3
+1
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1067,22 +1080,21 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
-1
-1
 2
 1
-0
-0
 1
 1
-3
+0
+1
+0
+0
+2
+1
+1
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1094,22 +1106,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
+2
 1
 1
 2
 1
 0
 0
+2
 1
 1
-3
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1121,22 +1131,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
+2
 1
 1
 2
 1
 0
 0
+2
 1
 1
-3
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1148,6 +1156,7 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 1
 1
 2
@@ -1156,13 +1165,11 @@ info:     start player 2
 0
 1
 1
-3
+1
 79
-78
+0
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1174,20 +1181,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 1
-79
+2
 2
 1
 0
 0
 1
 1
-3
+1
 79
-78
+0
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1199,20 +1206,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 1
-79
+2
 2
 1
 0
 0
 1
 1
-3
+1
 79
-78
+0
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1224,6 +1231,7 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 1
 2
 1
@@ -1231,12 +1239,11 @@ info:     start player 2
 0
 1
 1
-3
+1
 79
-78
+0
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1248,19 +1255,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
 1
+1
 0
 0
 1
 1
-3
+1
 79
-78
-1
+0
 1
 2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1272,18 +1279,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
+1
+1
 0
 0
 1
-3
+1
+1
 79
-78
+0
 1
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1295,20 +1303,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
 1
+1
 0
 0
 1
-3
+1
+1
 79
-78
-1
-1
-1
+0
 1
 2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1320,20 +1327,20 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
 1
+1
+2
 0
 0
 1
-3
+1
+1
 79
-78
-1
-1
-1
+0
 1
 2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1345,20 +1352,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
 1
+1
+1
 0
 0
 1
-3
+1
+1
 79
-78
+0
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1370,20 +1376,18 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
 1
+1
+2
 0
 0
 1
-2
+1
 79
-78
+0
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1395,21 +1399,18 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-0
-1
 2
 1
+1
+2
 0
 0
 1
-2
+1
 79
-78
+0
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1421,21 +1422,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 0
-1
 2
 1
+2
 0
 0
 1
-2
+1
 79
-78
+0
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1447,22 +1446,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 0
+1
 1
 2
-1
 0
 0
 1
-2
+1
 79
-78
+0
 1
-1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1474,22 +1470,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 0
+1
 1
 2
-1
 0
 0
 1
-2
+1
 79
-78
+0
 1
-1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1501,22 +1494,19 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+2
 0
+1
 1
 2
-1
 0
 0
+0
 1
-2
 79
-78
+0
 1
-1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1528,20 +1518,21 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-1
 2
+0
+1
+1
+1
 1
 0
 0
+0
 1
-2
 79
-78
+0
 1
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1552,21 +1543,23 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-0
 1
 2
+0
+1
+1
+1
+1
 1
 0
 0
+0
 1
-2
 79
-78
+0
 1
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1577,23 +1570,24 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-0
 1
 2
+0
+1
+1
+1
 1
 1
 0
 0
+0
 1
-2
+1
 79
-78
+0
 1
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1606,20 +1600,24 @@ info:     end player 1
 info:     start player 2
 1
 2
-1
-1
-0
 0
 1
 2
+1
+1
+1
+1
+1
+0
+0
+0
+1
+1
 79
-78
-2
+0
 1
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1632,20 +1630,23 @@ info:     end player 1
 info:     start player 2
 1
 2
-1
-1
-0
 0
 1
 2
+1
+1
+1
+1
+0
+0
+0
+1
+1
 79
-78
+0
 1
 1
-3
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1657,22 +1658,25 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+1
+2
+0
 2
 2
+1
+1
 1
 1
 0
 0
+0
 1
-2
+1
 79
-78
+0
 1
 1
-2
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1684,22 +1688,25 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
 1
-1
-1
-0
+2
 0
 1
 2
+1
+1
+1
+1
+0
+0
+0
+1
+1
 79
-78
+0
 1
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1711,22 +1718,26 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
 1
-1
-1
-0
+2
 0
 1
 2
+1
+1
+1
+1
+1
+0
+0
+0
+1
+1
 79
-78
+0
 1
 1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1738,21 +1749,26 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
+1
+2
+0
+1
+2
+1
+1
 1
 1
 1
 0
 0
-1
-2
-78
+0
 1
 1
+79
+0
 1
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1764,20 +1780,26 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
 1
-0
-0
+2
 0
 1
 2
-78
 1
 1
 1
 1
 1
-2
+0
+0
+0
+1
+1
+79
+0
+1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1789,20 +1811,28 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
 1
-0
-0
-0
-1
-2
 78
-1
-1
-1
+2
+0
 1
 1
 2
+1
+1
+1
+1
+1
+0
+0
+0
+1
+3
+79
+0
+1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1814,20 +1844,28 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+1
+1
+77
+2
+0
+1
+1
+2
+1
+1
+1
+1
+2
+0
+0
+0
 3
-1
+79
 0
-0
-0
-1
-2
-78
-1
-1
 1
 1
 0
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1839,20 +1877,27 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+1
+1
+77
+2
+0
+1
+1
+2
+1
+1
+1
+2
+0
+0
+0
 3
-1
+79
 0
-0
-0
-1
-2
-78
-1
-1
 1
 1
 0
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1864,19 +1909,27 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+1
+1
+77
+2
+0
+1
+1
+1
+2
+1
+1
+1
+0
+0
+0
 3
-1
-0
-0
+79
 0
 1
-2
 1
-1
-1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1888,19 +1941,27 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
+1
+1
+77
+2
+0
+1
+1
+1
+2
+1
+1
 1
 0
 0
 0
-1
 2
 79
+0
 1
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1912,19 +1973,27 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
 1
-0
-0
-0
 1
+77
 2
-78
-1
+0
 1
 1
 1
 2
+1
+1
+1
+0
+0
+0
+1
+79
+0
+1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1935,20 +2004,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-3
-1
-0
-0
-0
-1
-2
-78
-1
-1
-1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1960,19 +2015,28 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
-3
+1
+1
+77
 1
 0
-0
-0
-1
-2
-78
-1
-1
 1
 1
 2
+2
+0
+1
+1
+2
+0
+0
+0
+1
+79
+0
+1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -1983,19 +2047,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-0
-0
-0
-1
-2
-78
-1
-1
-1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2007,18 +2058,27 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+0
+1
+77
 1
 0
-0
+1
 0
 2
 2
-78
-1
-1
+0
 1
 1
 2
+0
+0
+0
+1
+0
+1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2030,18 +2090,26 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+0
 1
+1
+0
+1
+0
+1
+2
+0
+1
+1
+3
 0
 0
 0
-2
-2
-78
+1
+0
 1
 1
-1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2053,18 +2121,27 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+0
+1
+1
+0
+1
+0
+1
+2
+0
+1
+1
 1
 0
 0
 0
-2
-2
-78
+1
+0
 1
 1
 1
-1
-2
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2075,19 +2152,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-0
-0
-0
-2
-2
-78
-1
-1
-1
-1
-2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2098,19 +2162,27 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
 1
 1
-1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2121,19 +2193,27 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
 1
 1
-1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2144,19 +2224,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-0
-0
-0
-2
-2
-78
-1
-1
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2167,19 +2234,28 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
 1
 0
+1
+0
+1
+2
+0
+1
+1
 0
 0
 0
 2
-2
-78
-3
+0
 1
 1
 1
 1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2190,18 +2266,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-0
-0
-0
-2
-2
-78
-2
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2212,18 +2276,28 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
 1
 0
+1
+0
+1
+2
+0
+1
+1
 0
 0
 0
 2
-2
-78
-2
+0
 1
 1
 1
+1
+1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2234,18 +2308,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-0
-0
-0
-2
-2
-78
-2
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2256,18 +2318,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
 1
 0
+1
+0
+1
+2
+0
+1
 0
 0
 0
 2
-2
-78
+0
 1
 1
 1
 1
+0
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2278,18 +2348,28 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
 1
 0
+1
+0
+1
+2
+0
+1
 0
 0
 0
 2
+0
+1
+1
+1
+1
+1
+0
 2
-78
-1
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2300,17 +2380,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
 1
 0
+1
+0
+1
+2
+0
+1
 0
 0
 0
 2
-2
-78
+0
 1
 1
 1
+1
+0
 1
 info:     end player 2
 info:     start player 3
@@ -2322,15 +2411,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2343,15 +2443,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
+1
+79
+0
 1
 1
 info:     end player 2
@@ -2364,15 +2475,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2385,15 +2507,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2406,15 +2539,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+2
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2427,15 +2571,27 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+0
+1
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
 1
+1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2448,14 +2604,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+1
+2
+0
 1
 0
 0
 0
 2
-2
-78
+0
 1
+1
+1
+1
+79
+0
 1
 1
 info:     end player 2
@@ -2468,14 +2636,26 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+1
+2
+0
 1
 0
 0
+2
 0
-2
-2
-78
 1
+1
+1
+1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2488,14 +2668,25 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
+1
+0
+1
+1
+2
+0
 1
 0
 0
+2
 0
-2
-2
-78
 1
+1
+1
+79
+1
+0
 1
 1
 info:     end player 2
@@ -2508,16 +2699,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-0
-0
-2
-2
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2528,17 +2709,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-1
-0
-0
-2
-2
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2549,15 +2719,25 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
 1
+1
+0
+1
+1
+2
 0
 1
 0
 0
 2
-2
-78
+0
 1
+1
+1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2570,17 +2750,27 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
 1
+1
+0
+1
+1
+2
 0
 1
 0
 0
 2
+0
+1
+1
+1
+1
+1
+0
+1
 2
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2591,17 +2781,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-1
-0
-0
-2
-2
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2612,16 +2791,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-1
-0
-0
-2
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2632,16 +2801,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-0
-1
-0
-0
-2
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2652,14 +2811,27 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
+0
+1
 1
 0
+1
+1
+1
+2
+0
+1
 1
 0
 0
 2
-78
+0
 1
+1
+1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2676,10 +2848,23 @@ info:     start player 2
 1
 0
 1
-0
-0
-78
 1
+1
+1
+2
+0
+1
+1
+0
+0
+2
+0
+1
+1
+1
+1
+1
+0
 1
 1
 info:     end player 2
@@ -2692,17 +2877,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
-0
-1
-0
-0
-78
-1
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2713,16 +2887,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
-0
-1
-0
-0
-78
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2735,14 +2899,29 @@ info:     end player 1
 info:     start player 2
 1
 1
+0
+1
+1
+1
+1
+0
+1
+0
 1
 0
 1
 0
 0
-78
+2
+0
 1
 1
+1
+2
+1
+0
+1
+2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2753,16 +2932,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
-0
-1
-0
-0
-78
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2774,15 +2943,29 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+0
+1
+1
 1
 1
 0
 1
 0
+1
 0
-78
+1
+0
+0
+2
+0
 1
 1
+1
+2
+1
+0
+0
+2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2793,16 +2976,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
-0
-1
-0
-0
-78
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2814,15 +2987,30 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+0
+1
+1
 1
 1
 0
 1
 0
+1
 0
-78
+1
+0
+0
+2
+0
 1
 1
+2
+1
+2
+1
+0
+0
+2
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2833,16 +3021,6 @@ info:     end player 0
 info:     start player 1
 info:     end player 1
 info:     start player 2
-1
-1
-1
-0
-1
-0
-0
-78
-1
-1
 info:     end player 2
 info:     start player 3
 info:     end player 3
@@ -2854,22 +3032,34 @@ info:     start player 1
 info:     end player 1
 info:     start player 2
 1
+0
+1
 1
 1
 0
+0
+1
+0
 1
 0
 0
-78
+2
 1
 1
+1
+1
+2
+1
+0
+0
+2
 info:     end player 2
 info:     start player 3
 info:     end player 3
 info: end round 119
-info: player DM2 got score 379
-info: player DM2 got score 388
-info: player DM1 got score 205
-info: player DM2 got score 300
-info: player(s) DM2 got top score
+info: player DM2 got score 207
+info: player DM2 got score 333
+info: player DM1 got score 400
+info: player DM2 got score 378
+info: player(s) DM1 got top score
 info: game played

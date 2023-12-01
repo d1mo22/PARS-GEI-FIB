@@ -90,6 +90,10 @@ struct PLAYER_NAME : public Player {
     }
   }
 
+  PI sol() {
+    return {((40+2*round())%80),((79+2*round())%80)};
+  }
+
   Dir coordenadas_dir(const int& i, const int& j) {
     if (i == 1 and j == 0) return Dir(Bottom);
     else if (i == 1 and j == 1) return Dir(BR);
@@ -271,6 +275,7 @@ struct PLAYER_NAME : public Player {
   virtual void play () {
     mapa m;
     matrix mat;
+    cerr << sol().first << " " << sol().second << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);
     //move_furyans(m, mat);

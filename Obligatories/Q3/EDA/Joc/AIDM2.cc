@@ -96,7 +96,6 @@ struct PLAYER_NAME : public Player {
     }
 }
 
-
   Dir coordenadas_dir(const int& i, const int& j) {
     if (i == 1 and j == 0) return Dir(Bottom);
     else if (i == 1 and j == 1) return Dir(BR);
@@ -113,32 +112,6 @@ struct PLAYER_NAME : public Player {
   }
 
   Pos buscar_ascensors(const mapa& m, const Pos& p) {
-    VVB visitat(rows(), VB(cols(), false));
-    queue<Pos> q;
-    q.push(p);
-    visitat[p.i][p.j] = true;
-
-    while(!q.empty()) {
-      Pos p = q.front();
-      q.pop();
-
-      int x = p.i;
-      int y = p.j;
-
-      if (m[x][y][0] == Elevator) return p;
-
-      for (int i = Bottom; i <= LB; ++i) {
-        Pos next = p + Dir(i);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0] != Rock) {
-          q.push(next);
-          visitat[next.i][next.j] = true;
-        }
-      }
-    }
-    return Pos(-1,-1,0);
-  }
-
-  Pos casella(const mapa& m, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
     q.push(p);
@@ -190,24 +163,6 @@ struct PLAYER_NAME : public Player {
     return Pos(-1,-1,0);
   }
 
-  int binarySearch() {
-    int low = 0;
-    int high = 79;
-
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-
-        if (daylight(Pos(0,mid,1))) {
-            // Si está al sol, busca en la mitad inferior
-            high = mid;
-        } else {
-            // Si está en la sombra, busca en la mitad superior
-            low = mid + 1;
-        }
-    }
-
-    return low;
-  }
 
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {

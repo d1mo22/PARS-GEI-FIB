@@ -1,6 +1,5 @@
-info: seed 457939
+info: seed 1102078
 info: loading game
-Wrong number of cave cells: 1533. Generating another grid..
 info: loaded game
 info: loading player DM4
 info: loading player Dummy
@@ -149,6 +148,10 @@ info:     end player 3
 info: end round 13
 info: start round 14
 info:     start player 0
+Furyan detectat!
+Posicio actual: (22, 22, 0)
+Posicio enemic: (23, 21, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -159,6 +162,10 @@ info:     end player 3
 info: end round 14
 info: start round 15
 info:     start player 0
+Furyan detectat!
+Posicio actual: (27, 67, 0)
+Posicio enemic: (27, 66, 0)
+Vaig cap a Bottom
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -169,6 +176,14 @@ info:     end player 3
 info: end round 15
 info: start round 16
 info:     start player 0
+Furyan detectat!
+Posicio actual: (28, 67, 0)
+Posicio enemic: (27, 66, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (38, 29, 0)
+Posicio enemic: (37, 30, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -179,6 +194,18 @@ info:     end player 3
 info: end round 16
 info: start round 17
 info:     start player 0
+Furyan detectat!
+Posicio actual: (24, 47, 0)
+Posicio enemic: (24, 46, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (28, 67, 0)
+Posicio enemic: (27, 66, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (38, 28, 0)
+Posicio enemic: (37, 28, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -189,6 +216,18 @@ info:     end player 3
 info: end round 17
 info: start round 18
 info:     start player 0
+Furyan detectat!
+Posicio actual: (13, 49, 0)
+Posicio enemic: (13, 48, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (28, 67, 0)
+Posicio enemic: (29, 66, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (38, 28, 0)
+Posicio enemic: (38, 29, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -199,8 +238,18 @@ info:     end player 3
 info: end round 18
 info: start round 19
 info:     start player 0
-Posicio actual: (11, 28, 0)
-Posicio enemic: (13, 26, 0)
+Furyan detectat!
+Posicio actual: (20, 20, 0)
+Posicio enemic: (19, 21, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (27, 67, 0)
+Posicio enemic: (26, 67, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (38, 28, 0)
+Posicio enemic: (37, 28, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -211,8 +260,14 @@ info:     end player 3
 info: end round 19
 info: start round 20
 info:     start player 0
-Posicio actual: (10, 29, 0)
-Posicio enemic: (12, 27, 0)
+Furyan detectat!
+Posicio actual: (21, 19, 0)
+Posicio enemic: (21, 20, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (27, 66, 0)
+Posicio enemic: (28, 67, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -223,10 +278,14 @@ info:     end player 3
 info: end round 20
 info: start round 21
 info:     start player 0
-Posicio actual: (14, 66, 0)
-Posicio enemic: (16, 65, 0)
-Posicio actual: (9, 29, 0)
-Posicio enemic: (11, 27, 0)
+Furyan detectat!
+Posicio actual: (20, 20, 0)
+Posicio enemic: (21, 20, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (27, 66, 0)
+Posicio enemic: (27, 67, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -237,10 +296,14 @@ info:     end player 3
 info: end round 21
 info: start round 22
 info:     start player 0
-Posicio actual: (13, 67, 0)
-Posicio enemic: (15, 65, 0)
-Posicio actual: (8, 30, 0)
-Posicio enemic: (10, 28, 0)
+Furyan detectat!
+Posicio actual: (20, 21, 0)
+Posicio enemic: (20, 22, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (26, 67, 0)
+Posicio enemic: (27, 67, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -251,8 +314,14 @@ info:     end player 3
 info: end round 22
 info: start round 23
 info:     start player 0
-Posicio actual: (7, 31, 0)
-Posicio enemic: (9, 29, 0)
+Furyan detectat!
+Posicio actual: (19, 21, 0)
+Posicio enemic: (20, 20, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (26, 67, 0)
+Posicio enemic: (27, 66, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -263,8 +332,10 @@ info:     end player 3
 info: end round 23
 info: start round 24
 info:     start player 0
-Posicio actual: (6, 32, 0)
-Posicio enemic: (8, 30, 0)
+Furyan detectat!
+Posicio actual: (25, 68, 0)
+Posicio enemic: (24, 67, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -275,12 +346,26 @@ info:     end player 3
 info: end round 24
 info: start round 25
 info:     start player 0
-Posicio actual: (10, 69, 0)
-Posicio enemic: (12, 66, 0)
-Posicio actual: (10, 68, 0)
-Posicio enemic: (12, 66, 0)
-Posicio actual: (5, 33, 0)
-Posicio enemic: (7, 31, 0)
+Furyan detectat!
+Posicio actual: (12, 52, 0)
+Posicio enemic: (12, 51, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (21, 66, 0)
+Posicio enemic: (20, 66, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (23, 52, 0)
+Posicio enemic: (24, 52, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (18, 23, 0)
+Posicio enemic: (18, 22, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (3, 14, 0)
+Posicio enemic: (4, 14, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -291,14 +376,26 @@ info:     end player 3
 info: end round 25
 info: start round 26
 info:     start player 0
-Posicio actual: (9, 70, 0)
-Posicio enemic: (11, 67, 0)
-Posicio actual: (9, 68, 0)
-Posicio enemic: (11, 67, 0)
-Posicio actual: (9, 69, 0)
-Posicio enemic: (11, 67, 0)
-Posicio actual: (4, 34, 0)
-Posicio enemic: (6, 32, 0)
+Furyan detectat!
+Posicio actual: (13, 52, 0)
+Posicio enemic: (12, 52, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (21, 67, 0)
+Posicio enemic: (20, 66, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (23, 51, 0)
+Posicio enemic: (23, 52, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (19, 23, 0)
+Posicio enemic: (18, 23, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (25, 70, 0)
+Posicio enemic: (24, 71, 0)
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -309,14 +406,26 @@ info:     end player 3
 info: end round 26
 info: start round 27
 info:     start player 0
-Posicio actual: (8, 71, 0)
-Posicio enemic: (10, 68, 0)
-Posicio actual: (8, 69, 0)
-Posicio enemic: (10, 68, 0)
-Posicio actual: (8, 70, 0)
-Posicio enemic: (10, 68, 0)
-Posicio actual: (3, 34, 0)
-Posicio enemic: (5, 32, 0)
+Furyan detectat!
+Posicio actual: (13, 53, 0)
+Posicio enemic: (13, 52, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (22, 68, 0)
+Posicio enemic: (22, 67, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (22, 51, 0)
+Posicio enemic: (23, 51, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (19, 23, 0)
+Posicio enemic: (18, 23, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (30, 13, 0)
+Posicio enemic: (30, 14, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -327,14 +436,22 @@ info:     end player 3
 info: end round 27
 info: start round 28
 info:     start player 0
-Posicio actual: (7, 70, 0)
-Posicio enemic: (9, 68, 0)
-Posicio actual: (7, 71, 0)
-Posicio enemic: (9, 68, 0)
-Posicio actual: (2, 35, 0)
-Posicio enemic: (4, 33, 0)
-Posicio actual: (7, 36, 0)
-Posicio enemic: (4, 33, 0)
+Furyan detectat!
+Posicio actual: (14, 53, 0)
+Posicio enemic: (13, 53, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (22, 52, 0)
+Posicio enemic: (22, 51, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (19, 23, 0)
+Posicio enemic: (18, 23, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (29, 13, 0)
+Posicio enemic: (30, 14, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -345,12 +462,18 @@ info:     end player 3
 info: end round 28
 info: start round 29
 info:     start player 0
-Posicio actual: (6, 71, 0)
-Posicio enemic: (8, 69, 0)
-Posicio actual: (6, 72, 0)
-Posicio enemic: (8, 69, 0)
-Posicio actual: (1, 35, 0)
-Posicio enemic: (3, 34, 0)
+Furyan detectat!
+Posicio actual: (14, 52, 0)
+Posicio enemic: (14, 53, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (22, 67, 0)
+Posicio enemic: (21, 67, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (23, 52, 0)
+Posicio enemic: (22, 52, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -361,12 +484,18 @@ info:     end player 3
 info: end round 29
 info: start round 30
 info:     start player 0
-Posicio actual: (5, 71, 0)
-Posicio enemic: (7, 69, 0)
-Posicio actual: (6, 72, 0)
-Posicio enemic: (7, 69, 0)
-Posicio actual: (26, 36, 0)
-Posicio enemic: (28, 37, 0)
+Furyan detectat!
+Posicio actual: (13, 52, 0)
+Posicio enemic: (14, 52, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (22, 68, 0)
+Posicio enemic: (21, 68, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (23, 53, 0)
+Posicio enemic: (23, 52, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -377,10 +506,22 @@ info:     end player 3
 info: end round 30
 info: start round 31
 info:     start player 0
-Posicio actual: (6, 72, 0)
-Posicio enemic: (6, 70, 0)
-Posicio actual: (25, 36, 0)
-Posicio enemic: (27, 38, 0)
+Furyan detectat!
+Posicio actual: (13, 51, 0)
+Posicio enemic: (13, 52, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (8, 20, 0)
+Posicio enemic: (7, 19, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (22, 67, 0)
+Posicio enemic: (21, 68, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (24, 54, 0)
+Posicio enemic: (23, 53, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -391,10 +532,22 @@ info:     end player 3
 info: end round 31
 info: start round 32
 info:     start player 0
-Posicio actual: (9, 74, 0)
-Posicio enemic: (7, 71, 0)
-Posicio actual: (24, 35, 0)
-Posicio enemic: (26, 37, 0)
+Furyan detectat!
+Posicio actual: (12, 51, 0)
+Posicio enemic: (13, 51, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (23, 66, 0)
+Posicio enemic: (24, 65, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (25, 55, 0)
+Posicio enemic: (24, 54, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (27, 13, 0)
+Posicio enemic: (28, 13, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -405,12 +558,26 @@ info:     end player 3
 info: end round 32
 info: start round 33
 info:     start player 0
-Posicio actual: (9, 75, 0)
-Posicio enemic: (7, 72, 0)
-Posicio actual: (8, 39, 0)
-Posicio enemic: (5, 37, 0)
-Posicio actual: (23, 34, 0)
-Posicio enemic: (25, 36, 0)
+Furyan detectat!
+Posicio actual: (12, 50, 0)
+Posicio enemic: (12, 51, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (22, 67, 0)
+Posicio enemic: (22, 68, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (26, 56, 0)
+Posicio enemic: (25, 55, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (21, 67, 0)
+Posicio enemic: (22, 68, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (9, 27, 0)
+Posicio enemic: (9, 28, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -421,8 +588,30 @@ info:     end player 3
 info: end round 33
 info: start round 34
 info:     start player 0
-Posicio actual: (22, 33, 0)
-Posicio enemic: (24, 35, 0)
+Furyan detectat!
+Posicio actual: (11, 50, 0)
+Posicio enemic: (11, 49, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (10, 21, 0)
+Posicio enemic: (9, 21, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (22, 67, 0)
+Posicio enemic: (23, 66, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (27, 57, 0)
+Posicio enemic: (26, 56, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (28, 13, 0)
+Posicio enemic: (28, 14, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (8, 28, 0)
+Posicio enemic: (9, 28, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -433,8 +622,26 @@ info:     end player 3
 info: end round 34
 info: start round 35
 info:     start player 0
-Posicio actual: (21, 32, 0)
-Posicio enemic: (23, 34, 0)
+Furyan detectat!
+Posicio actual: (11, 50, 0)
+Posicio enemic: (12, 49, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (10, 22, 0)
+Posicio enemic: (9, 21, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (27, 58, 0)
+Posicio enemic: (27, 57, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (28, 13, 0)
+Posicio enemic: (27, 13, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (8, 29, 0)
+Posicio enemic: (9, 28, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -445,8 +652,26 @@ info:     end player 3
 info: end round 35
 info: start round 36
 info:     start player 0
-Posicio actual: (20, 31, 0)
-Posicio enemic: (22, 33, 0)
+Furyan detectat!
+Posicio actual: (10, 51, 0)
+Posicio enemic: (11, 50, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (22, 68, 0)
+Posicio enemic: (23, 68, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (27, 58, 0)
+Posicio enemic: (27, 57, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (28, 14, 0)
+Posicio enemic: (27, 14, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (7, 30, 0)
+Posicio enemic: (8, 29, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -457,8 +682,14 @@ info:     end player 3
 info: end round 36
 info: start round 37
 info:     start player 0
-Posicio actual: (19, 30, 0)
-Posicio enemic: (21, 32, 0)
+Furyan detectat!
+Posicio actual: (9, 31, 0)
+Posicio enemic: (8, 30, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (28, 14, 0)
+Posicio enemic: (28, 13, 0)
+Vaig cap a Bottom
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -469,8 +700,14 @@ info:     end player 3
 info: end round 37
 info: start round 38
 info:     start player 0
-Posicio actual: (9, 42, 0)
-Posicio enemic: (7, 40, 0)
+Furyan detectat!
+Posicio actual: (9, 23, 0)
+Posicio enemic: (10, 23, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (29, 14, 0)
+Posicio enemic: (30, 14, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -481,10 +718,18 @@ info:     end player 3
 info: end round 38
 info: start round 39
 info:     start player 0
-Posicio actual: (10, 43, 0)
-Posicio enemic: (8, 41, 0)
-Posicio actual: (18, 30, 0)
-Posicio enemic: (20, 32, 0)
+Furyan detectat!
+Posicio actual: (9, 24, 0)
+Posicio enemic: (10, 23, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (21, 65, 0)
+Posicio enemic: (22, 66, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (29, 13, 0)
+Posicio enemic: (28, 12, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -495,12 +740,22 @@ info:     end player 3
 info: end round 39
 info: start round 40
 info:     start player 0
-Posicio actual: (10, 44, 0)
-Posicio enemic: (8, 42, 0)
-Posicio actual: (21, 35, 0)
-Posicio enemic: (20, 33, 0)
-Posicio actual: (11, 40, 0)
-Posicio enemic: (8, 42, 0)
+Furyan detectat!
+Posicio actual: (8, 25, 0)
+Posicio enemic: (9, 24, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (20, 65, 0)
+Posicio enemic: (21, 64, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (27, 21, 0)
+Posicio enemic: (28, 22, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (7, 19, 0)
+Posicio enemic: (8, 20, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -511,10 +766,18 @@ info:     end player 3
 info: end round 40
 info: start round 41
 info:     start player 0
-Posicio actual: (11, 45, 0)
-Posicio enemic: (9, 43, 0)
-Posicio actual: (17, 30, 0)
-Posicio enemic: (19, 32, 0)
+Furyan detectat!
+Posicio actual: (20, 65, 0)
+Posicio enemic: (21, 64, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (26, 20, 0)
+Posicio enemic: (27, 21, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (6, 18, 0)
+Posicio enemic: (7, 19, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -525,6 +788,26 @@ info:     end player 3
 info: end round 41
 info: start round 42
 info:     start player 0
+Furyan detectat!
+Posicio actual: (30, 14, 0)
+Posicio enemic: (31, 15, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (8, 26, 0)
+Posicio enemic: (8, 25, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (25, 19, 0)
+Posicio enemic: (26, 20, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (5, 18, 0)
+Posicio enemic: (6, 18, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (4, 52, 0)
+Posicio enemic: (3, 52, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -535,6 +818,14 @@ info:     end player 3
 info: end round 42
 info: start round 43
 info:     start player 0
+Furyan detectat!
+Posicio actual: (5, 18, 0)
+Posicio enemic: (6, 18, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (4, 53, 0)
+Posicio enemic: (3, 52, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -545,6 +836,22 @@ info:     end player 3
 info: end round 43
 info: start round 44
 info:     start player 0
+Furyan detectat!
+Posicio actual: (25, 20, 0)
+Posicio enemic: (26, 20, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (13, 34, 0)
+Posicio enemic: (14, 35, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (4, 71, 0)
+Posicio enemic: (5, 70, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (6, 30, 0)
+Posicio enemic: (5, 29, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -555,6 +862,18 @@ info:     end player 3
 info: end round 44
 info: start round 45
 info:     start player 0
+Furyan detectat!
+Posicio actual: (25, 19, 0)
+Posicio enemic: (25, 20, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (5, 53, 0)
+Posicio enemic: (5, 52, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (4, 71, 0)
+Posicio enemic: (5, 70, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -565,6 +884,18 @@ info:     end player 3
 info: end round 45
 info: start round 46
 info:     start player 0
+Furyan detectat!
+Posicio actual: (24, 19, 0)
+Posicio enemic: (25, 19, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (5, 53, 0)
+Posicio enemic: (5, 52, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (4, 71, 0)
+Posicio enemic: (5, 70, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -575,6 +906,14 @@ info:     end player 3
 info: end round 46
 info: start round 47
 info:     start player 0
+Furyan detectat!
+Posicio actual: (24, 19, 0)
+Posicio enemic: (25, 19, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (4, 71, 0)
+Posicio enemic: (5, 70, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -585,6 +924,10 @@ info:     end player 3
 info: end round 47
 info: start round 48
 info:     start player 0
+Furyan detectat!
+Posicio actual: (4, 71, 0)
+Posicio enemic: (5, 70, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -595,6 +938,14 @@ info:     end player 3
 info: end round 48
 info: start round 49
 info:     start player 0
+Furyan detectat!
+Posicio actual: (6, 27, 0)
+Posicio enemic: (5, 28, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (4, 71, 0)
+Posicio enemic: (5, 70, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -625,6 +976,10 @@ info:     end player 3
 info: end round 51
 info: start round 52
 info:     start player 0
+Furyan detectat!
+Posicio actual: (8, 36, 0)
+Posicio enemic: (7, 37, 0)
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -645,6 +1000,16 @@ info:     end player 3
 info: end round 53
 info: start round 54
 info:     start player 0
+Furyan detectat!
+Posicio actual: (7, 74, 0)
+Posicio enemic: (7, 75, 0)
+Vaig cap a Top
+Vida actual: 24
+Hellhound detectat!
+Posicio actual: (23, 34, 0)
+Posicio enemic: (23, 33, 0)
+Vaig cap a Bottom
+warning: action already requested for unit 4
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -655,6 +1020,24 @@ info:     end player 3
 info: end round 54
 info: start round 55
 info:     start player 0
+Furyan detectat!
+Posicio actual: (32, 44, 0)
+Posicio enemic: (32, 45, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (5, 8, 0)
+Posicio enemic: (6, 7, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (6, 74, 0)
+Posicio enemic: (6, 75, 0)
+Vaig cap a Top
+Vida actual: 29
+Hellhound detectat!
+Posicio actual: (24, 34, 0)
+Posicio enemic: (24, 35, 0)
+Vaig cap a Top
+warning: action already requested for unit 4
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -675,8 +1058,6 @@ info:     end player 3
 info: end round 56
 info: start round 57
 info:     start player 0
-Posicio actual: (19, 65, 0)
-Posicio enemic: (16, 67, 0)
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -687,8 +1068,10 @@ info:     end player 3
 info: end round 57
 info: start round 58
 info:     start player 0
-Posicio actual: (20, 64, 0)
-Posicio enemic: (17, 66, 0)
+Furyan detectat!
+Posicio actual: (4, 7, 0)
+Posicio enemic: (4, 8, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -699,8 +1082,14 @@ info:     end player 3
 info: end round 58
 info: start round 59
 info:     start player 0
-Posicio actual: (20, 64, 0)
-Posicio enemic: (18, 65, 0)
+Furyan detectat!
+Posicio actual: (14, 39, 0)
+Posicio enemic: (13, 40, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (3, 7, 0)
+Posicio enemic: (4, 8, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -711,6 +1100,10 @@ info:     end player 3
 info: end round 59
 info: start round 60
 info:     start player 0
+Furyan detectat!
+Posicio actual: (15, 38, 0)
+Posicio enemic: (14, 39, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -721,6 +1114,10 @@ info:     end player 3
 info: end round 60
 info: start round 61
 info:     start player 0
+Furyan detectat!
+Posicio actual: (15, 37, 0)
+Posicio enemic: (15, 38, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -731,6 +1128,10 @@ info:     end player 3
 info: end round 61
 info: start round 62
 info:     start player 0
+Furyan detectat!
+Posicio actual: (14, 37, 0)
+Posicio enemic: (15, 37, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -741,6 +1142,10 @@ info:     end player 3
 info: end round 62
 info: start round 63
 info:     start player 0
+Furyan detectat!
+Posicio actual: (14, 36, 0)
+Posicio enemic: (14, 37, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -751,6 +1156,10 @@ info:     end player 3
 info: end round 63
 info: start round 64
 info:     start player 0
+Furyan detectat!
+Posicio actual: (13, 36, 0)
+Posicio enemic: (14, 37, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -761,6 +1170,10 @@ info:     end player 3
 info: end round 64
 info: start round 65
 info:     start player 0
+Furyan detectat!
+Posicio actual: (6, 9, 0)
+Posicio enemic: (5, 8, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -781,6 +1194,14 @@ info:     end player 3
 info: end round 66
 info: start round 67
 info:     start player 0
+Furyan detectat!
+Posicio actual: (29, 43, 0)
+Posicio enemic: (29, 42, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (17, 79, 0)
+Posicio enemic: (16, 79, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -791,6 +1212,10 @@ info:     end player 3
 info: end round 67
 info: start round 68
 info:     start player 0
+Furyan detectat!
+Posicio actual: (30, 43, 0)
+Posicio enemic: (29, 42, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -801,6 +1226,10 @@ info:     end player 3
 info: end round 68
 info: start round 69
 info:     start player 0
+Furyan detectat!
+Posicio actual: (7, 48, 0)
+Posicio enemic: (6, 49, 0)
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -821,8 +1250,10 @@ info:     end player 3
 info: end round 70
 info: start round 71
 info:     start player 0
-Posicio actual: (7, 48, 0)
-Posicio enemic: (9, 49, 0)
+Furyan detectat!
+Posicio actual: (15, 66, 0)
+Posicio enemic: (16, 66, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -833,6 +1264,14 @@ info:     end player 3
 info: end round 71
 info: start round 72
 info:     start player 0
+Furyan detectat!
+Posicio actual: (11, 47, 0)
+Posicio enemic: (10, 48, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (15, 65, 0)
+Posicio enemic: (16, 66, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -853,6 +1292,10 @@ info:     end player 3
 info: end round 73
 info: start round 74
 info:     start player 0
+Furyan detectat!
+Posicio actual: (11, 12, 0)
+Posicio enemic: (12, 11, 0)
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -873,6 +1316,10 @@ info:     end player 3
 info: end round 75
 info: start round 76
 info:     start player 0
+Furyan detectat!
+Posicio actual: (14, 66, 0)
+Posicio enemic: (15, 65, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -883,6 +1330,18 @@ info:     end player 3
 info: end round 76
 info: start round 77
 info:     start player 0
+Furyan detectat!
+Posicio actual: (23, 46, 0)
+Posicio enemic: (24, 47, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (9, 14, 0)
+Posicio enemic: (10, 13, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (14, 66, 0)
+Posicio enemic: (15, 65, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -893,6 +1352,10 @@ info:     end player 3
 info: end round 77
 info: start round 78
 info:     start player 0
+Furyan detectat!
+Posicio actual: (9, 40, 0)
+Posicio enemic: (10, 41, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -903,6 +1366,14 @@ info:     end player 3
 info: end round 78
 info: start round 79
 info:     start player 0
+Furyan detectat!
+Posicio actual: (8, 39, 0)
+Posicio enemic: (9, 40, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (22, 46, 0)
+Posicio enemic: (23, 46, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -913,6 +1384,10 @@ info:     end player 3
 info: end round 79
 info: start round 80
 info:     start player 0
+Furyan detectat!
+Posicio actual: (7, 38, 0)
+Posicio enemic: (8, 39, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -923,6 +1398,10 @@ info:     end player 3
 info: end round 80
 info: start round 81
 info:     start player 0
+Furyan detectat!
+Posicio actual: (13, 34, 0)
+Posicio enemic: (14, 35, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -933,6 +1412,10 @@ info:     end player 3
 info: end round 81
 info: start round 82
 info:     start player 0
+Furyan detectat!
+Posicio actual: (12, 33, 0)
+Posicio enemic: (13, 34, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -943,6 +1426,16 @@ info:     end player 3
 info: end round 82
 info: start round 83
 info:     start player 0
+Furyan detectat!
+Posicio actual: (11, 32, 0)
+Posicio enemic: (12, 33, 0)
+Vaig cap a Top
+Vida actual: 26
+Hellhound detectat!
+Posicio actual: (25, 38, 0)
+Posicio enemic: (25, 37, 0)
+Vaig cap a Altres
+warning: action already requested for unit 42
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -953,6 +1446,10 @@ info:     end player 3
 info: end round 83
 info: start round 84
 info:     start player 0
+Furyan detectat!
+Posicio actual: (10, 32, 0)
+Posicio enemic: (11, 32, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -963,6 +1460,14 @@ info:     end player 3
 info: end round 84
 info: start round 85
 info:     start player 0
+Furyan detectat!
+Posicio actual: (10, 33, 0)
+Posicio enemic: (10, 32, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (9, 31, 0)
+Posicio enemic: (10, 32, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -973,6 +1478,10 @@ info:     end player 3
 info: end round 85
 info: start round 86
 info:     start player 0
+Furyan detectat!
+Posicio actual: (11, 33, 0)
+Posicio enemic: (10, 33, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -983,6 +1492,10 @@ info:     end player 3
 info: end round 86
 info: start round 87
 info:     start player 0
+Furyan detectat!
+Posicio actual: (11, 34, 0)
+Posicio enemic: (10, 33, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -993,6 +1506,10 @@ info:     end player 3
 info: end round 87
 info: start round 88
 info:     start player 0
+Furyan detectat!
+Posicio actual: (12, 35, 0)
+Posicio enemic: (11, 34, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1003,6 +1520,10 @@ info:     end player 3
 info: end round 88
 info: start round 89
 info:     start player 0
+Furyan detectat!
+Posicio actual: (13, 36, 0)
+Posicio enemic: (12, 35, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1013,6 +1534,10 @@ info:     end player 3
 info: end round 89
 info: start round 90
 info:     start player 0
+Furyan detectat!
+Posicio actual: (14, 37, 0)
+Posicio enemic: (13, 36, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1023,6 +1548,10 @@ info:     end player 3
 info: end round 90
 info: start round 91
 info:     start player 0
+Furyan detectat!
+Posicio actual: (15, 38, 0)
+Posicio enemic: (14, 37, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1033,8 +1562,10 @@ info:     end player 3
 info: end round 91
 info: start round 92
 info:     start player 0
-Posicio actual: (18, 47, 0)
-Posicio enemic: (15, 48, 0)
+Furyan detectat!
+Posicio actual: (16, 39, 0)
+Posicio enemic: (15, 38, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1045,8 +1576,10 @@ info:     end player 3
 info: end round 92
 info: start round 93
 info:     start player 0
-Posicio actual: (19, 46, 0)
-Posicio enemic: (16, 48, 0)
+Furyan detectat!
+Posicio actual: (17, 40, 0)
+Posicio enemic: (16, 39, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1057,6 +1590,14 @@ info:     end player 3
 info: end round 93
 info: start round 94
 info:     start player 0
+Furyan detectat!
+Posicio actual: (27, 26, 0)
+Posicio enemic: (28, 25, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (18, 41, 0)
+Posicio enemic: (17, 40, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1067,8 +1608,14 @@ info:     end player 3
 info: end round 94
 info: start round 95
 info:     start player 0
-Posicio actual: (20, 48, 0)
-Posicio enemic: (18, 49, 0)
+Furyan detectat!
+Posicio actual: (27, 26, 0)
+Posicio enemic: (28, 25, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (18, 41, 0)
+Posicio enemic: (17, 40, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1079,8 +1626,14 @@ info:     end player 3
 info: end round 95
 info: start round 96
 info:     start player 0
-Posicio actual: (21, 47, 0)
-Posicio enemic: (19, 49, 0)
+Furyan detectat!
+Posicio actual: (19, 42, 0)
+Posicio enemic: (18, 41, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (19, 0, 0)
+Posicio enemic: (18, 1, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1091,8 +1644,18 @@ info:     end player 3
 info: end round 96
 info: start round 97
 info:     start player 0
-Posicio actual: (21, 46, 0)
-Posicio enemic: (19, 48, 0)
+Furyan detectat!
+Posicio actual: (20, 43, 0)
+Posicio enemic: (19, 42, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (19, 0, 0)
+Posicio enemic: (18, 1, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (18, 44, 0)
+Posicio enemic: (17, 43, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1103,8 +1666,6 @@ info:     end player 3
 info: end round 97
 info: start round 98
 info:     start player 0
-Posicio actual: (22, 45, 0)
-Posicio enemic: (20, 47, 0)
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1115,14 +1676,14 @@ info:     end player 3
 info: end round 98
 info: start round 99
 info:     start player 0
-Posicio actual: (26, 19, 0)
-Posicio enemic: (23, 16, 0)
-Posicio actual: (23, 44, 0)
-Posicio enemic: (21, 46, 0)
-Posicio actual: (24, 44, 0)
-Posicio enemic: (21, 46, 0)
-Posicio actual: (23, 45, 0)
-Posicio enemic: (21, 46, 0)
+Furyan detectat!
+Posicio actual: (27, 1, 0)
+Posicio enemic: (27, 2, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (19, 45, 0)
+Posicio enemic: (18, 44, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1133,12 +1694,14 @@ info:     end player 3
 info: end round 99
 info: start round 100
 info:     start player 0
-Posicio actual: (23, 43, 0)
-Posicio enemic: (22, 45, 0)
-Posicio actual: (25, 43, 0)
-Posicio enemic: (22, 45, 0)
-Posicio actual: (24, 44, 0)
-Posicio enemic: (22, 45, 0)
+Furyan detectat!
+Posicio actual: (26, 1, 0)
+Posicio enemic: (27, 1, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (26, 25, 0)
+Posicio enemic: (27, 25, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1149,12 +1712,14 @@ info:     end player 3
 info: end round 100
 info: start round 101
 info:     start player 0
-Posicio actual: (27, 19, 0)
-Posicio enemic: (24, 18, 0)
-Posicio actual: (24, 42, 0)
-Posicio enemic: (22, 44, 0)
-Posicio actual: (25, 43, 0)
-Posicio enemic: (22, 44, 0)
+Furyan detectat!
+Posicio actual: (26, 1, 0)
+Posicio enemic: (27, 1, 0)
+Vaig cap a Left
+Furyan detectat!
+Posicio actual: (26, 24, 0)
+Posicio enemic: (27, 25, 0)
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1165,10 +1730,6 @@ info:     end player 3
 info: end round 101
 info: start round 102
 info:     start player 0
-Posicio actual: (27, 20, 0)
-Posicio enemic: (25, 19, 0)
-Posicio actual: (25, 43, 0)
-Posicio enemic: (23, 45, 0)
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1179,12 +1740,6 @@ info:     end player 3
 info: end round 102
 info: start round 103
 info:     start player 0
-Posicio actual: (28, 21, 0)
-Posicio enemic: (26, 20, 0)
-Posicio actual: (26, 44, 0)
-Posicio enemic: (24, 44, 0)
-Posicio actual: (26, 42, 0)
-Posicio enemic: (24, 44, 0)
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1195,8 +1750,12 @@ info:     end player 3
 info: end round 103
 info: start round 104
 info:     start player 0
-Posicio actual: (29, 22, 0)
-Posicio enemic: (27, 20, 0)
+Vida actual: 38
+Hellhound detectat!
+Posicio actual: (22, 61, 0)
+Posicio enemic: (23, 61, 0)
+Vaig cap a Left
+warning: action already requested for unit 0
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1207,8 +1766,12 @@ info:     end player 3
 info: end round 104
 info: start round 105
 info:     start player 0
-Posicio actual: (29, 23, 0)
-Posicio enemic: (28, 21, 0)
+Vida actual: 43
+Hellhound detectat!
+Posicio actual: (22, 60, 0)
+Posicio enemic: (22, 59, 0)
+Vaig cap a Bottom
+warning: action already requested for unit 0
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1219,6 +1782,12 @@ info:     end player 3
 info: end round 105
 info: start round 106
 info:     start player 0
+Vida actual: 8
+Hellhound detectat!
+Posicio actual: (23, 60, 0)
+Posicio enemic: (22, 59, 0)
+Vaig cap a Bottom right
+warning: action already requested for unit 0
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1229,6 +1798,18 @@ info:     end player 3
 info: end round 106
 info: start round 107
 info:     start player 0
+Furyan detectat!
+Posicio actual: (8, 33, 0)
+Posicio enemic: (7, 33, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (36, 15, 0)
+Posicio enemic: (37, 16, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (29, 4, 0)
+Posicio enemic: (28, 4, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1239,6 +1820,26 @@ info:     end player 3
 info: end round 107
 info: start round 108
 info:     start player 0
+Furyan detectat!
+Posicio actual: (8, 34, 0)
+Posicio enemic: (7, 33, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (16, 41, 0)
+Posicio enemic: (16, 42, 0)
+Vaig cap a Top
+Furyan detectat!
+Posicio actual: (33, 19, 0)
+Posicio enemic: (32, 20, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (35, 14, 0)
+Posicio enemic: (36, 13, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (29, 5, 0)
+Posicio enemic: (28, 4, 0)
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1249,6 +1850,10 @@ info:     end player 3
 info: end round 108
 info: start round 109
 info:     start player 0
+Furyan detectat!
+Posicio actual: (9, 35, 0)
+Posicio enemic: (8, 34, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1259,6 +1864,14 @@ info:     end player 3
 info: end round 109
 info: start round 110
 info:     start player 0
+Furyan detectat!
+Posicio actual: (9, 35, 0)
+Posicio enemic: (8, 36, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (33, 16, 0)
+Posicio enemic: (32, 16, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1269,6 +1882,14 @@ info:     end player 3
 info: end round 110
 info: start round 111
 info:     start player 0
+Furyan detectat!
+Posicio actual: (5, 52, 0)
+Posicio enemic: (4, 52, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (33, 17, 0)
+Posicio enemic: (33, 16, 0)
+Vaig cap a Bottom
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1279,6 +1900,22 @@ info:     end player 3
 info: end round 111
 info: start round 112
 info:     start player 0
+Furyan detectat!
+Posicio actual: (9, 33, 0)
+Posicio enemic: (9, 32, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (5, 53, 0)
+Posicio enemic: (5, 52, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (34, 17, 0)
+Posicio enemic: (33, 17, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (30, 6, 0)
+Posicio enemic: (30, 5, 0)
+Vaig cap a Bottom
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1289,6 +1926,22 @@ info:     end player 3
 info: end round 112
 info: start round 113
 info:     start player 0
+Furyan detectat!
+Posicio actual: (10, 33, 0)
+Posicio enemic: (9, 32, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (5, 53, 0)
+Posicio enemic: (5, 52, 0)
+Vaig cap a Altres
+Furyan detectat!
+Posicio actual: (34, 18, 0)
+Posicio enemic: (34, 17, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (31, 6, 0)
+Posicio enemic: (30, 5, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1299,6 +1952,22 @@ info:     end player 3
 info: end round 113
 info: start round 114
 info:     start player 0
+Furyan detectat!
+Posicio actual: (11, 34, 0)
+Posicio enemic: (12, 35, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (5, 53, 0)
+Posicio enemic: (6, 52, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (12, 43, 0)
+Posicio enemic: (11, 42, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (35, 18, 0)
+Posicio enemic: (34, 18, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1309,6 +1978,22 @@ info:     end player 3
 info: end round 114
 info: start round 115
 info:     start player 0
+Furyan detectat!
+Posicio actual: (10, 33, 0)
+Posicio enemic: (11, 34, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (13, 44, 0)
+Posicio enemic: (13, 43, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (35, 19, 0)
+Posicio enemic: (35, 18, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (30, 6, 0)
+Posicio enemic: (31, 6, 0)
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1319,8 +2004,22 @@ info:     end player 3
 info: end round 115
 info: start round 116
 info:     start player 0
-Posicio actual: (17, 30, 0)
-Posicio enemic: (15, 27, 0)
+Furyan detectat!
+Posicio actual: (9, 32, 0)
+Posicio enemic: (10, 33, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (11, 58, 0)
+Posicio enemic: (12, 57, 0)
+Vaig cap a Top right
+Furyan detectat!
+Posicio actual: (14, 44, 0)
+Posicio enemic: (13, 43, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (36, 19, 0)
+Posicio enemic: (35, 19, 0)
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1331,8 +2030,22 @@ info:     end player 3
 info: end round 116
 info: start round 117
 info:     start player 0
-Posicio actual: (15, 30, 0)
-Posicio enemic: (14, 28, 0)
+Furyan detectat!
+Posicio actual: (8, 31, 0)
+Posicio enemic: (7, 30, 0)
+Vaig cap a Bottom right
+Furyan detectat!
+Posicio actual: (36, 20, 0)
+Posicio enemic: (36, 19, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (30, 13, 0)
+Posicio enemic: (29, 14, 0)
+Vaig cap a Bottom left
+Furyan detectat!
+Posicio actual: (6, 31, 0)
+Posicio enemic: (7, 30, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1343,8 +2056,22 @@ info:     end player 3
 info: end round 117
 info: start round 118
 info:     start player 0
-Posicio actual: (16, 31, 0)
-Posicio enemic: (14, 29, 0)
+Furyan detectat!
+Posicio actual: (8, 31, 0)
+Posicio enemic: (9, 32, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (37, 20, 0)
+Posicio enemic: (36, 20, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (29, 5, 0)
+Posicio enemic: (30, 6, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (5, 31, 0)
+Posicio enemic: (6, 30, 0)
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1355,8 +2082,22 @@ info:     end player 3
 info: end round 118
 info: start round 119
 info:     start player 0
-Posicio actual: (19, 30, 0)
-Posicio enemic: (21, 31, 0)
+Furyan detectat!
+Posicio actual: (7, 30, 0)
+Posicio enemic: (8, 31, 0)
+Vaig cap a Top left
+Furyan detectat!
+Posicio actual: (37, 21, 0)
+Posicio enemic: (37, 20, 0)
+Vaig cap a Bottom
+Furyan detectat!
+Posicio actual: (31, 11, 0)
+Posicio enemic: (30, 10, 0)
+Vaig cap a Right
+Furyan detectat!
+Posicio actual: (4, 31, 0)
+Posicio enemic: (5, 30, 0)
+Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1365,9 +2106,9 @@ info:     end player 2
 info:     start player 3
 info:     end player 3
 info: end round 119
-info: player DM4 got score 406
-info: player Dummy got score 546
-info: player Dummy got score 451
-info: player Dummy got score 314
+info: player DM4 got score 170
+info: player Dummy got score 320
+info: player Dummy got score 324
+info: player Dummy got score 798
 info: player(s) Dummy got top score
 info: game played

@@ -271,13 +271,33 @@ struct PLAYER_NAME : public Player {
     return Pos(-1,-1,0);
   }
 
-  pair<bool, Pos> radar(const matrix& mat, const Pos& p) {
+  pair<bool, Pos> hellhound_aprop(const matrix& mat, const Pos& p) {
     int x = p.i;
     int y = p.j;
 
-    for (int i = max(0, x-3); i < min(rows(), x+3); ++i) {
-      for (int j = max(0,y-3); j < min(cols(), y+3); ++j) {
-        if (mat[i][j][0] == Hellhound) return {true, Pos(i,j,0)};
+    for (int i = max(0, x-3); i < min(rows(), x+4); ++i) {
+      for (int j = max(0,y-3); j < min(cols(), y+4); ++j) {
+        if (mat[i][j][0] != -1) {
+          Unit u = unit(mat[i][j][0]);
+          if (u.type == Hellhound) return {true, Pos(i,j,0)};
+        }
+        
+      }
+    }
+    return {false, Pos(-1,-1,-1)};
+  }
+
+  pair<bool, Pos> furyan_rival(const matrix& mat, const Pos& p) {
+    int x = p.i;
+    int y = p.j;
+
+    for (int i = max(0, x-1); i < min(rows(), x+2); ++i) {
+      for (int j = max(0,y-1); j < min(cols(), y+2); ++j) {
+        if (mat[i][j][0] != -1) {
+          Unit u = unit(mat[i][j][0]);
+          if (u.player != me() and u.type == Furyan) return {true, Pos(i,j,0)};
+        }
+        
       }
     }
     return {false, Pos(-1,-1,-1)};
@@ -352,6 +372,18 @@ struct PLAYER_NAME : public Player {
     return None;
 }
 
+  string traduccio(const Dir& d) {
+    if (d == 0) return "Bottom";
+    else if (d == 1) return "Bottom right";
+    else if (d == 2) return "Right";
+    else if (d == 3) return "Top right";
+    else if (d == 4) return "Top";
+    else if (d == 5) return "Top left";
+    else if (d == 6) return "Left";
+    else if (d == 7) return "Bottom left";
+    else return "Altres";
+  }
+
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     /* 
@@ -366,17 +398,27 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
-      pair<bool, Pos> enemics = radar(mat, e);
+      pair<bool, Pos> dogs = hellhound_aprop(mat, e);
+      pair<bool, Pos> enemics = furyan_rival(mat, e);
       //Si esta sota terra
-      if(!enemics.first) {
+      if(!dogs.first and !enemics.first) {
         Pos next = conquistar(m, e);
         command(id, desicio(e, next));
       } 
+      else if (dogs.first) {
+        cerr << "Hellhound detectat!" << endl;
+        cerr << "Posicio actual: " << e << endl;
+        cerr << "Posicio enemic: " << dogs.second << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, dogs.second)) << endl;
+        command(id, escapa(m, e, dogs.second));
+      }
       else {
-        command(id, escapa(m, e, enemics.second));
+        cerr << "Furyan detectat!" << endl;
         cerr << "Posicio actual: " << e << endl;
         cerr << "Posicio enemic: " << enemics.second << endl;
-      } 
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, enemics.second)) << endl;
+        command(id, escapa(m, e, enemics.second));
+      }
     }
   }
 
@@ -393,8 +435,28 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
-      Pos next = eliminar_exploradors(mat, e);
-      command(id, desicio(e, next));
+      pair<bool, Pos> dogs = hellhound_aprop(mat, e);
+      pair<bool, Pos> enemics = furyan_rival(mat, e);
+      if (u.health < 50 and enemics.first) {
+        cerr << "Vida actual: " << u.health << endl;
+        cerr << "Hellhound detectat!" << endl;
+        cerr << "Posicio actual: " << e << endl;
+        cerr << "Posicio enemic: " << enemics.second << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, enemics.second)) << endl;
+        command(id, escapa(m, e, enemics.second));
+      } 
+      if (!dogs.first) {
+        Pos next = eliminar_exploradors(mat, e);
+        command(id, desicio(e, next));
+      }
+      else  {
+        cerr << "Hellhound detectat!" << endl;
+        cerr << "Posicio actual: " << e << endl;
+        cerr << "Posicio enemic: " << dogs.second << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, dogs.second)) << endl;
+        command(id, escapa(m, e, dogs.second));
+      }
+      
     }
   }
 

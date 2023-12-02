@@ -271,6 +271,86 @@ struct PLAYER_NAME : public Player {
     return Pos(-1,-1,0);
   }
 
+  pair<bool, Pos> radar(const matrix& mat, const Pos& p) {
+    int x = p.i;
+    int y = p.j;
+
+    for (int i = max(0, x-3); i < min(rows(), x+3); ++i) {
+      for (int j = max(0,y-3); j < min(cols(), y+3); ++j) {
+        if (mat[i][j][0] == Hellhound) return {true, Pos(i,j,0)};
+      }
+    }
+    return {false, Pos(-1,-1,-1)};
+  }
+
+  Dir escapa(const mapa& m, const Pos& me, const Pos& enemic) {
+    Pos nova;
+    if (me.i > enemic.i) {
+        if (me.j > enemic.j) {
+            nova = me + BR;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return BR;
+
+            nova = me + Right;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Right;
+        } 
+        else if (me.j == enemic.j) {
+            nova = me + Right;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Right;
+
+            nova = me + Left;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Left;
+        } 
+        else {
+            nova = me + LB;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return LB;
+
+            nova = me + Left;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Left;
+        }
+    } 
+    else if (me.i == enemic.i) {
+        if (me.j > enemic.j) {
+            nova = me + Bottom;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Bottom;
+
+            nova = me + BR;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return BR;
+        } 
+        else if (me.j < enemic.j) {
+            nova = me + Top;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Top;
+
+            nova = me + RT;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return RT;
+        }
+    } 
+    else {
+        if (me.j > enemic.j) {
+            nova = me + RT;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return RT;
+
+            nova = me + Top;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Top;
+        } 
+        else if (me.j == enemic.j) {
+            nova = me + Left;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Left;
+
+            nova = me + Right;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Right;
+        } 
+        else {
+            nova = me + TL;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return TL;
+
+            nova = me + Top;
+            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Top;
+        }
+    }
+
+    // Si no se puede escapar en ninguna dirección, devolver None
+    return None;
+}
 
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
@@ -286,12 +366,17 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
-      bool enemics = false;
+      pair<bool, Pos> enemics = radar(mat, e);
       //Si esta sota terra
-      if(!enemics) {
+      if(!enemics.first) {
         Pos next = conquistar(m, e);
         command(id, desicio(e, next));
-      }  
+      } 
+      else {
+        command(id, escapa(m, e, enemics.second));
+        cerr << "Posicio actual: " << e << endl;
+        cerr << "Posicio enemic: " << enemics.second << endl;
+      } 
     }
   }
 

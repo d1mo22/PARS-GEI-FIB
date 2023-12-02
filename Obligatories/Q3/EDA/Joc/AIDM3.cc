@@ -373,12 +373,12 @@ struct PLAYER_NAME : public Player {
       Pos e = u.pos;
       if (u.health > 50) {
         Pos next = eliminar_guerrers(m, e);
-        cerr << next << endl;
+        //cerr << next << endl;
         command(id, desicio(e, next));
       }
       else {
          Pos next = eliminar_exploradors(m, e);
-        cerr << next << endl;
+        //cerr << next << endl;
         command(id, desicio(e, next));
       }
      

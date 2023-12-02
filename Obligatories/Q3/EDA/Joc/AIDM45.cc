@@ -4,7 +4,7 @@
  * Write the name of your player and save this file
  * with the same name and .cc extension.
  */
-#define PLAYER_NAME DM4
+#define PLAYER_NAME DM45
 
 
 struct PLAYER_NAME : public Player {
@@ -61,14 +61,22 @@ struct PLAYER_NAME : public Player {
     int t = cols();
 
     for (int i = 0; i < n; ++i) {
+
         for (int j = 0; j < t; ++j) {
-          for (int k = 0; k < 2; ++k) {
+
+            for (int k = 0; k < 2; ++k) {
                 Cell c = cell(i, j, k);
                 mc[i][j][k] = c;
 
                 if (c.id != -1) {
                     Unit u = unit(c.id);
-                    if (u.player != me()) mi[i][j][k] = u.type;
+                    if (u.player != me()) {
+                        mi[i][j][k] = u.type;
+                    } else {
+                        mi[i][j][k] = -1;
+                    }
+                } else {
+                    mi[i][j][k] = -1;
                 }
             }
         }
@@ -192,9 +200,9 @@ struct PLAYER_NAME : public Player {
         }
 
         // Priorizar celdas no conquistadas
-        vector<int> direccions = random_permutation(7);
+        //vector<int> direccions = random_permutation(7);
         for (int i = 0; i <= 7; ++i) {
-            Pos next = p + Dir(direccions[i]);
+            Pos next = p + Dir(i);
             if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
                 // Priorizar celdas no conquistadas
                 if (m[next.i][next.j][0].type == Cave && cell(next).owner == -1) {
@@ -210,10 +218,9 @@ struct PLAYER_NAME : public Player {
     return {};
 }
 
-  Pos eliminar_exploradors(const mapa& m, const matrix& mat, const Pos& p) {
+  Pos eliminar_exploradors(const matrix& mat, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
     q.push(p);
     visitat[p.i][p.j] = true;
 
@@ -224,32 +231,23 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (mat[x][y][0] == Pioneer) {
-        vector<Pos> cami;
-        while(p.i != -1) {
-          cami.insert(cami.begin(), p);
-          p = pare[p.i][p.j];
-        }
-        return cami[1];
-      }
+      if (mat[x][y][0] == Pioneer) return p;
 
-      vector<int> direccions = random_permutation(7);
+      //vector<int> direccions = random_permutation(7);
       for (int i = 0; i <= 7; ++i) {
-        Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
+        Pos next = p + Dir(i);
+        if (pos_ok(next) && !visitat[next.i][next.j] && mat[next.i][next.j][0] != Rock) {
           q.push(next);
           visitat[next.i][next.j] = true;
-          pare[next.i][next.j] = p;
         }
       }
     }
     return Pos(-1,-1,0);
   }
 
-  Pos eliminar_guerrers(const mapa& m, const matrix& mat, const Pos& p) {
+  Pos eliminar_guerrers(const matrix& mat, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
     q.push(p);
     visitat[p.i][p.j] = true;
 
@@ -260,22 +258,13 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (mat[x][y][0] == Furyan) {
-        vector<Pos> cami;
-        while(p.i != -1) {
-          cami.insert(cami.begin(), p);
-          p = pare[p.i][p.j];
-        }
-        return cami[1];
-      }
+      if (mat[x][y][0] == Furyan) return p;
 
-      vector<int> direccions = random_permutation(7);
-      for (int i = 0; i <= 7; ++i) {
-        Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
+      for (int i = Bottom; i <= LB; ++i) {
+        Pos next = p + Dir(i);
+        if (pos_ok(next) && !visitat[next.i][next.j] && mat[next.i][next.j][0] != Rock) {
           q.push(next);
           visitat[next.i][next.j] = true;
-          pare[next.i][next.j] = p;
         }
       }
     }
@@ -352,15 +341,31 @@ struct PLAYER_NAME : public Player {
         no tienen dueño, si no hay ninguna vamos a una que no sea nuestra
       En el caso que haya algun hellhoun cerca --> Huimos
     */
+
     VI expo = pioneers(me());
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
       pair<bool, Pos> dogs = hellhound_aprop(mat, e);
       pair<bool, Pos> enemics = furyan_rival(mat, e);
-
-      if (dogs.first) command(id, escapa(m, e, dogs.second));
-      else if (enemics.first) command(id, escapa(m, e, enemics.second));
+      if (dogs.first) {
+        cerr << "Pionner" << endl;
+        cerr << "Hellhound detectat!" << endl;
+        cerr << "Posicio actual: " << e << endl;
+        cerr << "Posicio enemic: " << dogs.second << endl;
+        cerr << distancia(e, dogs.second) << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, dogs.second)) << endl;
+        command(id, escapa(m, e, dogs.second));
+      }
+      else if (enemics.first) {
+        cerr << "Pionner" << endl;
+        cerr << "Furyan detectat!" << endl;
+        cerr << "Posicio actual: " << e << endl;
+        cerr << "Posicio enemic: " << enemics.second << endl;
+        cerr << "Distancia: " << distancia(e, enemics.second) << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, enemics.second)) << endl;
+        command(id, escapa(m, e, enemics.second));
+      }
       else {
         Pos next = conquistar(m, e);
         command(id, desicio(e, next));
@@ -382,19 +387,12 @@ struct PLAYER_NAME : public Player {
       Unit u = unit(id);
       Pos e = u.pos;
       pair<bool, Pos> dogs = hellhound_aprop(mat, e);
-      pair<bool, Pos> enemics = furyan_rival(mat, e); 
-      if (dogs.first) command(id, escapa(m, e, dogs.second));
-      else if (enemics.first && u.health < 75) {
-        command(id, escapa(m, e, enemics.second));
-      }
-      /*else if (enemics.first && u.health > 75) {
-        
-        command(id, desicio(e,enemics.second));
-      }*/
-      else {
-        Pos next = eliminar_exploradors(m, mat, e);
+      //pair<bool, Pos> enemics = furyan_rival(mat, e); 
+      if (!dogs.first) {
+        Pos next = eliminar_exploradors(mat, e);
         command(id, desicio(e, next));
       }
+      else  command(id, escapa(m, e, dogs.second));
     }
   }
 
@@ -404,7 +402,7 @@ struct PLAYER_NAME : public Player {
    */
   virtual void play () {
     mapa m (rows(), vector<vector<Cell>>(cols(), vector<Cell>(2)));
-    matrix mat(rows(), vector<vector<int>>(cols(), vector<int>(2,-1)));
+    matrix mat(rows(), vector<vector<int>>(cols(), vector<int>(2)));
     cerr << sol().first << " " << sol().second << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);

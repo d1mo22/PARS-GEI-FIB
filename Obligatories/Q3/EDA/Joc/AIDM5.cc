@@ -4,7 +4,7 @@
  * Write the name of your player and save this file
  * with the same name and .cc extension.
  */
-#define PLAYER_NAME DM4
+#define PLAYER_NAME DM5
 
 
 struct PLAYER_NAME : public Player {
@@ -282,53 +282,63 @@ struct PLAYER_NAME : public Player {
     return Pos(-1,-1,0);
   }
 
-  pair<bool, Pos> hellhound_aprop(const matrix& mat, const Pos& p) {
+  vector<Pos> hellhound_aprop(const matrix& mat, const Pos& p) {
+    vector<Pos> rivales;
     int x = p.i;
     int y = p.j;
 
     for (int i = max(0, x-3); i < min(rows(), x+4); ++i) {
       for (int j = max(0,y-3); j < min(cols(), y+4); ++j)  {
         if (mat[i][j][0] == Hellhound)  {
-          return {true, Pos(i,j,0)};
+          rivales.push_back(Pos(i, j, 0));
         }
       }
     }
-    return {false, Pos(-1,-1,-1)};
+    return rivales;
   }
 
-  pair<bool, Pos> furyan_rival(const matrix& mat, const Pos& p) {
+  vector<Pos> furyan_rivales(const matrix& mat, const Pos& p) {
+    vector<Pos> rivales;
     int x = p.i;
     int y = p.j;
-
     for (int i = max(0, x-1); i < min(rows(), x+2); ++i) {
       for (int j = max(0,y-1); j < min(cols(), y+2); ++j) {
-        if (mat[i][j][0] != -1) {
-          Unit u = unit(mat[i][j][0]);
-          if (u.player != me() and u.type == Furyan) return {true, Pos(i,j,0)};
+            if (pos_ok(i,j,0) && mat[i][j][0] != -1) {
+                Unit u = unit(mat[i][j][0]);
+                if (u.player != me() && u.type == Furyan) rivales.push_back(Pos(i, j, 0));
+            }
         }
-        
-      }
     }
-    return {false, Pos(-1,-1,-1)};
+    return rivales;
   }
 
-  Dir escapa(const mapa& m, const Pos& me, const Pos& enemic) {
+  Dir escapar(const mapa& m, const Pos& me, const vector<Pos>& enemigos) {
     double max_distancia = -1.0;
     Dir mejor_direccion = None;
 
     for (int i = Bottom; i <= 7; ++i) {
-        Pos nova = me + Dir(i);
-        Cell c = cell(nova);
-        if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock && c.id == -1) {
-            double dist = distancia(nova, enemic);
-            if (dist > max_distancia) {
-                max_distancia = dist;
+        Pos nueva_pos = me + Dir(i);
+        Cell c = cell(nueva_pos);
+
+        // Verificar que la nueva posición sea válida
+        if (pos_ok(nueva_pos) && m[nueva_pos.i][nueva_pos.j][0].type != Rock && c.id == -1) {
+            // Calcular la distancia promedio a los enemigos
+            double distancia_promedio = 0.0;
+            for (const Pos& enemigo : enemigos) {
+                distancia_promedio += distancia(nueva_pos, enemigo);
+            }
+            distancia_promedio /= enemigos.size();
+
+            // Actualizar la dirección óptima si la distancia promedio es mayor
+            if (distancia_promedio > max_distancia) {
+                max_distancia = distancia_promedio;
                 mejor_direccion = Dir(i);
             }
         }
     }
+
     return mejor_direccion;
-}
+  }
 
   string traduccio(const Dir& d) {
     if (d == 0) return "Bottom";
@@ -356,11 +366,11 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
-      pair<bool, Pos> dogs = hellhound_aprop(mat, e);
-      pair<bool, Pos> enemics = furyan_rival(mat, e);
+      vector<Pos> dogs = hellhound_aprop(mat, e);
+      vector<Pos> enemics = furyan_rivales(mat, e);
 
-      if (dogs.first) command(id, escapa(m, e, dogs.second));
-      else if (enemics.first) command(id, escapa(m, e, enemics.second));
+      if (dogs.size() != 0) command(id, escapar(m, e, dogs));
+      else if (enemics.size() != 0) command(id, escapar(m, e, enemics));
       else {
         Pos next = conquistar(m, e);
         command(id, desicio(e, next));
@@ -381,15 +391,23 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
-      pair<bool, Pos> dogs = hellhound_aprop(mat, e);
-      pair<bool, Pos> enemics = furyan_rival(mat, e); 
-      if (dogs.first) command(id, escapa(m, e, dogs.second));
-      else if (enemics.first && u.health < 75) {
-        command(id, escapa(m, e, enemics.second));
+      vector<Pos> dogs = hellhound_aprop(mat, e);
+      vector<Pos> enemics = furyan_rivales(mat, e);
+      if (dogs.size() != 0) command(id, escapar(m, e, dogs));
+      else if ((enemics.size() != 0) && u.health < 75) {
+        command(id, escapar(m, e, enemics));
       }
-      /*else if (enemics.first && u.health > 75) {
-        
-        command(id, desicio(e,enemics.second));
+      /*else if ((enemics.size() != 0) && u.health > 75) {
+        int min = 100, n = enemics.size(), itr = -1;
+        for (int i = 0; i < n; ++i) {
+          Cell c = cell(enemics[i]);
+          Unit u = unit(c.id);
+          if (u.health < min) {
+            min = u.health;
+            itr = i;
+          }
+        }
+        command(id, desicio(e,enemics[itr]));
       }*/
       else {
         Pos next = eliminar_exploradors(m, mat, e);

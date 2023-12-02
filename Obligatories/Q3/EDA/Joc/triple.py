@@ -10,12 +10,12 @@ import random
 import os
 
 def main():
-    n_games = input("How many games do you want to play: ")
-    p1 = input("Name of the player1: ")
-    p2 = input("Name of the player2: ")
-    p3 = input("Name of the player3: ")
-    p4 = input("Name of the player4: ")
-    info = input("Do you want to diplay the number of games played? [y/n]: ")
+    n_games = "50"
+    p1 = "DM5"
+    p2 = "Dummy"
+    p3 = "Dummy"
+    p4 = "Dummy"
+    info = "n"
     victories = {p1:0, p2:0, p3:0, p4:0}
     classifications = {p1:0, p2:0, p3:0, p4:0}
     eliminations = {p1:0, p2:0, p3:0, p4:0}

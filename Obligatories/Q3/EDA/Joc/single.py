@@ -10,7 +10,7 @@ import random
 import os
 
 def main():
-    n_games = "20"
+    n_games = "50"
     p1 = "DM4"
     p2 = "Dummy"
     p3 = "Dummy"

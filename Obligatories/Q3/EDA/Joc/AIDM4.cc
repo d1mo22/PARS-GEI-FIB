@@ -97,7 +97,10 @@ struct PLAYER_NAME : public Player {
 }
 
   PI sol() {
-    return {((40+2*round())%80),((79+2*round())%80)};
+    int x = ((40+2*round())%80);
+    int y = ((79+2*round())%80);
+    if (x > y) return {y, x};
+    return {x, y};
   }
 
   Dir desicio(const Pos& p, const Pos& next) {
@@ -118,8 +121,10 @@ struct PLAYER_NAME : public Player {
     }
   }
 
-  int distancia(const Pos& p1, const Pos& p2) {
-    return sqrt(pow(p1.i - p2.i,2) + pow(p1.j - p2.j, 2));
+  double distancia(const Pos& p1, const Pos& p2) {
+    int x = p1.i - p2.i;
+    int y = p1.j - p2.j;
+    return sqrt(x*x + y*y);
   }
 
   Pos buscar_ascensors(const mapa& m, const Pos& p) {
@@ -276,14 +281,8 @@ struct PLAYER_NAME : public Player {
     int y = p.j;
 
     for (int i = max(0, x-3); i < min(rows(), x+4); ++i) {
-      for (int j = max(0,y-3); j < min(cols(), y+4); ++j) {
-        if (mat[i][j][0] != -1) {
-          Unit u = unit(mat[i][j][0]);
-          if (u.type == Hellhound) return {true, Pos(i,j,0)};
-        }
-        
+      for (int j = max(0,y-3); j < min(cols(), y+4); ++j) if (mat[i][j][0] == Hellhound) return {true, Pos(i,j,0)};
       }
-    }
     return {false, Pos(-1,-1,-1)};
   }
 
@@ -304,72 +303,21 @@ struct PLAYER_NAME : public Player {
   }
 
   Dir escapa(const mapa& m, const Pos& me, const Pos& enemic) {
-    Pos nova;
-    if (me.i > enemic.i) {
-        if (me.j > enemic.j) {
-            nova = me + BR;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return BR;
+    double max_distancia = -1.0;
+    Dir mejor_direccion = None;
 
-            nova = me + Right;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Right;
-        } 
-        else if (me.j == enemic.j) {
-            nova = me + Right;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Right;
-
-            nova = me + Left;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Left;
-        } 
-        else {
-            nova = me + LB;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return LB;
-
-            nova = me + Left;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Left;
-        }
-    } 
-    else if (me.i == enemic.i) {
-        if (me.j > enemic.j) {
-            nova = me + Bottom;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Bottom;
-
-            nova = me + BR;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return BR;
-        } 
-        else if (me.j < enemic.j) {
-            nova = me + Top;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Top;
-
-            nova = me + RT;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return RT;
-        }
-    } 
-    else {
-        if (me.j > enemic.j) {
-            nova = me + RT;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return RT;
-
-            nova = me + Top;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Top;
-        } 
-        else if (me.j == enemic.j) {
-            nova = me + Left;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Left;
-
-            nova = me + Right;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Right;
-        } 
-        else {
-            nova = me + TL;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return TL;
-
-            nova = me + Top;
-            if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock) return Top;
+    for (int i = Bottom; i <= 7; ++i) {
+        Pos nova = me + Dir(i);
+        Cell c = cell(nova);
+        if (pos_ok(nova) && m[nova.i][nova.j][0].type != Rock && c.id == -1) {
+            double dist = distancia(nova, enemic);
+            if (dist > max_distancia) {
+                max_distancia = dist;
+                mejor_direccion = Dir(i);
+            }
         }
     }
-
-    // Si no se puede escapar en ninguna dirección, devolver None
-    return None;
+    return mejor_direccion;
 }
 
   string traduccio(const Dir& d) {
@@ -381,6 +329,7 @@ struct PLAYER_NAME : public Player {
     else if (d == 5) return "Top left";
     else if (d == 6) return "Left";
     else if (d == 7) return "Bottom left";
+    else if (d == 10) return "None";
     else return "Altres";
   }
 
@@ -400,25 +349,28 @@ struct PLAYER_NAME : public Player {
       Pos e = u.pos;
       pair<bool, Pos> dogs = hellhound_aprop(mat, e);
       pair<bool, Pos> enemics = furyan_rival(mat, e);
-      //Si esta sota terra
-      if(!dogs.first and !enemics.first) {
-        Pos next = conquistar(m, e);
-        command(id, desicio(e, next));
-      } 
-      else if (dogs.first) {
+      if (dogs.first) {
+        cerr << "Pionner" << endl;
         cerr << "Hellhound detectat!" << endl;
         cerr << "Posicio actual: " << e << endl;
         cerr << "Posicio enemic: " << dogs.second << endl;
+        cerr << distancia(e, dogs.second) << endl;
         cerr << "Vaig cap a " << traduccio(escapa(m, e, dogs.second)) << endl;
         command(id, escapa(m, e, dogs.second));
       }
-      else {
+      else if (enemics.first) {
+        cerr << "Pionner" << endl;
         cerr << "Furyan detectat!" << endl;
         cerr << "Posicio actual: " << e << endl;
         cerr << "Posicio enemic: " << enemics.second << endl;
+        cerr << "Distancia: " << distancia(e, enemics.second) << endl;
         cerr << "Vaig cap a " << traduccio(escapa(m, e, enemics.second)) << endl;
         command(id, escapa(m, e, enemics.second));
       }
+      else {
+        Pos next = conquistar(m, e);
+        command(id, desicio(e, next));
+      } 
     }
   }
 
@@ -438,11 +390,12 @@ struct PLAYER_NAME : public Player {
       pair<bool, Pos> dogs = hellhound_aprop(mat, e);
       pair<bool, Pos> enemics = furyan_rival(mat, e);
       if (u.health < 50 and enemics.first) {
+        /*cerr << "Furyan" << endl;
         cerr << "Vida actual: " << u.health << endl;
         cerr << "Hellhound detectat!" << endl;
         cerr << "Posicio actual: " << e << endl;
         cerr << "Posicio enemic: " << enemics.second << endl;
-        cerr << "Vaig cap a " << traduccio(escapa(m, e, enemics.second)) << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, enemics.second)) << endl;*/
         command(id, escapa(m, e, enemics.second));
       } 
       if (!dogs.first) {
@@ -450,10 +403,11 @@ struct PLAYER_NAME : public Player {
         command(id, desicio(e, next));
       }
       else  {
+        /*cerr << "Furyan" << endl;
         cerr << "Hellhound detectat!" << endl;
         cerr << "Posicio actual: " << e << endl;
         cerr << "Posicio enemic: " << dogs.second << endl;
-        cerr << "Vaig cap a " << traduccio(escapa(m, e, dogs.second)) << endl;
+        cerr << "Vaig cap a " << traduccio(escapa(m, e, dogs.second)) << endl;*/
         command(id, escapa(m, e, dogs.second));
       }
       
@@ -467,6 +421,7 @@ struct PLAYER_NAME : public Player {
   virtual void play () {
     mapa m;
     matrix mat;
+    cerr << sol().first << " " << sol().second << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);
     move_furyans(m, mat);

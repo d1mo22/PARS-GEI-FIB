@@ -1,4 +1,4 @@
-info: seed 1102078
+info: seed 30
 info: loading game
 info: loaded game
 info: loading player DM4
@@ -8,6 +8,7 @@ info: loading player Dummy
 info: players loaded
 info: start round 0
 info:     start player 0
+40 79
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -18,6 +19,7 @@ info:     end player 3
 info: end round 0
 info: start round 1
 info:     start player 0
+1 42
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -28,6 +30,7 @@ info:     end player 3
 info: end round 1
 info: start round 2
 info:     start player 0
+3 44
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -38,6 +41,7 @@ info:     end player 3
 info: end round 2
 info: start round 3
 info:     start player 0
+5 46
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -48,6 +52,7 @@ info:     end player 3
 info: end round 3
 info: start round 4
 info:     start player 0
+7 48
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -58,6 +63,7 @@ info:     end player 3
 info: end round 4
 info: start round 5
 info:     start player 0
+9 50
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -68,6 +74,7 @@ info:     end player 3
 info: end round 5
 info: start round 6
 info:     start player 0
+11 52
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -78,6 +85,7 @@ info:     end player 3
 info: end round 6
 info: start round 7
 info:     start player 0
+13 54
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -88,6 +96,7 @@ info:     end player 3
 info: end round 7
 info: start round 8
 info:     start player 0
+15 56
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -98,6 +107,7 @@ info:     end player 3
 info: end round 8
 info: start round 9
 info:     start player 0
+17 58
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -108,6 +118,19 @@ info:     end player 3
 info: end round 9
 info: start round 10
 info:     start player 0
+19 60
+Pionner
+Furyan detectat!
+Posicio actual: (4, 35, 0)
+Posicio enemic: (4, 34, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (26, 27, 0)
+Posicio enemic: (26, 26, 0)
+Distancia: 1
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -118,6 +141,25 @@ info:     end player 3
 info: end round 10
 info: start round 11
 info:     start player 0
+21 62
+Pionner
+Furyan detectat!
+Posicio actual: (5, 36, 0)
+Posicio enemic: (4, 35, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (27, 28, 0)
+Posicio enemic: (28, 28, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (6, 45, 0)
+Posicio enemic: (7, 44, 0)
+Distancia: 1.41421
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -128,6 +170,25 @@ info:     end player 3
 info: end round 11
 info: start round 12
 info:     start player 0
+23 64
+Pionner
+Furyan detectat!
+Posicio actual: (26, 27, 0)
+Posicio enemic: (26, 26, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (18, 65, 0)
+Posicio enemic: (18, 64, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (9, 69, 0)
+Posicio enemic: (8, 70, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -138,6 +199,19 @@ info:     end player 3
 info: end round 12
 info: start round 13
 info:     start player 0
+25 66
+Pionner
+Furyan detectat!
+Posicio actual: (7, 38, 0)
+Posicio enemic: (8, 38, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (35, 73, 0)
+Posicio enemic: (35, 74, 0)
+Distancia: 1
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -148,10 +222,19 @@ info:     end player 3
 info: end round 13
 info: start round 14
 info:     start player 0
+27 68
+Pionner
 Furyan detectat!
-Posicio actual: (22, 22, 0)
-Posicio enemic: (23, 21, 0)
-Vaig cap a Top right
+Posicio actual: (34, 72, 0)
+Posicio enemic: (34, 73, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (21, 57, 0)
+Posicio enemic: (20, 58, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -162,10 +245,31 @@ info:     end player 3
 info: end round 14
 info: start round 15
 info:     start player 0
+29 70
+Pionner
 Furyan detectat!
-Posicio actual: (27, 67, 0)
-Posicio enemic: (27, 66, 0)
-Vaig cap a Bottom
+Posicio actual: (24, 30, 0)
+Posicio enemic: (24, 29, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (14, 42, 0)
+Posicio enemic: (13, 42, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (2, 17, 0)
+Posicio enemic: (3, 18, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (22, 56, 0)
+Posicio enemic: (23, 55, 0)
+Distancia: 1.41421
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -176,14 +280,19 @@ info:     end player 3
 info: end round 15
 info: start round 16
 info:     start player 0
+31 72
+Pionner
 Furyan detectat!
-Posicio actual: (28, 67, 0)
-Posicio enemic: (27, 66, 0)
-Vaig cap a Altres
+Posicio actual: (25, 31, 0)
+Posicio enemic: (24, 30, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (38, 29, 0)
-Posicio enemic: (37, 30, 0)
-Vaig cap a Left
+Posicio actual: (13, 41, 0)
+Posicio enemic: (14, 41, 0)
+Distancia: 1
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -194,18 +303,31 @@ info:     end player 3
 info: end round 16
 info: start round 17
 info:     start player 0
+33 74
+Pionner
 Furyan detectat!
-Posicio actual: (24, 47, 0)
-Posicio enemic: (24, 46, 0)
+Posicio actual: (26, 32, 0)
+Posicio enemic: (25, 31, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (13, 42, 0)
+Posicio enemic: (14, 41, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (14, 42, 0)
+Posicio enemic: (14, 41, 0)
+Distancia: 1
 Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (28, 67, 0)
-Posicio enemic: (27, 66, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (38, 28, 0)
-Posicio enemic: (37, 28, 0)
-Vaig cap a Right
+Posicio actual: (2, 16, 0)
+Posicio enemic: (3, 17, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -216,18 +338,37 @@ info:     end player 3
 info: end round 17
 info: start round 18
 info:     start player 0
+35 76
+Pionner
 Furyan detectat!
-Posicio actual: (13, 49, 0)
-Posicio enemic: (13, 48, 0)
+Posicio actual: (27, 31, 0)
+Posicio enemic: (26, 32, 0)
+Distancia: 1.41421
 Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (28, 67, 0)
-Posicio enemic: (29, 66, 0)
-Vaig cap a Top
+Posicio actual: (7, 41, 0)
+Posicio enemic: (7, 40, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (38, 28, 0)
-Posicio enemic: (38, 29, 0)
-Vaig cap a Top
+Posicio actual: (12, 43, 0)
+Posicio enemic: (11, 43, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (28, 30, 0)
+Posicio enemic: (28, 31, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (20, 59, 0)
+Posicio enemic: (19, 59, 0)
+Distancia: 1
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -238,18 +379,43 @@ info:     end player 3
 info: end round 18
 info: start round 19
 info:     start player 0
+37 78
+Pionner
 Furyan detectat!
-Posicio actual: (20, 20, 0)
-Posicio enemic: (19, 21, 0)
-Vaig cap a Bottom left
+Posicio actual: (28, 32, 0)
+Posicio enemic: (27, 31, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (27, 67, 0)
-Posicio enemic: (26, 67, 0)
+Posicio actual: (8, 42, 0)
+Posicio enemic: (7, 41, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (13, 44, 0)
+Posicio enemic: (14, 45, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (7, 72, 0)
+Posicio enemic: (7, 73, 0)
+Distancia: 1
 Vaig cap a Left
+Pionner
 Furyan detectat!
-Posicio actual: (38, 28, 0)
-Posicio enemic: (37, 28, 0)
-Vaig cap a Right
+Posicio actual: (10, 65, 0)
+Posicio enemic: (11, 66, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (23, 31, 0)
+Posicio enemic: (24, 31, 0)
+Distancia: 1
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -260,14 +426,31 @@ info:     end player 3
 info: end round 19
 info: start round 20
 info:     start player 0
+0 39
+Pionner
+Hellhound detectat!
+Posicio actual: (29, 33, 0)
+Posicio enemic: (31, 33, 0)
+2
+Vaig cap a Top
+Pionner
 Furyan detectat!
-Posicio actual: (21, 19, 0)
-Posicio enemic: (21, 20, 0)
+Posicio actual: (9, 43, 0)
+Posicio enemic: (8, 42, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (28, 29, 0)
+Posicio enemic: (29, 30, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (21, 61, 0)
+Posicio enemic: (20, 60, 0)
+Distancia: 1.41421
 Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (27, 66, 0)
-Posicio enemic: (28, 67, 0)
-Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -278,14 +461,43 @@ info:     end player 3
 info: end round 20
 info: start round 21
 info:     start player 0
+2 41
+Pionner
+Hellhound detectat!
+Posicio actual: (28, 33, 0)
+Posicio enemic: (30, 33, 0)
+2
+Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (20, 20, 0)
-Posicio enemic: (21, 20, 0)
-Vaig cap a Right
+Posicio actual: (10, 44, 0)
+Posicio enemic: (9, 43, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (27, 66, 0)
-Posicio enemic: (27, 67, 0)
-Vaig cap a Top right
+Posicio actual: (7, 72, 0)
+Posicio enemic: (7, 73, 0)
+Distancia: 1
+Vaig cap a Left
+Pionner
+Furyan detectat!
+Posicio actual: (2, 16, 0)
+Posicio enemic: (2, 17, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (15, 15, 0)
+Posicio enemic: (15, 16, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (23, 33, 0)
+Posicio enemic: (23, 34, 0)
+Distancia: 1
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -296,14 +508,49 @@ info:     end player 3
 info: end round 21
 info: start round 22
 info:     start player 0
-Furyan detectat!
-Posicio actual: (20, 21, 0)
-Posicio enemic: (20, 22, 0)
+4 43
+Pionner
+Hellhound detectat!
+Posicio actual: (27, 32, 0)
+Posicio enemic: (29, 33, 0)
+2.23607
 Vaig cap a Top
+Pionner
 Furyan detectat!
-Posicio actual: (26, 67, 0)
-Posicio enemic: (27, 67, 0)
-Vaig cap a Altres
+Posicio actual: (8, 44, 0)
+Posicio enemic: (9, 43, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (10, 43, 0)
+Posicio enemic: (9, 43, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (27, 27, 0)
+Posicio enemic: (27, 26, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (13, 39, 0)
+Posicio enemic: (14, 39, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (19, 63, 0)
+Posicio enemic: (20, 63, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (22, 32, 0)
+Posicio enemic: (22, 33, 0)
+Distancia: 1
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -314,14 +561,55 @@ info:     end player 3
 info: end round 22
 info: start round 23
 info:     start player 0
+6 45
+Pionner
+Hellhound detectat!
+Posicio actual: (26, 32, 0)
+Posicio enemic: (28, 32, 0)
+2
+Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (19, 21, 0)
-Posicio enemic: (20, 20, 0)
-Vaig cap a Top right
+Posicio actual: (7, 45, 0)
+Posicio enemic: (8, 44, 0)
+Distancia: 1.41421
+Vaig cap a Right
+Pionner
 Furyan detectat!
-Posicio actual: (26, 67, 0)
-Posicio enemic: (27, 66, 0)
+Posicio actual: (11, 44, 0)
+Posicio enemic: (12, 45, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (28, 28, 0)
+Posicio enemic: (28, 27, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (26, 53, 0)
+Posicio enemic: (25, 52, 0)
+Distancia: 1.41421
+Vaig cap a Bottom
+Pionner
+Furyan detectat!
+Posicio actual: (2, 16, 0)
+Posicio enemic: (2, 15, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (18, 64, 0)
+Posicio enemic: (19, 64, 0)
+Distancia: 1
 Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (9, 41, 0)
+Posicio enemic: (8, 42, 0)
+Distancia: 1.41421
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -332,9 +620,48 @@ info:     end player 3
 info: end round 23
 info: start round 24
 info:     start player 0
+8 47
+Pionner
+Hellhound detectat!
+Posicio actual: (25, 31, 0)
+Posicio enemic: (27, 31, 0)
+2
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (25, 68, 0)
-Posicio enemic: (24, 67, 0)
+Posicio actual: (7, 46, 0)
+Posicio enemic: (8, 45, 0)
+Distancia: 1.41421
+Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (11, 46, 0)
+Posicio enemic: (12, 46, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (29, 29, 0)
+Posicio enemic: (27, 31, 0)
+2.82843
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (30, 76, 0)
+Posicio enemic: (29, 75, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (7, 73, 0)
+Posicio enemic: (7, 74, 0)
+Distancia: 1
+Vaig cap a Left
+Pionner
+Furyan detectat!
+Posicio actual: (13, 15, 0)
+Posicio enemic: (13, 14, 0)
+Distancia: 1
 Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
@@ -346,26 +673,25 @@ info:     end player 3
 info: end round 24
 info: start round 25
 info:     start player 0
+10 49
+Pionner
 Furyan detectat!
-Posicio actual: (12, 52, 0)
-Posicio enemic: (12, 51, 0)
-Vaig cap a Bottom
+Posicio actual: (9, 44, 0)
+Posicio enemic: (8, 45, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (21, 66, 0)
-Posicio enemic: (20, 66, 0)
-Vaig cap a Right
+Posicio actual: (27, 52, 0)
+Posicio enemic: (26, 53, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (23, 52, 0)
-Posicio enemic: (24, 52, 0)
+Posicio actual: (34, 66, 0)
+Posicio enemic: (35, 67, 0)
+Distancia: 1.41421
 Vaig cap a Left
-Furyan detectat!
-Posicio actual: (18, 23, 0)
-Posicio enemic: (18, 22, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (3, 14, 0)
-Posicio enemic: (4, 14, 0)
-Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -376,26 +702,26 @@ info:     end player 3
 info: end round 25
 info: start round 26
 info:     start player 0
+12 51
+Pionner
 Furyan detectat!
-Posicio actual: (13, 52, 0)
-Posicio enemic: (12, 52, 0)
+Posicio actual: (7, 46, 0)
+Posicio enemic: (8, 45, 0)
+Distancia: 1.41421
 Vaig cap a Right
+Pionner
 Furyan detectat!
-Posicio actual: (21, 67, 0)
-Posicio enemic: (20, 66, 0)
-Vaig cap a Bottom right
+Posicio actual: (34, 65, 0)
+Posicio enemic: (35, 66, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (23, 51, 0)
-Posicio enemic: (23, 52, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (19, 23, 0)
-Posicio enemic: (18, 23, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (25, 70, 0)
-Posicio enemic: (24, 71, 0)
-Vaig cap a Bottom left
+Posicio actual: (9, 42, 0)
+Posicio enemic: (9, 43, 0)
+Distancia: 1
+Vaig cap a Top left
+warning: action already requested for unit 61
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -406,26 +732,37 @@ info:     end player 3
 info: end round 26
 info: start round 27
 info:     start player 0
+14 53
+Pionner
 Furyan detectat!
-Posicio actual: (13, 53, 0)
-Posicio enemic: (13, 52, 0)
-Vaig cap a Bottom
+Posicio actual: (25, 34, 0)
+Posicio enemic: (26, 35, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (22, 68, 0)
-Posicio enemic: (22, 67, 0)
-Vaig cap a Bottom
+Posicio actual: (10, 47, 0)
+Posicio enemic: (11, 47, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (22, 51, 0)
-Posicio enemic: (23, 51, 0)
-Vaig cap a Right
+Posicio actual: (13, 41, 0)
+Posicio enemic: (14, 42, 0)
+Distancia: 1.41421
+Vaig cap a Left
+Pionner
 Furyan detectat!
-Posicio actual: (19, 23, 0)
-Posicio enemic: (18, 23, 0)
-Vaig cap a Altres
+Posicio actual: (17, 67, 0)
+Posicio enemic: (18, 66, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (30, 13, 0)
-Posicio enemic: (30, 14, 0)
-Vaig cap a Top
+Posicio actual: (8, 20, 0)
+Posicio enemic: (7, 21, 0)
+Distancia: 1.41421
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -436,22 +773,26 @@ info:     end player 3
 info: end round 27
 info: start round 28
 info:     start player 0
+16 55
+Pionner
 Furyan detectat!
-Posicio actual: (14, 53, 0)
-Posicio enemic: (13, 53, 0)
-Vaig cap a Left
+Posicio actual: (24, 79, 0)
+Posicio enemic: (23, 79, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (22, 52, 0)
-Posicio enemic: (22, 51, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (19, 23, 0)
-Posicio enemic: (18, 23, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (29, 13, 0)
-Posicio enemic: (30, 14, 0)
+Posicio actual: (9, 54, 0)
+Posicio enemic: (10, 55, 0)
+Distancia: 1.41421
 Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (33, 63, 0)
+Posicio enemic: (34, 62, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+warning: action already requested for unit 61
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -462,18 +803,31 @@ info:     end player 3
 info: end round 28
 info: start round 29
 info:     start player 0
+18 57
+Pionner
 Furyan detectat!
-Posicio actual: (14, 52, 0)
-Posicio enemic: (14, 53, 0)
-Vaig cap a Top
+Posicio actual: (9, 47, 0)
+Posicio enemic: (9, 46, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (22, 67, 0)
-Posicio enemic: (21, 67, 0)
-Vaig cap a Right
+Posicio actual: (28, 77, 0)
+Posicio enemic: (29, 77, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (23, 52, 0)
-Posicio enemic: (22, 52, 0)
-Vaig cap a Right
+Posicio actual: (32, 64, 0)
+Posicio enemic: (33, 64, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (7, 20, 0)
+Posicio enemic: (8, 20, 0)
+Distancia: 1
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -484,18 +838,25 @@ info:     end player 3
 info: end round 29
 info: start round 30
 info:     start player 0
+20 59
+Pionner
 Furyan detectat!
-Posicio actual: (13, 52, 0)
-Posicio enemic: (14, 52, 0)
+Posicio actual: (6, 77, 0)
+Posicio enemic: (7, 77, 0)
+Distancia: 1
 Vaig cap a Left
+Pionner
 Furyan detectat!
-Posicio actual: (22, 68, 0)
-Posicio enemic: (21, 68, 0)
-Vaig cap a Left
+Posicio actual: (15, 42, 0)
+Posicio enemic: (16, 43, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (23, 53, 0)
-Posicio enemic: (23, 52, 0)
-Vaig cap a Bottom right
+Posicio actual: (9, 54, 0)
+Posicio enemic: (10, 54, 0)
+Distancia: 1
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -506,21 +867,30 @@ info:     end player 3
 info: end round 30
 info: start round 31
 info:     start player 0
+22 61
+Pionner
 Furyan detectat!
-Posicio actual: (13, 51, 0)
-Posicio enemic: (13, 52, 0)
-Vaig cap a Top
+Posicio actual: (23, 0, 0)
+Posicio enemic: (24, 0, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (8, 20, 0)
-Posicio enemic: (7, 19, 0)
-Vaig cap a Bottom right
+Posicio actual: (28, 79, 0)
+Posicio enemic: (29, 79, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (22, 67, 0)
-Posicio enemic: (21, 68, 0)
+Posicio actual: (6, 76, 0)
+Posicio enemic: (7, 77, 0)
+Distancia: 1.41421
 Vaig cap a Bottom left
-Furyan detectat!
-Posicio actual: (24, 54, 0)
-Posicio enemic: (23, 53, 0)
+Pionner
+Hellhound detectat!
+Posicio actual: (5, 20, 0)
+Posicio enemic: (2, 17, 0)
+4.24264
 Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
@@ -532,22 +902,37 @@ info:     end player 3
 info: end round 31
 info: start round 32
 info:     start player 0
+24 63
+Pionner
 Furyan detectat!
-Posicio actual: (12, 51, 0)
-Posicio enemic: (13, 51, 0)
-Vaig cap a Left
-Furyan detectat!
-Posicio actual: (23, 66, 0)
-Posicio enemic: (24, 65, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (25, 55, 0)
-Posicio enemic: (24, 54, 0)
+Posicio actual: (22, 79, 0)
+Posicio enemic: (22, 78, 0)
+Distancia: 1
 Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (27, 13, 0)
-Posicio enemic: (28, 13, 0)
-Vaig cap a Left
+Posicio actual: (9, 46, 0)
+Posicio enemic: (10, 46, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (9, 54, 0)
+Posicio enemic: (9, 55, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (20, 20, 0)
+Posicio enemic: (23, 23, 0)
+4.24264
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (6, 21, 0)
+Posicio enemic: (3, 18, 0)
+4.24264
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -558,26 +943,25 @@ info:     end player 3
 info: end round 32
 info: start round 33
 info:     start player 0
+26 65
+Pionner
 Furyan detectat!
-Posicio actual: (12, 50, 0)
-Posicio enemic: (12, 51, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (22, 67, 0)
-Posicio enemic: (22, 68, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (26, 56, 0)
-Posicio enemic: (25, 55, 0)
-Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (21, 67, 0)
-Posicio enemic: (22, 68, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (9, 27, 0)
-Posicio enemic: (9, 28, 0)
+Posicio actual: (16, 74, 0)
+Posicio enemic: (17, 73, 0)
+Distancia: 1.41421
 Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (19, 19, 0)
+Posicio enemic: (22, 22, 0)
+4.24264
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (7, 22, 0)
+Posicio enemic: (4, 19, 0)
+4.24264
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -588,30 +972,31 @@ info:     end player 3
 info: end round 33
 info: start round 34
 info:     start player 0
+28 67
+Pionner
 Furyan detectat!
-Posicio actual: (11, 50, 0)
-Posicio enemic: (11, 49, 0)
-Vaig cap a Bottom
+Posicio actual: (24, 0, 0)
+Posicio enemic: (23, 0, 0)
+Distancia: 1
+Vaig cap a Left
+Pionner
 Furyan detectat!
-Posicio actual: (10, 21, 0)
-Posicio enemic: (9, 21, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (22, 67, 0)
-Posicio enemic: (23, 66, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (27, 57, 0)
-Posicio enemic: (26, 56, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (28, 13, 0)
-Posicio enemic: (28, 14, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (8, 28, 0)
-Posicio enemic: (9, 28, 0)
-Vaig cap a Right
+Posicio actual: (7, 76, 0)
+Posicio enemic: (7, 75, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (18, 18, 0)
+Posicio enemic: (21, 21, 0)
+4.24264
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (7, 21, 0)
+Posicio enemic: (5, 20, 0)
+2.23607
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -622,26 +1007,19 @@ info:     end player 3
 info: end round 34
 info: start round 35
 info:     start player 0
-Furyan detectat!
-Posicio actual: (11, 50, 0)
-Posicio enemic: (12, 49, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (10, 22, 0)
-Posicio enemic: (9, 21, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (27, 58, 0)
-Posicio enemic: (27, 57, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (28, 13, 0)
-Posicio enemic: (27, 13, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (8, 29, 0)
-Posicio enemic: (9, 28, 0)
-Vaig cap a Top right
+30 69
+Pionner
+Hellhound detectat!
+Posicio actual: (17, 17, 0)
+Posicio enemic: (20, 20, 0)
+4.24264
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (8, 20, 0)
+Posicio enemic: (6, 21, 0)
+2.23607
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -652,26 +1030,25 @@ info:     end player 3
 info: end round 35
 info: start round 36
 info:     start player 0
+32 71
+Pionner
 Furyan detectat!
-Posicio actual: (10, 51, 0)
-Posicio enemic: (11, 50, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (22, 68, 0)
-Posicio enemic: (23, 68, 0)
-Vaig cap a Left
-Furyan detectat!
-Posicio actual: (27, 58, 0)
-Posicio enemic: (27, 57, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (28, 14, 0)
-Posicio enemic: (27, 14, 0)
-Vaig cap a Left
-Furyan detectat!
-Posicio actual: (7, 30, 0)
-Posicio enemic: (8, 29, 0)
+Posicio actual: (23, 79, 0)
+Posicio enemic: (24, 79, 0)
+Distancia: 1
 Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (28, 0, 0)
+Posicio enemic: (27, 0, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (16, 16, 0)
+Posicio enemic: (19, 19, 0)
+4.24264
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -682,14 +1059,19 @@ info:     end player 3
 info: end round 36
 info: start round 37
 info:     start player 0
+34 73
+Pionner
 Furyan detectat!
-Posicio actual: (9, 31, 0)
-Posicio enemic: (8, 30, 0)
+Posicio actual: (9, 79, 0)
+Posicio enemic: (8, 79, 0)
+Distancia: 1
 Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (28, 14, 0)
-Posicio enemic: (28, 13, 0)
-Vaig cap a Bottom
+Pionner
+Hellhound detectat!
+Posicio actual: (15, 15, 0)
+Posicio enemic: (18, 18, 0)
+4.24264
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -700,14 +1082,25 @@ info:     end player 3
 info: end round 37
 info: start round 38
 info:     start player 0
+36 75
+Pionner
 Furyan detectat!
-Posicio actual: (9, 23, 0)
-Posicio enemic: (10, 23, 0)
+Posicio actual: (21, 1, 0)
+Posicio enemic: (22, 0, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (34, 46, 0)
+Posicio enemic: (33, 46, 0)
+Distancia: 1
 Vaig cap a Right
-Furyan detectat!
-Posicio actual: (29, 14, 0)
-Posicio enemic: (30, 14, 0)
-Vaig cap a Left
+Pionner
+Hellhound detectat!
+Posicio actual: (14, 14, 0)
+Posicio enemic: (17, 17, 0)
+4.24264
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -718,18 +1111,31 @@ info:     end player 3
 info: end round 38
 info: start round 39
 info:     start player 0
+38 77
+Pionner
 Furyan detectat!
-Posicio actual: (9, 24, 0)
-Posicio enemic: (10, 23, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (21, 65, 0)
-Posicio enemic: (22, 66, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (29, 13, 0)
-Posicio enemic: (28, 12, 0)
+Posicio actual: (20, 2, 0)
+Posicio enemic: (21, 1, 0)
+Distancia: 1.41421
 Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (34, 47, 0)
+Posicio enemic: (33, 46, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (7, 4, 0)
+Posicio enemic: (8, 5, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (13, 13, 0)
+Posicio enemic: (16, 16, 0)
+4.24264
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -740,21 +1146,30 @@ info:     end player 3
 info: end round 39
 info: start round 40
 info:     start player 0
+40 79
+Pionner
 Furyan detectat!
-Posicio actual: (8, 25, 0)
-Posicio enemic: (9, 24, 0)
-Vaig cap a Top right
+Posicio actual: (21, 3, 0)
+Posicio enemic: (20, 2, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (20, 65, 0)
-Posicio enemic: (21, 64, 0)
-Vaig cap a Altres
+Posicio actual: (11, 46, 0)
+Posicio enemic: (10, 47, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (12, 12, 0)
+Posicio enemic: (15, 15, 0)
+4.24264
+Vaig cap a Top
+Pionner
 Furyan detectat!
-Posicio actual: (27, 21, 0)
-Posicio enemic: (28, 22, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (7, 19, 0)
-Posicio enemic: (8, 20, 0)
+Posicio actual: (24, 66, 0)
+Posicio enemic: (25, 67, 0)
+Distancia: 1.41421
 Vaig cap a Top left
 info:     end player 0
 info:     start player 1
@@ -766,18 +1181,37 @@ info:     end player 3
 info: end round 40
 info: start round 41
 info:     start player 0
+1 42
+Pionner
 Furyan detectat!
-Posicio actual: (20, 65, 0)
-Posicio enemic: (21, 64, 0)
-Vaig cap a Altres
+Posicio actual: (22, 4, 0)
+Posicio enemic: (21, 3, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (26, 20, 0)
-Posicio enemic: (27, 21, 0)
+Posicio actual: (12, 45, 0)
+Posicio enemic: (11, 46, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (11, 45, 0)
+Posicio enemic: (11, 46, 0)
+Distancia: 1
 Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (6, 18, 0)
-Posicio enemic: (7, 19, 0)
-Vaig cap a Top
+Posicio actual: (7, 3, 0)
+Posicio enemic: (7, 4, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (11, 12, 0)
+Posicio enemic: (11, 15, 0)
+3
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -788,26 +1222,19 @@ info:     end player 3
 info: end round 41
 info: start round 42
 info:     start player 0
+3 44
+Pionner
 Furyan detectat!
-Posicio actual: (30, 14, 0)
-Posicio enemic: (31, 15, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (8, 26, 0)
-Posicio enemic: (8, 25, 0)
+Posicio actual: (10, 44, 0)
+Posicio enemic: (9, 43, 0)
+Distancia: 1.41421
 Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (25, 19, 0)
-Posicio enemic: (26, 20, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (5, 18, 0)
-Posicio enemic: (6, 18, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (4, 52, 0)
-Posicio enemic: (3, 52, 0)
-Vaig cap a Right
+Pionner
+Hellhound detectat!
+Posicio actual: (12, 11, 0)
+Posicio enemic: (12, 14, 0)
+3
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -818,14 +1245,25 @@ info:     end player 3
 info: end round 42
 info: start round 43
 info:     start player 0
+5 46
+Pionner
 Furyan detectat!
-Posicio actual: (5, 18, 0)
-Posicio enemic: (6, 18, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (4, 53, 0)
-Posicio enemic: (3, 52, 0)
+Posicio actual: (11, 45, 0)
+Posicio enemic: (10, 45, 0)
+Distancia: 1
 Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (11, 10, 0)
+Posicio enemic: (12, 13, 0)
+3.16228
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (2, 31, 0)
+Posicio enemic: (3, 32, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -836,22 +1274,19 @@ info:     end player 3
 info: end round 43
 info: start round 44
 info:     start player 0
-Furyan detectat!
-Posicio actual: (25, 20, 0)
-Posicio enemic: (26, 20, 0)
-Vaig cap a Left
-Furyan detectat!
-Posicio actual: (13, 34, 0)
-Posicio enemic: (14, 35, 0)
+7 48
+Pionner
+Hellhound detectat!
+Posicio actual: (10, 9, 0)
+Posicio enemic: (12, 12, 0)
+3.60555
 Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (4, 71, 0)
-Posicio enemic: (5, 70, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (6, 30, 0)
-Posicio enemic: (5, 29, 0)
-Vaig cap a Bottom right
+Posicio actual: (2, 31, 0)
+Posicio enemic: (3, 32, 0)
+Distancia: 1.41421
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -862,18 +1297,19 @@ info:     end player 3
 info: end round 44
 info: start round 45
 info:     start player 0
+9 50
+Pionner
 Furyan detectat!
-Posicio actual: (25, 19, 0)
-Posicio enemic: (25, 20, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (5, 53, 0)
-Posicio enemic: (5, 52, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (4, 71, 0)
-Posicio enemic: (5, 70, 0)
-Vaig cap a Altres
+Posicio actual: (25, 40, 0)
+Posicio enemic: (24, 40, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (9, 8, 0)
+Posicio enemic: (12, 11, 0)
+4.24264
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -884,18 +1320,13 @@ info:     end player 3
 info: end round 45
 info: start round 46
 info:     start player 0
-Furyan detectat!
-Posicio actual: (24, 19, 0)
-Posicio enemic: (25, 19, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (5, 53, 0)
-Posicio enemic: (5, 52, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (4, 71, 0)
-Posicio enemic: (5, 70, 0)
-Vaig cap a Altres
+11 52
+Pionner
+Hellhound detectat!
+Posicio actual: (8, 7, 0)
+Posicio enemic: (11, 10, 0)
+4.24264
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -906,14 +1337,13 @@ info:     end player 3
 info: end round 46
 info: start round 47
 info:     start player 0
-Furyan detectat!
-Posicio actual: (24, 19, 0)
-Posicio enemic: (25, 19, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (4, 71, 0)
-Posicio enemic: (5, 70, 0)
-Vaig cap a Altres
+13 54
+Pionner
+Hellhound detectat!
+Posicio actual: (7, 6, 0)
+Posicio enemic: (10, 9, 0)
+4.24264
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -924,10 +1354,13 @@ info:     end player 3
 info: end round 47
 info: start round 48
 info:     start player 0
-Furyan detectat!
-Posicio actual: (4, 71, 0)
-Posicio enemic: (5, 70, 0)
-Vaig cap a Altres
+15 56
+Pionner
+Hellhound detectat!
+Posicio actual: (6, 6, 0)
+Posicio enemic: (9, 8, 0)
+3.60555
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -938,14 +1371,13 @@ info:     end player 3
 info: end round 48
 info: start round 49
 info:     start player 0
-Furyan detectat!
-Posicio actual: (6, 27, 0)
-Posicio enemic: (5, 28, 0)
-Vaig cap a Bottom left
-Furyan detectat!
-Posicio actual: (4, 71, 0)
-Posicio enemic: (5, 70, 0)
-Vaig cap a Altres
+17 58
+Pionner
+Hellhound detectat!
+Posicio actual: (5, 5, 0)
+Posicio enemic: (8, 7, 0)
+3.60555
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -956,6 +1388,19 @@ info:     end player 3
 info: end round 49
 info: start round 50
 info:     start player 0
+19 60
+Pionner
+Furyan detectat!
+Posicio actual: (29, 42, 0)
+Posicio enemic: (28, 41, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 6, 0)
+Posicio enemic: (7, 6, 0)
+3
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -966,6 +1411,19 @@ info:     end player 3
 info: end round 50
 info: start round 51
 info:     start player 0
+21 62
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 7, 0)
+Posicio enemic: (6, 7, 0)
+2
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (28, 62, 0)
+Posicio enemic: (29, 61, 0)
+Distancia: 1.41421
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -976,10 +1434,13 @@ info:     end player 3
 info: end round 51
 info: start round 52
 info:     start player 0
-Furyan detectat!
-Posicio actual: (8, 36, 0)
-Posicio enemic: (7, 37, 0)
-Vaig cap a Bottom left
+23 64
+Pionner
+Hellhound detectat!
+Posicio actual: (3, 8, 0)
+Posicio enemic: (5, 7, 0)
+2.23607
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -990,6 +1451,13 @@ info:     end player 3
 info: end round 52
 info: start round 53
 info:     start player 0
+25 66
+Pionner
+Hellhound detectat!
+Posicio actual: (2, 9, 0)
+Posicio enemic: (4, 7, 0)
+2.82843
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1000,16 +1468,19 @@ info:     end player 3
 info: end round 53
 info: start round 54
 info:     start player 0
-Furyan detectat!
-Posicio actual: (7, 74, 0)
-Posicio enemic: (7, 75, 0)
-Vaig cap a Top
-Vida actual: 24
+27 68
+Pionner
 Hellhound detectat!
-Posicio actual: (23, 34, 0)
-Posicio enemic: (23, 33, 0)
-Vaig cap a Bottom
-warning: action already requested for unit 4
+Posicio actual: (3, 10, 0)
+Posicio enemic: (4, 8, 0)
+2.23607
+Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (31, 55, 0)
+Posicio enemic: (31, 54, 0)
+Distancia: 1
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1020,24 +1491,13 @@ info:     end player 3
 info: end round 54
 info: start round 55
 info:     start player 0
-Furyan detectat!
-Posicio actual: (32, 44, 0)
-Posicio enemic: (32, 45, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (5, 8, 0)
-Posicio enemic: (6, 7, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (6, 74, 0)
-Posicio enemic: (6, 75, 0)
-Vaig cap a Top
-Vida actual: 29
+29 70
+Pionner
 Hellhound detectat!
-Posicio actual: (24, 34, 0)
-Posicio enemic: (24, 35, 0)
-Vaig cap a Top
-warning: action already requested for unit 4
+Posicio actual: (3, 11, 0)
+Posicio enemic: (3, 9, 0)
+2
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1048,6 +1508,13 @@ info:     end player 3
 info: end round 55
 info: start round 56
 info:     start player 0
+31 72
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 12, 0)
+Posicio enemic: (4, 10, 0)
+2
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1058,6 +1525,19 @@ info:     end player 3
 info: end round 56
 info: start round 57
 info:     start player 0
+33 74
+Pionner
+Furyan detectat!
+Posicio actual: (20, 50, 0)
+Posicio enemic: (19, 50, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (3, 13, 0)
+Posicio enemic: (4, 11, 0)
+2.23607
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1068,10 +1548,19 @@ info:     end player 3
 info: end round 57
 info: start round 58
 info:     start player 0
+35 76
+Pionner
 Furyan detectat!
-Posicio actual: (4, 7, 0)
-Posicio enemic: (4, 8, 0)
-Vaig cap a Top
+Posicio actual: (21, 51, 0)
+Posicio enemic: (20, 50, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (2, 14, 0)
+Posicio enemic: (3, 12, 0)
+2.23607
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1082,14 +1571,19 @@ info:     end player 3
 info: end round 58
 info: start round 59
 info:     start player 0
+37 78
+Pionner
 Furyan detectat!
-Posicio actual: (14, 39, 0)
-Posicio enemic: (13, 40, 0)
-Vaig cap a Bottom left
-Furyan detectat!
-Posicio actual: (3, 7, 0)
-Posicio enemic: (4, 8, 0)
-Vaig cap a Altres
+Posicio actual: (22, 52, 0)
+Posicio enemic: (21, 51, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (1, 15, 0)
+Posicio enemic: (3, 13, 0)
+2.82843
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1100,10 +1594,13 @@ info:     end player 3
 info: end round 59
 info: start round 60
 info:     start player 0
-Furyan detectat!
-Posicio actual: (15, 38, 0)
-Posicio enemic: (14, 39, 0)
-Vaig cap a Left
+0 39
+Pionner
+Hellhound detectat!
+Posicio actual: (1, 16, 0)
+Posicio enemic: (2, 14, 0)
+2.23607
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1114,10 +1611,19 @@ info:     end player 3
 info: end round 60
 info: start round 61
 info:     start player 0
+2 41
+Pionner
 Furyan detectat!
-Posicio actual: (15, 37, 0)
-Posicio enemic: (15, 38, 0)
-Vaig cap a Top
+Posicio actual: (23, 52, 0)
+Posicio enemic: (22, 51, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (2, 17, 0)
+Posicio enemic: (3, 15, 0)
+2.23607
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1128,10 +1634,13 @@ info:     end player 3
 info: end round 61
 info: start round 62
 info:     start player 0
-Furyan detectat!
-Posicio actual: (14, 37, 0)
-Posicio enemic: (15, 37, 0)
-Vaig cap a Left
+4 43
+Pionner
+Hellhound detectat!
+Posicio actual: (2, 18, 0)
+Posicio enemic: (3, 16, 0)
+2.23607
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1142,10 +1651,19 @@ info:     end player 3
 info: end round 62
 info: start round 63
 info:     start player 0
+6 45
+Pionner
+Hellhound detectat!
+Posicio actual: (1, 19, 0)
+Posicio enemic: (2, 17, 0)
+2.23607
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (14, 36, 0)
-Posicio enemic: (14, 37, 0)
-Vaig cap a Top
+Posicio actual: (30, 37, 0)
+Posicio enemic: (31, 37, 0)
+Distancia: 1
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1156,10 +1674,19 @@ info:     end player 3
 info: end round 63
 info: start round 64
 info:     start player 0
+8 47
+Pionner
+Hellhound detectat!
+Posicio actual: (2, 20, 0)
+Posicio enemic: (2, 18, 0)
+2
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (13, 36, 0)
-Posicio enemic: (14, 37, 0)
-Vaig cap a Top left
+Posicio actual: (29, 59, 0)
+Posicio enemic: (29, 58, 0)
+Distancia: 1
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1170,9 +1697,12 @@ info:     end player 3
 info: end round 64
 info: start round 65
 info:     start player 0
-Furyan detectat!
-Posicio actual: (6, 9, 0)
-Posicio enemic: (5, 8, 0)
+10 49
+Pionner
+Hellhound detectat!
+Posicio actual: (3, 21, 0)
+Posicio enemic: (3, 19, 0)
+2
 Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
@@ -1184,6 +1714,37 @@ info:     end player 3
 info: end round 65
 info: start round 66
 info:     start player 0
+12 51
+Pionner
+Furyan detectat!
+Posicio actual: (22, 54, 0)
+Posicio enemic: (23, 54, 0)
+Distancia: 1
+Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (10, 78, 0)
+Posicio enemic: (9, 79, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 22, 0)
+Posicio enemic: (3, 20, 0)
+2.23607
+Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (21, 15, 0)
+Posicio enemic: (22, 16, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (29, 37, 0)
+Posicio enemic: (30, 37, 0)
+Distancia: 1
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1194,14 +1755,37 @@ info:     end player 3
 info: end round 66
 info: start round 67
 info:     start player 0
+14 53
+Pionner
 Furyan detectat!
-Posicio actual: (29, 43, 0)
-Posicio enemic: (29, 42, 0)
-Vaig cap a Bottom
+Posicio actual: (22, 55, 0)
+Posicio enemic: (23, 54, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 23, 0)
+Posicio enemic: (3, 21, 0)
+2.23607
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (17, 79, 0)
-Posicio enemic: (16, 79, 0)
-Vaig cap a Right
+Posicio actual: (24, 55, 0)
+Posicio enemic: (23, 54, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (21, 15, 0)
+Posicio enemic: (22, 16, 0)
+Distancia: 1.41421
+Vaig cap a Top
+Pionner
+Furyan detectat!
+Posicio actual: (27, 58, 0)
+Posicio enemic: (28, 58, 0)
+Distancia: 1
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1212,10 +1796,13 @@ info:     end player 3
 info: end round 67
 info: start round 68
 info:     start player 0
-Furyan detectat!
-Posicio actual: (30, 43, 0)
-Posicio enemic: (29, 42, 0)
-Vaig cap a Altres
+16 55
+Pionner
+Hellhound detectat!
+Posicio actual: (5, 24, 0)
+Posicio enemic: (3, 22, 0)
+2.82843
+Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1226,10 +1813,7 @@ info:     end player 3
 info: end round 68
 info: start round 69
 info:     start player 0
-Furyan detectat!
-Posicio actual: (7, 48, 0)
-Posicio enemic: (6, 49, 0)
-Vaig cap a Bottom left
+18 57
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1240,6 +1824,25 @@ info:     end player 3
 info: end round 69
 info: start round 70
 info:     start player 0
+20 59
+Pionner
+Furyan detectat!
+Posicio actual: (8, 6, 0)
+Posicio enemic: (8, 5, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (7, 20, 0)
+Posicio enemic: (4, 22, 0)
+3.60555
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (26, 56, 0)
+Posicio enemic: (26, 57, 0)
+Distancia: 1
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1250,10 +1853,7 @@ info:     end player 3
 info: end round 70
 info: start round 71
 info:     start player 0
-Furyan detectat!
-Posicio actual: (15, 66, 0)
-Posicio enemic: (16, 66, 0)
-Vaig cap a Left
+22 61
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1264,13 +1864,18 @@ info:     end player 3
 info: end round 71
 info: start round 72
 info:     start player 0
+24 63
+Pionner
+Hellhound detectat!
+Posicio actual: (7, 18, 0)
+Posicio enemic: (4, 21, 0)
+4.24264
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (11, 47, 0)
-Posicio enemic: (10, 48, 0)
-Vaig cap a Bottom left
-Furyan detectat!
-Posicio actual: (15, 65, 0)
-Posicio enemic: (16, 66, 0)
+Posicio actual: (26, 55, 0)
+Posicio enemic: (26, 56, 0)
+Distancia: 1
 Vaig cap a Top left
 info:     end player 0
 info:     start player 1
@@ -1282,6 +1887,19 @@ info:     end player 3
 info: end round 72
 info: start round 73
 info:     start player 0
+26 65
+Pionner
+Furyan detectat!
+Posicio actual: (21, 63, 0)
+Posicio enemic: (21, 64, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (8, 19, 0)
+Posicio enemic: (5, 20, 0)
+3.16228
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1292,10 +1910,14 @@ info:     end player 3
 info: end round 73
 info: start round 74
 info:     start player 0
-Furyan detectat!
-Posicio actual: (11, 12, 0)
-Posicio enemic: (12, 11, 0)
-Vaig cap a Top right
+28 67
+Pionner
+Hellhound detectat!
+Posicio actual: (9, 18, 0)
+Posicio enemic: (6, 19, 0)
+3.16228
+Vaig cap a Bottom left
+warning: action already requested for unit 64
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1306,6 +1928,7 @@ info:     end player 3
 info: end round 74
 info: start round 75
 info:     start player 0
+30 69
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1316,10 +1939,25 @@ info:     end player 3
 info: end round 75
 info: start round 76
 info:     start player 0
+32 71
+Pionner
 Furyan detectat!
-Posicio actual: (14, 66, 0)
-Posicio enemic: (15, 65, 0)
-Vaig cap a Altres
+Posicio actual: (6, 7, 0)
+Posicio enemic: (6, 8, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (12, 78, 0)
+Posicio enemic: (12, 77, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (3, 15, 0)
+Posicio enemic: (4, 17, 0)
+2.23607
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1330,18 +1968,19 @@ info:     end player 3
 info: end round 76
 info: start round 77
 info:     start player 0
-Furyan detectat!
-Posicio actual: (23, 46, 0)
-Posicio enemic: (24, 47, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (9, 14, 0)
-Posicio enemic: (10, 13, 0)
+34 73
+Pionner
+Hellhound detectat!
+Posicio actual: (32, 51, 0)
+Posicio enemic: (35, 48, 0)
+4.24264
 Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (14, 66, 0)
-Posicio enemic: (15, 65, 0)
-Vaig cap a Altres
+Pionner
+Hellhound detectat!
+Posicio actual: (2, 14, 0)
+Posicio enemic: (3, 16, 0)
+2.23607
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1352,10 +1991,43 @@ info:     end player 3
 info: end round 77
 info: start round 78
 info:     start player 0
+36 75
+Pionner
 Furyan detectat!
-Posicio actual: (9, 40, 0)
-Posicio enemic: (10, 41, 0)
-Vaig cap a Top left
+Posicio actual: (19, 63, 0)
+Posicio enemic: (20, 62, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (34, 4, 0)
+Posicio enemic: (35, 3, 0)
+Distancia: 1.41421
+Vaig cap a None
+Pionner
+Furyan detectat!
+Posicio actual: (6, 7, 0)
+Posicio enemic: (6, 8, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (19, 62, 0)
+Posicio enemic: (20, 62, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (28, 59, 0)
+Posicio enemic: (28, 58, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (3, 13, 0)
+Posicio enemic: (2, 15, 0)
+2.23607
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1366,13 +2038,30 @@ info:     end player 3
 info: end round 78
 info: start round 79
 info:     start player 0
+38 77
+Pionner
 Furyan detectat!
-Posicio actual: (8, 39, 0)
-Posicio enemic: (9, 40, 0)
+Posicio actual: (34, 4, 0)
+Posicio enemic: (35, 3, 0)
+Distancia: 1.41421
+Vaig cap a None
+Pionner
+Furyan detectat!
+Posicio actual: (11, 16, 0)
+Posicio enemic: (10, 17, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (33, 64, 0)
+Posicio enemic: (34, 64, 0)
+Distancia: 1
 Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (22, 46, 0)
-Posicio enemic: (23, 46, 0)
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 12, 0)
+Posicio enemic: (3, 14, 0)
+2.23607
 Vaig cap a Left
 info:     end player 0
 info:     start player 1
@@ -1384,10 +2073,37 @@ info:     end player 3
 info: end round 79
 info: start round 80
 info:     start player 0
+40 79
+Pionner
 Furyan detectat!
-Posicio actual: (7, 38, 0)
-Posicio enemic: (8, 39, 0)
-Vaig cap a Altres
+Posicio actual: (12, 15, 0)
+Posicio enemic: (11, 15, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (11, 79, 0)
+Posicio enemic: (10, 78, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (32, 52, 0)
+Posicio enemic: (35, 50, 0)
+3.60555
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (26, 60, 0)
+Posicio enemic: (27, 59, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 11, 0)
+Posicio enemic: (3, 13, 0)
+2.23607
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1398,10 +2114,20 @@ info:     end player 3
 info: end round 80
 info: start round 81
 info:     start player 0
-Furyan detectat!
-Posicio actual: (13, 34, 0)
-Posicio enemic: (14, 35, 0)
-Vaig cap a Top left
+1 42
+Pionner
+Hellhound detectat!
+Posicio actual: (31, 53, 0)
+Posicio enemic: (34, 50, 0)
+4.24264
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (4, 10, 0)
+Posicio enemic: (3, 12, 0)
+2.23607
+Vaig cap a Bottom left
+warning: action already requested for unit 64
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1412,10 +2138,37 @@ info:     end player 3
 info: end round 81
 info: start round 82
 info:     start player 0
+3 44
+Pionner
 Furyan detectat!
-Posicio actual: (12, 33, 0)
-Posicio enemic: (13, 34, 0)
+Posicio actual: (12, 62, 0)
+Posicio enemic: (13, 61, 0)
+Distancia: 1.41421
+Vaig cap a Right
+Pionner
+Hellhound detectat!
+Posicio actual: (30, 54, 0)
+Posicio enemic: (33, 51, 0)
+4.24264
+Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (18, 12, 0)
+Posicio enemic: (19, 12, 0)
+Distancia: 1
 Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (11, 4, 0)
+Posicio enemic: (11, 5, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (5, 9, 0)
+Posicio enemic: (3, 11, 0)
+2.82843
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1426,16 +2179,31 @@ info:     end player 3
 info: end round 82
 info: start round 83
 info:     start player 0
+5 46
+Pionner
 Furyan detectat!
-Posicio actual: (11, 32, 0)
-Posicio enemic: (12, 33, 0)
-Vaig cap a Top
-Vida actual: 26
+Posicio actual: (35, 33, 0)
+Posicio enemic: (34, 34, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (30, 76, 0)
+Posicio enemic: (31, 77, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (15, 63, 0)
+Posicio enemic: (14, 62, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
+Pionner
 Hellhound detectat!
-Posicio actual: (25, 38, 0)
-Posicio enemic: (25, 37, 0)
-Vaig cap a Altres
-warning: action already requested for unit 42
+Posicio actual: (6, 8, 0)
+Posicio enemic: (3, 10, 0)
+3.60555
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1446,10 +2214,32 @@ info:     end player 3
 info: end round 83
 info: start round 84
 info:     start player 0
+7 48
+Pionner
 Furyan detectat!
-Posicio actual: (10, 32, 0)
-Posicio enemic: (11, 32, 0)
-Vaig cap a Right
+Posicio actual: (36, 32, 0)
+Posicio enemic: (35, 33, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (29, 54, 0)
+Posicio enemic: (31, 52, 0)
+2.82843
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (11, 4, 0)
+Posicio enemic: (12, 4, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (7, 7, 0)
+Posicio enemic: (4, 9, 0)
+3.60555
+Vaig cap a Bottom left
+warning: action already requested for unit 21
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1460,14 +2250,37 @@ info:     end player 3
 info: end round 84
 info: start round 85
 info:     start player 0
+9 50
+Pionner
+Hellhound detectat!
+Posicio actual: (30, 55, 0)
+Posicio enemic: (32, 53, 0)
+2.82843
+Vaig cap a Right
+Pionner
 Furyan detectat!
-Posicio actual: (10, 33, 0)
-Posicio enemic: (10, 32, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (9, 31, 0)
-Posicio enemic: (10, 32, 0)
+Posicio actual: (16, 11, 0)
+Posicio enemic: (17, 12, 0)
+Distancia: 1.41421
 Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (16, 63, 0)
+Posicio enemic: (17, 63, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (11, 4, 0)
+Posicio enemic: (10, 5, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (8, 6, 0)
+Posicio enemic: (5, 8, 0)
+3.60555
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1478,10 +2291,38 @@ info:     end player 3
 info: end round 85
 info: start round 86
 info:     start player 0
+11 52
+Pionner
 Furyan detectat!
-Posicio actual: (11, 33, 0)
-Posicio enemic: (10, 33, 0)
+Posicio actual: (23, 41, 0)
+Posicio enemic: (22, 42, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (30, 56, 0)
+Posicio enemic: (31, 54, 0)
+2.23607
 Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (15, 62, 0)
+Posicio enemic: (15, 63, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (11, 4, 0)
+Posicio enemic: (10, 5, 0)
+Distancia: 1.41421
+Vaig cap a Bottom
+Pionner
+Hellhound detectat!
+Posicio actual: (9, 5, 0)
+Posicio enemic: (6, 8, 0)
+4.24264
+Vaig cap a Bottom left
+warning: action already requested for unit 64
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1492,10 +2333,44 @@ info:     end player 3
 info: end round 86
 info: start round 87
 info:     start player 0
+13 54
+Pionner
 Furyan detectat!
-Posicio actual: (11, 34, 0)
-Posicio enemic: (10, 33, 0)
+Posicio actual: (29, 78, 0)
+Posicio enemic: (29, 79, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (23, 4, 0)
+Posicio enemic: (22, 3, 0)
+Distancia: 1.41421
+Vaig cap a Right
+Pionner
+Hellhound detectat!
+Posicio actual: (30, 57, 0)
+Posicio enemic: (31, 55, 0)
+2.23607
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (36, 78, 0)
+Posicio enemic: (35, 79, 0)
+Distancia: 1.41421
+Vaig cap a Left
+Pionner
+Furyan detectat!
+Posicio actual: (35, 69, 0)
+Posicio enemic: (35, 68, 0)
+Distancia: 1
 Vaig cap a Bottom right
+Pionner
+Hellhound detectat!
+Posicio actual: (10, 4, 0)
+Posicio enemic: (7, 7, 0)
+4.24264
+Vaig cap a Bottom
+warning: action already requested for unit 21
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1506,10 +2381,31 @@ info:     end player 3
 info: end round 87
 info: start round 88
 info:     start player 0
+15 56
+Pionner
 Furyan detectat!
-Posicio actual: (12, 35, 0)
-Posicio enemic: (11, 34, 0)
-Vaig cap a Bottom right
+Posicio actual: (37, 33, 0)
+Posicio enemic: (36, 33, 0)
+Distancia: 1
+Vaig cap a Right
+Pionner
+Furyan detectat!
+Posicio actual: (24, 41, 0)
+Posicio enemic: (24, 42, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Hellhound detectat!
+Posicio actual: (29, 58, 0)
+Posicio enemic: (31, 56, 0)
+2.82843
+Vaig cap a Top right
+Pionner
+Hellhound detectat!
+Posicio actual: (10, 4, 0)
+Posicio enemic: (8, 6, 0)
+2.82843
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1520,10 +2416,25 @@ info:     end player 3
 info: end round 88
 info: start round 89
 info:     start player 0
+17 58
+Pionner
 Furyan detectat!
-Posicio actual: (13, 36, 0)
-Posicio enemic: (12, 35, 0)
-Vaig cap a Bottom right
+Posicio actual: (30, 65, 0)
+Posicio enemic: (30, 66, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (36, 69, 0)
+Posicio enemic: (35, 69, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Hellhound detectat!
+Posicio actual: (11, 3, 0)
+Posicio enemic: (9, 5, 0)
+2.82843
+Vaig cap a Bottom left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1534,10 +2445,25 @@ info:     end player 3
 info: end round 89
 info: start round 90
 info:     start player 0
+19 60
+Pionner
 Furyan detectat!
-Posicio actual: (14, 37, 0)
-Posicio enemic: (13, 36, 0)
-Vaig cap a Bottom right
+Posicio actual: (22, 3, 0)
+Posicio enemic: (23, 2, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (12, 66, 0)
+Posicio enemic: (11, 66, 0)
+Distancia: 1
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (37, 68, 0)
+Posicio enemic: (36, 67, 0)
+Distancia: 1.41421
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1548,10 +2474,13 @@ info:     end player 3
 info: end round 90
 info: start round 91
 info:     start player 0
+21 62
+Pionner
 Furyan detectat!
-Posicio actual: (15, 38, 0)
-Posicio enemic: (14, 37, 0)
-Vaig cap a Bottom right
+Posicio actual: (14, 62, 0)
+Posicio enemic: (15, 63, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1562,10 +2491,25 @@ info:     end player 3
 info: end round 91
 info: start round 92
 info:     start player 0
+23 64
+Pionner
 Furyan detectat!
-Posicio actual: (16, 39, 0)
-Posicio enemic: (15, 38, 0)
+Posicio actual: (34, 37, 0)
+Posicio enemic: (35, 38, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (22, 67, 0)
+Posicio enemic: (22, 66, 0)
+Distancia: 1
 Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (36, 70, 0)
+Posicio enemic: (36, 69, 0)
+Distancia: 1
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1576,9 +2520,18 @@ info:     end player 3
 info: end round 92
 info: start round 93
 info:     start player 0
+25 66
+Pionner
 Furyan detectat!
-Posicio actual: (17, 40, 0)
-Posicio enemic: (16, 39, 0)
+Posicio actual: (33, 36, 0)
+Posicio enemic: (32, 37, 0)
+Distancia: 1.41421
+Vaig cap a Bottom left
+Pionner
+Furyan detectat!
+Posicio actual: (29, 65, 0)
+Posicio enemic: (28, 64, 0)
+Distancia: 1.41421
 Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
@@ -1590,14 +2543,25 @@ info:     end player 3
 info: end round 93
 info: start round 94
 info:     start player 0
+27 68
+Pionner
 Furyan detectat!
-Posicio actual: (27, 26, 0)
-Posicio enemic: (28, 25, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (18, 41, 0)
-Posicio enemic: (17, 40, 0)
+Posicio actual: (34, 35, 0)
+Posicio enemic: (33, 35, 0)
+Distancia: 1
 Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (14, 63, 0)
+Posicio enemic: (15, 63, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (1, 22, 0)
+Posicio enemic: (2, 22, 0)
+Distancia: 1
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1608,14 +2572,32 @@ info:     end player 3
 info: end round 94
 info: start round 95
 info:     start player 0
+29 70
+Pionner
 Furyan detectat!
-Posicio actual: (27, 26, 0)
-Posicio enemic: (28, 25, 0)
-Vaig cap a Altres
+Posicio actual: (35, 36, 0)
+Posicio enemic: (36, 35, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (18, 41, 0)
-Posicio enemic: (17, 40, 0)
-Vaig cap a Bottom right
+Posicio actual: (14, 75, 0)
+Posicio enemic: (15, 74, 0)
+Distancia: 1.41421
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (13, 64, 0)
+Posicio enemic: (14, 64, 0)
+Distancia: 1
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (1, 23, 0)
+Posicio enemic: (2, 23, 0)
+Distancia: 1
+Vaig cap a Right
+warning: action already requested for unit 63
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1626,14 +2608,20 @@ info:     end player 3
 info: end round 95
 info: start round 96
 info:     start player 0
-Furyan detectat!
-Posicio actual: (19, 42, 0)
-Posicio enemic: (18, 41, 0)
+31 72
+Pionner
+Hellhound detectat!
+Posicio actual: (17, 4, 0)
+Posicio enemic: (16, 2, 0)
+2.23607
 Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (19, 0, 0)
-Posicio enemic: (18, 1, 0)
-Vaig cap a Altres
+Posicio actual: (1, 23, 0)
+Posicio enemic: (1, 24, 0)
+Distancia: 1
+Vaig cap a Bottom left
+warning: action already requested for unit 63
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1644,18 +2632,7 @@ info:     end player 3
 info: end round 96
 info: start round 97
 info:     start player 0
-Furyan detectat!
-Posicio actual: (20, 43, 0)
-Posicio enemic: (19, 42, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (19, 0, 0)
-Posicio enemic: (18, 1, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (18, 44, 0)
-Posicio enemic: (17, 43, 0)
-Vaig cap a Bottom right
+33 74
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1666,6 +2643,7 @@ info:     end player 3
 info: end round 97
 info: start round 98
 info:     start player 0
+35 76
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1676,14 +2654,7 @@ info:     end player 3
 info: end round 98
 info: start round 99
 info:     start player 0
-Furyan detectat!
-Posicio actual: (27, 1, 0)
-Posicio enemic: (27, 2, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (19, 45, 0)
-Posicio enemic: (18, 44, 0)
-Vaig cap a Bottom right
+37 78
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1694,14 +2665,7 @@ info:     end player 3
 info: end round 99
 info: start round 100
 info:     start player 0
-Furyan detectat!
-Posicio actual: (26, 1, 0)
-Posicio enemic: (27, 1, 0)
-Vaig cap a Left
-Furyan detectat!
-Posicio actual: (26, 25, 0)
-Posicio enemic: (27, 25, 0)
-Vaig cap a Left
+0 39
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1712,14 +2676,7 @@ info:     end player 3
 info: end round 100
 info: start round 101
 info:     start player 0
-Furyan detectat!
-Posicio actual: (26, 1, 0)
-Posicio enemic: (27, 1, 0)
-Vaig cap a Left
-Furyan detectat!
-Posicio actual: (26, 24, 0)
-Posicio enemic: (27, 25, 0)
-Vaig cap a Top left
+2 41
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1730,6 +2687,13 @@ info:     end player 3
 info: end round 101
 info: start round 102
 info:     start player 0
+4 43
+Pionner
+Furyan detectat!
+Posicio actual: (29, 71, 0)
+Posicio enemic: (30, 70, 0)
+Distancia: 1.41421
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1740,6 +2704,7 @@ info:     end player 3
 info: end round 102
 info: start round 103
 info:     start player 0
+6 45
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1750,12 +2715,19 @@ info:     end player 3
 info: end round 103
 info: start round 104
 info:     start player 0
-Vida actual: 38
-Hellhound detectat!
-Posicio actual: (22, 61, 0)
-Posicio enemic: (23, 61, 0)
-Vaig cap a Left
-warning: action already requested for unit 0
+8 47
+Pionner
+Furyan detectat!
+Posicio actual: (28, 71, 0)
+Posicio enemic: (29, 71, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
+Furyan detectat!
+Posicio actual: (2, 26, 0)
+Posicio enemic: (3, 27, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1766,12 +2738,25 @@ info:     end player 3
 info: end round 104
 info: start round 105
 info:     start player 0
-Vida actual: 43
-Hellhound detectat!
-Posicio actual: (22, 60, 0)
-Posicio enemic: (22, 59, 0)
+10 49
+Pionner
+Furyan detectat!
+Posicio actual: (9, 63, 0)
+Posicio enemic: (9, 64, 0)
+Distancia: 1
+Vaig cap a Left
+Pionner
+Furyan detectat!
+Posicio actual: (29, 72, 0)
+Posicio enemic: (29, 71, 0)
+Distancia: 1
 Vaig cap a Bottom
-warning: action already requested for unit 0
+Pionner
+Furyan detectat!
+Posicio actual: (9, 48, 0)
+Posicio enemic: (10, 48, 0)
+Distancia: 1
+Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1782,12 +2767,13 @@ info:     end player 3
 info: end round 105
 info: start round 106
 info:     start player 0
-Vida actual: 8
-Hellhound detectat!
-Posicio actual: (23, 60, 0)
-Posicio enemic: (22, 59, 0)
-Vaig cap a Bottom right
-warning: action already requested for unit 0
+12 51
+Pionner
+Furyan detectat!
+Posicio actual: (38, 27, 0)
+Posicio enemic: (37, 28, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1798,17 +2784,12 @@ info:     end player 3
 info: end round 106
 info: start round 107
 info:     start player 0
+14 53
+Pionner
 Furyan detectat!
-Posicio actual: (8, 33, 0)
-Posicio enemic: (7, 33, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (36, 15, 0)
-Posicio enemic: (37, 16, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (29, 4, 0)
-Posicio enemic: (28, 4, 0)
+Posicio actual: (9, 48, 0)
+Posicio enemic: (9, 47, 0)
+Distancia: 1
 Vaig cap a Right
 info:     end player 0
 info:     start player 1
@@ -1820,25 +2801,12 @@ info:     end player 3
 info: end round 107
 info: start round 108
 info:     start player 0
+16 55
+Pionner
 Furyan detectat!
-Posicio actual: (8, 34, 0)
-Posicio enemic: (7, 33, 0)
-Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (16, 41, 0)
-Posicio enemic: (16, 42, 0)
-Vaig cap a Top
-Furyan detectat!
-Posicio actual: (33, 19, 0)
-Posicio enemic: (32, 20, 0)
-Vaig cap a Bottom left
-Furyan detectat!
-Posicio actual: (35, 14, 0)
-Posicio enemic: (36, 13, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (29, 5, 0)
-Posicio enemic: (28, 4, 0)
+Posicio actual: (10, 78, 0)
+Posicio enemic: (10, 77, 0)
+Distancia: 1
 Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
@@ -1850,10 +2818,13 @@ info:     end player 3
 info: end round 108
 info: start round 109
 info:     start player 0
+18 57
+Pionner
 Furyan detectat!
-Posicio actual: (9, 35, 0)
-Posicio enemic: (8, 34, 0)
-Vaig cap a Right
+Posicio actual: (10, 78, 0)
+Posicio enemic: (9, 77, 0)
+Distancia: 1.41421
+Vaig cap a Bottom
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1864,14 +2835,19 @@ info:     end player 3
 info: end round 109
 info: start round 110
 info:     start player 0
+20 59
+Pionner
 Furyan detectat!
-Posicio actual: (9, 35, 0)
-Posicio enemic: (8, 36, 0)
-Vaig cap a Bottom left
+Posicio actual: (8, 78, 0)
+Posicio enemic: (8, 77, 0)
+Distancia: 1
+Vaig cap a Bottom right
+Pionner
 Furyan detectat!
-Posicio actual: (33, 16, 0)
-Posicio enemic: (32, 16, 0)
-Vaig cap a Right
+Posicio actual: (3, 28, 0)
+Posicio enemic: (2, 27, 0)
+Distancia: 1.41421
+Vaig cap a Bottom right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1882,14 +2858,19 @@ info:     end player 3
 info: end round 110
 info: start round 111
 info:     start player 0
+22 61
+Pionner
 Furyan detectat!
-Posicio actual: (5, 52, 0)
-Posicio enemic: (4, 52, 0)
-Vaig cap a Right
+Posicio actual: (32, 32, 0)
+Posicio enemic: (33, 32, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
 Furyan detectat!
-Posicio actual: (33, 17, 0)
-Posicio enemic: (33, 16, 0)
-Vaig cap a Bottom
+Posicio actual: (8, 61, 0)
+Posicio enemic: (9, 62, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1900,22 +2881,7 @@ info:     end player 3
 info: end round 111
 info: start round 112
 info:     start player 0
-Furyan detectat!
-Posicio actual: (9, 33, 0)
-Posicio enemic: (9, 32, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (5, 53, 0)
-Posicio enemic: (5, 52, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (34, 17, 0)
-Posicio enemic: (33, 17, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (30, 6, 0)
-Posicio enemic: (30, 5, 0)
-Vaig cap a Bottom
+24 63
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1926,22 +2892,19 @@ info:     end player 3
 info: end round 112
 info: start round 113
 info:     start player 0
+26 65
+Pionner
+Hellhound detectat!
+Posicio actual: (21, 74, 0)
+Posicio enemic: (19, 77, 0)
+3.60555
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (10, 33, 0)
-Posicio enemic: (9, 32, 0)
-Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (5, 53, 0)
-Posicio enemic: (5, 52, 0)
-Vaig cap a Altres
-Furyan detectat!
-Posicio actual: (34, 18, 0)
-Posicio enemic: (34, 17, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (31, 6, 0)
-Posicio enemic: (30, 5, 0)
-Vaig cap a Right
+Posicio actual: (8, 61, 0)
+Posicio enemic: (9, 62, 0)
+Distancia: 1.41421
+Vaig cap a Top left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1952,22 +2915,13 @@ info:     end player 3
 info: end round 113
 info: start round 114
 info:     start player 0
-Furyan detectat!
-Posicio actual: (11, 34, 0)
-Posicio enemic: (12, 35, 0)
+28 67
+Pionner
+Hellhound detectat!
+Posicio actual: (22, 73, 0)
+Posicio enemic: (19, 76, 0)
+4.24264
 Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (5, 53, 0)
-Posicio enemic: (6, 52, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (12, 43, 0)
-Posicio enemic: (11, 42, 0)
-Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (35, 18, 0)
-Posicio enemic: (34, 18, 0)
-Vaig cap a Right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -1978,22 +2932,25 @@ info:     end player 3
 info: end round 114
 info: start round 115
 info:     start player 0
+30 69
+Pionner
+Hellhound detectat!
+Posicio actual: (21, 72, 0)
+Posicio enemic: (20, 75, 0)
+3.16228
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (10, 33, 0)
-Posicio enemic: (11, 34, 0)
+Posicio actual: (8, 61, 0)
+Posicio enemic: (9, 62, 0)
+Distancia: 1.41421
 Vaig cap a Top left
+Pionner
 Furyan detectat!
-Posicio actual: (13, 44, 0)
-Posicio enemic: (13, 43, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (35, 19, 0)
-Posicio enemic: (35, 18, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (30, 6, 0)
-Posicio enemic: (31, 6, 0)
-Vaig cap a Left
+Posicio actual: (11, 46, 0)
+Posicio enemic: (12, 46, 0)
+Distancia: 1
+Vaig cap a Top right
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -2004,22 +2961,19 @@ info:     end player 3
 info: end round 115
 info: start round 116
 info:     start player 0
+32 71
+Pionner
+Hellhound detectat!
+Posicio actual: (22, 71, 0)
+Posicio enemic: (21, 74, 0)
+3.16228
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (9, 32, 0)
-Posicio enemic: (10, 33, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (11, 58, 0)
-Posicio enemic: (12, 57, 0)
-Vaig cap a Top right
-Furyan detectat!
-Posicio actual: (14, 44, 0)
-Posicio enemic: (13, 43, 0)
-Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (36, 19, 0)
-Posicio enemic: (35, 19, 0)
-Vaig cap a Right
+Posicio actual: (10, 47, 0)
+Posicio enemic: (9, 46, 0)
+Distancia: 1.41421
+Vaig cap a Bottom
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -2030,22 +2984,31 @@ info:     end player 3
 info: end round 116
 info: start round 117
 info:     start player 0
-Furyan detectat!
-Posicio actual: (8, 31, 0)
-Posicio enemic: (7, 30, 0)
-Vaig cap a Bottom right
-Furyan detectat!
-Posicio actual: (36, 20, 0)
-Posicio enemic: (36, 19, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (30, 13, 0)
-Posicio enemic: (29, 14, 0)
+34 73
+Pionner
+Hellhound detectat!
+Posicio actual: (23, 70, 0)
+Posicio enemic: (20, 73, 0)
+4.24264
 Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (6, 31, 0)
-Posicio enemic: (7, 30, 0)
-Vaig cap a Top
+Posicio actual: (8, 61, 0)
+Posicio enemic: (9, 62, 0)
+Distancia: 1.41421
+Vaig cap a Top left
+Pionner
+Furyan detectat!
+Posicio actual: (11, 47, 0)
+Posicio enemic: (11, 46, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (11, 76, 0)
+Posicio enemic: (12, 77, 0)
+Distancia: 1.41421
+Vaig cap a Left
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -2056,22 +3019,25 @@ info:     end player 3
 info: end round 117
 info: start round 118
 info:     start player 0
+36 75
+Pionner
+Hellhound detectat!
+Posicio actual: (24, 69, 0)
+Posicio enemic: (21, 72, 0)
+4.24264
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (8, 31, 0)
-Posicio enemic: (9, 32, 0)
+Posicio actual: (10, 48, 0)
+Posicio enemic: (10, 47, 0)
+Distancia: 1
+Vaig cap a Top right
+Pionner
+Furyan detectat!
+Posicio actual: (23, 56, 0)
+Posicio enemic: (24, 56, 0)
+Distancia: 1
 Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (37, 20, 0)
-Posicio enemic: (36, 20, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (29, 5, 0)
-Posicio enemic: (30, 6, 0)
-Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (5, 31, 0)
-Posicio enemic: (6, 30, 0)
-Vaig cap a Top
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -2082,22 +3048,19 @@ info:     end player 3
 info: end round 118
 info: start round 119
 info:     start player 0
+38 77
+Pionner
+Hellhound detectat!
+Posicio actual: (25, 68, 0)
+Posicio enemic: (22, 71, 0)
+4.24264
+Vaig cap a Bottom left
+Pionner
 Furyan detectat!
-Posicio actual: (7, 30, 0)
-Posicio enemic: (8, 31, 0)
+Posicio actual: (8, 61, 0)
+Posicio enemic: (9, 62, 0)
+Distancia: 1.41421
 Vaig cap a Top left
-Furyan detectat!
-Posicio actual: (37, 21, 0)
-Posicio enemic: (37, 20, 0)
-Vaig cap a Bottom
-Furyan detectat!
-Posicio actual: (31, 11, 0)
-Posicio enemic: (30, 10, 0)
-Vaig cap a Right
-Furyan detectat!
-Posicio actual: (4, 31, 0)
-Posicio enemic: (5, 30, 0)
-Vaig cap a Altres
 info:     end player 0
 info:     start player 1
 info:     end player 1
@@ -2106,9 +3069,9 @@ info:     end player 2
 info:     start player 3
 info:     end player 3
 info: end round 119
-info: player DM4 got score 170
-info: player Dummy got score 320
-info: player Dummy got score 324
-info: player Dummy got score 798
+info: player DM4 got score 440
+info: player Dummy got score 498
+info: player Dummy got score 419
+info: player Dummy got score 447
 info: player(s) Dummy got top score
 info: game played

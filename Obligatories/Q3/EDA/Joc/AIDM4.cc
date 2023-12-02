@@ -4,7 +4,7 @@
  * Write the name of your player and save this file
  * with the same name and .cc extension.
  */
-#define PLAYER_NAME DM3
+#define PLAYER_NAME DM4
 
 
 struct PLAYER_NAME : public Player {
@@ -53,7 +53,7 @@ struct PLAYER_NAME : public Player {
    */
   typedef pair<int,int> PI;
   typedef vector<int> VI;
-  typedef vector<char> VC;
+  typedef vector<Cell> VC;
   typedef vector<bool> VB;
   typedef vector<VC> VVC;
   typedef vector<VI> VVI;
@@ -63,46 +63,59 @@ struct PLAYER_NAME : public Player {
 
   //Llegeix tota la informacio del mapa subterrani
   //Cave camino | Rock pared
-  void llegir_mapa(mapa& mc, matrix& mi) {
+ void llegir_mapa(mapa& mc, matrix& mi) {
     int n = rows();
     int t = cols();
     mc.resize(n);
     mi.resize(n);
 
     for (int i = 0; i < n; ++i) {
-      mc[i].resize(t);
-      mi[i].resize(t);
+        mc[i].resize(t);
+        mi[i].resize(t);
 
-      for (int j = 0; j < t; ++j) {
-        mc[i][j].resize(2);
-        mi[i][j].resize(2);
+        for (int j = 0; j < t; ++j) {
+            mc[i][j].resize(2);
+            mi[i][j].resize(2);
 
-        for (int k = 0; k < 2; ++k) {
-          Cell c = cell(i,j,k);
-          mc[i][j][k] = c.type;
-          if (c.id != -1) {
-          Unit u = unit(c.id);
-          if (u.player != me()) mi[i][j][k] = u.type;
+            for (int k = 0; k < 2; ++k) {
+                Cell c = cell(i, j, k);
+                mc[i][j][k] = c;
+
+                if (c.id != -1) {
+                    Unit u = unit(c.id);
+                    if (u.player != me()) {
+                        mi[i][j][k] = u.type;
+                    } else {
+                        mi[i][j][k] = -1;
+                    }
+                } else {
+                    mi[i][j][k] = -1;
+                }
+            }
         }
-        else mi[i][j][k] = -1;
-        }
-      }
     }
-  }
+}
 
   PI sol() {
     return {((40+2*round())%80),((79+2*round())%80)};
   }
 
-  Dir coordenadas_dir(const int& i, const int& j) {
-    if (i == 1 and j == 0) return Dir(Bottom);
-    else if (i == 1 and j == 1) return Dir(BR);
-    else if (i == 0 and j == 1) return Dir(Right);
-    else if (i == -1 and j == 1) return Dir(RT);
-    else if (i == -1 and j == 0) return Dir(Top);
-    else if (i == -1 and j == -1) return Dir(TL);
-    else if (i == 0 and j == -1) return Dir(Left);
-    else return Dir(LB);
+  Dir desicio(const Pos& p, const Pos& next) {
+    if (next.i > p.i and next.j > p.j) return BR;
+    else if (next.i > p.i and next.j < p.j) return LB;
+    else if (next.i < p.i and next.j > p.j) return RT;
+    else if (next.i < p.i and next.j < p.j) return TL;
+    else if (next.i == p.i and next.j > p.j) return Right;
+    else if (next.i == p.i and next.j < p.j) return Left;
+    else if (next.i > p.i and next.j == p.j) return Bottom;
+    else if (next.i < p.i and next.j == p.j) return Top;
+    else {
+      Pos aux = p;
+      aux.k = 1;
+      if (daylight(aux)) return None;
+      else if (p.k == 0) return Up;
+      else return Down;
+    }
   }
 
   int distancia(const Pos& p1, const Pos& p2) {
@@ -122,11 +135,37 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (m[x][y][0] == Elevator) return p;
+      if (m[x][y][0].type == Elevator) return p;
 
       for (int i = Bottom; i <= LB; ++i) {
         Pos next = p + Dir(i);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0] != Rock) {
+        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
+          q.push(next);
+          visitat[next.i][next.j] = true;
+        }
+      }
+    }
+    return Pos(-1,-1,0);
+  }
+
+  Pos buscar_ascensors_superficie(const mapa& m, const Pos& p) {
+    VVB visitat(rows(), VB(cols(), false));
+    queue<Pos> q;
+    q.push(p);
+    visitat[p.i][p.j] = true;
+
+    while(!q.empty()) {
+      Pos p = q.front();
+      q.pop();
+
+      int x = p.i;
+      int y = p.j;
+
+      if (m[x][y][1].type == Elevator) return p;
+
+      for (int i = Bottom; i <= LB; ++i) {
+        Pos next = p + Dir(i);
+        if (pos_ok(next) && !visitat[next.i][next.j]) {
           q.push(next);
           visitat[next.i][next.j] = true;
         }
@@ -149,7 +188,7 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-        if (m[x][y][0] == Cave) {
+        if (m[x][y][0].type == Cave) {
             Cell c = cell(x, y, 0);
             if (c.owner != me() && c.owner != -1 && c.id == -1) {
                 vector<Pos> path;
@@ -170,7 +209,7 @@ struct PLAYER_NAME : public Player {
       vector<int> direccions = random_permutation(7);
       for (int i = 0; i <= 7; ++i) {
         Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0] != Rock) {
+        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
           q.push(next);
           visitat[next.i][next.j] = true;
           pare[next.i][next.j] = p;
@@ -180,113 +219,7 @@ struct PLAYER_NAME : public Player {
     return {};
   }
 
-  Pos eliminar_exploradors(const mapa& m, const Pos& p) {
-    VVB visitat(rows(), VB(cols(), false));
-    queue<Pos> q;
-    q.push(p);
-    visitat[p.i][p.j] = true;
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
-
-    while(!q.empty()) {
-      Pos p = q.front();
-      q.pop();
-    
-      int x = p.i;
-      int y = p.j;
-
-      Cell c = cell(x,y,0);
-      if (c.id != -1) {
-        Unit u = unit(c.id);
-        if (u.id == Pioneer) {
-          vector<Pos> path;
-          while (p.i != -1) {
-            path.insert(path.begin(), p);
-            p = pare[p.i][p.j];
-          }
-          return path[1];
-        }
-      }
-
-      vector<int> direccions = random_permutation(7);
-      for (int i = 0; i < 8; ++i) {
-        Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0] != Rock) {
-          q.push(next);
-          visitat[next.i][next.j] = true;
-          pare[next.i][next.j] = p;
-        }
-      }
-    }
-    return {};
-  }
-
-  Pos eliminar_guerrers(const mapa& m, const Pos& p) {
-    VVB visitat(rows(), VB(cols(), false));
-    queue<Pos> q;
-    q.push(p);
-    visitat[p.i][p.j] = true;
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
-
-    while(!q.empty()) {
-      Pos p = q.front();
-      q.pop();
-    
-      int x = p.i;
-      int y = p.j;
-
-      Cell c = cell(x,y,0);
-      if (c.id != -1) {
-        Unit u = unit(c.id);
-        if (u.id == Furyan) {
-          vector<Pos> path;
-          while (p.i != -1) {
-            path.insert(path.begin(), p);
-            p = pare[p.i][p.j];
-          }
-          return path[1];
-        }
-      }
-
-      vector<int> direccions = random_permutation(7);
-      for (int i = 0; i < 8; ++i) {
-        Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0] != Rock) {
-          q.push(next);
-          visitat[next.i][next.j] = true;
-          pare[next.i][next.j] = p;
-        }
-      }
-    }
-    return {};
-  }
-
-  Pos buscar_ascensors_superficie(const mapa& m, const Pos& p) {
-    VVB visitat(rows(), VB(cols(), false));
-    queue<Pos> q;
-    q.push(p);
-    visitat[p.i][p.j] = true;
-
-    while(!q.empty()) {
-      Pos p = q.front();
-      q.pop();
-
-      int x = p.i;
-      int y = p.j;
-
-      if (m[x][y][1] == Elevator) return p;
-
-      for (int i = Bottom; i <= LB; ++i) {
-        Pos next = p + Dir(i);
-        if (pos_ok(next) && !visitat[next.i][next.j]) {
-          q.push(next);
-          visitat[next.i][next.j] = true;
-        }
-      }
-    }
-    return Pos(-1,-1,0);
-  }
-
-  Pos buscar_exploradors(const matrix& mat, const Pos& p) {
+  Pos eliminar_exploradors(const matrix& mat, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
     q.push(p);
@@ -298,11 +231,6 @@ struct PLAYER_NAME : public Player {
 
       int x = p.i;
       int y = p.j;
-
-      Cell c = cell(x,y,0);
-      if (c.id != -1) {
-        
-      }
 
       if (mat[x][y][0] == Pioneer) return p;
 
@@ -317,23 +245,32 @@ struct PLAYER_NAME : public Player {
     return Pos(-1,-1,0);
   }
 
-  Dir desicio(const Pos& p, const Pos& next) {
-    if (next.i > p.i and next.j > p.j) return BR;
-    else if (next.i > p.i and next.j < p.j) return LB;
-    else if (next.i < p.i and next.j > p.j) return RT;
-    else if (next.i < p.i and next.j < p.j) return TL;
-    else if (next.i == p.i and next.j > p.j) return Right;
-    else if (next.i == p.i and next.j < p.j) return Left;
-    else if (next.i > p.i and next.j == p.j) return Bottom;
-    else if (next.i < p.i and next.j == p.j) return Top;
-    else {
-      Pos aux = p;
-      aux.k = 1;
-      if (daylight(aux)) return None;
-      else if (p.k == 0) return Up;
-      else return Down;
+  Pos eliminar_guerrers(const matrix& mat, const Pos& p) {
+    VVB visitat(rows(), VB(cols(), false));
+    queue<Pos> q;
+    q.push(p);
+    visitat[p.i][p.j] = true;
+
+    while (!q.empty()) {
+      Pos p = q.front();
+      q.pop();
+
+      int x = p.i;
+      int y = p.j;
+
+      if (mat[x][y][0] == Furyan) return p;
+
+      for (int i = Bottom; i <= LB; ++i) {
+        Pos next = p + Dir(i);
+        if (pos_ok(next) && !visitat[next.i][next.j] && mat[next.i][next.j][0] != Rock) {
+          q.push(next);
+          visitat[next.i][next.j] = true;
+        }
+      }
     }
+    return Pos(-1,-1,0);
   }
+
 
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
@@ -371,17 +308,8 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
-      if (u.health > 50) {
-        Pos next = eliminar_guerrers(m, e);
-        cerr << next << endl;
-        command(id, desicio(e, next));
-      }
-      else {
-         Pos next = eliminar_exploradors(m, e);
-        cerr << next << endl;
-        command(id, desicio(e, next));
-      }
-     
+      Pos next = eliminar_exploradors(mat, e);
+      command(id, desicio(e, next));
     }
   }
 

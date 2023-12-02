@@ -1,2722 +1,2200 @@
-info: seed 354724
+info: seed 63040
 info: loading game
 info: loaded game
-info: loading player DM4
-info: loading player DM3
-info: loading player DM3
-info: loading player DM3
+info: loading player DM1
+info: loading player Demo
+info: loading player Demo
+info: loading player Demo
 info: players loaded
 info: start round 0
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(6, 66, 0)
-(35, 16, 0)
-(11, 22, 0)
-(37, 43, 0)
-(31, 6, 0)
 info:     end player 1
 info:     start player 2
-(24, 4, 0)
-(17, 59, 0)
-(21, 79, 0)
-(3, 70, 0)
-(31, 41, 0)
 info:     end player 2
 info:     start player 3
-(6, 18, 0)
-(25, 66, 0)
-(23, 22, 0)
-(2, 75, 0)
-(30, 47, 0)
 info:     end player 3
 info: end round 0
 info: start round 1
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(7, 67, 0)
-(34, 17, 0)
-(12, 22, 0)
-(36, 42, 0)
-(30, 7, 0)
 info:     end player 1
 info:     start player 2
-(25, 5, 0)
-(18, 60, 0)
-(22, 0, 0)
-(4, 71, 0)
-(32, 41, 0)
 info:     end player 2
 info:     start player 3
-(6, 17, 0)
-(25, 65, 0)
-(24, 23, 0)
-(1, 76, 0)
-(29, 46, 0)
 info:     end player 3
 info: end round 1
 info: start round 2
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(7, 68, 0)
-(33, 18, 0)
-(13, 22, 0)
-(35, 41, 0)
-(29, 8, 0)
 info:     end player 1
 info:     start player 2
-(26, 6, 0)
-(19, 60, 0)
-(21, 79, 0)
-(4, 72, 0)
-(33, 41, 0)
 info:     end player 2
 info:     start player 3
-(7, 17, 0)
-(25, 64, 0)
-(24, 24, 0)
-(2, 77, 0)
-(28, 45, 0)
 info:     end player 3
 info: end round 2
 info: start round 3
 info:     start player 0
+1
+1
+1
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(8, 69, 0)
-(33, 19, 0)
-(14, 22, 0)
-(34, 40, 0)
-(28, 9, 0)
 info:     end player 1
 info:     start player 2
-(27, 7, 0)
-(20, 60, 0)
-(21, 0, 0)
-(3, 73, 0)
-(32, 40, 0)
 info:     end player 2
 info:     start player 3
-(26, 64, 0)
-(24, 25, 0)
-(28, 44, 0)
 info:     end player 3
 info: end round 3
 info: start round 4
 info:     start player 0
+1
+1
+1
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(9, 70, 0)
-(32, 20, 0)
-(14, 21, 0)
-(34, 40, 0)
-(27, 10, 0)
 info:     end player 1
 info:     start player 2
-(28, 8, 0)
-(20, 59, 0)
-(22, 79, 0)
-(3, 74, 0)
-(32, 39, 0)
 info:     end player 2
 info:     start player 3
-(26, 63, 0)
-(24, 26, 0)
-(28, 43, 0)
 info:     end player 3
 info: end round 4
 info: start round 5
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(9, 70, 0)
-(31, 21, 0)
-(15, 21, 0)
-(34, 40, 0)
-(27, 11, 0)
 info:     end player 1
 info:     start player 2
-(27, 9, 0)
-(21, 59, 0)
-(23, 0, 0)
-(2, 75, 0)
-(33, 39, 0)
 info:     end player 2
 info:     start player 3
-(26, 62, 0)
-(24, 27, 0)
-(29, 43, 0)
 info:     end player 3
 info: end round 5
 info: start round 6
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+2
+1
+1
+2
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(10, 71, 0)
-(32, 22, 0)
-(15, 20, 0)
-(33, 40, 0)
-(28, 12, 0)
 info:     end player 1
 info:     start player 2
-(26, 10, 0)
-(22, 59, 0)
-(24, 79, 0)
-(33, 40, 0)
 info:     end player 2
 info:     start player 3
-(26, 61, 0)
-(25, 28, 0)
-(29, 42, 0)
 info:     end player 3
 info: end round 6
 info: start round 7
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+2
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(11, 72, 0)
-(32, 23, 0)
-(15, 19, 0)
-(32, 40, 0)
-(28, 13, 0)
 info:     end player 1
 info:     start player 2
-(27, 11, 0)
-(23, 59, 0)
-(25, 0, 0)
-(32, 40, 0)
 info:     end player 2
 info:     start player 3
-(26, 60, 0)
-(26, 29, 0)
-(30, 42, 0)
 info:     end player 3
 info: end round 7
 info: start round 8
 info:     start player 0
+1
+1
+1
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(12, 73, 0)
-(33, 24, 0)
-(15, 18, 0)
-(33, 41, 0)
-(28, 13, 0)
 info:     end player 1
 info:     start player 2
-(27, 11, 0)
-(24, 59, 0)
-(24, 79, 0)
-(33, 41, 0)
 info:     end player 2
 info:     start player 3
-(26, 59, 0)
-(26, 30, 0)
-(30, 41, 0)
 info:     end player 3
 info: end round 8
 info: start round 9
 info:     start player 0
+1
+1
+1
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(13, 73, 0)
-(32, 25, 0)
-(16, 18, 0)
-(32, 42, 0)
-(29, 13, 0)
 info:     end player 1
 info:     start player 2
-(28, 12, 0)
-(25, 59, 0)
-(25, 0, 0)
-(32, 41, 0)
 info:     end player 2
 info:     start player 3
-(26, 58, 0)
-(26, 31, 0)
-(31, 41, 0)
 info:     end player 3
 info: end round 9
 info: start round 10
 info:     start player 0
+1
+1
+1
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(14, 74, 0)
-(32, 26, 0)
-(17, 19, 0)
-(33, 42, 0)
-(29, 13, 0)
 info:     end player 1
 info:     start player 2
-(2, 57, 0)
-(28, 12, 0)
-(25, 58, 0)
-(26, 79, 0)
-(33, 42, 0)
 info:     end player 2
 info:     start player 3
-(26, 57, 0)
-(27, 31, 0)
-(32, 41, 0)
 info:     end player 3
 info: end round 10
 info: start round 11
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(13, 73, 0)
-(31, 27, 0)
-(17, 20, 0)
-(32, 41, 0)
-(28, 12, 0)
 info:     end player 1
 info:     start player 2
-(0, 72, 0)
-(1, 58, 0)
-(26, 10, 0)
-(24, 59, 0)
-(25, 78, 0)
-(32, 40, 0)
 info:     end player 2
 info:     start player 3
-(25, 57, 0)
-(26, 32, 0)
-(30, 41, 0)
 info:     end player 3
 info: end round 11
 info: start round 12
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(12, 73, 0)
-(32, 28, 0)
-(18, 21, 0)
-(31, 40, 0)
-(27, 11, 0)
 info:     end player 1
 info:     start player 2
-(0, 73, 0)
-(1, 59, 0)
-(25, 9, 0)
-(23, 60, 0)
-(24, 77, 0)
-(31, 39, 0)
 info:     end player 2
 info:     start player 3
-(24, 58, 0)
-(25, 33, 0)
-(29, 42, 0)
 info:     end player 3
 info: end round 12
 info: start round 13
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(12, 73, 0)
-(33, 29, 0)
-(17, 22, 0)
-(30, 41, 0)
-(26, 10, 0)
 info:     end player 1
 info:     start player 2
-(0, 26, 0)
-(2, 60, 0)
-(25, 9, 0)
-(22, 60, 0)
-(24, 76, 0)
-(31, 38, 0)
-(4, 0, 0)
 info:     end player 2
 info:     start player 3
-(23, 59, 0)
-(24, 34, 0)
 info:     end player 3
 info: end round 13
 info: start round 14
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+3
 info:     end player 0
 info:     start player 1
-(11, 72, 0)
-(33, 30, 0)
-(17, 22, 0)
-(25, 10, 0)
 info:     end player 1
 info:     start player 2
-(0, 25, 0)
-(1, 61, 0)
-(17, 19, 0)
-(24, 9, 0)
-(21, 61, 0)
-(23, 75, 0)
-(31, 37, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(22, 59, 0)
-(25, 35, 0)
 info:     end player 3
 info: end round 14
 info: start round 15
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+2
 info:     end player 0
 info:     start player 1
-(34, 31, 0)
-(16, 23, 0)
-(24, 9, 0)
 info:     end player 1
 info:     start player 2
-(0, 25, 0)
-(1, 61, 0)
-(17, 20, 0)
-(24, 9, 0)
-(20, 60, 0)
-(22, 74, 0)
-(31, 36, 0)
-(4, 79, 0)
 info:     end player 2
 info:     start player 3
-(21, 58, 0)
-(26, 36, 0)
 info:     end player 3
 info: end round 15
 info: start round 16
 info:     start player 0
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+2
+1
 info:     end player 0
 info:     start player 1
-(35, 32, 0)
-(15, 24, 0)
-(24, 9, 0)
 info:     end player 1
 info:     start player 2
-(0, 13, 0)
-(1, 61, 0)
-(18, 21, 0)
-(23, 8, 0)
-(19, 59, 0)
-(21, 73, 0)
-(30, 35, 0)
-(3, 0, 0)
 info:     end player 2
 info:     start player 3
-(20, 59, 0)
-(26, 37, 0)
 info:     end player 3
 info: end round 16
 info: start round 17
 info:     start player 0
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(34, 33, 0)
-(14, 25, 0)
-(23, 8, 0)
 info:     end player 1
 info:     start player 2
-(0, 14, 0)
-(1, 61, 0)
-(17, 22, 0)
-(22, 7, 0)
-(19, 59, 0)
-(21, 73, 0)
-(31, 36, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(19, 58, 0)
-(27, 38, 0)
 info:     end player 3
 info: end round 17
 info: start round 18
 info:     start player 0
+1
+1
+79
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(33, 34, 0)
-(13, 26, 0)
-(22, 7, 0)
 info:     end player 1
 info:     start player 2
-(0, 15, 0)
-(1, 61, 0)
-(16, 23, 0)
-(21, 6, 0)
-(18, 58, 0)
-(23, 75, 0)
-(31, 37, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(18, 58, 0)
 info:     end player 3
 info: end round 18
 info: start round 19
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(33, 35, 0)
-(13, 27, 0)
-(21, 6, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(15, 24, 0)
-(20, 5, 0)
-(18, 58, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(28, 49, 0)
-(17, 57, 0)
 info:     end player 3
 info: end round 19
 info: start round 20
 info:     start player 0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+2
+1
 info:     end player 0
 info:     start player 1
-(32, 36, 0)
-(12, 28, 0)
-(20, 5, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(14, 25, 0)
-(19, 4, 0)
-(17, 57, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(27, 50, 0)
-(16, 56, 0)
 info:     end player 3
 info: end round 20
 info: start round 21
 info:     start player 0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(12, 29, 0)
-(20, 5, 0)
 info:     end player 1
 info:     start player 2
-(0, 29, 0)
-(1, 61, 0)
-(19, 4, 0)
-(16, 56, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(21, 61, 0)
-(26, 51, 0)
-(15, 56, 0)
 info:     end player 3
 info: end round 21
 info: start round 22
 info:     start player 0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
 info:     end player 0
 info:     start player 1
-(11, 30, 0)
-(20, 5, 0)
 info:     end player 1
 info:     start player 2
-(0, 30, 0)
-(1, 61, 0)
-(15, 56, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(20, 61, 0)
-(25, 50, 0)
-(14, 55, 0)
 info:     end player 3
 info: end round 22
 info: start round 23
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
 info:     end player 0
 info:     start player 1
-(11, 30, 0)
-(19, 4, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(14, 55, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(20, 61, 0)
-(24, 49, 0)
-(13, 55, 0)
 info:     end player 3
 info: end round 23
 info: start round 24
 info:     start player 0
+1
+79
+1
+1
+0
+1
+1
+0
+1
+1
+2
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(11, 30, 0)
-(21, 6, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(13, 55, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(19, 62, 0)
-(23, 49, 0)
-(12, 56, 0)
 info:     end player 3
 info: end round 24
 info: start round 25
 info:     start player 0
+1
+79
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+2
+1
 info:     end player 0
 info:     start player 1
-(10, 31, 0)
-(22, 7, 0)
 info:     end player 1
 info:     start player 2
-(0, -1659583510, 21940)
-(1, 61, 0)
-(12, 56, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(18, 63, 0)
-(22, 48, 0)
-(11, 56, 0)
 info:     end player 3
 info: end round 25
 info: start round 26
 info:     start player 0
+1
+79
+1
+1
+0
+1
+1
+0
+2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(10, 31, 0)
-(23, 8, 0)
 info:     end player 1
 info:     start player 2
-(0, 33, 0)
-(1, 61, 0)
-(11, 56, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(17, 64, 0)
-(21, 49, 0)
-(10, 57, 0)
 info:     end player 3
 info: end round 26
 info: start round 27
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(9, 32, 0)
-(24, 9, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(10, 57, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(16, 65, 0)
-(20, 50, 0)
-(9, 58, 0)
 info:     end player 3
 info: end round 27
 info: start round 28
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(9, 33, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(9, 58, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(15, 65, 0)
-(31, 38, 0)
-(19, 50, 0)
-(8, 58, 0)
 info:     end player 3
 info: end round 28
 info: start round 29
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(8, 34, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(25, 3, 0)
-(8, 58, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(14, 65, 0)
-(30, 39, 0)
-(18, 51, 0)
-(7, 59, 0)
 info:     end player 3
 info: end round 29
 info: start round 30
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(9, 35, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(25, 2, 0)
-(7, 59, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(13, 65, 0)
-(29, 40, 0)
-(17, 52, 0)
-(6, 60, 0)
 info:     end player 3
 info: end round 30
 info: start round 31
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(9, 36, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(25, 1, 0)
-(6, 60, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(12, 66, 0)
-(28, 41, 0)
-(16, 52, 0)
-(5, 61, 0)
 info:     end player 3
 info: end round 31
 info: start round 32
 info:     start player 0
+1
+79
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(8, 37, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(24, 0, 0)
-(5, 61, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(11, 65, 0)
-(27, 42, 0)
-(15, 53, 0)
-(4, 62, 0)
 info:     end player 3
 info: end round 32
 info: start round 33
 info:     start player 0
+1
+79
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(10, 37, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(1, 61, 0)
-(23, 79, 0)
-(4, 60, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(10, 65, 0)
-(26, 43, 0)
-(14, 54, 0)
-(3, 61, 0)
 info:     end player 3
 info: end round 33
 info: start round 34
 info:     start player 0
+1
+79
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(9, 38, 0)
 info:     end player 1
 info:     start player 2
-(3, 60, 0)
-(23, 79, 0)
-(5, 61, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(11, 65, 0)
-(26, 44, 0)
-(15, 54, 0)
 info:     end player 3
 info: end round 34
 info: start round 35
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, -973140912, 21937)
-(10, 38, 0)
 info:     end player 1
 info:     start player 2
-(23, 79, 0)
-(6, 62, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(12, 66, 0)
-(25, 45, 0)
-(16, 55, 0)
 info:     end player 3
 info: end round 35
 info: start round 36
 info:     start player 0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(9, 39, 0)
 info:     end player 1
 info:     start player 2
-(23, 79, 0)
-(7, 62, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(13, 66, 0)
-(25, 46, 0)
-(17, 55, 0)
 info:     end player 3
 info: end round 36
 info: start round 37
 info:     start player 0
+1
+1
+1
+1
+0
+3
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, 52, 0)
-(9, 40, 0)
 info:     end player 1
 info:     start player 2
-(23, 79, 0)
-(8, 62, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(14, 66, 0)
-(24, 47, 0)
-(18, 56, 0)
 info:     end player 3
 info: end round 37
 info: start round 38
 info:     start player 0
+1
+1
+1
+1
+0
+2
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, 51, 0)
-(8, 41, 0)
 info:     end player 1
 info:     start player 2
-(24, 79, 0)
-(9, 63, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(15, 66, 0)
-(24, 47, 0)
-(19, 56, 0)
 info:     end player 3
 info: end round 38
 info: start round 39
 info:     start player 0
+1
+1
+1
+1
+0
+2
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(7, 42, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(10, 64, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(16, 67, 0)
-(23, 48, 0)
-(20, 57, 0)
 info:     end player 3
 info: end round 39
 info: start round 40
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(8, 43, 0)
 info:     end player 1
 info:     start player 2
-(24, 79, 0)
-(11, 65, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(17, 68, 0)
-(24, 48, 0)
-(21, 58, 0)
 info:     end player 3
 info: end round 40
 info: start round 41
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 53, 0)
-(9, 44, 0)
 info:     end player 1
 info:     start player 2
-(23, 0, 0)
-(12, 66, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 79, 0)
-(18, 69, 0)
-(24, 48, 0)
-(21, 58, 0)
 info:     end player 3
 info: end round 41
 info: start round 42
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 63, 0)
-(8, 45, 0)
 info:     end player 1
 info:     start player 2
-(23, 79, 0)
-(10, 66, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 0, 0)
-(19, 70, 0)
-(24, 49, 0)
-(22, 59, 0)
 info:     end player 3
 info: end round 42
 info: start round 43
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 51, 0)
-(8, 46, 0)
 info:     end player 1
 info:     start player 2
-(22, 79, 0)
-(10, 67, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(32, 40, 0)
-(31, 79, 0)
-(20, 70, 0)
-(25, 50, 0)
-(23, 59, 0)
 info:     end player 3
 info: end round 43
 info: start round 44
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 52, 0)
-(9, 47, 0)
 info:     end player 1
 info:     start player 2
-(22, 0, 0)
-(9, 68, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(31, 41, 0)
-(31, 0, 0)
-(21, 70, 0)
-(26, 51, 0)
-(24, 59, 0)
 info:     end player 3
 info: end round 44
 info: start round 45
 info:     start player 0
+1
+1
+1
+1
+0
+3
+1
+1
+0
+1
+1
+0
+1
+1
+1
+0
+0
+0
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(0, 53, 0)
-(10, 48, 0)
 info:     end player 1
 info:     start player 2
-(22, 79, 0)
-(8, 69, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(30, 42, 0)
-(31, 79, 0)
-(21, 69, 0)
-(27, 52, 0)
-(24, 58, 0)
 info:     end player 3
 info: end round 45
 info: start round 46
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 54, 0)
-(11, 49, 0)
 info:     end player 1
 info:     start player 2
-(22, 0, 0)
-(9, 69, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(29, 43, 0)
-(31, 0, 0)
-(21, 68, 0)
-(28, 53, 0)
-(23, 57, 0)
 info:     end player 3
 info: end round 46
 info: start round 47
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 0, -1)
-(12, 50, 0)
 info:     end player 1
 info:     start player 2
-(22, 79, 0)
-(9, 69, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(29, 44, 0)
-(31, 79, 0)
-(22, 68, 0)
-(27, 54, 0)
-(23, 57, 0)
 info:     end player 3
 info: end round 47
 info: start round 48
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 57, 0)
-(13, 51, 0)
 info:     end player 1
 info:     start player 2
-(22, 0, 0)
-(10, 69, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(28, 45, 0)
-(31, 0, 0)
-(22, 68, 0)
-(26, 55, 0)
-(23, 57, 0)
 info:     end player 3
 info: end round 48
 info: start round 49
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(12, 52, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(10, 69, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 60, 0)
-(27, 45, 0)
-(31, 79, 0)
-(21, 68, 0)
-(26, 56, 0)
-(23, 59, 0)
 info:     end player 3
 info: end round 49
 info: start round 50
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(11, 53, 0)
 info:     end player 1
 info:     start player 2
-(22, 79, 0)
-(10, 68, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 0, 0)
-(26, 45, 0)
-(31, 0, 0)
-(20, 69, 0)
-(25, 57, 0)
-(22, 59, 0)
 info:     end player 3
 info: end round 50
 info: start round 51
 info:     start player 0
+1
+1
+1
+1
+0
+3
+2
+1
+0
+1
+1
+0
+1
+1
+1
+0
+0
+0
+1
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(10, 54, 0)
 info:     end player 1
 info:     start player 2
-(21, 0, 0)
-(10, 68, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 0, 0)
-(25, 45, 0)
-(31, 79, 0)
-(19, 70, 0)
-(24, 58, 0)
-(21, 58, 0)
 info:     end player 3
 info: end round 51
 info: start round 52
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(10, 55, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(10, 67, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 61, 0)
-(31, 0, 0)
-(18, 69, 0)
-(23, 59, 0)
-(20, 59, 0)
 info:     end player 3
 info: end round 52
 info: start round 53
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(9, 56, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(9, 66, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, -1659342992, 21940)
-(31, 79, 0)
-(17, 68, 0)
-(22, 60, 0)
-(19, 58, 0)
 info:     end player 3
 info: end round 53
 info: start round 54
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(8, 57, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 61, 0)
-(31, 0, 0)
-(17, 68, 0)
-(2, 55, 0)
-(21, 60, 0)
-(18, 57, 0)
 info:     end player 3
 info: end round 54
 info: start round 55
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(7, 57, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 61, 0)
-(31, 79, 0)
-(16, 68, 0)
-(1, 56, 0)
-(20, 59, 0)
-(17, 56, 0)
 info:     end player 3
 info: end round 55
 info: start round 56
 info:     start player 0
+2
+1
+1
+0
+3
+2
+1
+0
+1
+1
+1
+0
+1
+2
+1
+1
+0
+0
+0
+0
+0
+1
+1
+1
 info:     end player 0
 info:     start player 1
-(6, 58, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 0, 0)
-(21, 13, 0)
-(31, 0, 0)
-(15, 67, 0)
-(2, 57, 0)
-(19, 58, 0)
-(16, 56, 0)
 info:     end player 3
 info: end round 56
 info: start round 57
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(6, 58, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 0, 0)
-(22, 13, 0)
-(31, 79, 0)
-(15, 67, 0)
-(1, 58, 0)
-(18, 57, 0)
-(15, 55, 0)
 info:     end player 3
 info: end round 57
 info: start round 58
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(6, 58, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(7, 59, 0)
-(23, 13, 0)
-(31, 0, 0)
-(14, 68, 0)
-(2, 59, 0)
-(17, 56, 0)
-(14, 56, 0)
 info:     end player 3
 info: end round 58
 info: start round 59
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(7, 59, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(6, 60, 0)
-(23, 13, 0)
-(31, 79, 0)
-(13, 67, 0)
-(3, 60, 0)
-(16, 55, 0)
-(13, 55, 0)
 info:     end player 3
 info: end round 59
 info: start round 60
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(6, 60, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(5, 61, 0)
-(23, 12, 0)
-(31, 0, 0)
-(13, 67, 0)
-(4, 60, 0)
-(15, 54, 0)
-(12, 56, 0)
 info:     end player 3
 info: end round 60
 info: start round 61
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(5, 61, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
-(3, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 78, 0)
-(23, 11, 0)
-(31, 79, 0)
-(12, 66, 0)
-(5, 61, 0)
-(14, 55, 0)
-(11, 57, 0)
 info:     end player 3
 info: end round 61
 info: start round 62
 info:     start player 0
+2
+1
+1
+0
+3
+1
+2
+1
+0
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+1
 info:     end player 0
 info:     start player 1
-(5, 61, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 77, 0)
-(23, 10, 0)
-(31, 0, 0)
-(11, 65, 0)
-(4, 62, 0)
-(13, 55, 0)
-(10, 58, 0)
-(19, 19, 0)
 info:     end player 3
 info: end round 62
 info: start round 63
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(5, 61, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 16, 0)
-(15, 25, 0)
-(23, 9, 0)
-(31, 79, 0)
-(10, 64, 0)
-(6, 61, 0)
-(12, 56, 0)
-(9, 59, 0)
-(19, 20, 0)
 info:     end player 3
 info: end round 63
 info: start round 64
 info:     start player 0
+2
+1
+1
+0
+3
+1
+2
+1
+0
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+78
 info:     end player 0
 info:     start player 1
-(4, 60, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 74, 0)
-(14, 25, 0)
-(22, 8, 0)
-(31, 0, 0)
-(9, 63, 0)
-(7, 62, 0)
-(11, 57, 0)
-(8, 60, 0)
-(18, 21, 0)
 info:     end player 3
 info: end round 64
 info: start round 65
 info:     start player 0
+1
+1
+1
+0
+2
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+77
 info:     end player 0
 info:     start player 1
-(3, 61, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 73, 0)
-(13, 26, 0)
-(22, 7, 0)
-(31, 79, 0)
-(8, 64, 0)
-(8, 62, 0)
-(11, 57, 0)
-(7, 61, 0)
-(17, 22, 0)
 info:     end player 3
 info: end round 65
 info: start round 66
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(3, 61, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 73, 0)
-(13, 27, 0)
-(21, 6, 0)
-(31, 0, 0)
-(7, 63, 0)
-(7, 62, 0)
-(10, 57, 0)
-(6, 62, 0)
-(16, 23, 0)
 info:     end player 3
 info: end round 66
 info: start round 67
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(2, 62, 0)
 info:     end player 1
 info:     start player 2
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 72, 0)
-(12, 28, 0)
-(20, 5, 0)
-(31, 79, 0)
-(6, 63, 0)
-(6, 62, 0)
-(9, 58, 0)
-(5, 61, 0)
-(15, 24, 0)
 info:     end player 3
 info: end round 67
 info: start round 68
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(1, 63, 0)
 info:     end player 1
 info:     start player 2
-(36, 68, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 49, 0)
-(11, 29, 0)
-(19, 4, 0)
-(31, 0, 0)
-(5, 63, 0)
-(6, 62, 0)
-(8, 58, 0)
-(4, 60, 0)
-(14, 25, 0)
 info:     end player 3
 info: end round 68
 info: start round 69
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(1, 63, 0)
 info:     end player 1
 info:     start player 2
-(35, 69, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(0, 50, 0)
-(12, 29, 0)
-(18, 3, 0)
-(31, 79, 0)
-(4, 62, 0)
-(5, 63, 0)
-(7, 59, 0)
-(3, 61, 0)
-(13, 26, 0)
 info:     end player 3
 info: end round 69
 info: start round 70
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(1, 63, 0)
 info:     end player 1
 info:     start player 2
-(34, 70, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(2, 63, 0)
-(11, 30, 0)
-(17, 2, 0)
-(31, 0, 0)
-(3, 61, 0)
-(4, 62, 0)
-(6, 60, 0)
-(2, 62, 0)
-(12, 27, 0)
 info:     end player 3
 info: end round 70
 info: start round 71
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(2, 63, 0)
 info:     end player 1
 info:     start player 2
-(33, 69, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(2, 62, 0)
-(24, 40, 0)
-(11, 30, 0)
-(16, 1, 0)
-(31, 79, 0)
-(3, 61, 0)
-(4, 62, 0)
-(5, 61, 0)
-(2, 62, 0)
-(12, 28, 0)
 info:     end player 3
 info: end round 71
 info: start round 72
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(2, 62, 0)
 info:     end player 1
 info:     start player 2
-(32, 69, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(2, 61, 0)
-(25, 41, 0)
-(10, 31, 0)
-(15, 0, 0)
-(31, 0, 0)
-(3, 61, 0)
-(4, 62, 0)
-(5, 61, 0)
-(2, 62, 0)
-(11, 29, 0)
 info:     end player 3
 info: end round 72
 info: start round 73
 info:     start player 0
+1
+1
+1
+0
+3
+1
+1
+2
+1
+0
+1
+1
+2
+1
+1
+2
+0
+0
+0
+0
+0
+1
+1
+78
 info:     end player 0
 info:     start player 1
-(2, 61, 0)
 info:     end player 1
 info:     start player 2
-(31, 69, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(3, 61, 0)
-(26, 42, 0)
-(9, 32, 0)
-(15, 79, 0)
-(31, 79, 0)
-(3, 61, 0)
-(4, 62, 0)
-(4, 60, 0)
-(2, 61, 0)
-(11, 30, 0)
 info:     end player 3
 info: end round 73
 info: start round 74
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(2, 61, 0)
 info:     end player 1
 info:     start player 2
-(30, 68, 0)
-(21, 79, 0)
 info:     end player 2
 info:     start player 3
-(3, 61, 0)
-(25, 43, 0)
-(9, 33, 0)
-(15, 79, 0)
-(31, 0, 0)
-(3, 61, 0)
-(4, 62, 0)
-(4, 62, 0)
-(2, 61, 0)
-(10, 31, 0)
 info:     end player 3
 info: end round 74
 info: start round 75
 info:     start player 0
+1
+2
+1
+0
+3
+1
+2
+2
+1
+0
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+0
+0
+1
+78
 info:     end player 0
 info:     start player 1
-(0, -972763312, 21937)
-(29, 63, 0)
-(2, 61, 0)
 info:     end player 1
 info:     start player 2
-(31, 69, 0)
-(22, 1, 0)
 info:     end player 2
 info:     start player 3
-(8, 34, 0)
-(16, 1, 0)
-(32, 1, 0)
-(5, 63, 0)
-(6, 64, 0)
-(6, 61, 0)
-(3, 61, 0)
-(9, 32, 0)
 info:     end player 3
 info: end round 75
 info: start round 76
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 66, 0)
-(28, 64, 0)
-(2, 61, 0)
 info:     end player 1
 info:     start player 2
-(31, 70, 0)
-(23, 2, 0)
 info:     end player 2
 info:     start player 3
-(8, 35, 0)
-(17, 2, 0)
-(31, 2, 0)
-(5, 63, 0)
-(7, 64, 0)
-(6, 62, 0)
-(4, 62, 0)
-(9, 33, 0)
 info:     end player 3
 info: end round 76
 info: start round 77
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(27, 65, 0)
-(3, 61, 0)
 info:     end player 1
 info:     start player 2
-(30, 71, 0)
-(24, 3, 0)
 info:     end player 2
 info:     start player 3
-(8, 35, 0)
-(18, 3, 0)
-(31, 3, 0)
-(6, 63, 0)
-(8, 65, 0)
-(7, 63, 0)
-(5, 63, 0)
-(8, 34, 0)
 info:     end player 3
 info: end round 77
 info: start round 78
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(28, 66, 0)
-(4, 62, 0)
 info:     end player 1
 info:     start player 2
-(29, 72, 0)
-(25, 4, 0)
 info:     end player 2
 info:     start player 3
-(9, 36, 0)
-(19, 4, 0)
-(30, 4, 0)
-(7, 63, 0)
-(9, 66, 0)
-(8, 63, 0)
-(6, 63, 0)
-(9, 35, 0)
 info:     end player 3
 info: end round 78
 info: start round 79
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 66, 0)
-(27, 67, 0)
-(5, 63, 0)
-(5, 8, 0)
 info:     end player 1
 info:     start player 2
-(28, 73, 0)
-(26, 5, 0)
 info:     end player 2
 info:     start player 3
-(9, 36, 0)
-(20, 5, 0)
-(30, 5, 0)
-(7, 64, 0)
-(9, 63, 0)
-(6, 64, 0)
-(9, 36, 0)
 info:     end player 3
 info: end round 79
 info: start round 80
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 67, 0)
-(27, 68, 0)
-(5, 63, 0)
-(4, 9, 0)
-(11, 18, 0)
 info:     end player 1
 info:     start player 2
-(28, 74, 0)
-(12, 48, 0)
-(27, 6, 0)
 info:     end player 2
 info:     start player 3
-(9, 37, 0)
-(21, 6, 0)
-(29, 6, 0)
-(10, 64, 0)
-(8, 36, 0)
 info:     end player 3
 info: end round 80
 info: start round 81
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 68, 0)
-(26, 69, 0)
-(5, 10, 0)
-(24, 30, 0)
-(12, 19, 0)
 info:     end player 1
 info:     start player 2
-(27, 75, 0)
-(11, 49, 0)
-(28, 7, 0)
 info:     end player 2
 info:     start player 3
-(9, 38, 0)
-(22, 7, 0)
-(28, 7, 0)
-(15, 17, 0)
-(8, 36, 0)
 info:     end player 3
 info: end round 81
 info: start round 82
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 69, 0)
-(26, 70, 0)
-(5, 11, 0)
-(23, 29, 0)
-(13, 19, 0)
 info:     end player 1
 info:     start player 2
-(26, 76, 0)
-(12, 50, 0)
-(36, 31, 0)
-(27, 7, 0)
 info:     end player 2
 info:     start player 3
-(9, 39, 0)
-(23, 8, 0)
-(27, 8, 0)
-(16, 18, 0)
-(8, 36, 0)
 info:     end player 3
 info: end round 82
 info: start round 83
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 68, 0)
-(25, 71, 0)
-(6, 12, 0)
-(23, 28, 0)
-(13, 19, 0)
 info:     end player 1
 info:     start player 2
-(25, 77, 0)
-(13, 51, 0)
-(35, 30, 0)
-(27, 8, 0)
 info:     end player 2
 info:     start player 3
-(9, 40, 0)
-(24, 9, 0)
-(26, 9, 0)
-(17, 19, 0)
-(9, 36, 0)
 info:     end player 3
 info: end round 83
 info: start round 84
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 67, 0)
-(26, 72, 0)
-(7, 13, 0)
-(23, 27, 0)
-(14, 19, 0)
 info:     end player 1
 info:     start player 2
-(25, 78, 0)
-(13, 52, 0)
-(34, 31, 0)
-(26, 9, 0)
 info:     end player 2
 info:     start player 3
-(8, 41, 0)
-(25, 10, 0)
-(25, 10, 0)
-(18, 19, 0)
-(9, 37, 0)
 info:     end player 3
 info: end round 84
 info: start round 85
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 68, 0)
-(26, 73, 0)
-(8, 14, 0)
-(23, 26, 0)
-(14, 18, 0)
 info:     end player 1
 info:     start player 2
-(25, 79, 0)
-(14, 53, 0)
-(33, 30, 0)
-(26, 9, 0)
 info:     end player 2
 info:     start player 3
-(7, 42, 0)
-(24, 11, 0)
-(26, 8, 0)
-(19, 20, 0)
-(10, 38, 0)
 info:     end player 3
 info: end round 85
 info: start round 86
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 69, 0)
-(27, 74, 0)
-(32, 25, 0)
-(9, 15, 0)
-(23, 25, 0)
-(15, 18, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(15, 54, 0)
-(32, 30, 0)
-(25, 10, 0)
 info:     end player 2
 info:     start player 3
-(8, 43, 0)
-(24, 11, 0)
-(26, 7, 0)
-(20, 21, 0)
-(9, 39, 0)
 info:     end player 3
 info: end round 86
 info: start round 87
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 68, 0)
-(27, 75, 0)
-(31, 26, 0)
-(10, 16, 0)
-(24, 25, 0)
-(16, 18, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(16, 55, 0)
-(31, 29, 0)
-(24, 11, 0)
 info:     end player 2
 info:     start player 3
-(7, 44, 0)
-(23, 12, 0)
-(26, 6, 0)
-(21, 22, 0)
-(9, 40, 0)
 info:     end player 3
 info: end round 87
 info: start round 88
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 70, 0)
-(27, 76, 0)
-(30, 25, 0)
-(11, 17, 0)
-(24, 25, 0)
-(17, 19, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(17, 56, 0)
-(30, 28, 0)
-(23, 12, 0)
 info:     end player 2
 info:     start player 3
-(7, 44, 0)
-(22, 13, 0)
-(27, 7, 0)
-(22, 22, 0)
-(8, 41, 0)
 info:     end player 3
 info: end round 88
 info: start round 89
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 70, 0)
-(26, 77, 0)
-(29, 25, 0)
-(12, 18, 0)
-(24, 24, 0)
-(18, 20, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(18, 57, 0)
-(29, 27, 0)
-(22, 13, 0)
 info:     end player 2
 info:     start player 3
-(7, 45, 0)
-(21, 14, 0)
-(26, 8, 0)
-(22, 21, 0)
-(7, 42, 0)
 info:     end player 3
 info: end round 89
 info: start round 90
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(0, 0, 0)
-(25, 78, 0)
-(28, 26, 0)
-(13, 19, 0)
-(24, 24, 0)
-(19, 20, 0)
 info:     end player 1
 info:     start player 2
-(25, 0, 0)
-(18, 58, 0)
-(28, 26, 0)
-(22, 13, 0)
 info:     end player 2
 info:     start player 3
-(8, 46, 0)
-(21, 14, 0)
-(25, 9, 0)
-(22, 20, 0)
-(7, 43, 0)
 info:     end player 3
 info: end round 90
 info: start round 91
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(21, 13, 0)
-(25, 78, 0)
-(27, 25, 0)
-(14, 19, 0)
-(23, 23, 0)
-(20, 21, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(17, 59, 0)
-(28, 26, 0)
-(22, 13, 0)
 info:     end player 2
 info:     start player 3
-(9, 47, 0)
-(22, 12, 0)
-(24, 10, 0)
-(23, 20, 0)
-(6, 44, 0)
 info:     end player 3
 info: end round 91
 info: start round 92
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(22, 13, 0)
-(26, 79, 0)
-(26, 24, 0)
-(15, 19, 0)
-(23, 22, 0)
-(21, 22, 0)
 info:     end player 1
 info:     start player 2
-(25, 0, 0)
-(18, 60, 0)
-(27, 25, 0)
-(21, 13, 0)
 info:     end player 2
 info:     start player 3
-(10, 48, 0)
-(22, 11, 0)
-(23, 11, 0)
-(23, 19, 0)
-(7, 45, 0)
 info:     end player 3
 info: end round 92
 info: start round 93
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(22, 13, 0)
-(25, 0, 0)
-(25, 24, 0)
-(15, 18, 0)
-(23, 21, 0)
-(22, 22, 0)
 info:     end player 1
 info:     start player 2
-(25, 79, 0)
-(19, 61, 0)
-(26, 24, 0)
-(21, 13, 0)
 info:     end player 2
 info:     start player 3
-(11, 49, 0)
-(23, 11, 0)
-(22, 12, 0)
-(23, 18, 0)
-(7, 45, 0)
 info:     end player 3
 info: end round 93
 info: start round 94
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(25, 78, 0)
-(24, 23, 0)
-(16, 18, 0)
-(23, 20, 0)
-(22, 21, 0)
 info:     end player 1
 info:     start player 2
-(25, 78, 0)
-(0, 17, 0)
-(20, 61, 0)
-(25, 24, 0)
-(22, 12, 0)
 info:     end player 2
 info:     start player 3
-(12, 50, 0)
-(23, 11, 0)
-(23, 12, 0)
-(23, 17, 0)
-(8, 46, 0)
 info:     end player 3
 info: end round 94
 info: start round 95
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 77, 0)
-(23, 22, 0)
-(17, 19, 0)
-(23, 19, 0)
-(23, 21, 0)
 info:     end player 1
 info:     start player 2
-(25, 78, 0)
-(0, 18, 0)
-(21, 61, 0)
-(24, 23, 0)
-(23, 12, 0)
 info:     end player 2
 info:     start player 3
-(13, 51, 0)
-(24, 11, 0)
-(23, 11, 0)
-(23, 16, 0)
-(28, 47, 0)
-(9, 47, 0)
 info:     end player 3
 info: end round 95
 info: start round 96
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 76, 0)
-(23, 21, 0)
-(18, 19, 0)
-(23, 18, 0)
-(23, 20, 0)
 info:     end player 1
 info:     start player 2
-(25, 77, 0)
-(0, 18, 0)
-(33, 59, 0)
-(23, 22, 0)
-(23, 11, 0)
 info:     end player 2
 info:     start player 3
-(25, 11, 0)
-(23, 10, 0)
-(22, 15, 0)
-(29, 48, 0)
-(10, 48, 0)
 info:     end player 3
 info: end round 96
 info: start round 97
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 76, 0)
-(23, 21, 0)
-(19, 20, 0)
-(23, 17, 0)
-(23, 19, 0)
 info:     end player 1
 info:     start player 2
-(24, 76, 0)
-(0, 19, 0)
-(33, 60, 0)
-(24, 22, 0)
-(23, 10, 0)
 info:     end player 2
 info:     start player 3
-(25, 10, 0)
-(24, 10, 0)
-(22, 14, 0)
-(29, 49, 0)
-(11, 49, 0)
 info:     end player 3
 info: end round 97
 info: start round 98
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(25, 77, 0)
-(23, 20, 0)
-(20, 21, 0)
-(23, 16, 0)
-(23, 18, 0)
 info:     end player 1
 info:     start player 2
-(24, 76, 0)
-(0, 19, 0)
-(34, 61, 0)
-(23, 21, 0)
-(24, 10, 0)
-(35, 30, 0)
 info:     end player 2
 info:     start player 3
-(25, 10, 0)
-(24, 9, 0)
-(23, 14, 0)
-(29, 50, 0)
 info:     end player 3
 info: end round 98
 info: start round 99
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(23, 19, 0)
-(21, 22, 0)
-(22, 15, 0)
-(23, 17, 0)
 info:     end player 1
 info:     start player 2
-(25, 76, 0)
-(0, 43, 0)
-(26, 58, 0)
-(33, 62, 0)
-(23, 20, 0)
-(24, 9, 0)
-(34, 31, 0)
 info:     end player 2
 info:     start player 3
-(25, 9, 0)
-(25, 9, 0)
-(23, 13, 0)
-(29, 51, 0)
 info:     end player 3
 info: end round 99
 info: start round 100
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 20, 0)
-(22, 23, 0)
-(23, 16, 0)
-(24, 18, 0)
 info:     end player 1
 info:     start player 2
-(26, 77, 0)
-(26, 57, 0)
-(34, 63, 0)
-(23, 21, 0)
-(23, 11, 0)
-(35, 32, 0)
 info:     end player 2
 info:     start player 3
-(25, 10, 0)
-(24, 10, 0)
-(22, 14, 0)
-(28, 50, 0)
 info:     end player 3
 info: end round 100
 info: start round 101
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(23, 21, 0)
-(23, 23, 0)
-(22, 17, 0)
-(25, 19, 0)
 info:     end player 1
 info:     start player 2
-(25, 78, 0)
-(27, 57, 0)
-(35, 63, 0)
-(22, 22, 0)
-(25, 10, 0)
-(34, 33, 0)
 info:     end player 2
 info:     start player 3
-(25, 11, 0)
-(25, 10, 0)
-(22, 15, 0)
-(28, 49, 0)
 info:     end player 3
 info: end round 101
 info: start round 102
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(23, 21, 0)
-(24, 24, 0)
-(23, 18, 0)
-(24, 20, 0)
 info:     end player 1
 info:     start player 2
-(26, 79, 0)
-(27, 56, 0)
-(35, 62, 0)
-(23, 23, 0)
-(24, 9, 0)
-(33, 34, 0)
 info:     end player 2
 info:     start player 3
-(24, 12, 0)
-(24, 11, 0)
-(23, 16, 0)
-(28, 48, 0)
 info:     end player 3
 info: end round 102
 info: start round 103
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 22, 0)
-(24, 25, 0)
-(25, 38, 0)
-(24, 19, 0)
-(23, 21, 0)
 info:     end player 1
 info:     start player 2
-(25, 0, 0)
-(28, 56, 0)
-(34, 61, 0)
-(24, 24, 0)
-(25, 9, 0)
-(32, 35, 0)
 info:     end player 2
 info:     start player 3
-(25, 13, 0)
-(23, 12, 0)
-(23, 17, 0)
-(28, 47, 0)
 info:     end player 3
 info: end round 103
 info: start round 104
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 23, 0)
-(23, 26, 0)
-(26, 39, 0)
-(24, 20, 0)
-(24, 22, 0)
-(37, 50, 0)
 info:     end player 1
 info:     start player 2
-(24, 79, 0)
-(28, 55, 0)
-(34, 60, 0)
-(24, 25, 0)
-(26, 9, 0)
-(31, 36, 0)
 info:     end player 2
 info:     start player 3
-(24, 14, 0)
-(23, 13, 0)
-(24, 18, 0)
-(28, 46, 0)
 info:     end player 3
 info: end round 104
 info: start round 105
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 24, 0)
-(24, 27, 0)
-(27, 39, 0)
-(23, 21, 0)
-(23, 23, 0)
-(37, 49, 0)
 info:     end player 1
 info:     start player 2
-(23, 0, 0)
-(28, 54, 0)
-(34, 60, 0)
-(23, 26, 0)
-(26, 8, 0)
-(31, 37, 0)
 info:     end player 2
 info:     start player 3
-(25, 15, 0)
-(23, 14, 0)
-(24, 19, 0)
-(28, 45, 0)
 info:     end player 3
 info: end round 105
 info: start round 106
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(25, 25, 0)
-(24, 27, 0)
-(28, 40, 0)
-(22, 22, 0)
-(24, 24, 0)
-(37, 48, 0)
 info:     end player 1
 info:     start player 2
-(25, 0, 0)
-(28, 53, 0)
-(33, 59, 0)
-(23, 26, 0)
-(25, 9, 0)
-(32, 38, 0)
 info:     end player 2
 info:     start player 3
-(24, 16, 0)
-(22, 15, 0)
-(23, 20, 0)
-(28, 44, 0)
 info:     end player 3
 info: end round 106
 info: start round 107
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(25, 25, 0)
-(25, 28, 0)
-(29, 40, 0)
-(23, 23, 0)
-(24, 24, 0)
-(37, 48, 0)
 info:     end player 1
 info:     start player 2
-(25, 79, 0)
-(28, 52, 0)
-(33, 58, 0)
-(24, 27, 0)
-(26, 10, 0)
-(32, 39, 0)
 info:     end player 2
 info:     start player 3
-(23, 17, 0)
-(21, 16, 0)
-(22, 21, 0)
-(28, 43, 0)
 info:     end player 3
 info: end round 107
 info: start round 108
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(24, 26, 0)
-(26, 29, 0)
-(30, 41, 0)
-(23, 23, 0)
-(24, 25, 0)
-(37, 48, 0)
 info:     end player 1
 info:     start player 2
-(24, 0, 0)
-(28, 51, 0)
-(34, 58, 0)
-(25, 28, 0)
-(25, 11, 0)
-(31, 40, 0)
 info:     end player 2
 info:     start player 3
-(24, 18, 0)
-(21, 16, 0)
-(23, 22, 0)
-(28, 42, 0)
 info:     end player 3
 info: end round 108
 info: start round 109
 info:     start player 0
+1
+1
+1
+0
+3
+1
+2
+1
+1
+1
+0
+1
+1
+0
+1
+0
+0
+1
+1
+0
+2
+0
+0
+0
+1
+0
+0
+0
+1
+1
+78
 info:     end player 0
 info:     start player 1
-(26, 26, 0)
-(26, 30, 0)
-(31, 41, 0)
-(24, 24, 0)
-(24, 26, 0)
-(37, 47, 0)
 info:     end player 1
 info:     start player 2
-(25, 0, 0)
-(28, 50, 0)
-(34, 58, 0)
-(26, 29, 0)
-(24, 12, 0)
-(32, 41, 0)
 info:     end player 2
 info:     start player 3
-(23, 19, 0)
-(22, 17, 0)
-(23, 23, 0)
-(28, 41, 0)
 info:     end player 3
 info: end round 109
 info: start round 110
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(26, 27, 0)
-(26, 28, 0)
-(32, 41, 0)
-(23, 25, 0)
-(25, 27, 0)
-(37, 46, 0)
 info:     end player 1
 info:     start player 2
-(25, 79, 0)
-(28, 50, 0)
-(34, 57, 0)
-(26, 29, 0)
-(23, 13, 0)
-(32, 41, 0)
 info:     end player 2
 info:     start player 3
-(23, 20, 0)
-(23, 18, 0)
-(24, 24, 0)
-(29, 41, 0)
 info:     end player 3
 info: end round 110
 info: start round 111
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(26, 25, 0)
-(26, 27, 0)
-(31, 40, 0)
-(24, 25, 0)
-(26, 27, 0)
-(37, 45, 0)
 info:     end player 1
 info:     start player 2
-(25, 0, 0)
-(0, 44, 0)
-(28, 49, 0)
-(34, 58, 0)
-(27, 29, 0)
-(24, 14, 0)
-(31, 41, 0)
 info:     end player 2
 info:     start player 3
-(23, 21, 0)
-(24, 19, 0)
-(25, 24, 0)
-(29, 40, 0)
 info:     end player 3
 info: end round 111
 info: start round 112
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(27, 25, 0)
-(27, 27, 0)
-(31, 40, 0)
-(25, 25, 0)
-(26, 27, 0)
-(36, 44, 0)
-(22, 73, 0)
 info:     end player 1
 info:     start player 2
-(0, 77, 0)
-(28, 48, 0)
-(33, 59, 0)
-(27, 28, 0)
-(25, 15, 0)
 info:     end player 2
 info:     start player 3
-(35, 3, 0)
-(23, 22, 0)
-(24, 20, 0)
-(26, 25, 0)
-(30, 40, 0)
 info:     end player 3
 info: end round 112
 info: start round 113
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(27, 24, 0)
-(28, 27, 0)
-(31, 39, 0)
-(25, 24, 0)
-(26, 26, 0)
-(35, 43, 0)
-(23, 74, 0)
 info:     end player 1
 info:     start player 2
-(0, 1, 0)
-(28, 47, 0)
-(34, 57, 0)
-(27, 28, 0)
-(24, 16, 0)
 info:     end player 2
 info:     start player 3
-(34, 4, 0)
-(24, 23, 0)
-(23, 20, 0)
-(26, 24, 0)
-(31, 40, 0)
 info:     end player 3
 info: end round 113
 info: start round 114
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(27, 23, 0)
-(28, 26, 0)
-(31, 38, 0)
-(26, 24, 0)
-(26, 25, 0)
-(34, 42, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(28, 46, 0)
-(34, 56, 0)
-(27, 27, 0)
-(23, 17, 0)
-(24, 0, 0)
 info:     end player 2
 info:     start player 3
-(34, 5, 0)
-(25, 24, 0)
-(24, 20, 0)
-(27, 24, 0)
-(31, 39, 0)
 info:     end player 3
 info: end round 114
 info: start round 115
 info:     start player 0
+1
+1
+1
+0
+3
+1
+2
+1
+1
+1
+0
+1
+1
+0
+1
+0
+0
+0
+1
+1
+1
+0
+0
+0
+1
+0
+0
+0
+0
+1
+78
 info:     end player 0
 info:     start player 1
-(28, 23, 0)
-(29, 26, 0)
-(31, 37, 0)
-(26, 24, 0)
-(26, 24, 0)
-(34, 41, 0)
 info:     end player 1
 info:     start player 2
-(0, 0, 0)
-(28, 45, 0)
-(34, 55, 0)
-(28, 27, 0)
-(22, 18, 0)
-(24, 0, 0)
 info:     end player 2
 info:     start player 3
-(35, 6, 0)
-(25, 24, 0)
-(24, 21, 0)
-(27, 23, 0)
-(31, 38, 0)
 info:     end player 3
 info: end round 115
 info: start round 116
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(29, 23, 0)
-(30, 26, 0)
-(31, 36, 0)
-(27, 24, 0)
-(26, 24, 0)
-(33, 40, 0)
 info:     end player 1
 info:     start player 2
-(0, 72, 0)
-(28, 44, 0)
-(33, 54, 0)
-(29, 27, 0)
-(23, 19, 0)
-(24, 0, 0)
 info:     end player 2
 info:     start player 3
-(36, 7, 0)
-(26, 24, 0)
-(23, 22, 0)
-(28, 23, 0)
-(31, 37, 0)
 info:     end player 3
 info: end round 116
 info: start round 117
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(29, 22, 0)
-(30, 25, 0)
-(30, 35, 0)
-(27, 23, 0)
-(27, 24, 0)
-(33, 39, 0)
 info:     end player 1
 info:     start player 2
-(0, -1629420811, 21940)
-(28, 43, 0)
-(32, 53, 0)
-(30, 27, 0)
-(22, 20, 0)
 info:     end player 2
 info:     start player 3
-(35, 8, 0)
-(26, 24, 0)
-(24, 23, 0)
-(29, 23, 0)
-(31, 36, 0)
 info:     end player 3
 info: end round 117
 info: start round 118
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(30, 22, 0)
-(31, 25, 0)
-(29, 34, 0)
-(28, 23, 0)
-(27, 23, 0)
-(33, 38, 0)
 info:     end player 1
 info:     start player 2
-(0, 77, 0)
-(27, 42, 0)
-(32, 52, 0)
-(30, 26, 0)
-(22, 21, 0)
 info:     end player 2
 info:     start player 3
-(36, 9, 0)
-(27, 24, 0)
-(25, 24, 0)
-(29, 22, 0)
-(30, 35, 0)
 info:     end player 3
 info: end round 118
 info: start round 119
 info:     start player 0
 info:     end player 0
 info:     start player 1
-(28, 23, 0)
-(31, 24, 0)
-(29, 33, 0)
-(29, 23, 0)
-(28, 23, 0)
-(32, 37, 0)
 info:     end player 1
 info:     start player 2
-(0, 2, 0)
-(27, 41, 0)
-(31, 51, 0)
-(30, 25, 0)
-(23, 22, 0)
 info:     end player 2
 info:     start player 3
-(37, 10, 0)
-(27, 23, 0)
-(26, 24, 0)
-(29, 22, 0)
-(29, 34, 0)
 info:     end player 3
 info: end round 119
-info: player DM4 got score 518
-info: player DM3 got score 230
-info: player DM3 got score 398
-info: player DM3 got score 296
-info: player(s) DM4 got top score
+info: player DM1 got score 398
+info: player Demo got score 217
+info: player Demo got score 196
+info: player Demo got score 237
+info: player(s) DM1 got top score
 info: game played

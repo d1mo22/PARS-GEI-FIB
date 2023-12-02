@@ -189,25 +189,7 @@ struct PLAYER_NAME : public Player {
     }
     return Pos(-1,-1,0);
   }
-
-  int binarySearch() {
-    int low = 0;
-    int high = 79;
-
-    while (low < high) {
-        int mid = low + (high - low) / 2;
-
-        if (daylight(Pos(0,mid,1))) {
-            // Si está al sol, busca en la mitad inferior
-            high = mid;
-        } else {
-            // Si está en la sombra, busca en la mitad superior
-            low = mid + 1;
-        }
-    }
-
-    return low;
-  }
+  
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     VI expo = pioneers(me());

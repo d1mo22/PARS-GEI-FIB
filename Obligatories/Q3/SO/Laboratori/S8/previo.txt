@@ -1,0 +1,11 @@
+1-  mknod prueba p
+    cat >prueba
+    cat <prueba 
+
+2-  Desde diferentes terminales puede que se pueda
+    hacer a traves de un programa dodne configuramos
+    la pipe y despues hacemos que los programes muten
+    con el execlp. Desde la misma terminal lo podemos 
+    hacer con |
+
+3-   

@@ -8,4 +8,14 @@
     con el execlp. Desde la misma terminal lo podemos 
     hacer con |
 
-3-   
+3-  Redireccionar entrada a una pipe (4)
+    close(0);
+    dup(4);
+    
+4-  createSockets: Esta funcion primero crea un socket con los
+    siguientes parametros (Un socket de UNIX de lectura y escritura).
+    Despues le da una direccion al socket con bind. A seguir
+    se pone a ver si alguien se conecta al socket.
+
+    serverConnection: Esta funcion lo que hace es devolver
+    el canal por el cual se va a usar el socket creado.

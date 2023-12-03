@@ -397,18 +397,10 @@ struct PLAYER_NAME : public Player {
       else if ((enemics.size() != 0) && u.health < 75) {
         command(id, escapar(m, e, enemics));
       }
-      /*else if ((enemics.size() != 0) && u.health > 75) {
-        int min = 100, n = enemics.size(), itr = -1;
-        for (int i = 0; i < n; ++i) {
-          Cell c = cell(enemics[i]);
-          Unit u = unit(c.id);
-          if (u.health < min) {
-            min = u.health;
-            itr = i;
-          }
-        }
-        command(id, desicio(e,enemics[itr]));
-      }*/
+      else if (u.health > 51) {
+        Pos next = eliminar_exploradors(m, mat, e);
+        command(id, desicio(e,next));
+      }
       else {
         Pos next = eliminar_exploradors(m, mat, e);
         command(id, desicio(e, next));

@@ -54,6 +54,9 @@ struct PLAYER_NAME : public Player {
   typedef vector<VVC> mapa;
   typedef vector<VVI> matrix;
 
+  int superficie = 0;
+  bool gema = false;
+
   //Llegeix tota la informacio del mapa subterrani
   //Cave camino | Rock pared
  void llegir_mapa(mapa& mc, matrix& mi) {
@@ -156,6 +159,44 @@ struct PLAYER_NAME : public Player {
       int y = p.j;
 
       if (m[x][y][1].type == Elevator) {
+        vector<Pos> cami;
+        while(p.i != -1) {
+          cami.insert(cami.begin(), p);
+          p = pare[p.i][p.j];
+        }
+        if (m[cami[1].i][cami[1].j][1].type == Elevator) {
+          cami[1].k = 0;
+        }
+        return cami[1];
+      }
+
+      for (int i = 1; i < 5; ++i) {
+        Pos next = p + Dir(i);
+        if (pos_ok(next) && !visitat[next.i][next.j]) {
+          q.push(next);
+          visitat[next.i][next.j] = true;
+          pare[next.i][next.j] = p;
+        }
+      }
+    }
+    return Pos(-1,-1,0);
+  }
+
+  Pos buscar_gema(const mapa& m, const Pos& p) {
+    VVB visitat(rows(), VB(cols(), false));
+    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
+    queue<Pos> q;
+    q.push(p);
+    visitat[p.i][p.j] = true;
+
+    while(!q.empty()) {
+      Pos p = q.front();
+      q.pop();
+
+      int x = p.i;
+      int y = p.j;
+
+      if (m[x][y][1].gem) {
         vector<Pos> cami;
         while(p.i != -1) {
           cami.insert(cami.begin(), p);
@@ -394,15 +435,37 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
+      vector<Pos> ascensor = buscar_ascensors(m, e);
+      int pasos = ascensor.size() - 1;
+      
+     
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
-
-      if (dogs.size() != 0) command(id, escapar(m, e, dogs));
-      else if (enemics.size() != 0) command(id, escapar(m, e, enemics));
+      if (e.k == 0) {
+        if (dogs.size() != 0) {
+          command(id, escapar(m, e, dogs));
+        }
+        else if (enemics.size() != 0) {
+          command(id, escapar(m, e, enemics));
+        }
+        else if (expo.size() > 9 and (nb_gems(me())) < 5 and intent(ascensor[pasos], pasos) and superficie < 4) {
+          if (m[e.i][e.j][e.k].type == Elevator) { 
+            command(id, Up);
+            ++superficie;
+          }
+          else {
+            command(id, desicio(e, ascensor[1]));
+          }
+        }
+        else {
+          Pos next = conquistar(m, e);
+          command(id, desicio(e, next));
+        }
+      }
       else {
-        Pos next = conquistar(m, e);
-        command(id, desicio(e, next));
-      } 
+        Pos next = buscar_gema(m, e);
+        command(id, desicio(e,next));
+      }
     }
   }
 
@@ -413,6 +476,8 @@ struct PLAYER_NAME : public Player {
         -Si la vida del guerrero es > 50 vamos a buscar otros guerreros
         -Si la vida es menor vamos a buscar exploradores hasta que nos recuperemos
       Si hay hellhounds cerca --> Huir de ellos
+      
+      TO DO: Revisar cual es la vida optima para atacar/escapar
     */
 
     VI expo = furyans(me());
@@ -422,10 +487,10 @@ struct PLAYER_NAME : public Player {
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
       if (dogs.size() != 0) command(id, escapar(m, e, dogs));
-      else if ((enemics.size() != 0) && u.health < 75) {
+      else if ((enemics.size() != 0) and u.health < 65) {
         command(id, escapar(m, e, enemics));
       }
-      else if (u.health > 51) {
+      else if (u.health > 65 and expo.size() < 5) {
         Pos next = eliminar_guerrers(m, mat, e);
         command(id, desicio(e,next));
       }

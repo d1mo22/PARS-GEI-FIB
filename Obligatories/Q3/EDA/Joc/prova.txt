@@ -1,3 +1,7 @@
+Victory cuanto mas alto mejor
+Classification cuanto mas alto mejor
+Elimination cuanto mas bajo mejor
+
 ----------------------
 Victory rates:
 DM5 : 16.0 %
@@ -20,20 +24,20 @@ Dummy : 62.0 %
 DM7
 ----------------------
 Victory rates:
-DM7 : 28.000000000000004 %
-Dummy : 72.0 %
-Dummy : 72.0 %
-Dummy : 72.0 %
+DM7 : 34.0 %
+Dummy : 66.0 %
+Dummy : 66.0 %
+Dummy : 66.0 %
 
 Classification rates:
 DM7 : 54.0 %
-Dummy : 134.0 %
-Dummy : 134.0 %
-Dummy : 134.0 %
+Dummy : 146.0 %
+Dummy : 146.0 %
+Dummy : 146.0 %
 
 Elimination rates:
-DM7 : 16.0 %
-Dummy : 84.0 %
-Dummy : 84.0 %
-Dummy : 84.0 %
+DM7 : 10.0 %
+Dummy : 90.0 %
+Dummy : 90.0 %
+Dummy : 90.0 %
 ----------------------

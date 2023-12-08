@@ -1,12 +1,17 @@
-1- Conseguir que las unidades se escapen de los hellhounds
-
-2- Conseguir que los Furyan vayan a buscar unidades rivales
-
 3- Conseguir buscar el ascensor mas cercano y decidir si subir o no dependiendo de la posicion del sol
 
 4- En la superficice, buscar el ascensor mas cercano y por el camino buscar gemas.
 
-Probar hacer un BFS y guardar la primera posicion del camino mas corto
-Hacer una funcion para ver si hay algun hellhound cerca con un booleano y su posicion
+Tener un vector/mapa de donde estan las gemas en el mapa
+Ver las que estan mas cerca de un ascensor e ir a buscarlas
+Y luego volver a bajar con el ascensor
+
+
+Ascensor cercano = <= 3 pasos (Ver el valor del parametro)
+Ver si el ascensor esta al sol
+Ver en ese ascensor si hay gemas en un radio de 4x4.
+Si cumple todo lo anterior podemos subir y bajar.
+
+Buscar el pioneer que tiene un ascensor cercano y ver si ese ascensor tiene gemas
 
 Se puede sacar verde solo con la parte de abajo

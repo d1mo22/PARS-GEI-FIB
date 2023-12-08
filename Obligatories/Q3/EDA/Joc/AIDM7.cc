@@ -51,6 +51,7 @@ struct PLAYER_NAME : public Player {
   typedef vector<int> VI;
   typedef vector<Cell> VC;
   typedef vector<bool> VB;
+  typedef vector<Pos> VP;
   typedef vector<VC> VVC;
   typedef vector<VI> VVI;
   typedef vector<VB> VVB;
@@ -59,7 +60,7 @@ struct PLAYER_NAME : public Player {
 
   //Llegeix tota la informacio del mapa subterrani
   //Cave camino | Rock pared
- void llegir_mapa(mapa& mc, matrix& mi) {
+  void llegir_mapa(mapa& mc, matrix& mi) {
     int n = rows();
     int t = cols();
 
@@ -77,6 +78,21 @@ struct PLAYER_NAME : public Player {
         }
     }
 }
+
+  vector<Pos> gemas_cerca(const mapa& m, const Pos& p) {
+    vector<Pos> gemas;
+    int x = p.i;
+    int y = p.j;
+
+    for (int i = max(0, x-3); i < min(rows(), x+4); ++i) {
+      for (int j = max(0,y-3); j < min(cols(), y+4); ++j)  {
+        if (m[i][j][1].gem)  {
+          gemas.push_back(Pos(i, j, 1));
+        }
+      }
+    }
+    return gemas;
+  }
 
   PI sol(int i) {
     int x = ((40+2*(round()+i))%80);
@@ -109,12 +125,13 @@ struct PLAYER_NAME : public Player {
     return sqrt(x*x + y*y);
   }
 
-  Pos buscar_ascensors(const mapa& m, const Pos& p) {
+  vector<Pos> buscar_ascensors(const mapa& m, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
+    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
+    vector<vector<int>> distancia (rows(), vector<int>(rows(), -1));
     q.push(p);
     visitat[p.i][p.j] = true;
-
     while(!q.empty()) {
       Pos p = q.front();
       q.pop();
@@ -122,21 +139,69 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (m[x][y][0].type == Elevator) return p;
+      if (m[x][y][0].type == Elevator) {
+        vector<Pos> cami;
+        while(p.i != -1) {
+          cami.insert(cami.begin(), p);
+          p = pare[p.i][p.j];
+        }
+        return cami;
+      }
 
       for (int i = Bottom; i <= LB; ++i) {
         Pos next = p + Dir(i);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
+        if (!visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock and m[next.i][next.j][0].id == -1) {
           q.push(next);
           visitat[next.i][next.j] = true;
+          pare[next.i][next.j] = p;
+        }
+      }
+    }
+    return {Pos(-1,-1,0)};
+  }
+
+  Pos buscar_ascensors_superficie(const mapa& m, const Pos& p) {
+    VVB visitat(rows(), VB(cols(), false));
+    vector<vector<Pos>> pare(rows(), vector<Pos>(cols()));
+    queue<Pos> q;
+
+    q.push(p);
+    visitat[p.i][p.j] = true;
+    pare[p.i][p.j] = Pos(-1,-1,-1);
+    bool first = true;
+    while(!q.empty()) {
+      Pos actual = q.front();
+      q.pop();
+
+      int x = p.i;
+      int y = p.j;
+
+      if (m[x][y][1].type == Elevator and not first) {
+        Pos p = actual;
+        vector<Pos> cami;
+        while(p.i != -1) {
+          cami.insert(cami.begin(), p);
+          p = pare[p.i][p.j];
+        }
+        return cami[1];
+      }
+
+      first = false;
+      for (int i = Bottom; i <= Top; ++i) {
+        Pos next = actual + Dir(i);
+        if (!visitat[next.i][next.j]) {
+          q.push(next);
+          visitat[next.i][next.j] = true;
+          pare[next.i][next.j] = actual;
         }
       }
     }
     return Pos(-1,-1,0);
   }
 
-  Pos buscar_ascensors_superficie(const mapa& m, const Pos& p) {
+  Pos buscar_gemes(const mapa& m, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
+    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
     queue<Pos> q;
     q.push(p);
     visitat[p.i][p.j] = true;
@@ -148,13 +213,21 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (m[x][y][1].type == Elevator) return p;
+      if (m[x][y][1].gem) {
+        vector<Pos> cami;
+        while(p.i != -1) {
+          cami.insert(cami.begin(), p);
+          p = pare[p.i][p.j];
+        }
+        return cami[1];
+      }
 
-      for (int i = Bottom; i <= Top; ++i) {
+      for (int i = 1; i < 5; ++i) {
         Pos next = p + Dir(i);
         if (!visitat[next.i][next.j]) {
           q.push(next);
           visitat[next.i][next.j] = true;
+          pare[next.i][next.j] = p;
         }
       }
     }
@@ -164,9 +237,11 @@ struct PLAYER_NAME : public Player {
   Pos conquistar(const mapa& m, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
+    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
+
     q.push(p);
     visitat[p.i][p.j] = true;
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
+    pare[p.i][p.j] = Pos(-1,-1,-1);
 
     while (!q.empty()) {
         Pos p = q.front();
@@ -187,7 +262,7 @@ struct PLAYER_NAME : public Player {
         vector<int> direccions = random_permutation(7);
         for (int i = 0; i <= 7; ++i) {
             Pos next = p + Dir(direccions[i]);
-            if (!visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock && m[next.i][next.j][0].id == -1) {
+            if (pos_ok(next) and !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock && m[next.i][next.j][0].id == -1) {
                 q.push(next);
                 visitat[next.i][next.j] = true;
                 pare[next.i][next.j] = p;
@@ -288,8 +363,8 @@ struct PLAYER_NAME : public Player {
     vector<Pos> rivales;
     int x = p.i;
     int y = p.j;
-    for (int i = max(0, x-1); i < min(rows(), x+2); ++i) {
-      for (int j = max(0,y-1); j < min(cols(), y+2); ++j) {
+    for (int i = max(0, x-2); i < min(rows(), x+3); ++i) {
+      for (int j = max(0,y-2); j < min(cols(), y+3); ++j) {
             if (pos_ok(i,j,0) && mat[i][j][0] != -1) {
                 Unit u = unit(mat[i][j][0]);
                 if (u.player != me() && u.type == Furyan) rivales.push_back(Pos(i, j, 0));
@@ -347,6 +422,19 @@ struct PLAYER_NAME : public Player {
     return false;
   }
 
+  int guanyador() {
+    int max = 0;
+    int max_punts = -1;
+    for (int i = 0; i < 4; ++i) {
+      int punts = nb_cells(i)+(30*nb_gems(i));
+      if (punts > max_punts) {
+        max = i;
+        max_punts = punts;
+      }
+    }
+    return max;
+  }
+
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     /* 
@@ -360,15 +448,24 @@ struct PLAYER_NAME : public Player {
     for (int id : expo) {
       Unit u = unit(id);
       Pos e = u.pos;
+
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
+      vector<Pos> ascensors = buscar_ascensors(m, e);
+      int pasos = ascensors.size() - 1;
 
-      if (dogs.size() != 0) command(id, escapar(m, e, dogs));
-      else if (enemics.size() != 0) command(id, escapar(m, e, enemics));
-      else {
-        Pos next = conquistar(m, e);
-        command(id, desicio(e, next));
-      } 
+      if (e.k == 0) { 
+        if (dogs.size() != 0)  {
+          command(id, escapar(m, e, dogs));
+        }
+        else if (enemics.size() != 0) {
+          command(id, escapar(m, e, enemics));
+        }
+        else {
+          Pos next = conquistar(m, e);
+          command(id, desicio(e, next));
+        } 
+      }
     }
   }
 
@@ -387,6 +484,7 @@ struct PLAYER_NAME : public Player {
       Pos e = u.pos;
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
+
       if (dogs.size() != 0) command(id, escapar(m, e, dogs));
       else if ((enemics.size() != 0) && u.health < 50) {
         command(id, escapar(m, e, enemics));
@@ -406,6 +504,7 @@ struct PLAYER_NAME : public Player {
     mapa m (rows(), vector<vector<Cell>>(cols(), vector<Cell>(2)));
     matrix mat(rows(), vector<vector<int>>(cols(), vector<int>(2,-1)));
     cerr << sol(0).first << " " << sol(0).second << endl;
+    cerr << "El jugador amb mes punts es: " << guanyador() << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);
     move_furyans(m, mat);

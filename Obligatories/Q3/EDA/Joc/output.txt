@@ -1,16 +1,17 @@
-info: seed 684247
+info: seed 1222933
 info: loading game
 info: loaded game
-info: loading player Dummy
 info: loading player DM7
+info: loading player Dummy
 info: loading player Dummy
 info: loading player Dummy
 info: players loaded
 info: start round 0
 info:     start player 0
+40 79
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-40 79
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -19,9 +20,10 @@ info:     end player 3
 info: end round 0
 info: start round 1
 info:     start player 0
+1 42
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-1 42
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -30,9 +32,10 @@ info:     end player 3
 info: end round 1
 info: start round 2
 info:     start player 0
+3 44
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-3 44
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -41,9 +44,10 @@ info:     end player 3
 info: end round 2
 info: start round 3
 info:     start player 0
+5 46
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-5 46
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -52,9 +56,10 @@ info:     end player 3
 info: end round 3
 info: start round 4
 info:     start player 0
+7 48
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-7 48
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -63,9 +68,10 @@ info:     end player 3
 info: end round 4
 info: start round 5
 info:     start player 0
+9 50
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-9 50
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -74,9 +80,10 @@ info:     end player 3
 info: end round 5
 info: start round 6
 info:     start player 0
+11 52
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-11 52
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -85,9 +92,10 @@ info:     end player 3
 info: end round 6
 info: start round 7
 info:     start player 0
+13 54
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-13 54
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -96,9 +104,10 @@ info:     end player 3
 info: end round 7
 info: start round 8
 info:     start player 0
+15 56
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-15 56
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -107,9 +116,10 @@ info:     end player 3
 info: end round 8
 info: start round 9
 info:     start player 0
+17 58
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-17 58
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -118,9 +128,10 @@ info:     end player 3
 info: end round 9
 info: start round 10
 info:     start player 0
+19 60
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-19 60
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -129,9 +140,10 @@ info:     end player 3
 info: end round 10
 info: start round 11
 info:     start player 0
+21 62
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-21 62
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -140,9 +152,10 @@ info:     end player 3
 info: end round 11
 info: start round 12
 info:     start player 0
+23 64
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-23 64
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -151,9 +164,10 @@ info:     end player 3
 info: end round 12
 info: start round 13
 info:     start player 0
+25 66
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-25 66
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -162,9 +176,10 @@ info:     end player 3
 info: end round 13
 info: start round 14
 info:     start player 0
+27 68
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-27 68
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -173,9 +188,10 @@ info:     end player 3
 info: end round 14
 info: start round 15
 info:     start player 0
+29 70
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-29 70
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -184,9 +200,10 @@ info:     end player 3
 info: end round 15
 info: start round 16
 info:     start player 0
+31 72
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-31 72
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -195,9 +212,10 @@ info:     end player 3
 info: end round 16
 info: start round 17
 info:     start player 0
+33 74
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-33 74
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -206,9 +224,10 @@ info:     end player 3
 info: end round 17
 info: start round 18
 info:     start player 0
+35 76
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-35 76
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -217,9 +236,10 @@ info:     end player 3
 info: end round 18
 info: start round 19
 info:     start player 0
+37 78
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-37 78
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -228,9 +248,10 @@ info:     end player 3
 info: end round 19
 info: start round 20
 info:     start player 0
+0 39
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-0 39
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -239,9 +260,10 @@ info:     end player 3
 info: end round 20
 info: start round 21
 info:     start player 0
+2 41
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-2 41
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -250,9 +272,10 @@ info:     end player 3
 info: end round 21
 info: start round 22
 info:     start player 0
+4 43
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-4 43
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -261,9 +284,10 @@ info:     end player 3
 info: end round 22
 info: start round 23
 info:     start player 0
+6 45
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-6 45
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -272,9 +296,10 @@ info:     end player 3
 info: end round 23
 info: start round 24
 info:     start player 0
+8 47
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-8 47
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -283,9 +308,10 @@ info:     end player 3
 info: end round 24
 info: start round 25
 info:     start player 0
+10 49
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-10 49
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -294,9 +320,10 @@ info:     end player 3
 info: end round 25
 info: start round 26
 info:     start player 0
+12 51
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-12 51
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -305,9 +332,10 @@ info:     end player 3
 info: end round 26
 info: start round 27
 info:     start player 0
+14 53
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-14 53
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -316,9 +344,10 @@ info:     end player 3
 info: end round 27
 info: start round 28
 info:     start player 0
+16 55
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-16 55
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -327,9 +356,10 @@ info:     end player 3
 info: end round 28
 info: start round 29
 info:     start player 0
+18 57
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-18 57
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -338,9 +368,10 @@ info:     end player 3
 info: end round 29
 info: start round 30
 info:     start player 0
+20 59
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-20 59
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -349,9 +380,10 @@ info:     end player 3
 info: end round 30
 info: start round 31
 info:     start player 0
+22 61
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-22 61
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -360,9 +392,10 @@ info:     end player 3
 info: end round 31
 info: start round 32
 info:     start player 0
+24 63
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-24 63
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -371,9 +404,10 @@ info:     end player 3
 info: end round 32
 info: start round 33
 info:     start player 0
+26 65
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-26 65
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -382,9 +416,10 @@ info:     end player 3
 info: end round 33
 info: start round 34
 info:     start player 0
+28 67
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-28 67
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -393,9 +428,10 @@ info:     end player 3
 info: end round 34
 info: start round 35
 info:     start player 0
+30 69
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-30 69
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -404,9 +440,10 @@ info:     end player 3
 info: end round 35
 info: start round 36
 info:     start player 0
+32 71
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-32 71
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -415,9 +452,10 @@ info:     end player 3
 info: end round 36
 info: start round 37
 info:     start player 0
+34 73
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-34 73
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -426,9 +464,10 @@ info:     end player 3
 info: end round 37
 info: start round 38
 info:     start player 0
+36 75
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-36 75
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -437,9 +476,10 @@ info:     end player 3
 info: end round 38
 info: start round 39
 info:     start player 0
+38 77
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-38 77
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -448,9 +488,10 @@ info:     end player 3
 info: end round 39
 info: start round 40
 info:     start player 0
+40 79
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-40 79
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -459,9 +500,10 @@ info:     end player 3
 info: end round 40
 info: start round 41
 info:     start player 0
+1 42
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-1 42
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -470,9 +512,10 @@ info:     end player 3
 info: end round 41
 info: start round 42
 info:     start player 0
+3 44
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-3 44
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -481,9 +524,10 @@ info:     end player 3
 info: end round 42
 info: start round 43
 info:     start player 0
+5 46
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-5 46
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -492,9 +536,10 @@ info:     end player 3
 info: end round 43
 info: start round 44
 info:     start player 0
+7 48
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-7 48
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -503,9 +548,10 @@ info:     end player 3
 info: end round 44
 info: start round 45
 info:     start player 0
+9 50
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-9 50
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -514,9 +560,10 @@ info:     end player 3
 info: end round 45
 info: start round 46
 info:     start player 0
+11 52
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-11 52
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -525,9 +572,10 @@ info:     end player 3
 info: end round 46
 info: start round 47
 info:     start player 0
+13 54
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-13 54
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -536,9 +584,10 @@ info:     end player 3
 info: end round 47
 info: start round 48
 info:     start player 0
+15 56
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-15 56
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -547,9 +596,10 @@ info:     end player 3
 info: end round 48
 info: start round 49
 info:     start player 0
+17 58
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-17 58
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -558,9 +608,10 @@ info:     end player 3
 info: end round 49
 info: start round 50
 info:     start player 0
+19 60
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-19 60
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -569,9 +620,10 @@ info:     end player 3
 info: end round 50
 info: start round 51
 info:     start player 0
+21 62
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-21 62
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -580,9 +632,10 @@ info:     end player 3
 info: end round 51
 info: start round 52
 info:     start player 0
+23 64
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-23 64
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -591,9 +644,10 @@ info:     end player 3
 info: end round 52
 info: start round 53
 info:     start player 0
+25 66
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-25 66
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -602,9 +656,10 @@ info:     end player 3
 info: end round 53
 info: start round 54
 info:     start player 0
+27 68
+El jugador amb mes punts es: 0
 info:     end player 0
 info:     start player 1
-27 68
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -613,9 +668,10 @@ info:     end player 3
 info: end round 54
 info: start round 55
 info:     start player 0
+29 70
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-29 70
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -624,9 +680,10 @@ info:     end player 3
 info: end round 55
 info: start round 56
 info:     start player 0
+31 72
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-31 72
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -635,9 +692,10 @@ info:     end player 3
 info: end round 56
 info: start round 57
 info:     start player 0
+33 74
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-33 74
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -646,9 +704,10 @@ info:     end player 3
 info: end round 57
 info: start round 58
 info:     start player 0
+35 76
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-35 76
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -657,9 +716,10 @@ info:     end player 3
 info: end round 58
 info: start round 59
 info:     start player 0
+37 78
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-37 78
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -668,9 +728,10 @@ info:     end player 3
 info: end round 59
 info: start round 60
 info:     start player 0
+0 39
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-0 39
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -679,9 +740,10 @@ info:     end player 3
 info: end round 60
 info: start round 61
 info:     start player 0
+2 41
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-2 41
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -690,9 +752,10 @@ info:     end player 3
 info: end round 61
 info: start round 62
 info:     start player 0
+4 43
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-4 43
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -701,9 +764,10 @@ info:     end player 3
 info: end round 62
 info: start round 63
 info:     start player 0
+6 45
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-6 45
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -712,9 +776,10 @@ info:     end player 3
 info: end round 63
 info: start round 64
 info:     start player 0
+8 47
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-8 47
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -723,9 +788,10 @@ info:     end player 3
 info: end round 64
 info: start round 65
 info:     start player 0
+10 49
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-10 49
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -734,9 +800,10 @@ info:     end player 3
 info: end round 65
 info: start round 66
 info:     start player 0
+12 51
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-12 51
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -745,9 +812,10 @@ info:     end player 3
 info: end round 66
 info: start round 67
 info:     start player 0
+14 53
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-14 53
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -756,9 +824,10 @@ info:     end player 3
 info: end round 67
 info: start round 68
 info:     start player 0
+16 55
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-16 55
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -767,9 +836,10 @@ info:     end player 3
 info: end round 68
 info: start round 69
 info:     start player 0
+18 57
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-18 57
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -778,9 +848,10 @@ info:     end player 3
 info: end round 69
 info: start round 70
 info:     start player 0
+20 59
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-20 59
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -789,9 +860,10 @@ info:     end player 3
 info: end round 70
 info: start round 71
 info:     start player 0
+22 61
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-22 61
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -800,9 +872,10 @@ info:     end player 3
 info: end round 71
 info: start round 72
 info:     start player 0
+24 63
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-24 63
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -811,9 +884,10 @@ info:     end player 3
 info: end round 72
 info: start round 73
 info:     start player 0
+26 65
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-26 65
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -822,9 +896,10 @@ info:     end player 3
 info: end round 73
 info: start round 74
 info:     start player 0
+28 67
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-28 67
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -833,9 +908,10 @@ info:     end player 3
 info: end round 74
 info: start round 75
 info:     start player 0
+30 69
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-30 69
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -844,9 +920,10 @@ info:     end player 3
 info: end round 75
 info: start round 76
 info:     start player 0
+32 71
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-32 71
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -855,9 +932,10 @@ info:     end player 3
 info: end round 76
 info: start round 77
 info:     start player 0
+34 73
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-34 73
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -866,9 +944,10 @@ info:     end player 3
 info: end round 77
 info: start round 78
 info:     start player 0
+36 75
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-36 75
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -877,9 +956,10 @@ info:     end player 3
 info: end round 78
 info: start round 79
 info:     start player 0
+38 77
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-38 77
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -888,9 +968,10 @@ info:     end player 3
 info: end round 79
 info: start round 80
 info:     start player 0
+40 79
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-40 79
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -899,9 +980,10 @@ info:     end player 3
 info: end round 80
 info: start round 81
 info:     start player 0
+1 42
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-1 42
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -910,9 +992,10 @@ info:     end player 3
 info: end round 81
 info: start round 82
 info:     start player 0
+3 44
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-3 44
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -921,9 +1004,10 @@ info:     end player 3
 info: end round 82
 info: start round 83
 info:     start player 0
+5 46
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-5 46
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -932,9 +1016,10 @@ info:     end player 3
 info: end round 83
 info: start round 84
 info:     start player 0
+7 48
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-7 48
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -943,9 +1028,10 @@ info:     end player 3
 info: end round 84
 info: start round 85
 info:     start player 0
+9 50
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-9 50
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -954,9 +1040,10 @@ info:     end player 3
 info: end round 85
 info: start round 86
 info:     start player 0
+11 52
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-11 52
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -965,9 +1052,10 @@ info:     end player 3
 info: end round 86
 info: start round 87
 info:     start player 0
+13 54
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-13 54
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -976,9 +1064,10 @@ info:     end player 3
 info: end round 87
 info: start round 88
 info:     start player 0
+15 56
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-15 56
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -987,9 +1076,10 @@ info:     end player 3
 info: end round 88
 info: start round 89
 info:     start player 0
+17 58
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-17 58
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -998,9 +1088,10 @@ info:     end player 3
 info: end round 89
 info: start round 90
 info:     start player 0
+19 60
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-19 60
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1009,9 +1100,10 @@ info:     end player 3
 info: end round 90
 info: start round 91
 info:     start player 0
+21 62
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-21 62
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1020,9 +1112,10 @@ info:     end player 3
 info: end round 91
 info: start round 92
 info:     start player 0
+23 64
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-23 64
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1031,9 +1124,10 @@ info:     end player 3
 info: end round 92
 info: start round 93
 info:     start player 0
+25 66
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-25 66
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1042,9 +1136,10 @@ info:     end player 3
 info: end round 93
 info: start round 94
 info:     start player 0
+27 68
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-27 68
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1053,9 +1148,10 @@ info:     end player 3
 info: end round 94
 info: start round 95
 info:     start player 0
+29 70
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-29 70
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1064,9 +1160,10 @@ info:     end player 3
 info: end round 95
 info: start round 96
 info:     start player 0
+31 72
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-31 72
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1075,9 +1172,10 @@ info:     end player 3
 info: end round 96
 info: start round 97
 info:     start player 0
+33 74
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-33 74
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1086,9 +1184,10 @@ info:     end player 3
 info: end round 97
 info: start round 98
 info:     start player 0
+35 76
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-35 76
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1097,9 +1196,10 @@ info:     end player 3
 info: end round 98
 info: start round 99
 info:     start player 0
+37 78
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-37 78
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1108,9 +1208,10 @@ info:     end player 3
 info: end round 99
 info: start round 100
 info:     start player 0
+0 39
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-0 39
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1119,9 +1220,10 @@ info:     end player 3
 info: end round 100
 info: start round 101
 info:     start player 0
+2 41
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-2 41
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1130,9 +1232,10 @@ info:     end player 3
 info: end round 101
 info: start round 102
 info:     start player 0
+4 43
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-4 43
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1141,9 +1244,10 @@ info:     end player 3
 info: end round 102
 info: start round 103
 info:     start player 0
+6 45
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-6 45
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1152,9 +1256,10 @@ info:     end player 3
 info: end round 103
 info: start round 104
 info:     start player 0
+8 47
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-8 47
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1163,9 +1268,10 @@ info:     end player 3
 info: end round 104
 info: start round 105
 info:     start player 0
+10 49
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-10 49
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1174,9 +1280,10 @@ info:     end player 3
 info: end round 105
 info: start round 106
 info:     start player 0
+12 51
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-12 51
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1185,9 +1292,10 @@ info:     end player 3
 info: end round 106
 info: start round 107
 info:     start player 0
+14 53
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-14 53
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1196,9 +1304,10 @@ info:     end player 3
 info: end round 107
 info: start round 108
 info:     start player 0
+16 55
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-16 55
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1207,9 +1316,10 @@ info:     end player 3
 info: end round 108
 info: start round 109
 info:     start player 0
+18 57
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-18 57
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1218,9 +1328,10 @@ info:     end player 3
 info: end round 109
 info: start round 110
 info:     start player 0
+20 59
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-20 59
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1229,9 +1340,10 @@ info:     end player 3
 info: end round 110
 info: start round 111
 info:     start player 0
+22 61
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-22 61
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1240,9 +1352,10 @@ info:     end player 3
 info: end round 111
 info: start round 112
 info:     start player 0
+24 63
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-24 63
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1251,9 +1364,10 @@ info:     end player 3
 info: end round 112
 info: start round 113
 info:     start player 0
+26 65
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-26 65
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1262,9 +1376,10 @@ info:     end player 3
 info: end round 113
 info: start round 114
 info:     start player 0
+28 67
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-28 67
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1273,9 +1388,10 @@ info:     end player 3
 info: end round 114
 info: start round 115
 info:     start player 0
+30 69
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-30 69
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1284,9 +1400,10 @@ info:     end player 3
 info: end round 115
 info: start round 116
 info:     start player 0
+32 71
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-32 71
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1295,9 +1412,10 @@ info:     end player 3
 info: end round 116
 info: start round 117
 info:     start player 0
+34 73
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-34 73
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1306,9 +1424,10 @@ info:     end player 3
 info: end round 117
 info: start round 118
 info:     start player 0
+36 75
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-36 75
 info:     end player 1
 info:     start player 2
 info:     end player 2
@@ -1317,18 +1436,19 @@ info:     end player 3
 info: end round 118
 info: start round 119
 info:     start player 0
+38 77
+El jugador amb mes punts es: 1
 info:     end player 0
 info:     start player 1
-38 77
 info:     end player 1
 info:     start player 2
 info:     end player 2
 info:     start player 3
 info:     end player 3
 info: end round 119
-info: player Dummy got score 381
-info: player DM7 got score 628
-info: player Dummy got score 232
-info: player Dummy got score 375
-info: player(s) DM7 got top score
+info: player DM7 got score 314
+info: player Dummy got score 717
+info: player Dummy got score 511
+info: player Dummy got score 248
+info: player(s) Dummy got top score
 info: game played

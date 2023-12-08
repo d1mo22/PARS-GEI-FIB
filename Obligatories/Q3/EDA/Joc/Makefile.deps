@@ -1,4 +1,3 @@
-2-temp.o: 2-temp.cc
 AIDM1.o: AIDM1.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
  State.hh Action.hh Random.hh Registry.hh
 AIDM2.o: AIDM2.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \

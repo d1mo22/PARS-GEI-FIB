@@ -454,7 +454,7 @@ struct PLAYER_NAME : public Player {
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
       if (dogs.size() != 0) command(id, escapar(m, e, dogs));
-      else if ((enemics.size() != 0) and u.health < 75) {
+      else if ((enemics.size() != 0) and u.health < 60) {
         command(id, escapar(m, e, enemics));
       }
       else if (u.health > 60 and expo.size() < 5) {

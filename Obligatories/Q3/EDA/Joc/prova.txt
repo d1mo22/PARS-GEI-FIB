@@ -17,3 +17,24 @@ Dummy : 62.0 %
 Dummy : 62.0 %
 Dummy : 62.0 %
 ----------------------
+
+DM6
+----------------------
+Victory rates:
+DM6 : 22.0 %
+Dummy : 78.0 %
+Dummy : 78.0 %
+Dummy : 78.0 %
+
+Classification rates:
+DM6 : 42.0 %
+Dummy : 158.0 %
+Dummy : 158.0 %
+Dummy : 158.0 %
+
+Elimination rates:
+DM6 : 36.0 %
+Dummy : 64.0 %
+Dummy : 64.0 %
+Dummy : 64.0 %
+----------------------

@@ -4,7 +4,7 @@
  * Write the name of your player and save this file
  * with the same name and .cc extension.
  */
-#define PLAYER_NAME DM6
+#define PLAYER_NAME DM7
 
 
 struct PLAYER_NAME : public Player {
@@ -39,6 +39,9 @@ struct PLAYER_NAME : public Player {
     - Al matar exploradores/guerreros estos spawnean en un lugar random y pertenecen al grupo
       que los ha mantado. 
       A NO SER QUE los mate la maquina ENTONCES spawnean en un equipo random.
+
+    -Para modificar la velocidad de la simulacion hace falta modificar el viewer.js
+     el atributo
   */
 
   /**
@@ -75,9 +78,9 @@ struct PLAYER_NAME : public Player {
     }
 }
 
-  PI sol(int i) {
-    int x = ((40+2*(round()+i))%80);
-    int y = ((79+2*(round())+i)%80);
+  PI sol() {
+    int x = ((40+2*round())%80);
+    int y = ((79+2*round())%80);
     if (x > y) return {y, x};
     return {x, y};
   }
@@ -106,13 +109,12 @@ struct PLAYER_NAME : public Player {
     return sqrt(x*x + y*y);
   }
 
-  vector<Pos> buscar_ascensors(const mapa& m, const Pos& p) {
+  Pos buscar_ascensors(const mapa& m, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
     queue<Pos> q;
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
-    vector<vector<int>> distancia (rows(), vector<int>(rows(), -1));
     q.push(p);
     visitat[p.i][p.j] = true;
+
     while(!q.empty()) {
       Pos p = q.front();
       q.pop();
@@ -120,30 +122,21 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (m[x][y][0].type == Elevator) {
-        vector<Pos> cami;
-        while(p.i != -1) {
-          cami.insert(cami.begin(), p);
-          p = pare[p.i][p.j];
-        }
-        return cami;
-      }
+      if (m[x][y][0].type == Elevator) return p;
 
       for (int i = Bottom; i <= LB; ++i) {
         Pos next = p + Dir(i);
         if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
           q.push(next);
           visitat[next.i][next.j] = true;
-          pare[next.i][next.j] = p;
         }
       }
     }
-    return {Pos(-1,-1,0)};
+    return Pos(-1,-1,0);
   }
 
   Pos buscar_ascensors_superficie(const mapa& m, const Pos& p) {
     VVB visitat(rows(), VB(cols(), false));
-    vector<vector<Pos>> pare(rows(), vector<Pos>(cols(), Pos(-1,-1,-1)));
     queue<Pos> q;
     q.push(p);
     visitat[p.i][p.j] = true;
@@ -155,21 +148,13 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (m[x][y][1].type == Elevator) {
-        vector<Pos> cami;
-        while(p.i != -1) {
-          cami.insert(cami.begin(), p);
-          p = pare[p.i][p.j];
-        }
-        return cami[1];
-      }
+      if (m[x][y][1].type == Elevator) return p;
 
-      for (int i = 1; i < 5; ++i) {
+      for (int i = Bottom; i <= LB; ++i) {
         Pos next = p + Dir(i);
         if (pos_ok(next) && !visitat[next.i][next.j]) {
           q.push(next);
           visitat[next.i][next.j] = true;
-          pare[next.i][next.j] = p;
         }
       }
     }
@@ -190,35 +175,19 @@ struct PLAYER_NAME : public Player {
         int x = p.i;
         int y = p.j;
 
-        if (m[x][y][0].type == Cave) {
-            Cell c = cell(x, y, 0);
-            if (c.owner != me() && c.owner != -1 && c.id == -1) {
-                vector<Pos> path;
-                while (p.i != -1) {
-                    path.insert(path.begin(), p);
-                    p = pare[p.i][p.j];
-                }
-                return path[1];
-            } else if (c.owner != me() && c.id == -1 && c.owner == -1) {
-                vector<Pos> path;
-                while (p.i != -1) {
-                    path.insert(path.begin(), p);
-                    p = pare[p.i][p.j];
-                }
-                return path[1];
-            }
+        if (m[x][y][0].type == Cave and m[x][y][0].owner != me()) {
+          vector<Pos> cami;
+          while(p.i != -1) {
+            cami.insert(cami.begin(), p);
+            p = pare[p.i][p.j];
+          }
+          return cami[1];
         }
 
-        // Priorizar celdas no conquistadas
         vector<int> direccions = random_permutation(7);
         for (int i = 0; i <= 7; ++i) {
             Pos next = p + Dir(direccions[i]);
-            if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
-                // Priorizar celdas no conquistadas
-                if (m[next.i][next.j][0].type == Cave && cell(next).owner == -1) {
-                    return next;
-                }
-
+            if (!visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock && m[next.i][next.j][0].id == -1) {
                 q.push(next);
                 visitat[next.i][next.j] = true;
                 pare[next.i][next.j] = p;
@@ -254,7 +223,7 @@ struct PLAYER_NAME : public Player {
       vector<int> direccions = random_permutation(7);
       for (int i = 0; i <= 7; ++i) {
         Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
+        if (!visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
           q.push(next);
           visitat[next.i][next.j] = true;
           pare[next.i][next.j] = p;
@@ -290,7 +259,7 @@ struct PLAYER_NAME : public Player {
       vector<int> direccions = random_permutation(7);
       for (int i = 0; i <= 7; ++i) {
         Pos next = p + Dir(direccions[i]);
-        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
+        if (!visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
           q.push(next);
           visitat[next.i][next.j] = true;
           pare[next.i][next.j] = p;
@@ -339,7 +308,7 @@ struct PLAYER_NAME : public Player {
         Cell c = cell(nueva_pos);
 
         // Verificar que la nueva posición sea válida
-        if (pos_ok(nueva_pos) && m[nueva_pos.i][nueva_pos.j][0].type != Rock && c.id == -1) {
+        if (m[nueva_pos.i][nueva_pos.j][0].type != Rock && c.id == -1) {
             // Calcular la distancia promedio a los enemigos
             double distancia_promedio = 0.0;
             for (const Pos& enemigo : enemigos) {
@@ -371,12 +340,6 @@ struct PLAYER_NAME : public Player {
     else return "Altres";
   }
 
-  bool intent(const Pos& p, int pasos) {
-    PI s = sol(pasos);
-    int meitat = (s.first + s.second)/2;
-    if ((p.j >= meitat) and (p.j < s.second)) return true;
-    return false;
-  }
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     /* 
@@ -385,11 +348,7 @@ struct PLAYER_NAME : public Player {
         -Priorizamos las celdas que son de un enemigo antes que las que
         no tienen dueño, si no hay ninguna vamos a una que no sea nuestra
       En el caso que haya algun hellhoun cerca --> Huimos
-
-      TO DO:
-        -Buscar gemas!
     */
-
     VI expo = pioneers(me());
     for (int id : expo) {
       Unit u = unit(id);
@@ -422,12 +381,8 @@ struct PLAYER_NAME : public Player {
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
       if (dogs.size() != 0) command(id, escapar(m, e, dogs));
-      else if ((enemics.size() != 0) && u.health < 75) {
+      else if ((enemics.size() != 0) && u.health < 50) {
         command(id, escapar(m, e, enemics));
-      }
-      else if (u.health > 51) {
-        Pos next = eliminar_guerrers(m, mat, e);
-        command(id, desicio(e,next));
       }
       else {
         Pos next = eliminar_exploradors(m, mat, e);
@@ -443,7 +398,7 @@ struct PLAYER_NAME : public Player {
   virtual void play () {
     mapa m (rows(), vector<vector<Cell>>(cols(), vector<Cell>(2)));
     matrix mat(rows(), vector<vector<int>>(cols(), vector<int>(2,-1)));
-    cerr << sol(0).first << " " << sol(0).second << endl;
+    cerr << sol().first << " " << sol().second << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);
     move_furyans(m, mat);

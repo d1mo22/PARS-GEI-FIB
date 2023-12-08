@@ -191,16 +191,10 @@ struct PLAYER_NAME : public Player {
             }
         }
 
-        // Priorizar celdas no conquistadas
         vector<int> direccions = random_permutation(7);
         for (int i = 0; i <= 7; ++i) {
             Pos next = p + Dir(direccions[i]);
             if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock) {
-                // Priorizar celdas no conquistadas
-                if (m[next.i][next.j][0].type == Cave && cell(next).owner == -1) {
-                    return next;
-                }
-
                 q.push(next);
                 visitat[next.i][next.j] = true;
                 pare[next.i][next.j] = p;

@@ -17,64 +17,23 @@ Dummy : 62.0 %
 Dummy : 62.0 %
 Dummy : 62.0 %
 ----------------------
-
-DM6 - 75 de vida per escapar
+DM7
 ----------------------
 Victory rates:
-DM6 : 22.0 %
-Dummy : 78.0 %
-Dummy : 78.0 %
-Dummy : 78.0 %
+DM7 : 28.000000000000004 %
+Dummy : 72.0 %
+Dummy : 72.0 %
+Dummy : 72.0 %
 
 Classification rates:
-DM6 : 42.0 %
-Dummy : 158.0 %
-Dummy : 158.0 %
-Dummy : 158.0 %
+DM7 : 54.0 %
+Dummy : 134.0 %
+Dummy : 134.0 %
+Dummy : 134.0 %
 
 Elimination rates:
-DM6 : 36.0 %
-Dummy : 64.0 %
-Dummy : 64.0 %
-Dummy : 64.0 %
-----------------------
-60 de vida per escapar
-----------------------
-Victory rates:
-DM6 : 10.0 %
-Dummy : 90.0 %
-Dummy : 90.0 %
-Dummy : 90.0 %
-
-Classification rates:
-DM6 : 26.0 %
-Dummy : 174.0 %
-Dummy : 174.0 %
-Dummy : 174.0 %
-
-Elimination rates:
-DM6 : 56.0 %
-Dummy : 44.0 %
-Dummy : 44.0 %
-Dummy : 44.0 %
-----------------------
-50 de vida per escapar
-----------------------
-Victory rates:
-DM6 : 14.0 %
-Dummy : 86.0 %
-Dummy : 86.0 %
-Dummy : 86.0 %
-
-Classification rates:
-DM6 : 22.0 %
-Dummy : 178.0 %
-Dummy : 178.0 %
-Dummy : 178.0 %
-
-Elimination rates:
-DM6 : 58.0 %
-Dummy : 42.0 %
-Dummy : 42.0 %
-Dummy : 42.0 %
+DM7 : 16.0 %
+Dummy : 84.0 %
+Dummy : 84.0 %
+Dummy : 84.0 %
 ----------------------

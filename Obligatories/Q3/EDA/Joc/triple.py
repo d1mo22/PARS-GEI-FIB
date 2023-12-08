@@ -11,7 +11,7 @@ import os
 
 def main():
     n_games = "50"
-    p1 = "DM6"
+    p1 = "DM7"
     p2 = "Dummy"
     p3 = "Dummy"
     p4 = "Dummy"

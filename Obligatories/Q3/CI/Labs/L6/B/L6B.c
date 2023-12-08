@@ -76,20 +76,20 @@ void config_ADC() {
 }
 
 void config_PIC() {
-   ANSELB=0x00;
-   ANSELA=0x00;
-   ANSELD=0x00;
-   ANSELE=0x00;
+    ANSELB=0x00;
+    ANSELA=0x00;
+    ANSELD=0x00;
+    ANSELE=0x02;
 
-   TRISB=0x00;
-   TRISA=0x03;
-   TRISD=0x00;
-   TRISEbits.RE1 = 1;
+    TRISB=0x00;
+    TRISA=0x03;
+    TRISD=0x00;
+    TRISE=0x02;
 
-   PORTB=0x00;
-   PORTD=0x00;
-   PORTE=0x00;
-   PORTA=0x00;
+    PORTB=0x00;
+    PORTD=0x00;
+    PORTE=0x00;
+    PORTA=0x00;
 
     IPEN = 1;
     GIEH = 1;

@@ -78,9 +78,9 @@ struct PLAYER_NAME : public Player {
     }
 }
 
-  PI sol() {
-    int x = ((40+2*round())%80);
-    int y = ((79+2*round())%80);
+  PI sol(int i) {
+    int x = ((40+2*(round()+i))%80);
+    int y = ((79+2*(round()+i))%80);
     if (x > y) return {y, x};
     return {x, y};
   }
@@ -150,9 +150,9 @@ struct PLAYER_NAME : public Player {
 
       if (m[x][y][1].type == Elevator) return p;
 
-      for (int i = Bottom; i <= LB; ++i) {
+      for (int i = Bottom; i <= Top; ++i) {
         Pos next = p + Dir(i);
-        if (pos_ok(next) && !visitat[next.i][next.j]) {
+        if (!visitat[next.i][next.j]) {
           q.push(next);
           visitat[next.i][next.j] = true;
         }
@@ -340,6 +340,13 @@ struct PLAYER_NAME : public Player {
     else return "Altres";
   }
 
+  bool intent(const Pos& p, int pasos) {
+    PI s = sol(pasos);
+    int meitat = (s.first + s.second)/2;
+    if ((p.j >= meitat) and (p.j < s.second)) return true;
+    return false;
+  }
+
   //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     /* 
@@ -398,7 +405,7 @@ struct PLAYER_NAME : public Player {
   virtual void play () {
     mapa m (rows(), vector<vector<Cell>>(cols(), vector<Cell>(2)));
     matrix mat(rows(), vector<vector<int>>(cols(), vector<int>(2,-1)));
-    cerr << sol().first << " " << sol().second << endl;
+    cerr << sol(0).first << " " << sol(0).second << endl;
     llegir_mapa(m, mat);
     move_pionner(m, mat);
     move_furyans(m, mat);

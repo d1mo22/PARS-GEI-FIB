@@ -11,11 +11,11 @@ import os
 
 def main():
     n_games = "50"
-    p1 = "DM5"
+    p1 = "DM8"
     p2 = "Dummy"
     p3 = "Dummy"
     p4 = "Dummy"
-    info = "y"
+    info = "n"
     victories = {p1:0, p2:0, p3:0, p4:0}
     print("\nPlaying... (this process might take some time)\n")
     for i in range(0, int(n_games)):

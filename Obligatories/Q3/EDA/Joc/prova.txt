@@ -24,20 +24,20 @@ Dummy : 62.0 %
 DM7
 ----------------------
 Victory rates:
-DM7 : 34.0 %
-Dummy : 66.0 %
-Dummy : 66.0 %
-Dummy : 66.0 %
+DM7 : 39.6 %
+Dummy : 60.4 %
+Dummy : 60.4 %
+Dummy : 60.4 %
 
 Classification rates:
-DM7 : 54.0 %
-Dummy : 146.0 %
-Dummy : 146.0 %
-Dummy : 146.0 %
+DM7 : 64.8 %
+Dummy : 134.4 %
+Dummy : 134.4 %
+Dummy : 134.4 %
 
 Elimination rates:
-DM7 : 10.0 %
-Dummy : 90.0 %
-Dummy : 90.0 %
-Dummy : 90.0 %
+DM7 : 12.6 %
+Dummy : 87.2 %
+Dummy : 87.2 %
+Dummy : 87.2 %
 ----------------------

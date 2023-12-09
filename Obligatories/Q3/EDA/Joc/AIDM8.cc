@@ -40,8 +40,8 @@ struct PLAYER_NAME : public Player {
       que los ha mantado. 
       A NO SER QUE los mate la maquina ENTONCES spawnean en un equipo random.
 
-    -Para modificar la velocidad de la simulacion hace falta modificar el viewer.js
-     el atributo
+    - Para modificar la velocidad de la simulacion hace falta modificar el viewer.js
+      el atributo
   */
 
   /**
@@ -59,6 +59,7 @@ struct PLAYER_NAME : public Player {
   typedef vector<VVI> matrix;
 
   VP ascensors;
+  VB gemas_cercanas;
 
   //Llegeix tota la informacio del mapa subterrani
   //Cave camino | Rock pared
@@ -96,8 +97,8 @@ struct PLAYER_NAME : public Player {
     int x = p.i;
     int y = p.j;
 
-    for (int i = max(0, x-3); i < min(rows(), x+4); ++i) {
-      for (int j = max(0,y-3); j < min(cols(), y+4); ++j)  {
+    for (int i = max(0, x-5); i < min(rows(), x+6); ++i) {
+      for (int j = max(0,y-5); j < min(cols(), y+6); ++j)  {
         if (m[i][j][1].gem)  {
           gemas.push_back(Pos(i, j, 1));
         }
@@ -151,7 +152,7 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (m[x][y][0].type == Elevator) {
+      if (m[x][y][p.k].type == Elevator) {
         vector<Pos> cami;
         while(p.i != -1) {
           cami.insert(cami.begin(), p);
@@ -162,7 +163,7 @@ struct PLAYER_NAME : public Player {
 
       for (int i = Bottom; i <= LB; ++i) {
         Pos next = p + Dir(i);
-        if (!visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock and m[next.i][next.j][0].id == -1) {
+        if (!visitat[next.i][next.j] && m[next.i][next.j][p.k].type != Rock and m[next.i][next.j][p.k].id == -1) {
           q.push(next);
           visitat[next.i][next.j] = true;
           pare[next.i][next.j] = p;
@@ -234,9 +235,9 @@ struct PLAYER_NAME : public Player {
         return cami[1];
       }
 
-      for (int i = 1; i < 5; ++i) {
+      for (int i = 1; i < 8; ++i) {
         Pos next = p + Dir(i);
-        if (!visitat[next.i][next.j]) {
+        if (pos_ok(next) && !visitat[next.i][next.j]) {
           q.push(next);
           visitat[next.i][next.j] = true;
           pare[next.i][next.j] = p;
@@ -256,30 +257,30 @@ struct PLAYER_NAME : public Player {
     pare[p.i][p.j] = Pos(-1,-1,-1);
 
     while (!q.empty()) {
-        Pos p = q.front();
-        q.pop();
+      Pos p = q.front();
+      q.pop();
 
-        int x = p.i;
-        int y = p.j;
+      int x = p.i;
+      int y = p.j;
 
-        if (m[x][y][0].type == Cave and m[x][y][0].owner != me()) {
-          vector<Pos> cami;
-          while(p.i != -1) {
-            cami.insert(cami.begin(), p);
-            p = pare[p.i][p.j];
-          }
-          return cami[1];
+      if (m[x][y][0].type == Cave and m[x][y][0].owner != me()) {
+        vector<Pos> cami;
+        while(p.i != -1) {
+          cami.insert(cami.begin(), p);
+          p = pare[p.i][p.j];
         }
+        return cami[1];
+      }
 
-        vector<int> direccions = random_permutation(7);
-        for (int i = 0; i <= 7; ++i) {
-            Pos next = p + Dir(direccions[i]);
-            if (pos_ok(next) and !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock && m[next.i][next.j][0].id == -1) {
-                q.push(next);
-                visitat[next.i][next.j] = true;
-                pare[next.i][next.j] = p;
-            }
+      vector<int> direccions = random_permutation(7);
+      for (int i = 0; i <= 7; ++i) {
+        Pos next = p + Dir(direccions[i]);
+        if (pos_ok(next) && !visitat[next.i][next.j] && m[next.i][next.j][0].type != Rock && m[next.i][next.j][0].id == -1) {
+           q.push(next);
+          visitat[next.i][next.j] = true;
+          pare[next.i][next.j] = p;
         }
+      }
     }
     return {};
 }
@@ -467,29 +468,47 @@ struct PLAYER_NAME : public Player {
         Una vez arriba ir a buscar la gema y luego bajar de la superficie
     */
     VI expo = pioneers(me());
-    for (int id : expo) {
-      Unit u = unit(id);
+    int n = expo.size();
+    for (int i = 0; i < n; ++i) {
+      Unit u = unit(expo[i]);
       Pos e = u.pos;
-
       vector<Pos> dogs = hellhound_aprop(mat, e);
       vector<Pos> enemics = furyan_rivales(mat, e);
-      vector<Pos> ascensors = buscar_ascensors(m, e);
-      int pasos = ascensors.size() - 1;
 
+      /*if (intent(ascensors[pasos], pasos) && pasos < 4 && gemas.size() != 0 && e.k == 0)  {
+        cerr << "Hay un ascensor con gemas a " << pasos << " pasos, con " << gemas.size()  << " gemas cerca" << endl;
+        cerr << "Que esta en la posicion: " << ascensors[pasos] << endl;
+        cerr << "El camino a seguir es:" << endl;
+        for (Pos p : ascensors) cerr << p << endl;
+      }*/
       if (e.k == 0) { 
+        vector<Pos> ascensors = buscar_ascensors(m, e);
+        int pasos = ascensors.size() - 1;
+        vector<Pos> gemas = gemas_cerca(m, ascensors[pasos]);
+
         if (dogs.size() != 0)  {
-          command(id, escapar(m, e, dogs));
+          command(expo[i], escapar(m, e, dogs));
         }
         else if (enemics.size() != 0) {
-          command(id, escapar(m, e, enemics));
+          command(expo[i], escapar(m, e, enemics));
+        }
+        else if (intent(ascensors[pasos], pasos) && pasos < 4 && gemas.size() != 0) {
+          if (m[e.i][e.j][e.k].type == Elevator) command(expo[i], Up);
+          else {
+            Pos next = ascensors[1];
+            command(expo[i], desicio(e, next));
+          }
         }
         else {
           Pos next = conquistar(m, e);
-          command(id, desicio(e, next));
+          command(expo[i], desicio(e, next));
         } 
       }
+      //Si estamos en la superficie
       else {
-
+        cerr << "else buscar gems" << endl;
+        Pos next = buscar_gemes(m, e);
+        command(expo[i], desicio(e, next));
       }
     }
   }
@@ -514,16 +533,13 @@ struct PLAYER_NAME : public Player {
       else if ((enemics.size() != 0) && u.health < 50) {
         command(id, escapar(m, e, enemics));
       }
-      else if (u.health > 50 and expo.size() < 8) {
-        Pos next = eliminar_exploradors(m, mat, e);
-        command(id, desicio(e, next));
-      }
       else {
         Pos next = eliminar_exploradors(m, mat, e);
         command(id, desicio(e, next));
       }
     }
   }
+
 
 
   /**
@@ -533,12 +549,11 @@ struct PLAYER_NAME : public Player {
     mapa m (rows(), vector<vector<Cell>>(cols(), vector<Cell>(2)));
     matrix mat(rows(), vector<vector<int>>(cols(), vector<int>(2,-1)));
     cerr << sol(0).first << " " << sol(0).second << endl;
-    cerr << "El jugador amb mes punts es: " << guanyador() << endl;
     llegir_mapa(m, mat);
     if (round() == 1) {
       mapa_ascensors(m);
-      for (Pos a : ascensors) cerr << a << endl;
     }
+    if (round() == 119) cerr << nb_gems(me()) << endl;
     move_pionner(m, mat);
     move_furyans(m, mat);
   }

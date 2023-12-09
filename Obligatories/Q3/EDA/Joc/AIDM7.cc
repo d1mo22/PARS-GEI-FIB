@@ -40,8 +40,8 @@ struct PLAYER_NAME : public Player {
       que los ha mantado. 
       A NO SER QUE los mate la maquina ENTONCES spawnean en un equipo random.
 
-    -Para modificar la velocidad de la simulacion hace falta modificar el viewer.js
-     el atributo
+    - Para modificar la velocidad de la simulacion hace falta modificar el viewer.js
+      el atributo
   */
 
   /**
@@ -82,10 +82,10 @@ struct PLAYER_NAME : public Player {
 }
 
   void mapa_ascensors(const mapa& m) {
-    for (int i = 0; i < rows(); ++i) {
-      for (int j = 0; j < cols(); ++j) {
+    for (int j = 0; j < cols(); ++j) {
+      for (int i = 0; i < rows(); ++i) {
         if (m[i][j][1].type == Elevator) {
-          ascensors.push_back(Pos(i,j,0));
+          ascensors.push_back(Pos(i,j,1));
         }
       }
     }
@@ -297,8 +297,9 @@ struct PLAYER_NAME : public Player {
 
       int x = p.i;
       int y = p.j;
+      
 
-      if (mat[x][y][0] == Pioneer) {
+      if (mat[x][y][0] == Pioneer ) {
         vector<Pos> cami;
         while(p.i != -1) {
           cami.insert(cami.begin(), p);
@@ -334,7 +335,9 @@ struct PLAYER_NAME : public Player {
       int x = p.i;
       int y = p.j;
 
-      if (mat[x][y][0] == Furyan) {
+      Unit u = unit(m[x][y][0].id);
+
+      if (mat[x][y][0] == Furyan && u.health < 50) {
         vector<Pos> cami;
         while(p.i != -1) {
           cami.insert(cami.begin(), p);
@@ -361,8 +364,8 @@ struct PLAYER_NAME : public Player {
     int x = p.i;
     int y = p.j;
 
-    for (int i = max(0, x-3); i < min(rows(), x+4); ++i) {
-      for (int j = max(0,y-3); j < min(cols(), y+4); ++j)  {
+    for (int i = max(0, x-4); i < min(rows(), x+5); ++i) {
+      for (int j = max(0,y-4); j < min(cols(), y+5); ++j)  {
         if (mat[i][j][0] == Hellhound)  {
           rivales.push_back(Pos(i, j, 0));
         }
@@ -438,16 +441,17 @@ struct PLAYER_NAME : public Player {
     int max = 0;
     int max_punts = -1;
     for (int i = 0; i < 4; ++i) {
-      int punts = nb_cells(i)+(30*nb_gems(i));
-      if (punts > max_punts) {
-        max = i;
-        max_punts = punts;
+      if (i != me()) {
+        int punts = nb_cells(i)+(30*nb_gems(i));
+        if (punts > max_punts) {
+          max = i;
+          max_punts = punts;
+        }
       }
     }
     return max;
   }
 
-  //Se mueve en una direccion que no esta conquistada
   void move_pionner(const mapa& m, const matrix& mat) {
     /* 
       Primero miramos si hay algun hellhound cerca (3x3)

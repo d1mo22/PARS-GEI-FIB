@@ -111,6 +111,8 @@ public:
   inline void command (Movement m) {
     _my_assert(++q_ <= MAX_MOVEMENTS, "Too many commands.");
 
+    if (m.id == -1) return; // Afegit per Albert: si no es posa, el SecGame i el Game no es comporten igual si es llances comandes a unitats -1 
+			     
     if (u_.find(m.id) != u_.end()) {
       cerr << "warning: action already requested for unit " << m.id << endl;
       return;

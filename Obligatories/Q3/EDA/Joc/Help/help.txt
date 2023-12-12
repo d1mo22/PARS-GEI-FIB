@@ -1,8 +1,0 @@
-Usage: ./Game [options] player1 player2 .. [< default.cnf] [> default.res] 
-Available options:
---seed=seed     -s seed     set random seed
---input=file    -i input    set input file  (default: stdin)
---output=file   -o output   set output file (default: stdout)
---list          -l          list registered players
---version       -v          print version
---help          -h          print help

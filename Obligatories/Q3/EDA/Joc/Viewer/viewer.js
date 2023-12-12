@@ -18,7 +18,7 @@ var data = { } // Object for storing all the game data.
 
 
 // Animation.
-var speed = 5; // Ticks per second.
+var speed = 10; // Ticks per second.
 var FRAMES_PER_ROUND = 2;
 var frames = 0; // Incremented each tick, when it reaches FRAMES_PER_ROUND, actRound is updated (acording to gameDirection).
 

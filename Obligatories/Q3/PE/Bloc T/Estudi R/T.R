@@ -3,14 +3,14 @@
 # agafem primer la fulla on tenim els temps i nodes
 # de els laberints 100x100
 library(readxl)
-L_100 <- read_excel("~/Desktop/PARS-GEI-FIB/Obligatories/Q3/PE/Bloc T/Bloc T.xlsx", 
+L_100 <- read_excel("~/Desktop/FIB-UPC/Obligatories/Q3/PE/Bloc T/Bloc T.xlsx", 
     sheet = "Laberintos 100x100")
 View(L_100)
 
 # Despres fem el import de la fulla on tenim les dades
 # dels laberints 1000x1000
 library(readxl)
-L1000 <- read_excel("~/Desktop/PARS-GEI-FIB/Obligatories/Q3/PE/Bloc T/Bloc T.xlsx", 
+L1000 <- read_excel("~/Desktop/FIB-UPC/Obligatories/Q3/PE/Bloc T/Bloc T.xlsx", 
     sheet = "Laberintos 1000x1000")
 View(L1000)
 

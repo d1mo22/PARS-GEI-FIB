@@ -1,35 +1,35 @@
 AIDM1.o: AIDM1.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM2.o: AIDM2.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM3.o: AIDM3.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM4.o: AIDM4.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM45.o: AIDM45.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM5.o: AIDM5.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM6.o: AIDM6.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM7.o: AIDM7.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDM8.o: AIDM8.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AIDemo.o: AIDemo.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 AINull.o: AINull.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 Action.o: Action.cc Action.hh Structs.hh Utils.hh
 DM30.o: DM30.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 Game.o: Game.cc Game.hh Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh Board.hh
+  State.hh Action.hh Random.hh Registry.hh Board.hh
 Info.o: Info.cc Info.hh Settings.hh Structs.hh Utils.hh State.hh
 Main.o: Main.cc Game.hh Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh Board.hh
+  State.hh Action.hh Random.hh Registry.hh Board.hh
 Player.o: Player.cc Player.hh Info.hh Settings.hh Structs.hh Utils.hh \
- State.hh Action.hh Random.hh Registry.hh
+  State.hh Action.hh Random.hh Registry.hh
 Random.o: Random.cc Random.hh Utils.hh
 Registry.o: Registry.cc Registry.hh Utils.hh
 Settings.o: Settings.cc Settings.hh Structs.hh Utils.hh

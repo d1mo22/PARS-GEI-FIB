@@ -1,0 +1,23 @@
+2- Los links creados son hard link y soft link
+   solo que el primer comando crea un soft link, mientras 
+   que el segundo crea un hard link. Ambos apuntan al mimso
+   fichero que es pr.txt
+
+   En el caso del HL tenemos que tienen el mismo tamaño,
+   apuntan al mismo inodo y tiene 2 links.
+   Mientra que el SL tiene un tamaño diferente, inodo
+   diferente y en este caso solo tiene un link que le 
+   referencia al inodo que es el mismo.
+
+3- Al ejecutar el cat sobre el HL/SL obtenemos el mismo resultado
+   que al ejecutarlo sobre el archivo. ("esto es una prueba")
+   El comando readlink solo funciona en el caso del SL ya que
+   lee el archivo al que apunta y lo imprime por la temrinal.
+   ("pr.txt")
+
+4- Una vez eliminado el fichero .txt vemos como al hacer el cat
+   en el caso del HL como aun podemos ver el contenido que tenia
+   el fichero que hemos eliminado, en contrario en el caso del
+   SL no podemos leer nada. En el namei vemos como el HL tiene 
+   no such file or directory, mientras que el SL tiene el 
+   mismo redireccionamiento hacia el pr.txt

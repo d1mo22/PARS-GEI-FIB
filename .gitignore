@@ -3,4 +3,5 @@
 *.out
 *.exe
 .DS.store
+.Rproj.user
 

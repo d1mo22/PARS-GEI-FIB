@@ -2,6 +2,7 @@
     "files.associations": {
         "iostream": "cpp",
         "config.h": "c",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "splash.h": "c"
     }
 }

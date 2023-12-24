@@ -2,7 +2,6 @@
  * Processor: PIC18F45K22
  * Compiler:  MPLAB XC8
  */
-//No funciona llegir de la ternimal
 
 #include <xc.h>
 #include <stdio.h>
@@ -26,23 +25,18 @@ void interrupt RSI_high() {
       TRISE&=0xFE;
       TMR2IF = 0;
     }
-    if (RC1IE && RC1IF) {
-        c = RCREG1;
-	if (c == 'A') putchGLCD(1,0,'A');
-        RC1IF = 0;
-    }
 }
 
 void pinta_CI() {
    int k = 0;
     for (int i = 0; i < 8; ++i) {
-      for(int j = 0; j < 128; ++j) {
-	 int aux = bitmap[k];
-	 writeByte(i, j, aux);
-	 ++k;
-	 }
+        for(int j = 0; j < 128; ++j) {
+            int aux = bitmap[k];
+            writeByte(i, j, aux);
+            ++k;
+	    }  
     }
-  }
+}
 
 void write_term(char* s) {
     for (int i = 0; i < strlen(s); ++i) {
@@ -130,7 +124,7 @@ void config_PIC() {
     GIEL = 1;
 }
 
-void pintar_noms() {
+void pintar_noms(void) {
    writeTxt(0,1,s1);
    writeTxt(3,7, s2);
    writeTxt(5, 9, s3);
@@ -142,7 +136,7 @@ void pintar_noms() {
    write_term(endl);
 }
 
-void start() {
+void start(void) {
     pinta_CI();
     __delay_ms(2000);
     clearGLCD(0,7,0,127);
@@ -204,7 +198,6 @@ void main(void) {
             writeTxt(4, 0, buff);     
         }
    */
-   //char c = llegir_term();
     while (1) { 
     }        
 }

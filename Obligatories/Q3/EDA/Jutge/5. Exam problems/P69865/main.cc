@@ -16,14 +16,13 @@ const PI bisharp[4] = {{1, 1}, {-1, 1}, {1, -1}, {-1, -1}};
 
 int n, m;
 int tresors = 0;
-VVC tauler;
 
-bool pos_ok(int i, int j) {
+bool pos_ok(int i, int j, const VVC &tauler) {
   return ((i >= 0) and (i < n) and (j >= 0) and (j < m) and
           (tauler[i][j] != 'T'));
 }
 
-int dfs_k(const PI &start, VVI& visitats) {
+int dfs_k(const PI &start, VVI &visitats, VVC &tauler) {
   stack<PI> q;
   int suma = 0;
 
@@ -41,13 +40,13 @@ int dfs_k(const PI &start, VVI& visitats) {
 
       if ((cela >= '0') and (cela <= '9')) {
         suma += cela - '0';
-        tauler[x][y] = '.';
+        tauler[x][y] = 'T';
       }
 
       for (int i = 0; i < 8; ++i) {
         int xx = x + knight[i].first;
         int yy = y + knight[i].second;
-        if (pos_ok(xx, yy) and !visitats[xx][yy]) {
+        if (pos_ok(xx, yy, tauler) and !visitats[xx][yy]) {
           q.push({xx, yy});
         }
       }
@@ -56,7 +55,7 @@ int dfs_k(const PI &start, VVI& visitats) {
   return suma;
 }
 
-int dfs_b(const PI &start, VVI& visitats) {
+int dfs_b(const PI &start, VVI &visitats, VVC &tauler) {
   stack<PI> q;
   int suma = 0;
 
@@ -67,7 +66,6 @@ int dfs_b(const PI &start, VVI& visitats) {
     int x = e.first;
     int y = e.second;
     q.pop();
-    
 
     if (!visitats[x][y]) {
       visitats[x][y] = true;
@@ -75,13 +73,13 @@ int dfs_b(const PI &start, VVI& visitats) {
 
       if ((cela >= '0') and (cela <= '9')) {
         suma += cela - '0';
-        tauler[x][y] = '.';
+        tauler[x][y] = 'T';
       }
 
       for (int i = 0; i < 4; ++i) {
         int xx = x + bisharp[i].first;
         int yy = y + bisharp[i].second;
-        if (pos_ok(xx, yy) and !visitats[xx][yy]) {
+        if (pos_ok(xx, yy, tauler) and !visitats[xx][yy]) {
           q.push({xx, yy});
         }
       }
@@ -94,7 +92,7 @@ int main() {
   while (cin >> n >> m) {
     vector<PI> caballs;
     vector<PI> alfils;
-    tauler = VVC(n, VC(m));
+    VVC tauler(n, VC(m));
     int k = 0, b = 0;
     for (int i = 0; i < n; ++i)
       for (int j = 0; j < m; ++j) {
@@ -106,22 +104,21 @@ int main() {
         } else if (c == 'K') {
           caballs.push_back(make_pair(i, j));
           ++k;
-        }
-        else if ((c >= '0') and (c <= '9')) ++tresors;
+        } else if ((c >= '0') and (c <= '9'))
+          ++tresors;
         tauler[i][j] = c;
       }
 
-    cout << tresors << endl;
     int punts = 0;
     for (int i = 0; i < k; ++i) {
       PI pos = caballs[i];
       VVI visitats(n, VI(m, false));
-      punts += dfs_k(pos, visitats);
+      punts += dfs_k(pos, visitats, tauler);
     }
     for (int i = 0; i < b; ++i) {
       PI pos = alfils[i];
       VVI visitats(n, VI(m, false));
-      punts += dfs_b(pos,visitats);
+      punts += dfs_b(pos, visitats, tauler);
     }
     cout << punts << endl;
   }

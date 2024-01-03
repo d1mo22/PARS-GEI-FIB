@@ -1,0 +1,16 @@
+PARELLES:
+SOLS:
+----------
+PARELLES:
+a ba
+aab ac
+ab b
+SOLS:
+----------
+PARELLES:
+a ba
+ab b
+SOLS:
+aab
+ac
+----------

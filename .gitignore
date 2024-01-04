@@ -2,6 +2,6 @@
 *.o
 *.out
 *.exe
-.DS.store
+.DS_store
 .Rproj.user
 

@@ -10,7 +10,7 @@ void backtrack(const VI &salts, int m, int n, int idx, int sum) {
   else {
     if (sum + salts[idx] <= m / 2)
       backtrack(salts, m, n, idx + 1, sum + salts[idx]);
-    if (sum - salts[idx] >= -m / 2)
+    if (sum - salts[idx] >= -m / 2) 
       backtrack(salts, m, n, idx + 1, sum - salts[idx]);
   }
 }

@@ -4,5 +4,6 @@
         "config.h": "c",
         "ostream": "cpp",
         "splash.h": "c"
-    }
+    },
+    "editor.formatOnSave": true,
 }

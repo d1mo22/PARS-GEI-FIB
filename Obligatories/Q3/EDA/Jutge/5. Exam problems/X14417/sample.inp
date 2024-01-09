@@ -1,0 +1,27 @@
+2 3
+PA  PI  *
+*   MA  MI
+3
+PI MI PA
+
+
+2 3
+PA  PI  *
+*   MA  MI
+3
+PA MI MI 
+
+
+2 3
+PA  *   *
+*   MA  MI
+3
+PA MA NA
+
+
+3 10
+A B C D E F G H I J
+K L M N * O P Q R S
+T U V W X Y Z _ * *
+12
+B L A D E _ R U N N E R

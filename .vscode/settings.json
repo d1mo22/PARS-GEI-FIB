@@ -6,6 +6,4 @@
         "splash.h": "c",
         "stdio.h": "c"
     },
-    "editor.formatOnSave": true,
-    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColimnLimit: 0}"
 }

@@ -3,7 +3,9 @@
         "iostream": "cpp",
         "config.h": "c",
         "ostream": "cpp",
-        "splash.h": "c"
+        "splash.h": "c",
+        "stdio.h": "c"
     },
     "editor.formatOnSave": true,
+    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColimnLimit: 0}"
 }

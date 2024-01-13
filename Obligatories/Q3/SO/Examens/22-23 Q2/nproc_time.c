@@ -15,9 +15,10 @@ int main(int argc, char** argv) {
         } else {  // Este es el proceso padre
             int status;
             waitpid(ret, &status, 0);
-            if (WIFEXITED(status)) {
+            if (WIFEXITED(status) != 255) {
                 printf("Tiempo en ejecuccion: %d\n", WEXITSTATUS(status));
-            }
+            } else
+                perror("Error");
         }
     }
 }

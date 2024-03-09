@@ -1,5 +1,5 @@
 TEMPLATE    = app
-QT         += opengl 
+QT         += opengl widgets openglwidgets
 
 INCLUDEPATH +=  /user/include/glm
 

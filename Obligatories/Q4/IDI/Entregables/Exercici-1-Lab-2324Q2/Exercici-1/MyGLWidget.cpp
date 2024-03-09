@@ -20,17 +20,18 @@ void MyGLWidget::initializeGL () {
   creaBuffersQuadrat();
 }
 
-
 void MyGLWidget::modelTransformQuadrat(glm::vec3 posicio, glm::vec3 escala) {
   glm::mat4 TG(1.0f);
-  TG = glm::translate(TG,posicio);  
+  TG = glm::translate(TG,glm::vec3(posicio.x+trans, posicio.y, posicio.z));  
   TG = glm::scale(TG,escala);
   glUniformMatrix4fv(TGLoc, 1, GL_FALSE, &TG[0][0]);
 }
 
-void MyGLWidget::modelTransformQuadratCano(glm::vec3 posicio, glm::vec3 escala) {
+void MyGLWidget::modelTransformQuadratCano(glm::vec3 posicio, glm::vec3 escala, float angle) {
   glm::mat4 TG(1.0f);
-  TG = glm::translate(TG, posicio);
+  TG = glm::translate(TG, glm::vec3(posicio.x - 0.75 + trans, posicio.y - 0.0625, 0.0));
+  TG = glm::rotate(TG, angle, glm::vec3(0.0, 0.0, 1.0));
+  TG = glm::translate(TG, glm::vec3(0.75, 0.0625, 0.0));
   TG = glm::scale(TG, escala);
   glUniformMatrix4fv(TGLoc, 1, GL_FALSE, &TG[0][0]);
 
@@ -38,34 +39,33 @@ void MyGLWidget::modelTransformQuadratCano(glm::vec3 posicio, glm::vec3 escala) 
 
 //36 graus = pi/5
 //30 grados = pi/6
-void MyGLWidget::modelTransformQuadrat_Roda(glm::vec3 centre, float separacio_entre_rectangles, bool rectangle_negre) {
+void MyGLWidget::modelTransformQuadrat_Roda(glm::vec3 centre, float angle_rodes) {
   glm::mat4 TG(1.0);
-  float offset = -0.5;
-  for (int i = 0; i < 1; ++i) {
-    TG = glm::mat4(1.0); // Restaurar la matriz de transformación a la identidad en cada iteración
-    // Aplicar la traslación a la posición relativa al centro
-    
-    //TG = glm::rotate(TG, (float) (i * M_PI / 6), glm::vec3(0.0,0.0,1.0));
-    // Aplicar la escala
-    TG = glm::translate(TG, glm::vec3(-0.275, -0.125, 0.0));
+
+  for (int i = 0; i < 12; ++i) {
+    TG = glm::mat4(1.0); 
+
+    float angle = angle_rodes + (i * (M_PI / 6));
+    float x = centre.x;
+    float y = centre.y;
+
+    TG = glm::translate(TG, glm::vec3(x + trans, y, 0.0));
+    TG = glm::rotate(TG, angle, glm::vec3(0.0, 0.0, 1.0));
+    TG = glm::translate(TG, glm::vec3(-0.05, 0.025, 0.0));
     TG = glm::scale(TG, glm::vec3(0.1, 0.05, 0.0));
-    // Aplicar transformaciones adicionales si el rectángulo es negro
-    if (rectangle_negre && (i % 2 == 0)) {
-      // Aplicar color negro
+
+    if (i % 2 == 0) {
       glUniform3fv(colorLoc, 1, &negre[0]);
-    } else {
-      // Aplicar color gris
+    } 
+    else {
       glUniform3fv(colorLoc, 1, &gris[0]);
     }
-    // Enviar la matriz de transformación al shader
+
     glUniformMatrix4fv(TGLoc, 1, GL_FALSE, &TG[0][0]);
-    // Dibujar el rectángulo
+
     glDrawArrays(GL_TRIANGLES, 0, 6);
-    offset += 0.1;
   }
 }
-
-
 
 void MyGLWidget::paintGL () {
 // En cas de voler canviar els paràmetres del viewport, descomenteu la crida següent i
@@ -76,18 +76,21 @@ void MyGLWidget::paintGL () {
 
   // Pintem un quadrat
   glBindVertexArray(VAOQuadrat);
+
   glUniform3fv(colorLoc, 1, &verd[0]);
-  modelTransformQuadrat(glm::vec3(0.5, 0.0, 0.0), glm::vec3(1.0, 0.25, 0.0));
+  modelTransformQuadrat(glm::vec3(0.5, 0.125, 0.0), glm::vec3(1.0, 0.25, 0.0));
   glDrawArrays(GL_TRIANGLES, 0, 6);  
 
-  modelTransformQuadrat(glm::vec3(0.375, 0.25, 0.0), glm::vec3(0.5, 0.25, 0.0));
+  modelTransformQuadrat(glm::vec3(0.375, 0.375, 0.0), glm::vec3(0.5, 0.25, 0.0));
   glDrawArrays(GL_TRIANGLES, 0, 6); 
 
   glUniform3fv(colorLoc, 1, &gris[0]);
-  modelTransformQuadratCano(glm::vec3(0.875, 0.1875, 0.0), glm::vec3(0.75, 0.125, 0.0));
+  modelTransformQuadratCano(glm::vec3(0.875, 0.3125, 0.0), glm::vec3(0.75, 0.125, 0.0), angle_cano);
   glDrawArrays(GL_TRIANGLES, 0, 6); 
 
-  modelTransformQuadrat_Roda(glm::vec3(-0.375, -0.125, 0.0), 0.25, true);
+  for (int i = 0; i < 4; ++i) {
+    modelTransformQuadrat_Roda(glm::vec3(-0.375 + (i*0.25), -0.125, 0.0), angle_rodes);
+  }
   // Desactivem el VAO
   glBindVertexArray(0);
 }
@@ -109,12 +112,18 @@ void MyGLWidget::keyPressEvent(QKeyEvent* event) {
   makeCurrent();
   switch (event->key()) {
     case Qt::Key_Left: 
+      if (angle_cano <= (17*M_PI/18)) angle_cano += (M_PI / 18);
     	break;
     case Qt::Key_Right: 
+      if (angle_cano >= 0) angle_cano -= (M_PI / 18);
     	break;
     case Qt::Key_A: 
+      angle_rodes += (M_PI / 180);
+      trans -= 0.01;
     	break;
     case Qt::Key_D:
+      angle_rodes -= (M_PI / 180);
+      trans += 0.01;
     	break;		
     default: event->ignore(); break;
   }

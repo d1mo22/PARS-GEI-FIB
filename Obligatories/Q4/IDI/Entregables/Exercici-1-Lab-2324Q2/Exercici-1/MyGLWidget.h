@@ -37,10 +37,15 @@ class MyGLWidget : public QOpenGLWidget, protected QOpenGLFunctions_3_3_Core
     
     void modelTransformQuadrat(glm::vec3 posicio, glm::vec3 escala);
 
-    void modelTransformQuadratCano(glm::vec3 posicio, glm::vec3 escala);
+    void modelTransformQuadratCano(glm::vec3 posicio, glm::vec3 escala, float angle);
 
-    void modelTransformQuadrat_Roda(glm::vec3 centre, float separacio_entre_rectangles, bool rectangle_negre);
+    void modelTransformQuadrat_Roda(glm::vec3 centre, float angle);
     
+    //Variables
+    float angle_rodes = 0.0;
+    float angle_cano = 0.0;
+    float trans = 0.0;
+
     // program
     QOpenGLShaderProgram *program;
     // attribute locations

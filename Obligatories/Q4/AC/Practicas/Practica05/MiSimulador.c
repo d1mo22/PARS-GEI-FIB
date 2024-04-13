@@ -3,19 +3,23 @@
 /* Posa aqui les teves estructures de dades globals
  * per mantenir la informacio necesaria de la cache
  * */
+struct linea {
+	int v;
+	int TAG;
+};
 
-
+struct linea cache[128];
 
 
 /* La rutina init_cache es cridada pel programa principal per
  * inicialitzar la cache.
- * La cache es inicialitzada al començar cada un dels tests.
+ * La cache es inicialitzada al comenï¿½ar cada un dels tests.
  * */
 void init_cache ()
 {
     totaltime=0.0;
 	/* Escriu aqui el teu codi */
-
+	for (int i = 0; i < 128; i++) cache[i].v = 0;
 
 
 }
@@ -28,30 +32,37 @@ void reference (unsigned int address)
 	unsigned int linea_mc;
 	unsigned int tag;
 	unsigned int miss;	   // boolea que ens indica si es miss
-	unsigned int replacement;  // boolea que indica si es reemplaça una linia valida
-	unsigned int tag_out;	   // TAG de la linia reemplaçada
+	unsigned int replacement;  // boolea que indica si es reemplaï¿½a una linia valida
+	unsigned int tag_out;	   // TAG de la linia reemplaï¿½ada
 	float t1,t2;		// Variables per mesurar el temps (NO modificar)
 	
 	t1=GetTime();
 	/* Escriu aqui el teu codi */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	byte = address%32;
+	bloque_m = address/32;
+	linea_mc = bloque_m%128;
+	tag = bloque_m/128;
+	if (cache[linea_mc].v == 0) {
+		miss = 1;
+		replacement = 0;
+		tag_out = -1;
+		cache[linea_mc].TAG = tag;
+		cache[linea_mc].v = 1;
+	}
+	else if (cache[linea_mc].v == 1 && cache[linea_mc].TAG != tag) {
+		miss = 1;
+		replacement = 1;
+		tag_out = cache[linea_mc].TAG;
+		cache[linea_mc].TAG = tag;
+	}
+	else {
+		miss = 0;
+		replacement = 0;
+		tag_out = -1;
+	}
 	/* La funcio test_and_print escriu el resultat de la teva simulacio
 	 * per pantalla (si s'escau) i comproba si hi ha algun error
-	 * per la referencia actual. També mesurem el temps d'execució
+	 * per la referencia actual. Tambï¿½ mesurem el temps d'execuciï¿½
 	 * */
 	t2=GetTime();
 	totaltime+=t2-t1;

@@ -1,9 +1,0 @@
-{
-    "files.associations": {
-        "iostream": "cpp",
-        "config.h": "c",
-        "ostream": "cpp",
-        "splash.h": "c",
-        "stdio.h": "c"
-    },
-}

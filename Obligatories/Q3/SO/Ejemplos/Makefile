@@ -17,3 +17,4 @@ signal_basico:signal_basico.c
 	gcc -o signal_basico signal_basico.c
 clean:
 	rm -f cada_segundo cada_segundo_sigchld_activa cada_segundo_sigchld_bloqueo NProcesos NProcesosExit plauncher plauncherN signal_basico
+

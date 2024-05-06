@@ -1,0 +1,11 @@
+Alta d inscripcio
+context:Sistema::AltaInscripcio(dni: String, nomTaller: String, price: TPreu)
+pre:
+    Participant.allInstances()->(p | p.dni = dni) and
+    Taller.allInstances()->(t | t.nom = nomTaller)
+post:
+    Inscripcio.allInstances()->exists(i | i.oclIsNew() and
+                                          )
+Alta de reserva
+
+Consulta reserves exitoses

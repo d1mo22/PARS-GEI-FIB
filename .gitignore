@@ -4,4 +4,4 @@
 *.exe
 .DS_store
 .Rproj.user
-
+.tar

@@ -1,6 +1,4 @@
 #include "CacheSim.h"
-#include <unistd.h>
-#include <stdio.h>
 
 /* Posa aqui les teves estructures de dades globals
  * per mantenir la informacio necesaria de la cache
@@ -131,8 +129,6 @@ void reference (unsigned int address, unsigned int LE)
 void final ()
 {
  	/* Escriu aqui el teu codi */ 
-  int ret;
-  char buff[64];
-  ret = sprintf(buff, "Hits: %d\nMiss: %d\n", hit_g, miss_g);
-  write(1, buff, ret);
+  
+  
 }

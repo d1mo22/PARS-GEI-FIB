@@ -187,21 +187,21 @@ long int PierdeTiempo(int i) {
 
 float GetTime(void);
 
-main (int argc, char *argv[])
+int main (int argc, char *argv[])
 {
    carta mano[5];
    int i, j, k, m, n;
    int tot;
    // Descomentar para medir el tiempo
-   //float t1,t2; 
+   float t1,t2; 
    // Descomentar para medir los ticks
-   //ticks tick1,tick2;
+   ticks tick1,tick2;
    tot = 0;
    
   // Descomentar para medir el tiempo
-  //t1=GetTime();
+  t1=GetTime();
   // Descomentar para medir los ticks
-  //tick1=getticks();
+  tick1=getticks();
   if (argc == 2) V = atoi(argv[1]); 
             else V = 0;
 
@@ -225,13 +225,18 @@ main (int argc, char *argv[])
                    tot, escaleracolor, poker, full, color, escalera, trio, doblepareja, pareja, nada);   
 		   
   // Esta es la única invocación a la rutina "PierdeTiempo"
-  printf("Pierdo algo de tiempo mientras calculo el numero: %ld\n",PierdeTiempo(PT));
+  ticks tick3, tick4;
+  tick3 = getticks();
+  long int aux = PierdeTiempo(PT);
+  tick4 = getticks();
+
+  printf("Pierdo algo de tiempo mientras calculo el numero: %ld\n", aux);
   // Descomentar para medir el tiempo
   //t2=GetTime();
   //printf("Milisegundos Tot = %9f\n",t2-t1);  
   // Descomentar para medir los ticks
   //tick2=getticks();  
-  //printf("Ciclos = %lf\n",elapsed(tick2,tick1));  
+  printf("Ciclos = %lf\n",elapsed(tick4,tick3)); 
 }
 
 

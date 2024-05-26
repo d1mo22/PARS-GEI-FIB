@@ -103,6 +103,7 @@ void MyGLWidget::keyPressEvent(QKeyEvent* event) {
     break;
   case Qt::Key_F:
     camara = !camara;
+    std::cerr << camara std::endl;
     if (camara) {
       posFocus = glm::vec3(0.0,0.0,0.0);
     }

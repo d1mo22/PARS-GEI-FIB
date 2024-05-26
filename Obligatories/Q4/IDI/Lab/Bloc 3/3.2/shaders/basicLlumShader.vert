@@ -36,19 +36,13 @@ void main()
     gl_Position = proj * view * TG * vec4 (vertex, 1.0);
 
     mat4 SCO = view*TG;
-
     mat3 NormalMatrix = inverse(transpose(mat3(SCO)));
-    vec3 normalSCO = NormalMatrix*normal;
-    fNormalSCO = normalize(normalSCO);
 
+    vec3 normalSCO = NormalMatrix*normal;
+    
+    fNormalSCO = normalize(normalSCO);
     fVertexSCO = (SCO*vec4(vertex, 1.0)).xyz;
 
     fposFSCO = (view * vec4(posFocus,1.0)).xyz;
-    //vec3 posFSCO = posFocus;
-
-    //vec3 L = posFSCO - vertexSCO;
-    //L = normalize(L); //Normalitzat
-
-    //fcolor = ambient+difus+especular;
  
 }

@@ -19,7 +19,7 @@ class MyGLWidget : public BL3GLWidget {
 
   private:
     float angleX = 0.0;
-    GLint camara = false; //False escena / True camara
+    int camara = false; //False escena / True camara
     GLuint posFocusLoc, colFocusLoc, focusCamLoc;
     glm::vec3 posFocus, colFocus;
     int printOglError(const char file[], int line, const char func[]);

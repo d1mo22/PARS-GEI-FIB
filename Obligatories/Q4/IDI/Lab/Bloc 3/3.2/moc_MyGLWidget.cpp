@@ -74,7 +74,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMyGLWidgetENDCLASS[] = {
 };
 
 Q_CONSTINIT const QMetaObject MyGLWidget::staticMetaObject = { {
-    QMetaObject::SuperData::link<LL2GLWidget::staticMetaObject>(),
+    QMetaObject::SuperData::link<BL3GLWidget::staticMetaObject>(),
     qt_meta_stringdata_CLASSMyGLWidgetENDCLASS.offsetsAndSizes,
     qt_meta_data_CLASSMyGLWidgetENDCLASS,
     qt_static_metacall,
@@ -104,12 +104,12 @@ void *MyGLWidget::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_meta_stringdata_CLASSMyGLWidgetENDCLASS.stringdata0))
         return static_cast<void*>(this);
-    return LL2GLWidget::qt_metacast(_clname);
+    return BL3GLWidget::qt_metacast(_clname);
 }
 
 int MyGLWidget::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = LL2GLWidget::qt_metacall(_c, _id, _a);
+    _id = BL3GLWidget::qt_metacall(_c, _id, _a);
     return _id;
 }
 QT_WARNING_POP

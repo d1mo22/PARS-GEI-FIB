@@ -26,8 +26,7 @@ vec3 Ambient() {
     return llumAmbient * fmatamb;
 }
 
-vec3 Difus (vec3 NormSCO, vec3 L, vec3 colFocus) 
-{
+vec3 Difus (vec3 NormSCO, vec3 L, vec3 colFocus) {
     // Tant sols retorna el terme difús
     // S'assumeix que els vectors que es reben com a paràmetres estan normalitzats
     vec3 colRes = vec3(0);
@@ -37,8 +36,7 @@ vec3 Difus (vec3 NormSCO, vec3 L, vec3 colFocus)
     return (colRes);
 }
 
-vec3 Especular (vec3 NormSCO, vec3 L, vec4 vertSCO, vec3 colFocus) 
-{
+vec3 Especular (vec3 NormSCO, vec3 L, vec4 vertSCO, vec3 colFocus) {
     // Tant sols retorna el terme especular!
     // Els vectors rebuts com a paràmetres (NormSCO i L) estan normalitzats
     vec3 colRes = vec3 (0);

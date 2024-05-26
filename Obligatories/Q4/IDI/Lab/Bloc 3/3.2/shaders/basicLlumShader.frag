@@ -1,6 +1,5 @@
 #version 330 core
 
-in vec3 fcolor;
 out vec4 FragColor;
 
 in vec3 fmatamb;
@@ -23,8 +22,7 @@ vec3 Ambient() {
     return llumAmbient * fmatamb;
 }
 
-vec3 Difus (vec3 NormSCO, vec3 L, vec3 colFocus) 
-{
+vec3 Difus (vec3 NormSCO, vec3 L, vec3 colFocus) {
     // Tant sols retorna el terme difús
     // S'assumeix que els vectors que es reben com a paràmetres estan normalitzats
     vec3 colRes = vec3(0);
@@ -34,8 +32,7 @@ vec3 Difus (vec3 NormSCO, vec3 L, vec3 colFocus)
     return (colRes);
 }
 
-vec3 Especular (vec3 NormSCO, vec3 L, vec4 vertSCO, vec3 colFocus) 
-{
+vec3 Especular (vec3 NormSCO, vec3 L, vec4 vertSCO, vec3 colFocus) {
     // Tant sols retorna el terme especular!
     // Els vectors rebuts com a paràmetres (NormSCO i L) estan normalitzats
     vec3 colRes = vec3 (0);
@@ -70,7 +67,7 @@ void main()
 	
 
 	vec3 ambient = Ambient();
-    vec3 difus = Difus(NormalSCO, L, colorFocus);
-    vec3 especular = Especular(NormalSCO, L, vec4(fVertexSCO,1.0), colorFocus);
-	FragColor = vec4(ambient+difus+especular,1);	
+  vec3 difus = Difus(NormalSCO, L, colorFocus);
+  vec3 especular = Especular(NormalSCO, L, vec4(fVertexSCO,1.0), colorFocus);
+	FragColor = vec4(ambient+difus,1);	
 }

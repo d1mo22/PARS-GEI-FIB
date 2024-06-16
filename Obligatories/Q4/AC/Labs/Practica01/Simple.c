@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-main()
+int main()
 {
-  
+
   long long i, resultado=0;
-  
+
   for ( i=0; i<3000000; i++)
     resultado=resultado+i;
 

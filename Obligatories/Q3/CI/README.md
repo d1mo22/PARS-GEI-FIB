@@ -5,4 +5,4 @@ Esta carpeta contiene tanto la teoría como los laboratorios de la asignatura de
 ## Contenido
 
 - La carpeta "Teoría" contiene las presentaciones usadas en clase.
-- La carpeta "Laboratorios" contiene los archivos y ejercicios prácticos realizados en el laboratorio.
+- La carpeta "Labs" contiene los archivos y ejercicios prácticos realizados en el laboratorio.

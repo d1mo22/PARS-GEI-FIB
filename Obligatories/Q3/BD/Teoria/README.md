@@ -5,4 +5,3 @@ Esta carpeta contiene las diapositivas de teoría para la asignatura de Base de 
 ## Contenido
 
 - Las diapositivas de teoría están disponibles en formato PDF.
-

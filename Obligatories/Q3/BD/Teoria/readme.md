@@ -1,6 +1,6 @@
 # Base de Datos - Teoría
 
-Este repositorio contiene las diapositivas de teoría para la asignatura de Base de Datos.
+Esta carpeta contiene las diapositivas de teoría para la asignatura de Base de Datos.
 
 ## Contenido
 

@@ -1,0 +1,5 @@
+absValue (-666)
+power 2 3
+isPrime 17
+slowFib 5
+quickFib 40

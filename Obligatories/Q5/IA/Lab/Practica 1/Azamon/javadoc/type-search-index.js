@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"IA.Azamon","l":"Oferta"},{"p":"IA.Azamon","l":"Paquete"},{"p":"IA.Azamon","l":"Paquetes"},{"p":"IA.Azamon","l":"Testing"},{"p":"IA.Azamon","l":"Transporte"}]

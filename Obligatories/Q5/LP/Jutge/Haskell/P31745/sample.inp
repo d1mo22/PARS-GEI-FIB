@@ -1,0 +1,5 @@
+flatten [[1,2,3],[4,5],[6],[],[3,3]]
+myLength "Albert"
+myReverse [1..10]
+countIn [[3,2,3],[3],[], [2,2]] 3
+firstWord "  Volem pa amb oli  "

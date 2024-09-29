@@ -1,3 +1,0 @@
-git archive --format tgz --worktree-attributes \
-    --output ../NewViewer_$(git log -1 --pretty=format:%h HEAD).tgz \
-    --prefix NewViewer_$(git log -1 --pretty=format:%h HEAD)/ HEAD

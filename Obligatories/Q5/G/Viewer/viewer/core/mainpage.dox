@@ -1,0 +1,34 @@
+/*! \mainpage 
+ *
+ * \section Introduction
+ * The <em> core library </em> contains a collection of <a href="annotated.html"> classes </a> 
+ * for representing 3D scenes.
+ *
+ * The <em> viewer application </em> and all the <em> plugins </em> you will create 
+ * make use of this library.
+ * Therefore it is important that you get familiar with the different classes in this library. 
+ * 
+ * \section Overview 
+ * Here is a brief overview of the main classes in the core library.
+ 
+ * A <em> Scene </em> represents a collection of 3D objects. 
+ *
+ * Each 3D <em> Object </em> contains a collection of vertices and a collection of faces.
+ * 
+ * A <em> Vertex </em> stores per-vertex attributes (such as vertex coordinates). 
+ *
+ * A \em Face is a collection of vertex indices. Faces do not hold directly vertex coordinates; 
+ * instead, faces store vertex indices, that is, integers indicating the position of each vertex 
+ * in the vector of vertices associated with every 3D Object.  
+ * 
+ *
+ * The library also provides a simple <em> Camera </em> class, and basic math classes for representing Points and Vectors in 3D space.  
+ * 
+ * For further information, check the <a href="annotated.html"> classes </a> in this library.
+ *
+ * \section Rules 
+ * Please remember that you should *not* modify any of the files of the core library. 
+ * 
+ * Remember that the plugins you write must work when linked with the original, unmodified files.
+ * 
+ */

@@ -1,0 +1,12 @@
+loadObject /assig/grau-g/models/default.obj
+addPlugin /home/alvar/Docencia/G/NewViewer/plugins/bin/libbase.so
+
+loadObject /assig/grau-g/models/sphere.obj
+addPlugin /home/alvar/Docencia/G/NewViewer/plugins/bin/libbase.so
+
+
+loadObject /assig/grau-g/models/eg-dragon.obj
+addPlugin /home/alvar/Docencia/G/NewViewer/plugins/bin/libbase.so
+
+loadObject /assig/grau-g/models/fertility.obj
+addPlugin /home/alvar/Docencia/G/NewViewer/plugins/bin/libbase.so

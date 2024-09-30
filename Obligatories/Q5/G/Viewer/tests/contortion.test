@@ -1,0 +1,21 @@
+resize 800 600
+loadObject /assig/grau-g/models/man.obj
+solid
+noaxes
+clearColor 1 1 1
+preset2
+dist 1.7
+
+float time 0.0
+grab 1
+
+float time 1.6
+grab 2
+
+float time 2.5
+grab 3
+
+float time 4.0
+grab 4
+
+

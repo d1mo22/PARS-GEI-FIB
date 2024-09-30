@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+T=$(dirname $0)
+if [ ${T:0:1} != "/" ]; then 
+   T=$PWD/$T
+fi
+
+dollar="$"
+function assign() {
+	 if eval [ X"$dollar$1" == X ]; then
+	    if [ -d "$2" ]; then
+	       eval export $1="$2"
+	    else
+	       eval export $1="$3"
+	    fi
+	 fi
+}
+
+SYSTEM=$(uname)
+if [ $SYSTEM == "Linux" ]; then
+    export VIMAGE=eog
+    export VEDITOR=gedit
+    assign "VMODELS"   "$HOME/assig/grau-g/models"   "$T/models"
+    assign "VTEXTURES" "$HOME/assig/grau-g/Textures" "$T/Textures"
+    assign "VTESTS"    "$HOME/assig/grau-g/tests"    "$T/tests"
+    export LC_NUMERIC="C"
+    export VPLUGINS="libnavigatedefault.so;librenderdefault.so;libdrawvbong.so;libpluginloader.so"
+elif [ $SYSTEM == "Darwin" ]; then
+    assign "VMODELS"   "$HOME/assig/grau-g/models"   "$T/models"
+    assign "VTEXTURES" "$HOME/assig/grau-g/Textures" "$T/Textures"
+    assign "VTESTS"    "$HOME/assig/grau-g/tests"    "$T/tests"
+    export LC_NUMERIC="C"
+    export VPLUGINS="libdrawvbong.dylib;libpluginloader.dylib;libnavigatedefault.dylib;librenderdefault.dylib"
+fi
+
+    
+VGLRUN=""
+VGLARGS=""
+if [ X$1 == 'X-vgl' ]; then
+    shift
+    if [ -x /usr/bin/vglrun ]; then
+	VGLRUN="/usr/bin/vglrun"
+	VGLARGS=" +sync +sp "
+    fi
+fi
+
+echo "Environment"
+echo "VMODELS = " $VMODELS 
+echo "VTEXTURES = " $VTEXTURES
+echo "VTESTS = " $VTESTS
+echo -n "about to execute: "
+if [ $SYSTEM == "Linux" ]; then
+    echo ${VGLRUN} ${VGLARGS} ${_GLARENA_EXTRA_} $T/viewer/bin/viewer $@
+    ${VGLRUN} ${VGLARGS} ${_GLARENA_EXTRA_} $T/viewer/bin/viewer $@
+elif [ $SYSTEM == "Darwin" ]; then
+    echo ${VGLRUN} ${VGLARGS} ${_GLARENA_EXTRA_} $T/viewer/bin/viewer.app/Contents/MacOS/viewer $@
+    ${VGLRUN} ${VGLARGS} ${_GLARENA_EXTRA_} $T/viewer/bin/viewer.app/Contents/MacOS/viewer $@
+fi
+
+exit 0

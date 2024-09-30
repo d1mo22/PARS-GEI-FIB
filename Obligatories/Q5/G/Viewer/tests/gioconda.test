@@ -1,0 +1,21 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+preset1
+loadObject plane.obj
+
+ yaw 0
+ pitch 0
+  float time 0.0 
+  unit0 gioconda.png	 
+  grab 1
+
+  float time 0.75
+  grab 2
+  
+  float time 1.25
+  grab 3
+
+  float time 2.75
+  grab 4

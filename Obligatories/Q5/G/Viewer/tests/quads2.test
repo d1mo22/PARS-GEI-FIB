@@ -1,0 +1,32 @@
+resize 800 600
+loadObject /assig/grau-g/models/glass.obj
+solid
+noaxes
+clearColor 1 1 0
+resetLightPosition
+
+resetCamera
+dist 3.1
+grab 1
+grab 1
+
+preset1
+dist 3.0
+grab 2
+grab 2
+
+loadObject /assig/grau-g/models/cube.obj
+preset4
+dist 3.8
+grab 3
+grab 3
+
+
+loadObject /assig/grau-g/models/armadillo.obj
+preset1
+yaw 180
+dist 2.3
+grab 4
+grab 4
+
+

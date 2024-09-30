@@ -1,0 +1,32 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+
+loadObject /assig/grau-g/models/plane.obj
+resetCamera
+int n 12
+dist 1.4
+grab 1
+grab 1
+
+int n 1
+grab 2
+grab 2
+
+int n 5
+grab 3
+grab 3
+
+loadObject /assig/grau-g/models/fertility.obj
+resetCamera
+yaw -45
+dist 1.5
+int n 5
+grab 4
+grab 4
+
+
+
+
+

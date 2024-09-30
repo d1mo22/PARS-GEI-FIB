@@ -1,0 +1,50 @@
+/*! \mainpage 
+ *
+ * \section Introduction
+ * The <em> GLWidget library </em> contains a single class: <em> GLWidget </em>.
+ * The main purpose of this class, which is derived from <em> QGLWidget</em>, is to 
+ * provide a very basic implementation of the well-known methods <em> initializeGL() </em>, 
+ * <em> paintGL() </em> and <em> resizeGL(). </em>
+ * 
+ * GLWidget has little OpenGL rendering code. Instead, most of the GLWidget implementation 
+ * is devoted to enable users to load an arbitrary number of <em> plugins </em> that provide 
+ * the typical functionalities of a 3D application:  
+ * setting up the OpenGL state (for example, loading images to be used as textures),
+ * loading shaders, 
+ * drawing the scene by issuing OpenGL rendering calls, and 
+ * enabling some user interaction (object selection, camera control...). 
+ *
+ * GLWidget does not implement none of the functionalities above. These functionalities must
+ * be provided through plugins. Learning advanced Computer Graphics techniques through plugin
+ * development has multiple advantages: allows for very-focused,
+ * self-contained, independent exercises, enforces <em> modularity </em> and facillitates
+ * code <em> reusability.</em>    
+ *
+ * The <em> viewer application </em> makes use of this library. Indeed, the <em> plugins </em> you will
+ * create will also require using this library to get access to important objects such as the
+ * 3D scene and the camera. 
+ * 
+ * \section Overview 
+ * The GLWidget class holds basically three different pieces of information:
+ * \li a scene
+ * \li a camera
+ * \li a list of loaded plugins 
+ * 
+ * Most of the code in GLWidget deals with invoking appropriate methods from the plugins. 
+ * In a nutshell, 
+
+ * \li Everytime a new plugin is loaded, its onPluginLoad() method is called.
+ * \li Everytime a new object is added to the scene, the onObjectAdd() method of all loaded plugins is invoked.
+ * \li The GLWidget::paintGL() method performs three basic steps: 1) call preFrame() for all plugins,
+ * 2) call paintGL() for the plugin that implements it, and 3) call postFrame() for all plugins. 
+ * \li Mouse and keyboard events (<em> keyPressEvent </em> and so on) are propagated to all loaded plugins.
+ * 
+ * 
+ * For further information, check the GLWidget class documentation.
+ *
+ * \section Rules 
+ * Please remember that you should *not* modify any of the files of the glwidget library. 
+ * 
+ * Remember that the plugins you write must work when linked with the original, unmodified files.
+ * 
+ */

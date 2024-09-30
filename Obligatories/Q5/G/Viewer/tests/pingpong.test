@@ -1,0 +1,22 @@
+resize 800 600
+loadObject /assig/grau-g/models/sphere.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+
+time 0
+dist 9
+pitch 45
+grab 1
+
+time 0.5
+grab 2
+
+time 1
+grab 3
+
+time 3.5
+grab 4
+
+

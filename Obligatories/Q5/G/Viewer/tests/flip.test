@@ -1,0 +1,23 @@
+resize 800 600
+loadObject /assig/grau-g/models/cow.obj
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+preset2
+time 0.35
+grab 1
+
+loadObject /assig/grau-g/models/teapot.obj
+preset3
+time 1
+grab 2
+
+preset1
+time 3.1
+grab 3
+
+loadObject /assig/grau-g/models/cube.obj
+preset1
+time 0.7
+grab 4

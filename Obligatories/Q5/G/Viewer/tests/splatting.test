@@ -1,0 +1,26 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+unit0 /assig/grau-g/Textures/noise.png
+unit1 /assig/grau-g/Textures/rock.png
+unit2 /assig/grau-g/Textures/grass.png
+
+loadObject /assig/grau-g/models/plane.obj
+resetCamera
+grab 1
+
+
+loadObject /assig/grau-g/models/boid.obj
+preset2
+grab 2
+
+loadObject /assig/grau-g/models/fertility.obj
+resetCamera
+grab 3
+
+loadObject /assig/grau-g/models/eg-dragon.obj
+preset2
+grab 4
+
+

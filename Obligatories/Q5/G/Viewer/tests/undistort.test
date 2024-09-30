@@ -1,0 +1,24 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+
+dist 1.2
+unit0 /assig/grau-g/Textures/frames.png
+grab 1
+grab 1
+
+unit0 /assig/grau-g/Textures/frames-pincushion.png
+grab 2
+grab 2
+
+unit0 /assig/grau-g/Textures/quinta.png
+grab 3
+grab 3
+
+unit0 /assig/grau-g/Textures/quinta-pincushion.png
+grab 4
+grab 4
+

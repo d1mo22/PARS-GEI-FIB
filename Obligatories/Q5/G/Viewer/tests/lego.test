@@ -1,0 +1,38 @@
+resize 800 600
+unit0 /assig/grau-g/Textures/lego-white.png
+loadObject /assig/grau-g/models/sphere.obj
+solid
+noaxes
+clearColor 1 1 1
+resetLightPosition
+
+float Step 0.2
+float step 0.2
+preset1
+grab 1
+
+loadObject /assig/grau-g/models/cessna.obj
+preset2
+pitch 45
+dist 1.5
+float Step 2.4
+float step 2.4
+grab 2
+
+loadObject /assig/grau-g/models/man.obj
+preset2
+dist 1.8
+float Step 0.02
+float step 0.02
+grab 3
+
+loadObject /assig/grau-g/models/armadillo.obj
+resetCamera
+yaw 150
+pitch 45
+dist 1.4
+float Step 0.3
+float step 0.3
+grab 4
+
+

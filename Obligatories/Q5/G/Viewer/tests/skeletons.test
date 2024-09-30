@@ -1,0 +1,24 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+unit0 /assig/grau-g/Textures/skeletons.png
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+
+float time 0
+grab 1
+
+int tiles 3
+float time 0.4444
+grab 2
+
+int tiles 5
+float time 0.4444
+grab 3
+
+int tiles 1
+float time 0.6666
+grab 4
+
+

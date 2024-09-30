@@ -1,0 +1,29 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+
+unit0  /assig/grau-g/Textures/verandah.png
+loadObject /assig/grau-g/models/sphere.obj
+resetCamera
+dist 0.1
+grab 1
+grab 1
+
+yaw 90
+grab 2
+grab 2
+
+yaw 200
+grab 3
+grab 3
+
+yaw 270
+grab 4
+grab 4
+
+
+
+
+

@@ -1,0 +1,24 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+clearColor 1 1 0.7
+resetCamera
+resetLightPosition
+noaxes
+
+bool full false
+bool plot false
+grab 1
+
+bool full false
+bool plot true 
+grab 2
+
+bool full true
+bool plot false
+grab 3
+
+bool full true
+bool plot true
+grab 4
+
+

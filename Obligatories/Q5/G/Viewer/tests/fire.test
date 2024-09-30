@@ -1,0 +1,27 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 0 0 0
+resetCamera
+dist 1.2
+unit0 /assig/grau-g/Textures/foc-1.png
+unit1 /assig/grau-g/Textures/foc-2.png
+unit2 /assig/grau-g/Textures/foc-3.png
+unit3 /assig/grau-g/Textures/foc-4.png
+
+float slice 0.1
+
+time 0
+grab 1
+
+time 0.25
+grab 2
+
+time 0.55
+grab 3
+
+time 0.75
+grab 4
+
+clearColor 1 1 1

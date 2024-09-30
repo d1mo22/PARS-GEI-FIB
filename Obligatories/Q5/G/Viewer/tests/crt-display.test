@@ -1,0 +1,20 @@
+resize 800 600
+loadObject /assig/grau-g/models/torus.obj
+solid
+noaxes
+clearColor 1 1 1
+preset3
+
+int n 1
+grab 1
+
+int n 2
+grab 2
+
+int n 3
+grab 3
+
+int n 4
+grab 4
+
+

@@ -1,0 +1,25 @@
+resize 800 600
+loadObject /assig/grau-g/models/armadillo.obj
+resetCamera
+yaw 180
+dist 2.3
+solid
+noaxes
+clearColor 0.9 0.9 0.9
+resetLightPosition
+
+float time 0
+grab 1
+grab 1
+
+float time 2.0
+grab 2
+grab 2
+
+float time 6.0
+grab 3
+grab 3
+
+float time 8.0
+grab 4
+grab 4

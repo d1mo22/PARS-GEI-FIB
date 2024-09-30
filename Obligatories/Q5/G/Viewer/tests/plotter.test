@@ -1,0 +1,32 @@
+resize 800 600
+loadObject /assig/grau-g/models/stripX3.obj
+solid
+noaxes
+clearColor 1 1 1
+
+float xmin -6
+float xmax  6
+float ymin -2
+float ymax  2
+grab 1
+
+float ymin -1.2
+float ymax 3
+grab 2
+
+float xmin 0
+float xmax  8
+grab 3
+
+float xmin -3
+float xmax  3
+float ymin -2
+float ymax  2
+grab 4
+
+float xmin -6
+float xmax  6
+float ymin -2
+float ymax  2
+
+

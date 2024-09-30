@@ -1,0 +1,25 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 0.8 0.8 0.8
+resetCamera
+resetLightPosition
+
+unit0 /assig/grau-g/Textures/digits.png
+
+resetCamera
+float time 0
+grab 1
+
+float time 987
+grab 2
+
+float time 135
+grab 3
+
+float time 46
+grab 4
+
+
+resetCamera

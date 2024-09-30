@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/default.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+unit0 /assig/grau-g/Textures/noise3.png
+
+resetCamera
+preset1
+int levels 256
+grab 1
+grab 1
+
+int levels 2
+grab 2
+grab 2
+
+int levels 3
+grab 3
+grab 3
+
+int levels 4
+grab 4
+grab 4
+
+resetCamera
+

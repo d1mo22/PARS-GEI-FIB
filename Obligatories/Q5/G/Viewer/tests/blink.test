@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+unit0 /assig/grau-g/Textures/eyeSprites.png 
+unit1 /assig/grau-g/Textures/eyeIris.jpg
+
+
+resetCamera
+float time 0.0
+grab 1
+grab 1
+
+float time 2.8
+grab 2
+grab 2
+
+float time 2.5
+grab 3
+grab 3
+
+float time 2.4
+grab 4
+grab 4
+
+resetCamera

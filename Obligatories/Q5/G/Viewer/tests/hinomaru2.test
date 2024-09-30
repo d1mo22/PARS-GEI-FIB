@@ -1,0 +1,24 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 0.8 0.8 1.0
+resetCamera
+dist 1.4
+bool classic true
+grab 1
+
+
+preset1
+grab 2
+
+preset2
+bool classic false
+grab 3
+
+loadObject /assig/grau-g/models/glass.obj
+preset2
+grab 4
+
+clearColor 1 1 1
+

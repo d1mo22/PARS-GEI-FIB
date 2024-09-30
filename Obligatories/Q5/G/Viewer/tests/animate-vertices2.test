@@ -1,0 +1,26 @@
+resize 800 600
+loadObject /assig/grau-g/models/glass.obj
+solid
+noaxes
+clearColor 1 1 1
+preset1
+
+float amplitude 0.1
+float freq 1.0
+
+time 0
+grab 1
+
+time 0.25
+grab 2
+
+loadObject /assig/grau-g/models/armadillo.obj
+resetCamera
+yaw 180
+time 0
+grab 3
+
+time 0.25
+grab 4
+
+

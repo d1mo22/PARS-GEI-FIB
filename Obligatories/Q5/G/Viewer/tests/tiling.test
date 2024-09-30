@@ -1,0 +1,25 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+preset1
+lightPositionWorld 10 10 10 1
+unit0  /assig/grau-g/Textures/lego.png
+loadObject /assig/grau-g/models/plane.obj
+dist 1.8
+int tiles 1
+grab 1
+
+int tiles 2
+grab 2
+
+int tiles 4
+grab 3
+
+int tiles 8
+grab 4
+
+
+
+
+

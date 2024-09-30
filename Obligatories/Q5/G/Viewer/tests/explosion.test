@@ -1,0 +1,22 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 0 0 0
+resetCamera
+dist 1.2
+unit0 /assig/grau-g/Textures/explosion.png
+time 0
+grab 1
+
+time 0.25
+grab 2
+
+time 0.5
+grab 3
+
+unit0 /assig/grau-g/Textures/frames.png
+time 0.75
+grab 4
+
+clearColor 1 1 1

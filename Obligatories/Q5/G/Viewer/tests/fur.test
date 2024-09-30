@@ -1,0 +1,25 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+clearColor 1 1 0.7
+resetCamera
+resetLightPosition
+noaxes
+unit0 /assig/grau-g/Textures/fur.png
+
+yaw 40
+pitch 40
+grab 1
+
+dist 0.3
+grab 2
+
+loadObject /assig/grau-g/models/man.obj
+resetCamera
+grab 3
+
+pitch -45
+dist 0.3
+grab 4
+
+resetCamera
+

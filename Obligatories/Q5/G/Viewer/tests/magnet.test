@@ -1,0 +1,21 @@
+resize 800 600
+loadObject /assig/grau-g/models/glass.obj
+solid
+noaxes
+clearColor 1 1 1
+preset1
+
+lightPositionWorld 3 2 0 1
+float n 4
+grab 1
+
+float n 3
+grab 2
+
+float n 2.5
+grab 3
+
+lightPositionWorld 1 0 0 1
+grab 4
+
+

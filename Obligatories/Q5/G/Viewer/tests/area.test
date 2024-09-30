@@ -1,0 +1,9 @@
+loadObject /assig/grau-g/models/default.obj
+addObject /assig/grau-g/models/sphere.obj
+addObject /assig/grau-g/models/cube.obj
+addObject /assig/grau-g/models/eg-dragon.obj
+addObject /assig/grau-g/models/fertility.obj
+addPlugin /home/alvar/Docencia/G/NewViewer/plugins/bin/libarea.so
+clearScene
+addPlugin /home/alvar/Docencia/G/NewViewer/plugins/bin/libarea.so
+exit

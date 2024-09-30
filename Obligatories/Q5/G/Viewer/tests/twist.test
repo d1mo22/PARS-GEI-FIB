@@ -1,0 +1,21 @@
+resize 800 600
+loadObject /assig/grau-g/models/cube.obj
+solid
+noaxes
+clearColor 1 1 1
+preset3
+
+time 0
+grab 1
+
+time 1.57
+grab 2
+
+time 4.6
+grab 3
+
+preset4
+dist 1.8
+time 4.6
+grab 4
+

@@ -1,0 +1,31 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+preset1
+
+unit0  /assig/grau-g/Textures/grid01.jpg
+loadObject /assig/grau-g/models/monkey1.obj
+yaw 15
+pitch 10
+dist 1.3
+grab 1
+
+unit0  /assig/grau-g/Textures/Fieldstone.PNG
+grab 2
+
+unit0  /assig/grau-g/Textures/hallu-gray-stones.png
+loadObject /assig/grau-g/models/glass.obj
+dist 1.8
+yaw -15
+grab 3
+
+unit0  /assig/grau-g/Textures/Fieldstone.PNG
+loadObject /assig/grau-g/models/eg-dragon.obj
+dist 1.4
+grab 4
+
+
+
+
+

@@ -1,0 +1,34 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1 1 1
+
+unit0 /assig/grau-g/Textures/foot0.png
+unit1 /assig/grau-g/Textures/foot1.png
+unit2 /assig/grau-g/Textures/foot2.png
+unit3 /assig/grau-g/Textures/foot3.png
+resetCamera
+dist 1.3
+float mouseX 400
+float mouseY 400
+bool virtualMouse true
+
+int layer 1
+grab 1
+
+int layer 2
+float mouseY 300
+grab 2
+
+int layer 3
+float mouseY 200
+grab 3
+
+float mouseY 100
+grab 4
+bool virtualMouse false
+grab 5
+
+
+

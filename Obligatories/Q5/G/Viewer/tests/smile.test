@@ -1,0 +1,23 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+
+unit0 smile.png
+dist 1.4
+grab 1
+
+preset1
+dist 1.4
+grab 2
+
+preset3
+dist 1.4
+grab 3
+
+preset2
+dist 1.4
+grab 4
+

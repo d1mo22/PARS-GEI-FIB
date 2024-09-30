@@ -1,0 +1,22 @@
+resize 800 600
+loadObject /assig/grau-g/models/cube.obj
+solid
+noaxes
+clearColor 1 1 1
+preset2
+dist 2
+resetLightPosition
+grab 1
+
+yaw 220
+pitch -40
+grab 2
+
+yaw 40
+grab 3
+
+yaw -40
+pitch 50
+grab 4
+
+

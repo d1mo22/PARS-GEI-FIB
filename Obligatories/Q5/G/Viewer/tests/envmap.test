@@ -1,0 +1,26 @@
+resize 800 600
+loadObject /assig/grau-g/models/cube.obj
+solid
+noaxes
+clearColor 0 0 0
+resetCamera
+dist 0.5
+yaw 180
+unit0 /assig/grau-g/Textures/envmap.jpg
+float time 0
+grab 1
+
+pitch 20
+yaw 220
+float time 2
+grab 2
+
+pitch 0
+float time 3.14
+grab 3
+
+float time 8
+yaw 260
+grab 4 
+
+clearColor 1 1 1

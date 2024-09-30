@@ -1,0 +1,22 @@
+/*! \mainpage 
+ *
+ * \section Introduction
+ * The <em> Plugin interface </em> contains a single class: <em> BasicPlugin </em>.
+ * All viewer plugins must derive from this class. 
+ *
+ * A default (do nothing) implementation is provided for all methods, so most plugins
+ * need to override very few methods (typically onPluginLoad(), onObjectAdd(), and a subset
+ * of preFrame(), postFrame, drawScene() and paintGL().
+ *
+ * Within a plugin, you can use the scene() and camera() methods to access the <em> Scene </em> and the
+ * <em> Camera </em>. You can also access the <em> GLWidget </em> with glwidget(). 
+ *  
+ * Check the <em> BasicPlugin </em> class reference for futher information about the methods that can be overriden. 
+ *
+ * Check also the plugin examples in the plugins/ folder.
+
+ * \section Rules 
+ * Please remember that you should *not* modify the interface itself.  * 
+ * The plugins you write must work with the original, unmodified files.
+ * 
+ */

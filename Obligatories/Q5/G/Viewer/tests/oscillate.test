@@ -1,0 +1,26 @@
+resize 800 600
+wire
+axes
+clearColor 1 1 1
+
+loadObject /assig/grau-g/models/man.obj
+resetCamera
+dist 3
+roll 45
+time 1.6
+bool eyespace true
+grab 1
+
+bool eyespace false
+grab 2
+
+preset1
+dist 3
+roll 45
+time 4.7
+bool eyespace true
+grab 3
+
+bool eyespace false
+grab 4
+

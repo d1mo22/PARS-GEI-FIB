@@ -1,0 +1,32 @@
+resize 800 600
+loadObject /assig/grau-g/models/glass.obj
+solid
+noaxes
+clearColor 1 1 1
+preset1
+resetLightPosition
+
+preset2
+float time 0.75
+grab 1
+grab 1
+
+float time 2.25
+grab 2
+grab 2
+
+loadObject /assig/grau-g/models/torus.obj
+preset1
+float time 2.25
+grab 3
+grab 3
+
+loadObject /assig/grau-g/models/armadillo.obj
+preset1
+yaw 190
+pitch 53
+dist 2
+grab 4
+grab 4
+
+   

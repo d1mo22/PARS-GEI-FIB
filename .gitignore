@@ -1,8 +1,10 @@
 .vscode
 .idea
+
 *.o
 *.out
 *.exe
+
 .DS_store
 .Rproj.user
 .tar

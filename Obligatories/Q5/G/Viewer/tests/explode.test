@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/sphere.obj
+solid
+noaxes
+clearColor 1 1 1
+resetLightPosition
+
+preset1
+float speed 0.5
+time 1
+grab 1
+
+loadObject /assig/grau-g/models/eg-dragon.obj
+preset1
+dist 1.5
+time 1
+grab 2
+
+loadObject /assig/grau-g/models/glass.obj
+preset1
+time 1
+grab 3
+
+loadObject /assig/grau-g/models/armadillo.obj
+preset1
+yaw 180
+time 1
+grab 4
+
+

@@ -1,0 +1,35 @@
+resize 800 600
+loadObject /assig/grau-g/models/boid.obj
+solid
+noaxes
+clearColor 1 1 1
+preset1
+
+resetLightPosition
+
+lightAmbient 0.1 0.1 0.1
+lightDiffuse 1 1 1 
+lightSpecular 1 1 1 
+lightPositionEye 0 0 0 1
+
+matAmbient 1.0 0.5 0.3
+matDiffuse 1.0 0.5 0.3
+matSpecular 1.0 1.0 1.0
+matShininess 64
+
+yaw 135
+dist 1.5
+bool rotate true
+
+time 0
+grab 1
+
+time 0.5
+grab 2
+
+time 1
+grab 3
+
+time 1.5
+grab 4
+

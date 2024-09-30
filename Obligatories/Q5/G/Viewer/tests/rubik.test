@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/cube.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+
+int M 2
+grab 1
+grab 1
+
+preset2
+int M 2
+grab 2
+grab 2
+
+int M 3
+grab 3
+grab 3
+
+pitch -45
+yaw 225
+int M 4
+grab 4
+grab 4
+
+preset2
+

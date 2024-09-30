@@ -1,0 +1,25 @@
+/*! \mainpage 
+ *
+ * \section intro_sec Introduction
+ *
+ * These pages describe the software we use in GRAU-G to implement the exercises.
+ *
+ * The software has five major components:
+ *
+ * \li A simple <em> Viewer Application </em> that allows you to open and view OBJ files. 
+ * This viewer is extensible via plugins implementing a simple interface. The idea
+ * is that solving an exercise involves writing a plugin. Testing the plugin involves
+ * running the viewer and loading the plugin to check its behavior.
+ * \li A <a href="../core/html/index.html"> Core Library </a> that provides classes to represent a 3D scene: Scene,
+    Object, Face, Vertex, Camera... This library is used by the application and your plugins.
+* \li A <a href="../glwidget/html/index.html"> GLWidget Library </a> containg a GLWidget class. The GLWidget class has little
+OpenGL code. Instead, most of the GLWidget implementation is devoted to enable users to load an arbitrary number of plugins that provide the typical functionalities of a 3D application: setting up the OpenGL state (for example, loading images to be used as textures), loading shaders, drawing the scene by issuing OpenGL rendering calls, and enabling some user interaction (object selection, camera control...).
+* \li A <a href="../interfaces/html/index.html"> Plugin Interface </a> that provides the base class for all plugins. 
+A default (do nothing) implementation is provided for all methods, so most plugins need to override very few methods (typically onPluginLoad(), onObjectAdd(), and a subset of preFrame(), postFrame, drawScene() and paintGL(). Within a plugin, you can use the scene() and camera() methods to access the Scene and the Camera. You can also access the GLWidget with glwidget().
+* \li Some <em> Plugin examples </em> that provide basic functionality for the viewer.
+
+\section Rules
+* Please remember that you should *not* edit any of the viewer files (viewer/app/, viewer/core/, viewer/glwidget/, viewer/interfaces/). All exercices must be completed by creating new plugins (from scracth, 
+or by modifying a copy of one of the plugin examples provided) within the plugin/ folder. 
+ 
+ */

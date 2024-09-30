@@ -1,0 +1,25 @@
+resize 800 600
+loadObject /assig/grau-g/models/torus.obj
+solid
+noaxes
+clearColor 1 1 1
+resetLightPosition
+
+preset1
+grab 1
+
+loadObject /assig/grau-g/models/eg-dragon.obj
+preset1
+dist 1.5
+grab 2
+
+loadObject /assig/grau-g/models/man.obj
+preset1
+grab 3
+
+loadObject /assig/grau-g/models/armadillo.obj
+preset1
+yaw 180
+grab 4
+
+

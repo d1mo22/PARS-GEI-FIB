@@ -1,0 +1,24 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+
+
+loadObject /assig/grau-g/models/plane.obj
+resetCamera
+float n 8
+grab 1
+
+
+float n 16
+grab 2
+
+loadObject /assig/grau-g/models/fertility.obj
+resetCamera
+float n 8
+grab 3
+
+float n 16
+grab 4
+
+

@@ -1,0 +1,23 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+wire
+noaxes
+clearColor 0.9 0.9 1
+resetCamera
+dist 1.2
+grab 1
+
+loadObject /assig/grau-g/models/monkey-unwrap.obj
+resetCamera
+grab 2
+
+loadObject /assig/grau-g/models/cow123K.obj
+time 0.25
+grab 3
+
+loadObject /assig/grau-g/models/icosahedron.obj
+time 0.5
+grab 4
+
+
+clearColor 1 1 1

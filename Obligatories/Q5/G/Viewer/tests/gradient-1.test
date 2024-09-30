@@ -1,0 +1,27 @@
+resize 800 600
+loadObject /assig/grau-g/models/glass.obj
+solid
+noaxes
+clearColor 1 1 1
+preset1
+resetLightPosition
+
+grab 1
+
+loadObject /assig/grau-g/models/sphere.obj
+preset1
+dist 1.2
+grab 2
+
+loadObject /assig/grau-g/models/torus.obj
+dist 1.5
+grab 3
+
+loadObject /assig/grau-g/models/boid.obj
+preset1
+yaw 190
+pitch 53
+dist 2
+grab 4
+
+

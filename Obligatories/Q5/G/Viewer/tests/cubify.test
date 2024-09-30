@@ -1,0 +1,28 @@
+resize 800 600
+loadObject /assig/grau-g/models/glass.obj
+wire
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+preset2
+dist 1.0
+wire
+grab 1
+
+loadObject /assig/grau-g/models/cube.obj
+preset2
+solid
+grab 2
+
+loadObject /assig/grau-g/models/sphere.obj
+preset2
+wire
+grab 3
+
+solid
+grab 4
+
+
+resetCamera

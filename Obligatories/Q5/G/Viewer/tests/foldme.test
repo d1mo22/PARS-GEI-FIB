@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/boid.obj
+wire
+noaxes
+clearColor 1 1 1
+preset1
+yaw 190
+pitch 53
+dist 1.3
+resetLightPosition
+time 1
+grab 1
+
+loadObject /assig/grau-g/models/cow123K.obj
+preset1
+time 1
+grab 2
+
+loadObject /assig/grau-g/models/plane-old.obj
+preset1
+dist 1.9
+time 2
+grab 3
+
+loadObject /assig/grau-g/models/monkey1.obj
+preset2
+time 2
+grab 4
+
+

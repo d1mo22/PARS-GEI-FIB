@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+unit0 /assig/grau-g/Textures/window.png
+unit1 /assig/grau-g/Textures/interior.png
+unit2 /assig/grau-g/Textures/exterior.png
+
+dist 1.6
+grab 1
+grab 1
+
+yaw 25
+grab 2
+grab 2
+
+yaw -25
+grab 3
+grab 3
+
+yaw 10 
+pitch 20
+grab 4
+grab 4
+
+resetCamera

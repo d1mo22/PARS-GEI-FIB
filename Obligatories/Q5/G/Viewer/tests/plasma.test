@@ -1,0 +1,22 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+axes
+clearColor 1 1 1
+resetCamera
+
+unit0 fbm.png
+
+float time 0
+grab 1
+
+float time 3
+grab 2
+
+float time 6
+grab 3
+
+float time 12
+grab 4
+
+

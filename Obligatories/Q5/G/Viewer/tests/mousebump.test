@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/man.obj
+solid
+noaxes
+clearColor 1 1 1
+
+resetCamera
+mousePosition 400 300
+int test 1
+grab 1
+
+preset2
+dist 1
+int test 2
+grab 2
+
+loadObject /assig/grau-g/models/cow123K.obj
+resetCamera
+yaw -45 
+int test 3
+grab 3
+
+loadObject /assig/grau-g/models/mario145k.obj 
+resetCamera
+float radius 300
+int test 4
+grab 4
+
+int test 0
+grab

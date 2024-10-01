@@ -1,0 +1,22 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+preset1
+
+loadObject ~/assig/grau-g/models/dolphin.obj
+yaw 90
+roll 90
+pitch 0
+dist 1.8
+time 0
+grab 1
+
+time 0.25
+grab 2
+
+time 0.75
+grab 3
+
+time 0.9
+grab 4

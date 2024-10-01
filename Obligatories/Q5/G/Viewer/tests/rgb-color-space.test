@@ -1,0 +1,30 @@
+resize 800 600
+loadObject /assig/grau-g/models/filled-cube.obj
+solid
+noaxes
+clearColor 1.0 1.0 1.0
+
+resetLightPosition
+
+resetCamera
+preset2
+int mode 1
+grab 1
+
+yaw 135
+pitch -45
+int mode 2
+grab 2
+
+preset2
+int mode 2
+grab 3
+
+preset2
+int mode 3
+float cut -0.25
+grab 4
+
+
+
+

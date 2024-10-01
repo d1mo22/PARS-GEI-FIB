@@ -1,0 +1,35 @@
+resize 800 600
+solid
+noaxes
+loadObject default.obj
+
+unit0 brush.png
+vec2 quadSize 0.2 0.2
+int mode 0
+pitch 22
+yaw   66
+roll  0
+dist  2
+grab 1
+
+pitch -55
+yaw   45
+roll  0
+dist  2
+int mode 1
+grab 2
+
+pitch 62
+yaw   81
+roll  0
+dist  2
+int mode 2
+grab 3
+
+pitch 16
+yaw   -38
+roll  0
+dist  2
+loadObject bunny.obj
+vec2 quadSize 0.01 0.02
+grab 4

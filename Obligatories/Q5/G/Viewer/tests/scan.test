@@ -1,0 +1,25 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+
+loadObject /assig/grau-g/models/default.obj
+resetCamera
+dist 2
+time 0
+grab 1
+
+time 0.99
+grab 2
+
+time 0.5
+preset2
+grab 3
+
+resetCamera
+time 2.7
+grab 4
+
+
+

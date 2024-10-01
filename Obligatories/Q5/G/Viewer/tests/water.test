@@ -1,0 +1,30 @@
+resize 800 600
+solid
+noaxes
+clearColor 1 1 1
+
+
+unit0  /assig/grau-g/Textures/pond1.jpg
+unit1  /assig/grau-g/Textures/noise.png
+loadObject /assig/grau-g/models/plane.obj
+dist 1.3
+grab 1
+time 0
+
+unit0 /assig/grau-g/Textures/flechas-hor.png
+dist 0.4
+time 10
+grab 2
+
+unit0  /assig/grau-g/Textures/Fieldstone.PNG
+dist 1.3
+time 5
+grab 3
+
+unit0 /assig/grau-g/Textures/grid01old.jpg
+dist 0.2
+time 5
+grab 4
+
+dist 1.3
+

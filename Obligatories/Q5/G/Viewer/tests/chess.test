@@ -1,0 +1,23 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+unit0 /assig/grau-g/Textures/chess.png
+solid
+noaxes
+clearColor 1.0 1.0 1.0
+
+resetLightPosition
+
+resetCamera
+grab 1
+
+dist 1.5
+grab 2
+
+dist 1.2
+grab 3
+
+dist 1.0
+grab 4
+
+
+

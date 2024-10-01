@@ -1,0 +1,33 @@
+resize 800 600
+loadObject /assig/grau-g/models/ortho_planes.obj
+solid
+noaxes
+clearColor 1 1 1
+preset4
+
+resetLightPosition
+
+
+int mode 0
+grab 1
+
+int mode 1
+float eps 0.05
+dist 1.5
+grab 2
+
+dist 1.0
+int mode 1
+grab 3
+
+int mode 2
+dist 1.4
+grab 4
+
+preset4
+int mode 1
+
+
+
+
+

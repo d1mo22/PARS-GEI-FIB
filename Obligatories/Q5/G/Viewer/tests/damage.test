@@ -1,0 +1,26 @@
+resize 800 600
+loadObject  /assig/grau-g/models/default.obj
+solid
+noaxes
+clearColor 1 1 1
+preset1
+int num 4
+grab 1
+
+loadObject /assig/grau-g/models/man.obj
+resetCamera
+int num 20
+grab 2
+
+
+loadObject /assig/grau-g/models/feline.obj
+resetCamera
+yaw 180
+int num 5
+grab 3
+
+preset2
+int num 2
+grab 4
+
+int num 2

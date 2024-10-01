@@ -1,0 +1,21 @@
+resize 800 800
+loadObject /assig/grau-g/models/sphere.obj
+addObject /assig/grau-g/models/simpleplane.obj
+solid
+resetCamera
+unit0 /assig/grau-g/Textures/brickbump.jpg
+time 0.01
+grab 1
+
+time 0.5
+preset2
+grab 2
+
+unit0 /assig/grau-g/Textures/pond1.jpg
+time 1.5
+resetCamera
+grab 3
+
+time 0.2
+grab 4
+

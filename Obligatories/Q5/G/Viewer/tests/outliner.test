@@ -1,0 +1,27 @@
+resize 800 600
+loadObject /assig/grau-g/models/player.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+pitch 12
+yaw -5
+dist 1.4
+
+resetLightPosition
+
+int mode 0
+grab 1
+
+int mode 1
+grab 2
+
+int mode 2
+grab 3
+
+int mode 3
+grab 4
+
+int mode 0
+
+

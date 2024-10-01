@@ -1,0 +1,26 @@
+resize 800 600
+loadObject /assig/grau-g/models/man.obj
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+resetCamera
+dist 1.5
+float mouseOverrideX 400
+grab 1
+
+float mouseOverrideX 700
+grab 2
+
+float mouseOverrideX 0
+grab 3
+
+float mouseOverrideX 600
+grab 4
+
+float mouseOverrideX -1
+grab 5
+
+

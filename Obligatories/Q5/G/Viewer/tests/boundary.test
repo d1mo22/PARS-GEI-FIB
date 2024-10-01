@@ -1,0 +1,34 @@
+resize 800 600
+loadObject default.obj
+solid
+noaxes
+clearColor 1 1 0.8
+resetCamera
+resetLightPosition
+
+preset2
+float edge0 0.48
+float edge1 0.5
+grab 1
+
+preset1
+float edge0 0.25
+float edge1 0.3
+grab 2
+
+
+loadObject man.obj
+preset4
+dist 2
+float edge0 0.35
+float edge1 0.4
+grab 3
+
+resetCamera
+float edge0 0.4
+float edge1 0.5
+grab 4
+
+
+
+

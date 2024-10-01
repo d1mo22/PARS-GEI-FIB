@@ -1,0 +1,32 @@
+resize 800 600
+wire
+noaxes
+clearColor 1 1 1
+
+
+unit0  colornoise2.png
+loadObject fertility.obj
+dist .6
+time .4
+grab 1
+
+loadObject cessna.obj
+clearColor .96 .76 .067
+solid
+dist .7
+time .2
+grab 2
+
+unit0 colornoise.png
+preset2
+wire
+clearColor 1. 1. 1.
+dist 0.6
+time .35
+grab 3
+
+loadObject armadillo.obj
+time 30
+preset2
+dist 0.7
+grab 4

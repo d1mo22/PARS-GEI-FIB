@@ -1,0 +1,23 @@
+resize 800 600
+loadObject plane.obj
+solid
+noaxes
+clearColor 1 1 0.8
+resetCamera
+resetLightPosition
+
+grab 1
+
+dist 1.2
+grab 2
+
+dist 1.0
+grab 3
+
+dist 0.8
+grab 4
+
+
+
+
+

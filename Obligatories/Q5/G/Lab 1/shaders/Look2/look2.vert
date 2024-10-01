@@ -18,9 +18,9 @@ void main()
     float t = smoothstep(1.45, 1.55, vertice.y);
 
     mat3 rotation = mat3(
-        vec3(cos(angle), 0, sin(angle)),
+        vec3(cos(-angle), 0, sin(-angle)),
         vec3(0, 1, 0),
-        vec3(-sin(angle), 0, cos(angle))
+        vec3(-sin(-angle), 0, cos(-angle))
     );
     vec3 rotatedVertex = rotation*vertex;
     vertice = mix(vertice, rotatedVertex, t);

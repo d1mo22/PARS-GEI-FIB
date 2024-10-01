@@ -1,0 +1,27 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+unit0  /assig/grau-g/Textures/court.jpg
+unit1  /assig/grau-g/Textures/player3.jpg
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+dist 2.7
+
+resetLightPosition
+
+int mode 0
+grab 1
+
+int mode 1
+grab 2
+
+int mode 2
+grab 3
+
+int mode 3
+grab 4
+
+int mode 0
+
+

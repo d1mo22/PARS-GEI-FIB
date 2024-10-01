@@ -1,0 +1,25 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1.0 1.0 1.0
+resetCamera
+resetLightPosition
+
+unit0 /assig/grau-g/Textures/syringe.png
+
+resetCamera
+float time 0
+grab 1
+
+float time 2
+grab 2
+
+float time 4
+grab 3
+
+float time 11.9
+grab 4
+
+
+resetCamera

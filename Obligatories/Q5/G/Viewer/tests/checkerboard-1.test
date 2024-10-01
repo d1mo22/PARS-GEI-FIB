@@ -9,7 +9,7 @@ resetCamera
 grab 1
 
 
-loadObject /assig/grau-g/models/boid.obj
+loadObject /assig/grau-g/models/cow.obj
 preset2
 grab 2
 

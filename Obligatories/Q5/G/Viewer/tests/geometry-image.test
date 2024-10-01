@@ -1,0 +1,29 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane256.obj
+unit0 /assig/grau-g/Textures/bunny-geo.png
+unit1 /assig/grau-g/Textures/bunny-norm.png
+solid
+noaxes
+clearColor 1.0 1.0 1.0
+
+resetLightPosition
+
+resetCamera
+preset4
+dist 1.6
+
+int mode 0
+grab 1
+
+int mode 1
+grab 2
+
+int mode 2
+grab 3
+
+int mode 3
+grab 4
+
+
+
+

@@ -1,0 +1,27 @@
+resize 600 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+resetCamera
+clearColor 1 1 1
+unit0 /assig/grau-g/Textures/interior.png
+unit1 /assig/grau-g/Textures/palm-tree2.png
+unit2 /assig/grau-g/Textures/dunes.jpg
+time 0
+grab 1
+
+time 0.5
+grab 2
+
+pitch 10
+yaw 30
+time 1.0
+grab 3
+
+pitch -10
+time 1.5
+grab 4
+
+
+
+

@@ -1,0 +1,26 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+solid
+noaxes
+clearColor 1.0 1.0 1.0
+
+resetLightPosition
+float width 0.01
+resetCamera
+grab 1
+
+loadObject /assig/grau-g/models/cube.obj
+preset1
+grab 2
+
+preset2
+resetCamera
+float width 0.02
+grab 3
+
+loadObject /assig/grau-g/models/default.obj
+float width 0.01
+grab 4
+
+
+

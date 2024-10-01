@@ -1,0 +1,22 @@
+resize 800 600
+loadObject ~/assig/grau-g/models/plane.obj
+solid
+noaxes
+resetCamera
+dist 1.2
+a = 0.2
+unit0 ~/assig/grau-g/Textures/hallu-color-stones.png
+time 0
+grab 1
+
+time 0.25
+grab 2
+
+time 0.5
+grab 3
+
+unit0 /assig/grau-g/Textures/hallu-gray-stones.png
+time 0.75
+grab 4
+
+

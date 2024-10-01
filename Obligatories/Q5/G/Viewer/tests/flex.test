@@ -1,0 +1,26 @@
+resize 800 600
+solid 
+noaxes
+clearColor 1 1 1
+
+
+
+loadObject man.obj
+int mode 1
+time 0
+resetCamera
+pitch 0
+yaw 90 
+grab 1
+
+time 1.5
+grab 2
+
+int mode 2
+time 0.5
+grab 3
+
+time 1.1
+grab 4
+
+

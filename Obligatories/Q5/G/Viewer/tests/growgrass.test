@@ -1,0 +1,20 @@
+resize 800 600
+loadObject /assig/grau-g/models/cessna.obj
+solid
+clearColor 1 1 1
+preset1
+grab 1
+
+loadObject /assig/grau-g/models/cube.obj
+preset2
+grab 2
+
+loadObject /assig/grau-g/models/feline.obj
+resetCamera
+dist 1.1
+pitch 150
+yaw 60
+grab 3
+
+preset2
+grab 4

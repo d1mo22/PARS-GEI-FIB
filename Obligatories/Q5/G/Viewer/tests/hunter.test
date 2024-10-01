@@ -1,0 +1,23 @@
+resize 800 600
+solid
+noaxes
+
+loadObject plane.obj
+unit0 exterior.png
+
+vec2 mousePosition 400 300
+float magnific 2
+grab 1
+
+
+float magnific 4
+grab 2
+
+float magnific 2
+vec2 mousePosition 257 261
+grab 3
+
+float magnific 5 
+vec2 mousePosition 257 261
+
+grab 4

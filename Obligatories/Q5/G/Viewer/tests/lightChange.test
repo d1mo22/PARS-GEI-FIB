@@ -1,0 +1,28 @@
+resize 800 600
+loadObject /assig/grau-g/models/default.obj
+unit0 /assig/grau-g/Textures/Combo-lite.png
+solid
+noaxes
+clearColor 1 1 1
+resetCamera
+resetLightPosition
+
+preset1
+time 1.1
+lightPositionEye 0 3 0 1
+grab 1
+
+time 3.1
+lightPositionEye 3 0 0 1
+grab 2
+
+time 7.1
+lightPositionEye -3 0 0 1
+grab 3
+
+time 8.1
+grab 4
+
+
+
+

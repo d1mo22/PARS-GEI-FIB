@@ -1,0 +1,22 @@
+resize 600 600
+loadObject /assig/grau-g/models/default.obj
+solid
+axes
+resetCamera
+clearColor 0 0 0
+lightPositionEye 1 1 -2 1
+unit0 /assig/grau-g/Textures/light.png
+grab 1
+
+preset1
+lightPositionEye 1 0 -2 1
+grab 2
+
+preset2
+lightPositionEye -1 1 -2 1
+grab 3
+
+preset3
+lightPositionEye 0 1 -2 1
+grab 4
+

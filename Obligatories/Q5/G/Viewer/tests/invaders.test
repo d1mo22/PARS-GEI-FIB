@@ -1,0 +1,22 @@
+resize 800 600
+loadObject /assig/grau-g/models/plane.obj
+unit0 /assig/grau-g/Textures/invaders.jpg
+solid
+noaxes
+clearColor 1.0 1.0 1.0
+
+resetLightPosition
+
+resetCamera
+dist 1.4
+grab 1
+
+grab 2
+
+grab 3
+
+grab 4
+
+
+
+

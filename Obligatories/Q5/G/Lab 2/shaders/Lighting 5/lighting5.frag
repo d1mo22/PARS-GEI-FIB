@@ -35,7 +35,7 @@ vec4 light(vec3 N, vec3 V, vec3 L) {
     matAmbient * lightAmbient +
     matDiffuse * lightDiffuse * Idiff+
     matSpecular * lightSpecular * Ispec;
-    }
+}
 
 
 void main() {

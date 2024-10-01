@@ -1,6 +1,7 @@
 .vscode
 .idea
 
+*.iml
 *.o
 *.out
 *.exe
@@ -8,3 +9,4 @@
 .DS_store
 .Rproj.user
 .tar
+/out

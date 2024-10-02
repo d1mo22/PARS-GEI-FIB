@@ -47,9 +47,8 @@ public class Main {
     }
 
     private static void printInstrumentation(Properties properties) {
-        Iterator keys = properties.keySet().iterator();
-        while (keys.hasNext()) {
-            String key = (String) keys.next();
+        for (Object o : properties.keySet()) {
+            String key = (String) o;
             String property = properties.getProperty(key);
             System.out.println(key + " : " + property);
         }
@@ -57,8 +56,8 @@ public class Main {
     }
 
     private static void printActions(List actions) {
-        for (int i = 0; i < actions.size(); i++) {
-            String action = (String) actions.get(i);
+        for (Object o : actions) {
+            String action = (String) o;
             System.out.println(action);
         }
     }

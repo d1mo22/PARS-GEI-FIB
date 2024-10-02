@@ -1,4 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: IA.Azamon.Testing
-Created-By: 11.0.24 (Red Hat, Inc.)
-

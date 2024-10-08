@@ -45,6 +45,7 @@ void Face::computeNormal(const vector<Vertex> &v)
         pnormal.setY(pnormal.y() + ((pi.x() + pj.x()) * (pi.z() - pj.z())));
         pnormal.setZ(pnormal.z() + ((pi.y() + pj.y()) * (pi.x() - pj.x())));
     }
+    if (pnormal.length()<0.01) pnormal *= 100; //workaround
     pnormal.normalize();
 }
 

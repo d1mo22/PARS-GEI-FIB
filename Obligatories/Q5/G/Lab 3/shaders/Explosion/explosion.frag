@@ -9,5 +9,6 @@ uniform float time;
 
 void main()
 {
+    int slice;
     fragColor = frontColor * texture(colorMap, vtexCoord);
 }

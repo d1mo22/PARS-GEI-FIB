@@ -1,0 +1,6 @@
+Queue [] [3,2,1]
+1
+Queue [2,3] []
+False
+False
+True

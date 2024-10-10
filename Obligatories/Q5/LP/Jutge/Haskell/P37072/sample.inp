@@ -1,0 +1,19 @@
+let t7 = Node 7 Empty Empty
+let t6 = Node 6 Empty Empty
+let t5 = Node 5 Empty Empty
+let t4 = Node 4 Empty Empty
+let t3 = Node 3 t6 t7
+let t2 = Node 2 t4 t5
+let t1 = Node 1 t2 t3
+let t1' = Node 1 t3 t2
+size t1
+height t1
+equal t2 t3
+isomorphic t1 t1'
+preOrder t1
+postOrder t1
+inOrder t1
+breadthFirst t1
+build [1,2,4,5,3] [4,2,5,1,3]
+overlap (+) t2 t3
+overlap (+) t1 t3

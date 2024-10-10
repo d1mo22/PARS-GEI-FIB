@@ -1,0 +1,7 @@
+let c = push 3 (push 2 (push 1 create))
+c
+top c
+pop c
+empty $ pop c
+empty $ pop $ pop $ c
+empty $ pop $ pop $ pop c

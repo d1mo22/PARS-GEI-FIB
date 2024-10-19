@@ -1,0 +1,8 @@
+eval3 (Val 2)
+eval3 (Add (Val 2) (Val 3))
+eval3 (Sub (Val 2) (Val 3))
+eval3 (Div (Val 4) (Val 2))
+eval3 (Mul (Add (Val 2) (Val 3)) (Sub (Val 2) (Val 3)))
+eval3 (Div (Val 4) (Val 0))
+eval3 (Add (Div (Val 4) (Val 0)) (Val 3))
+eval3 (Add (Val 3) (Div (Val 4) (Val 0)))

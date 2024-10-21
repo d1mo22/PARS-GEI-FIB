@@ -1,0 +1,13 @@
+let div10 = flip div 10
+let t1 = Node 3 99 (Node 1 88 Nil Nil) (Node 1 22 Nil Nil)
+let t2 = Node 2 77 (Node 1 33 Nil Nil) Nil
+let t3 = Node 6 44 t1 t2
+let t4 = Node 7 55 t1 t2
+isOk t3
+isOk t4
+nthElement t3 1
+nthElement t3 9
+nthElement t3 3
+nthElement t3 8
+mapToElements div10 t3 [1,9,3,8]
+div10 <$> t3

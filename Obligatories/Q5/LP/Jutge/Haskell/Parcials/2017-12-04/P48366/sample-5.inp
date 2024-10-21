@@ -1,0 +1,8 @@
+numerador (racional 1 2)
+denominador (racional 1 2)
+numerador (racional 2 4)
+denominador (racional 2 4)
+racional 1 2
+racional 2 4
+racional 1 2 == racional 2 4 
+racional 1 2 == racional 1 3

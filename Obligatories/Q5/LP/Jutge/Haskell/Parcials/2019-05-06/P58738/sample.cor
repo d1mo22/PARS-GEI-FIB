@@ -1,0 +1,8 @@
+True
+False
+Just 88
+Nothing
+Just 22
+Nothing
+[Just 8,Nothing,Just 2,Nothing]
+Node 6 4 (Node 3 9 (Node 1 8 Nil Nil) (Node 1 2 Nil Nil)) (Node 2 7 (Node 1 3 Nil Nil) Nil)

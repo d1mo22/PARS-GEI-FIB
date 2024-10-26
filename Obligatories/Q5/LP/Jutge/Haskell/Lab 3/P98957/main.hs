@@ -1,3 +1,7 @@
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+
+{-# HLINT ignore "Use :" #-}
+
 ones :: [Integer]
 ones = repeat 1
 
@@ -37,6 +41,7 @@ lookNsay = map read $ iterate next "1"
     next :: String -> String
     next [] = []
     next xs =
+      -- span devuelve la lista mas grande que cumpla una condicion
       let (prefix, rest) = span (== head xs) xs
        in show (length prefix) ++ [head xs] ++ next rest
 

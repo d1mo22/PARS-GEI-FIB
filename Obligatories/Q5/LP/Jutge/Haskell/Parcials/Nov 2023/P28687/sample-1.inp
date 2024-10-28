@@ -1,0 +1,4 @@
+take 5 $ termes_cosinus 0
+cosinus 0 (1%100000)
+map fromRational $ take 5 $ termes_cosinus (314%100)
+fromRational $ cosinus (314%100) (1%100000)

@@ -1,0 +1,4 @@
+roman2int "I"
+roman2int "IV"
+roman2int "MCCCXIX"
+roman2int "MMXVIII"

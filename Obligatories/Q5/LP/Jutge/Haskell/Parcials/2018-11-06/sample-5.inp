@@ -1,0 +1,4 @@
+Node (Leaf 3) (Node (Leaf 8) (Leaf 7))
+Node (Leaf 1) (Node (Node (Leaf 3) (Leaf 4)) (Node (Leaf 8) (Leaf 7)))
+Node (Leaf "Albert") (Node (Leaf "Gerard") (Leaf "Jordi"))
+Leaf 'x'

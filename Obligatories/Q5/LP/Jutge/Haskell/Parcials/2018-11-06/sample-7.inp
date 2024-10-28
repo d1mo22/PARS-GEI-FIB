@@ -1,0 +1,5 @@
+let t1 = Node (Leaf "a") (Node (Leaf "b") (Leaf "c"))
+let t2 = Node (Leaf 0) (Node (Leaf 1) (Leaf 2))
+let t3 = Node (Node (Leaf 1) (Leaf 2)) (Leaf 0)
+zipLTrees t1 t2
+zipLTrees t1 t3

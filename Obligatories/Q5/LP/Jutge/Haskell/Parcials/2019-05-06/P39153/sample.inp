@@ -1,0 +1,3 @@
+take 6 $ map fromRational $ exps (1%1)
+fromRational $ exponencial (1%1) (1%100000)
+

@@ -1,0 +1,3 @@
+apply2 (+ 2.5) 10.5
+apply2 (* 3) 4
+apply2 ("hello " ++) "peter"

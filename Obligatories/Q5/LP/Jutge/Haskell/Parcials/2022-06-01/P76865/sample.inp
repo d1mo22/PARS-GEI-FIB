@@ -1,0 +1,3 @@
+maximum $ Node 'a' (Node 'c' Empty Empty) (Node 'b' Empty Empty)
+avg $ Node 10 (Node 20 Empty Empty) (Node 30 Empty Empty)
+cat $ Node "mi" (Node "mama" Empty Empty) (Node "me" (Node "mima" Empty Empty) Empty)

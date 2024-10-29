@@ -53,10 +53,9 @@ build l = Node (build l1) (build l2)
     l2 = drop len l
 
 zipLTrees :: LTree a -> LTree b -> Maybe (LTree (a, b))
-zipLTrees (Node t1 t2) (Leaf y) = do Nothing
-zipLTrees (Leaf x) (Node t1 t2) = do Nothing
-zipLTrees (Leaf x) (Leaf y) = do
-  return (Leaf (x, y))
+zipLTrees (Node t1 t2) (Leaf y) = Nothing
+zipLTrees (Leaf x) (Node t1 t2) = Nothing
+zipLTrees (Leaf x) (Leaf y) = Just (Leaf (x, y))
 zipLTrees (Node t1 t2) (Node t3 t4) = do
   tx <- zipLTrees t1 t3
   ty <- zipLTrees t2 t4

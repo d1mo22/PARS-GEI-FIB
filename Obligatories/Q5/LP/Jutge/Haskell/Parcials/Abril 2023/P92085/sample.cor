@@ -1,0 +1,4 @@
+[True,False,True,False]
+S (S (S (S (S Z))))
+S (S (S (S (S (S Z)))))
+S (S (S (S (S (S Z)))))

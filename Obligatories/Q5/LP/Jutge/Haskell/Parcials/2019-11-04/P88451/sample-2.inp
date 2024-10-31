@@ -1,0 +1,6 @@
+doubleT $ Empty :: Tree Int
+doubleT $ Node 1 Empty Empty
+doubleT $ Node 1 (Node 2 Empty Empty) Empty
+doubleT $ Node 2 Empty (Node 1 Empty Empty)
+doubleT $ Node 1 (Node 2 Empty Empty) (Node 3 Empty Empty)
+doubleT $ Node 1 (Node 2 Empty (Node 3 Empty Empty)) (Node 4 Empty Empty)

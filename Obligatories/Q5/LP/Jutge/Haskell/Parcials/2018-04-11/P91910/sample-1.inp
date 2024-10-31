@@ -1,0 +1,2 @@
+take 6 $ multEq 2 3
+take 5 $ multEq 3 7

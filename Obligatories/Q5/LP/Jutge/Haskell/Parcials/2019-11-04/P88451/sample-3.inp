@@ -1,0 +1,2 @@
+doubleF $ Forest []
+doubleF $ Forest [Empty, Node 1 Empty Empty, Node 1 (Node 2 Empty Empty) (Node 3 Empty Empty)]

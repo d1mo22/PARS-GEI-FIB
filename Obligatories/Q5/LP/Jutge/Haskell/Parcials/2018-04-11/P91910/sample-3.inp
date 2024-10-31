@@ -1,0 +1,4 @@
+take 10 $ myIterate (+1) 0
+take 10 $ myIterate (*2) 1
+take 10 $ myIterate ('a':) []
+take 8 $ myIterate (++"y") "x"

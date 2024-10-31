@@ -1,0 +1,6 @@
+get (set empty "a" 1) "a"
+get (set empty "a" 1) "b"
+get (set (set empty "a" 1) "b" 2) "a"
+get (set (set empty "a" 1) "b" 2) "b"
+get (set (set empty "a" 1) "b" 2) "c"
+get (set (set empty "a" 1) "a" 2) "a"

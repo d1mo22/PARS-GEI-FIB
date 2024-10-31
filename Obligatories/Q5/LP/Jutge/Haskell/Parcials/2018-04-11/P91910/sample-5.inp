@@ -1,0 +1,11 @@
+let st1 = set (set empty "a" 1) "b" 2
+let st2 = set (set empty "a" 4) "b" 3
+let e1 = Mul (Val 5) (Sum (Var "a") (Var "b"))
+let e2 = Mul (Val 5) (Sum (Var "a") (Var "c"))
+let e3 = Sub (Var "a") (Var "b")
+eval st1 e1
+eval st2 e1
+eval st1 e2
+eval st2 e2
+eval st1 e3
+eval st2 e3

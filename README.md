@@ -1,4 +1,5 @@
 # PARS GEI-FIB
+
 Grau+Màster en Enginyeria Informàtica de la FIB-UPC 2022-2027
 
 ## 📚 Assignatures

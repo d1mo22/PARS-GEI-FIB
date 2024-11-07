@@ -22,12 +22,14 @@ out vec4 fragColor;
 
 const vec4 WHITE = vec4(1);
 const vec4 RED = vec4(1,0,0,1);
-
+20.669.458
 void main()
 {
     vec2 centre = vec2(0.5,0.5);
-    float d = distance(centre, vtexCoord);
-    float t = smoothstep(0.20, 0.205, d);
+    vec2 radius = vec2(0.5,0.4);
+    vec2 adjustedCoord = (vtexCoord - centre) / radius;
+    float d = length(adjustedCoord);
+    float t = smoothstep(1.0 - 0.005, 1.0 + 0.005, d);
     vec4 color = mix(RED, WHITE, t);
     fragColor = color;
 }

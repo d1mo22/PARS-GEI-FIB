@@ -17,10 +17,11 @@ vec4 light(vec3 N, vec3 L) {
     float Ispec = 0.0;
     if (NdotL > 0) Ispec = pow(RdotV, matShininess);
 
+    vec4 ambient = lightAmbient + matAmbient
     vec4 diffuse = (lightDiffuse * matDiffuse * NdotL)/2;
     vec4 specular = lightSpecular * matSpecular * Ispec;
 
-    return diffuse + specular;
+    return ambient + diffuse + specular;
 }
 
 void main()

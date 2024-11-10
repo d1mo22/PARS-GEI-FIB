@@ -1,53 +1,50 @@
-//Vector montañoso
 #include <iostream>
 #include <vector>
 using namespace std;
- 
- 
+
 vector<int> calcula_cims(const vector<int>& v) {
-        int tam_v = v.size();
-        int tam_sol = 0;
-        if (tam_v%2 == 0) tam_sol = tam_v/2 - 1;
-        else tam_sol = tam_v/2;
-        vector<int> u(tam_sol, 0);
-        int k = 0;
-        for (int i = 1; i < tam_v-1; ++i) {
-                if (v[i] > v[i-1] && v[i] > v[i+1]) {
-                        u[k] = v[i];
-                        ++k;
-                }
+    int tam_v = v.size();
+    vector<int> u;
+    for (int i = 1; i < tam_v - 1; ++i) {
+        if (v[i] > v[i - 1] && v[i] > v[i + 1]) {
+            u.push_back(v[i]);
         }
-        return u;      
+    }
+    return u;
 }
- 
+
 int main() {
-        int n;
-        cin >> n;
-        vector<int> v(n);
-        for (int i = 0; i < n; ++i) {
-                cin >> v[i];
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    for (int i = 0; i < n; ++i) {
+        cin >> v[i];
+    }
+
+    vector<int> cims = calcula_cims(v);
+    int num_cims = cims.size();
+    int ult_cim = cims.empty() ? 0 : cims.back();
+
+    cout << num_cims << ":";
+        for (int cim : cims) {
+            cout << " " << cim;
         }
-        int count = 0;
-        for (int i = 0; calcula_cims(v)[i] != 0; ++i) {
-                ++count;
+    cout << endl;
+
+    bool found_higher = false;
+    for (size_t i = 0; i < cims.size(); ++i) {
+        if (cims[i] > ult_cim) {
+            if (found_higher) {
+                cout << " ";
+            }
+            cout << cims[i];
+            found_higher = true;
         }
-        int cim_max = 0;
-        cout << count << ":";
-        for (int i = 0; calcula_cims(v)[i] != 0; ++i) {
-                cout << " " << calcula_cims(v)[i];
-                cim_max = calcula_cims(v)[i];
-        }
-        cout << endl;
-        bool mes_alt = false;
-        bool primer = true;
-        for (int i = 0; calcula_cims(v)[i] != 0; ++i) {
-                if (calcula_cims(v)[i] > cim_max) {
-                        if (primer) primer = false;
-                        else cout << " ";
-                        cout << calcula_cims(v)[i];
-                        mes_alt = true;
-                }
-        }
-        if (not mes_alt) cout << "-" << endl;
-        else cout << endl;
+    }
+    if (!found_higher) {
+        cout << "-";
+    }
+    cout << endl;
+
+    return 0;
 }

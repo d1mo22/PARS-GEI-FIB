@@ -6,36 +6,36 @@ int validar(const string& s) {
     int pos = 0;
     int suma = 0;
     for (int i = 10; i != 0; --i) {
-        if (s[pos] == 'X') suma += (s[pos] - 'N')*i ;
-        else if (s[pos] != '?') suma += (s[pos] - '0')*i;
+        if (s[pos] == 'X') suma += 10 * i;
+        else if (s[pos] != '?') suma += (s[pos] - '0') * i;
         ++pos;
     }
     return suma;
 }
 
 int posicio_interrogant(const string& s) {
-    int pos = 0;
-    for (int i = s.size() - 1; i != 0; --i) {
-        if (s[i] == '?') return pos + 1;
-        ++pos;
+    for (int i = 0; i < s.size(); ++i) {
+        if (s[i] == '?') return 10 - i;
     }
     return -1;
 }
 
 char missing(int suma, int pos) {
-    int i = 0;
-    while (i < 10) {
-        if ((suma+(i*pos))%11 == 0) return (i + '0');
-        ++i;
+    for (int i = 0; i <= 10; ++i) {
+        if ((suma + (i * pos)) % 11 == 0) {
+            return (i == 10) ? 'X' : (i + '0');
+        }
     }
-    return 'X';
+    return 'X'; // This should never be reached if the input is valid
 }
 
 int main() {
     string s;
     while (cin >> s) {
-        int pos = posicio_interrogant(s);
         int suma = validar(s);
-        cout << suma << " " << missing(suma, pos) << endl;
+        int pos = posicio_interrogant(s);
+        char digit = missing(suma, pos);
+        cout << digit << endl;
     }
+    return 0;
 }

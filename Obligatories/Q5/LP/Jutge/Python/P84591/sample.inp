@@ -1,0 +1,5 @@
+print(absValue(-666))
+print(power(2, 3))
+print(isPrime(17))
+print(slowFib(5))
+print(quickFib(40))

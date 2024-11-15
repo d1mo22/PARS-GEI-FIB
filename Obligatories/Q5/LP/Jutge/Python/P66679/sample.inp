@@ -1,0 +1,5 @@
+my_map(lambda x: x + 1, [1, 2, 3, 4])
+my_filter(lambda x: x % 2 == 1, [1, 2, 3, 4, 5])
+factors(10)
+triplets(1)
+triplets(20)

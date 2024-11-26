@@ -1,0 +1,8 @@
+g1 = fibs()
+[next(g1) for n in range(10)]
+g2 = roots(4)
+[round(next(g2), 10) for n in range(10)]
+g3 = primes()
+[next(g3) for n in range(20)]
+g4 = hammings()
+[next(g4) for n in range(20)]

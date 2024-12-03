@@ -20,4 +20,4 @@ Cada práctica incluye su propio conjunto de archivos y documentación para faci
 
 - [Nuria Enseñat](https://github.com/nuriaensenat)
 - [Joan Vila](https://github.com/vilavilla)
-- David Morais
+- [David Morais](https://github.com/d1mo22)

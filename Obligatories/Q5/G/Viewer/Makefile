@@ -30,7 +30,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = all1.0.0
-DISTDIR = /home/david/NewViewer_1d403e6/.tmp/all1.0.0
+DISTDIR = /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/.tmp/all1.0.0
 SUBTARGETS    =  \
 		sub-viewer \
 		sub-plugins
@@ -38,91 +38,91 @@ SUBTARGETS    =  \
 
 sub-viewer-qmake_all:  FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro
+	cd viewer/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro
 	cd viewer/ && $(MAKE) -f Makefile qmake_all
 sub-viewer: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile
 sub-viewer-make_first-ordered: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile 
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile 
 sub-viewer-make_first: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile 
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile 
 sub-viewer-all-ordered: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile all
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile all
 sub-viewer-all: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile all
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile all
 sub-viewer-clean-ordered: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile clean
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile clean
 sub-viewer-clean: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile clean
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile clean
 sub-viewer-distclean-ordered: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile distclean
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile distclean
 sub-viewer-distclean: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile distclean
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile distclean
 sub-viewer-install_subtargets-ordered: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile install
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile install
 sub-viewer-install_subtargets: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile install
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile install
 sub-viewer-uninstall_subtargets-ordered: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile uninstall
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile uninstall
 sub-viewer-uninstall_subtargets: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile uninstall
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile uninstall
 sub-plugins-qmake_all: sub-viewer-qmake_all FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro
+	cd plugins/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro
 	cd plugins/ && $(MAKE) -f Makefile qmake_all
 sub-plugins: viewer-bin-libglwidget-so \
 		viewer-bin-libcore-so FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile
 sub-plugins-make_first-ordered: sub-viewer-make_first-ordered  FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile 
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile 
 sub-plugins-make_first: viewer-bin-libglwidget-so-make_first viewer-bin-libcore-so-make_first FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile 
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile 
 sub-plugins-all-ordered: sub-viewer-all-ordered  FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile all
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile all
 sub-plugins-all: viewer-bin-libglwidget-so-all viewer-bin-libcore-so-all FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile all
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile all
 sub-plugins-clean-ordered: sub-viewer-clean-ordered  FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile clean
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile clean
 sub-plugins-clean: viewer-bin-libglwidget-so-clean viewer-bin-libcore-so-clean FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile clean
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile clean
 sub-plugins-distclean-ordered: sub-viewer-distclean-ordered  FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile distclean
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile distclean
 sub-plugins-distclean: viewer-bin-libglwidget-so-distclean viewer-bin-libcore-so-distclean FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile distclean
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile distclean
 sub-plugins-install_subtargets-ordered: sub-viewer-install_subtargets-ordered  FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile install
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile install
 sub-plugins-install_subtargets: viewer-bin-libglwidget-so-install_subtargets viewer-bin-libcore-so-install_subtargets FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile install
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile install
 sub-plugins-uninstall_subtargets-ordered: sub-viewer-uninstall_subtargets-ordered  FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile uninstall
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile uninstall
 sub-plugins-uninstall_subtargets: viewer-bin-libglwidget-so-uninstall_subtargets viewer-bin-libcore-so-uninstall_subtargets FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile uninstall
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile uninstall
 
 Makefile: all.pro /opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++/qmake.conf /opt/Qt/6.7.3/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.7.3/gcc_64/mkspecs/common/unix.conf \
@@ -565,18 +565,18 @@ uninstall_subtargets: sub-viewer-uninstall_subtargets-ordered sub-plugins-uninst
 
 sub-viewer-check_ordered:
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile check
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile check
 sub-plugins-check_ordered: sub-viewer-check_ordered 
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile check
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile check
 check: sub-viewer-check_ordered sub-plugins-check_ordered
 
 sub-viewer-benchmark_ordered:
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -f Makefile benchmark
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -f Makefile benchmark
 sub-plugins-benchmark_ordered: sub-viewer-benchmark_ordered 
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -f Makefile benchmark
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -f Makefile benchmark
 benchmark: sub-viewer-benchmark_ordered sub-plugins-benchmark_ordered
 install:install_subtargets  FORCE
 
@@ -595,9 +595,9 @@ distdir: sub-viewer-distdir sub-plugins-distdir FORCE
 
 sub-viewer-distdir: FORCE
 	@test -d viewer/ || mkdir -p viewer/
-	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/viewer.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/viewer
+	cd viewer/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/viewer.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/viewer
 
 sub-plugins-distdir: FORCE
 	@test -d plugins/ || mkdir -p plugins/
-	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/plugins.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/plugins
+	cd plugins/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/plugins.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/plugins
 

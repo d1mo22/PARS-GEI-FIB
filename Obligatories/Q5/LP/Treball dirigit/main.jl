@@ -76,3 +76,49 @@ Inf/Inf == NaN
 # Podem veure quin es el seguent float representable
 nextfloat(1.0)
 prevfloat(1.0)
+
+abstract type Animal end
+
+struct Dog <: Animal
+    name::String
+end
+
+struct Cat <: Animal
+    name::String
+end
+
+# Podem fer servir el polimorfisme
+function sound(a::Dog)
+    println("Woof!")
+end
+
+function sound(a::Cat)
+    println("Meow!")
+end
+
+# Example of a shape hierarchy
+abstract type Shape end
+
+struct Circle <: Shape
+    radius::Float64
+end
+
+struct Rectangle <: Shape
+    width::Float64
+    height::Float64
+end
+
+function area(s::Circle)
+    π * s.radius^2
+end
+
+function area(s::Rectangle)
+    s.width * s.height
+end
+
+# Usage example
+c = Circle(5.0)
+r = Rectangle(4.0, 6.0)
+println("Circle area: ", area(c))
+println("Rectangle area: ", area(r))
+

@@ -1,2 +1,2 @@
-TARGET     = $$qtLibraryTarget(showHelpNg)
+TARGET     = $$qtLibraryTarget(showHelpNg1)
 include(../common.pro)

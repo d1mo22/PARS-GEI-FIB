@@ -1,4 +1,2 @@
-TARGET     = $$qtLibraryTarget(multitex)  # Nom del plugin 
-
+TARGET     = $$qtLibraryTarget(multitex1)
 include(../common.pro)
-

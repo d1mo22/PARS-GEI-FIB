@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = renderdefault1.0.0
-DISTDIR = /home/david/NewViewer_1d403e6/plugins/render-default/build/renderdefault1.0.0
+DISTDIR = /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/build/renderdefault1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/opt/Qt/6.7.3/gcc_64/lib -Wl,-rpath-link,/opt/Qt/6.7.3/gcc_64/lib -shared
 LIBS          = $(SUBLIBS) /opt/Qt/6.7.3/gcc_64/lib/libQt6OpenGLWidgets.so /opt/Qt/6.7.3/gcc_64/lib/libQt6OpenGL.so /opt/Qt/6.7.3/gcc_64/lib/libQt6Widgets.so /opt/Qt/6.7.3/gcc_64/lib/libQt6Gui.so /opt/Qt/6.7.3/gcc_64/lib/libQt6Core.so -lpthread -lGL   
@@ -1052,7 +1052,7 @@ build/moc_renderdefault.cpp: renderdefault.h \
 		/opt/Qt/6.7.3/gcc_64/include/QtOpenGL/qopenglshaderprogram.h \
 		build/moc_predefs.h \
 		/opt/Qt/6.7.3/gcc_64/libexec/moc
-	/opt/Qt/6.7.3/gcc_64/libexec/moc $(DEFINES) --include /home/david/NewViewer_1d403e6/plugins/render-default/build/moc_predefs.h -I/opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -I/home/david/NewViewer_1d403e6/plugins/render-default -I/home/david/NewViewer_1d403e6/plugins/render-default/include -I/home/david/NewViewer_1d403e6/viewer/glwidget/include -I/home/david/NewViewer_1d403e6/viewer/interfaces -I/home/david/NewViewer_1d403e6/viewer/core/include -I/opt/Qt/6.7.3/gcc_64/include -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGLWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGL -I/opt/Qt/6.7.3/gcc_64/include/QtWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtGui -I/opt/Qt/6.7.3/gcc_64/include/QtCore -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include renderdefault.h -o build/moc_renderdefault.cpp
+	/opt/Qt/6.7.3/gcc_64/libexec/moc $(DEFINES) --include /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/build/moc_predefs.h -I/opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/include -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/include -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/interfaces -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/include -I/opt/Qt/6.7.3/gcc_64/include -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGLWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGL -I/opt/Qt/6.7.3/gcc_64/include/QtWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtGui -I/opt/Qt/6.7.3/gcc_64/include/QtCore -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include renderdefault.h -o build/moc_renderdefault.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1332,13 +1332,13 @@ build/moc_renderdefault.o: build/moc_renderdefault.cpp
 ####### Install
 
 install_target: all FORCE
-	@test -d $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/render-default/../bin/plugins || mkdir -p $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/render-default/../bin/plugins
-	$(QINSTALL_PROGRAM) ../bin/$(TARGET) $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/bin/plugins/$(TARGET)
-	-$(STRIP) --strip-unneeded $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/bin/plugins/$(TARGET)
+	@test -d $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/../bin/plugins || mkdir -p $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/../bin/plugins
+	$(QINSTALL_PROGRAM) ../bin/$(TARGET) $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/bin/plugins/$(TARGET)
+	-$(STRIP) --strip-unneeded $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/bin/plugins/$(TARGET)
 
 uninstall_target: FORCE
-	-$(DEL_FILE) $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/bin/plugins/$(TARGET)
-	-$(DEL_DIR) $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/render-default/../bin/plugins/ 
+	-$(DEL_FILE) $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/bin/plugins/$(TARGET)
+	-$(DEL_DIR) $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/../bin/plugins/ 
 
 
 install: install_target  FORCE

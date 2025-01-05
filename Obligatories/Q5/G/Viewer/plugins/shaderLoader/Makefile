@@ -37,7 +37,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = shaderloader1.0.0
-DISTDIR = /home/david/NewViewer_1d403e6/plugins/shaderLoader/build/shaderloader1.0.0
+DISTDIR = /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/build/shaderloader1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/opt/Qt/6.7.3/gcc_64/lib -Wl,-rpath-link,/opt/Qt/6.7.3/gcc_64/lib -shared
 LIBS          = $(SUBLIBS) /opt/Qt/6.7.3/gcc_64/lib/libQt6OpenGLWidgets.so /opt/Qt/6.7.3/gcc_64/lib/libQt6OpenGL.so /opt/Qt/6.7.3/gcc_64/lib/libQt6Widgets.so /opt/Qt/6.7.3/gcc_64/lib/libQt6Gui.so /opt/Qt/6.7.3/gcc_64/lib/libQt6Core.so -lpthread -lGL   
@@ -1048,7 +1048,7 @@ build/moc_customdialog.cpp: customdialog.h \
 		/opt/Qt/6.7.3/gcc_64/include/QtCore/QUrl \
 		build/moc_predefs.h \
 		/opt/Qt/6.7.3/gcc_64/libexec/moc
-	/opt/Qt/6.7.3/gcc_64/libexec/moc $(DEFINES) --include /home/david/NewViewer_1d403e6/plugins/shaderLoader/build/moc_predefs.h -I/opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -I/home/david/NewViewer_1d403e6/plugins/shaderLoader -I/home/david/NewViewer_1d403e6/plugins/shaderLoader/include -I/home/david/NewViewer_1d403e6/viewer/glwidget/include -I/home/david/NewViewer_1d403e6/viewer/interfaces -I/home/david/NewViewer_1d403e6/viewer/core/include -I/opt/Qt/6.7.3/gcc_64/include -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGLWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGL -I/opt/Qt/6.7.3/gcc_64/include/QtWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtGui -I/opt/Qt/6.7.3/gcc_64/include/QtCore -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include customdialog.h -o build/moc_customdialog.cpp
+	/opt/Qt/6.7.3/gcc_64/libexec/moc $(DEFINES) --include /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/build/moc_predefs.h -I/opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/include -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/include -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/interfaces -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/include -I/opt/Qt/6.7.3/gcc_64/include -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGLWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGL -I/opt/Qt/6.7.3/gcc_64/include/QtWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtGui -I/opt/Qt/6.7.3/gcc_64/include/QtCore -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include customdialog.h -o build/moc_customdialog.cpp
 
 build/moc_shaderLoader.cpp: shaderLoader.h \
 		../../viewer/interfaces/plugin.h \
@@ -1309,7 +1309,7 @@ build/moc_shaderLoader.cpp: shaderLoader.h \
 		/opt/Qt/6.7.3/gcc_64/include/QtCore/QElapsedTimer \
 		build/moc_predefs.h \
 		/opt/Qt/6.7.3/gcc_64/libexec/moc
-	/opt/Qt/6.7.3/gcc_64/libexec/moc $(DEFINES) --include /home/david/NewViewer_1d403e6/plugins/shaderLoader/build/moc_predefs.h -I/opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -I/home/david/NewViewer_1d403e6/plugins/shaderLoader -I/home/david/NewViewer_1d403e6/plugins/shaderLoader/include -I/home/david/NewViewer_1d403e6/viewer/glwidget/include -I/home/david/NewViewer_1d403e6/viewer/interfaces -I/home/david/NewViewer_1d403e6/viewer/core/include -I/opt/Qt/6.7.3/gcc_64/include -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGLWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGL -I/opt/Qt/6.7.3/gcc_64/include/QtWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtGui -I/opt/Qt/6.7.3/gcc_64/include/QtCore -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include shaderLoader.h -o build/moc_shaderLoader.cpp
+	/opt/Qt/6.7.3/gcc_64/libexec/moc $(DEFINES) --include /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/build/moc_predefs.h -I/opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++ -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/include -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/include -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/interfaces -I/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/include -I/opt/Qt/6.7.3/gcc_64/include -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGLWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtOpenGL -I/opt/Qt/6.7.3/gcc_64/include/QtWidgets -I/opt/Qt/6.7.3/gcc_64/include/QtGui -I/opt/Qt/6.7.3/gcc_64/include/QtCore -I/usr/include/c++/13 -I/usr/include/x86_64-linux-gnu/c++/13 -I/usr/include/c++/13/backward -I/usr/lib/gcc/x86_64-linux-gnu/13/include -I/usr/local/include -I/usr/include/x86_64-linux-gnu -I/usr/include shaderLoader.h -o build/moc_shaderLoader.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1903,13 +1903,13 @@ build/moc_shaderLoader.o: build/moc_shaderLoader.cpp
 ####### Install
 
 install_target: all FORCE
-	@test -d $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/shaderLoader/../bin/plugins || mkdir -p $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/shaderLoader/../bin/plugins
-	$(QINSTALL_PROGRAM) ../bin/$(TARGET) $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/bin/plugins/$(TARGET)
-	-$(STRIP) --strip-unneeded $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/bin/plugins/$(TARGET)
+	@test -d $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/../bin/plugins || mkdir -p $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/../bin/plugins
+	$(QINSTALL_PROGRAM) ../bin/$(TARGET) $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/bin/plugins/$(TARGET)
+	-$(STRIP) --strip-unneeded $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/bin/plugins/$(TARGET)
 
 uninstall_target: FORCE
-	-$(DEL_FILE) $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/bin/plugins/$(TARGET)
-	-$(DEL_DIR) $(INSTALL_ROOT)/home/david/NewViewer_1d403e6/plugins/shaderLoader/../bin/plugins/ 
+	-$(DEL_FILE) $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/bin/plugins/$(TARGET)
+	-$(DEL_DIR) $(INSTALL_ROOT)/home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/../bin/plugins/ 
 
 
 install: install_target  FORCE

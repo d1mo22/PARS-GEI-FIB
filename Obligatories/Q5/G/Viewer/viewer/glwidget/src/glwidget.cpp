@@ -62,11 +62,6 @@ const QString& GLWidget::getPluginPath() const {
   return pluginPath;
 }
 
-void printDepthBufferBits() {
-     GLint depthBits = 0;
-     glGetIntegerv(GL_DEPTH_BITS, &depthBits);
-     std::cout << "Depth buffer bits: " << depthBits << std::endl;
-}
 
 void GLWidget::initializeGL()
 {   
@@ -89,7 +84,6 @@ void GLWidget::initializeGL()
     unlitProgram.addShader(&vs);
     unlitProgram.addShader(&fs);
     unlitProgram.link();
-    printDepthBufferBits();
 /*
 qDebug() << vs.log() << endl;
 qDebug() << vs.isCompiled() << endl;
@@ -101,7 +95,6 @@ qDebug() << fs.isCompiled() << endl;
 qDebug() << unlitProgram.isLinked() << endl;
 */
 }
-
 
 QOpenGLShaderProgram* GLWidget::defaultProgram()
 {

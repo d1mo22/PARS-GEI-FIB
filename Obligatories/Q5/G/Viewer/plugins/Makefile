@@ -30,7 +30,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = plugins1.0.0
-DISTDIR = /home/david/NewViewer_1d403e6/plugins/.tmp/plugins1.0.0
+DISTDIR = /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/.tmp/plugins1.0.0
 SUBTARGETS    =  \
 		sub-drawvbong \
 		sub-navigate-default \
@@ -44,204 +44,204 @@ SUBTARGETS    =  \
 
 sub-drawvbong-qmake_all:  FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro
+	cd drawvbong/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro
 	cd drawvbong/ && $(MAKE) -f Makefile qmake_all
 sub-drawvbong: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile
 sub-drawvbong-make_first: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile 
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile 
 sub-drawvbong-all: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile all
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile all
 sub-drawvbong-clean: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile clean
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile clean
 sub-drawvbong-distclean: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile distclean
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile distclean
 sub-drawvbong-install_subtargets: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile install
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile install
 sub-drawvbong-uninstall_subtargets: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile uninstall
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile uninstall
 sub-navigate-default-qmake_all:  FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro
+	cd navigate-default/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro
 	cd navigate-default/ && $(MAKE) -f Makefile qmake_all
 sub-navigate-default: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile
 sub-navigate-default-make_first: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile 
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile 
 sub-navigate-default-all: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile all
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile all
 sub-navigate-default-clean: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile clean
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile clean
 sub-navigate-default-distclean: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile distclean
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile distclean
 sub-navigate-default-install_subtargets: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile install
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile install
 sub-navigate-default-uninstall_subtargets: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile uninstall
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile uninstall
 sub-render-default-qmake_all:  FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro
+	cd render-default/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro
 	cd render-default/ && $(MAKE) -f Makefile qmake_all
 sub-render-default: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile
 sub-render-default-make_first: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile 
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile 
 sub-render-default-all: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile all
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile all
 sub-render-default-clean: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile clean
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile clean
 sub-render-default-distclean: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile distclean
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile distclean
 sub-render-default-install_subtargets: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile install
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile install
 sub-render-default-uninstall_subtargets: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile uninstall
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile uninstall
 sub-shaderLoader-qmake_all:  FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro
+	cd shaderLoader/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro
 	cd shaderLoader/ && $(MAKE) -f Makefile qmake_all
 sub-shaderLoader: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile
 sub-shaderLoader-make_first: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile 
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile 
 sub-shaderLoader-all: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile all
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile all
 sub-shaderLoader-clean: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile clean
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile clean
 sub-shaderLoader-distclean: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile distclean
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile distclean
 sub-shaderLoader-install_subtargets: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile install
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile install
 sub-shaderLoader-uninstall_subtargets: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile uninstall
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile uninstall
 sub-pluginLoader-qmake_all:  FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro
+	cd pluginLoader/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro
 	cd pluginLoader/ && $(MAKE) -f Makefile qmake_all
 sub-pluginLoader: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile
 sub-pluginLoader-make_first: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile 
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile 
 sub-pluginLoader-all: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile all
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile all
 sub-pluginLoader-clean: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile clean
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile clean
 sub-pluginLoader-distclean: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile distclean
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile distclean
 sub-pluginLoader-install_subtargets: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile install
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile install
 sub-pluginLoader-uninstall_subtargets: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile uninstall
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile uninstall
 sub-effectCRT-qmake_all:  FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro
+	cd effectCRT/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro
 	cd effectCRT/ && $(MAKE) -f Makefile qmake_all
 sub-effectCRT: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile
 sub-effectCRT-make_first: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile 
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile 
 sub-effectCRT-all: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile all
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile all
 sub-effectCRT-clean: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile clean
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile clean
 sub-effectCRT-distclean: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile distclean
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile distclean
 sub-effectCRT-install_subtargets: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile install
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile install
 sub-effectCRT-uninstall_subtargets: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile uninstall
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile uninstall
 sub-showHelpNg-qmake_all:  FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro
+	cd showHelpNg/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro
 	cd showHelpNg/ && $(MAKE) -f Makefile qmake_all
 sub-showHelpNg: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile
 sub-showHelpNg-make_first: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile 
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile 
 sub-showHelpNg-all: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile all
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile all
 sub-showHelpNg-clean: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile clean
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile clean
 sub-showHelpNg-distclean: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile distclean
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile distclean
 sub-showHelpNg-install_subtargets: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile install
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile install
 sub-showHelpNg-uninstall_subtargets: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile uninstall
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile uninstall
 sub-alphaBlending-qmake_all:  FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro
+	cd alphaBlending/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro
 	cd alphaBlending/ && $(MAKE) -f Makefile qmake_all
 sub-alphaBlending: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile
 sub-alphaBlending-make_first: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile 
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile 
 sub-alphaBlending-all: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile all
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile all
 sub-alphaBlending-clean: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile clean
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile clean
 sub-alphaBlending-distclean: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile distclean
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile distclean
 sub-alphaBlending-install_subtargets: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile install
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile install
 sub-alphaBlending-uninstall_subtargets: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile uninstall
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile uninstall
 
 Makefile: plugins.pro /opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++/qmake.conf /opt/Qt/6.7.3/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.7.3/gcc_64/mkspecs/common/unix.conf \
@@ -683,54 +683,54 @@ uninstall_subtargets: sub-drawvbong-uninstall_subtargets sub-navigate-default-un
 
 sub-drawvbong-check:
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile check
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile check
 sub-navigate-default-check:
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile check
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile check
 sub-render-default-check:
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile check
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile check
 sub-shaderLoader-check:
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile check
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile check
 sub-pluginLoader-check:
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile check
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile check
 sub-effectCRT-check:
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile check
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile check
 sub-showHelpNg-check:
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile check
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile check
 sub-alphaBlending-check:
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile check
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile check
 check: sub-drawvbong-check sub-navigate-default-check sub-render-default-check sub-shaderLoader-check sub-pluginLoader-check sub-effectCRT-check sub-showHelpNg-check sub-alphaBlending-check
 
 sub-drawvbong-benchmark:
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile benchmark
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -f Makefile benchmark
 sub-navigate-default-benchmark:
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile benchmark
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -f Makefile benchmark
 sub-render-default-benchmark:
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile benchmark
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -f Makefile benchmark
 sub-shaderLoader-benchmark:
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile benchmark
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -f Makefile benchmark
 sub-pluginLoader-benchmark:
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile benchmark
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -f Makefile benchmark
 sub-effectCRT-benchmark:
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile benchmark
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -f Makefile benchmark
 sub-showHelpNg-benchmark:
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile benchmark
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -f Makefile benchmark
 sub-alphaBlending-benchmark:
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile benchmark
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -f Makefile benchmark
 benchmark: sub-drawvbong-benchmark sub-navigate-default-benchmark sub-render-default-benchmark sub-shaderLoader-benchmark sub-pluginLoader-benchmark sub-effectCRT-benchmark sub-showHelpNg-benchmark sub-alphaBlending-benchmark
 install:install_subtargets  FORCE
 
@@ -749,33 +749,33 @@ distdir: sub-drawvbong-distdir sub-navigate-default-distdir sub-render-default-d
 
 sub-drawvbong-distdir: FORCE
 	@test -d drawvbong/ || mkdir -p drawvbong/
-	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/drawvbong
+	cd drawvbong/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/drawvbong/drawvbong.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/drawvbong
 
 sub-navigate-default-distdir: FORCE
 	@test -d navigate-default/ || mkdir -p navigate-default/
-	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/navigate-default
+	cd navigate-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/navigate-default/navigate-default.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/navigate-default
 
 sub-render-default-distdir: FORCE
 	@test -d render-default/ || mkdir -p render-default/
-	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/render-default/render-default.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/render-default
+	cd render-default/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/render-default/render-default.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/render-default
 
 sub-shaderLoader-distdir: FORCE
 	@test -d shaderLoader/ || mkdir -p shaderLoader/
-	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/shaderLoader
+	cd shaderLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/shaderLoader/shaderLoader.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/shaderLoader
 
 sub-pluginLoader-distdir: FORCE
 	@test -d pluginLoader/ || mkdir -p pluginLoader/
-	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/pluginLoader
+	cd pluginLoader/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/pluginLoader/pluginLoader.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/pluginLoader
 
 sub-effectCRT-distdir: FORCE
 	@test -d effectCRT/ || mkdir -p effectCRT/
-	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/effectCRT
+	cd effectCRT/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/effectCRT/effectCRT.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/effectCRT
 
 sub-showHelpNg-distdir: FORCE
 	@test -d showHelpNg/ || mkdir -p showHelpNg/
-	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/showHelpNg
+	cd showHelpNg/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/showHelpNg/showHelpNg.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/showHelpNg
 
 sub-alphaBlending-distdir: FORCE
 	@test -d alphaBlending/ || mkdir -p alphaBlending/
-	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/alphaBlending
+	cd alphaBlending/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/plugins/alphaBlending/alphaBlending.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/alphaBlending
 

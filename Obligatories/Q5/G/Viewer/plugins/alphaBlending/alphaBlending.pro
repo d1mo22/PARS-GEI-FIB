@@ -1,4 +1,2 @@
-TARGET     = $$qtLibraryTarget(alphaBlending)  # Nom del plugin 
-
+TARGET     = $$qtLibraryTarget(alphaBlending1)
 include(../common.pro)
-

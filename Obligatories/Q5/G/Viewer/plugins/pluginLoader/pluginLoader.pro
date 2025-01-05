@@ -1,4 +1,2 @@
-TARGET     = $$qtLibraryTarget(pluginloader)  # Nom del plugin 
-
+TARGET     = $$qtLibraryTarget(pluginLoader1)
 include(../common.pro)
-QMAKE_CXXFLAGS += -DGRACETIME=2500

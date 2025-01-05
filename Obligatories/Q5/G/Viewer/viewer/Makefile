@@ -30,7 +30,7 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = viewer1.0.0
-DISTDIR = /home/david/NewViewer_1d403e6/viewer/.tmp/viewer1.0.0
+DISTDIR = /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/.tmp/viewer1.0.0
 SUBTARGETS    =  \
 		sub-core \
 		sub-glwidget \
@@ -39,133 +39,133 @@ SUBTARGETS    =  \
 
 sub-core-qmake_all:  FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro
+	cd core/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro
 	cd core/ && $(MAKE) -f Makefile qmake_all
 sub-core: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile
 sub-core-make_first-ordered: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile 
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile 
 sub-core-make_first: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile 
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile 
 sub-core-all-ordered: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile all
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile all
 sub-core-all: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile all
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile all
 sub-core-clean-ordered: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile clean
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile clean
 sub-core-clean: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile clean
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile clean
 sub-core-distclean-ordered: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile distclean
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile distclean
 sub-core-distclean: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile distclean
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile distclean
 sub-core-install_subtargets-ordered: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile install
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile install
 sub-core-install_subtargets: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile install
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile install
 sub-core-uninstall_subtargets-ordered: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile uninstall
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile uninstall
 sub-core-uninstall_subtargets: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile uninstall
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile uninstall
 sub-glwidget-qmake_all: sub-core-qmake_all FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro
+	cd glwidget/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro
 	cd glwidget/ && $(MAKE) -f Makefile qmake_all
 sub-glwidget: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile
 sub-glwidget-make_first-ordered: sub-core-make_first-ordered  FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile 
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile 
 sub-glwidget-make_first: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile 
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile 
 sub-glwidget-all-ordered: sub-core-all-ordered  FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile all
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile all
 sub-glwidget-all: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile all
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile all
 sub-glwidget-clean-ordered: sub-core-clean-ordered  FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile clean
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile clean
 sub-glwidget-clean: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile clean
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile clean
 sub-glwidget-distclean-ordered: sub-core-distclean-ordered  FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile distclean
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile distclean
 sub-glwidget-distclean: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile distclean
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile distclean
 sub-glwidget-install_subtargets-ordered: sub-core-install_subtargets-ordered  FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile install
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile install
 sub-glwidget-install_subtargets: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile install
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile install
 sub-glwidget-uninstall_subtargets-ordered: sub-core-uninstall_subtargets-ordered  FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile uninstall
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile uninstall
 sub-glwidget-uninstall_subtargets: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile uninstall
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile uninstall
 sub-app-qmake_all: sub-glwidget-qmake_all FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro
+	cd app/ && $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro
 	cd app/ && $(MAKE) -f Makefile qmake_all
 sub-app: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile
 sub-app-make_first-ordered: sub-glwidget-make_first-ordered  FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile 
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile 
 sub-app-make_first: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile 
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile 
 sub-app-all-ordered: sub-glwidget-all-ordered  FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile all
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile all
 sub-app-all: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile all
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile all
 sub-app-clean-ordered: sub-glwidget-clean-ordered  FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile clean
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile clean
 sub-app-clean: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile clean
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile clean
 sub-app-distclean-ordered: sub-glwidget-distclean-ordered  FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile distclean
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile distclean
 sub-app-distclean: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile distclean
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile distclean
 sub-app-install_subtargets-ordered: sub-glwidget-install_subtargets-ordered  FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile install
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile install
 sub-app-install_subtargets: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile install
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile install
 sub-app-uninstall_subtargets-ordered: sub-glwidget-uninstall_subtargets-ordered  FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile uninstall
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile uninstall
 sub-app-uninstall_subtargets: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile uninstall
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile uninstall
 
 Makefile: viewer.pro /opt/Qt/6.7.3/gcc_64/mkspecs/linux-g++/qmake.conf /opt/Qt/6.7.3/gcc_64/mkspecs/features/spec_pre.prf \
 		/opt/Qt/6.7.3/gcc_64/mkspecs/common/unix.conf \
@@ -607,24 +607,24 @@ uninstall_subtargets: sub-core-uninstall_subtargets-ordered sub-glwidget-uninsta
 
 sub-core-check_ordered:
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile check
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile check
 sub-glwidget-check_ordered: sub-core-check_ordered 
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile check
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile check
 sub-app-check_ordered: sub-glwidget-check_ordered 
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile check
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile check
 check: sub-core-check_ordered sub-glwidget-check_ordered sub-app-check_ordered
 
 sub-core-benchmark_ordered:
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -f Makefile benchmark
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -f Makefile benchmark
 sub-glwidget-benchmark_ordered: sub-core-benchmark_ordered 
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile benchmark
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -f Makefile benchmark
 sub-app-benchmark_ordered: sub-glwidget-benchmark_ordered 
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -f Makefile benchmark
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -f Makefile benchmark
 benchmark: sub-core-benchmark_ordered sub-glwidget-benchmark_ordered sub-app-benchmark_ordered
 install:install_subtargets  FORCE
 
@@ -643,13 +643,13 @@ distdir: sub-core-distdir sub-glwidget-distdir sub-app-distdir FORCE
 
 sub-core-distdir: FORCE
 	@test -d core/ || mkdir -p core/
-	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/core/core.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/core
+	cd core/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/core/core.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/core
 
 sub-glwidget-distdir: FORCE
 	@test -d glwidget/ || mkdir -p glwidget/
-	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/glwidget/glwidget.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/glwidget
+	cd glwidget/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/glwidget/glwidget.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/glwidget
 
 sub-app-distdir: FORCE
 	@test -d app/ || mkdir -p app/
-	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/NewViewer_1d403e6/viewer/app/app.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/app
+	cd app/ && ( test -e Makefile || $(QMAKE) -o Makefile /home/david/PARS-GEI-FIB/Obligatories/Q5/G/Viewer/viewer/app/app.pro ) && $(MAKE) -e -f Makefile distdir DISTDIR=$(DISTDIR)/app
 

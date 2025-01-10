@@ -1,0 +1,5 @@
+(display "Introduce un numero: ")
+(define x (read))
+(display "El doble es: ")
+(display (* x 2))
+(newline)

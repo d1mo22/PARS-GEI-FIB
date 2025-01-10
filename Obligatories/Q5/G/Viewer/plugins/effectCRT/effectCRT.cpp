@@ -25,6 +25,8 @@ void EffectCRT::onPluginLoad()
       "#version 330 core\n"
       "uniform mat4 modelViewProjectionMatrix;"
       "in vec3 vertex;"
+      "in vec3 normal;    QOpenGLShaderProgram* program;
+    QOpenGLShader *fs, *vs; "
       "in vec3 color;"
       "out vec4 col;"
       "void main() {"

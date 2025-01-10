@@ -1,2 +1,2 @@
-TARGET     = $$qtLibraryTarget(effectCRT)
+TARGET     = $$qtLibraryTarget(effectCRT2)
 include(../common.pro)

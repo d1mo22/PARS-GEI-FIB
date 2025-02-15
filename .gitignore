@@ -14,5 +14,5 @@ __pycache__/
 .antlr/
 .idea/
 *.class
-/venv
+/venv/
 

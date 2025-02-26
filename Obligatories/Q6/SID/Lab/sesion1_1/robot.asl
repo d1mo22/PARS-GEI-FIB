@@ -2,7 +2,6 @@
 adyacente(a, b).
 adyacente(b, c).
 adyacente(c, d).
-adyacente(d, a).
 
 localizado(robot, a).
 localizado(papel_usado, d).
@@ -20,13 +19,21 @@ localizado(papelera, c).
 
 +localizado(robot, X) : localizado(papelera, X) &
 				llevando(papel_usado)
-			<- .print("todo el papel tirado a la papelera en ", X).
+			<- .print("todo el papel tirado a la papelera en ", X);
+				+tirado(papel_usado, papelera).
 
-+!localizado(robot, X) : localizado(robot, X) <- .print("Ha llegado a su destino").
- 
-+!localizado(robot, X) : localizado(robot, Y) &
-				(not (X=Y)) & adyacente(Y,Z) 
-			<- .print("mover de ", Y, " a ", Z); 
-			   -localizado(robot, Y); 
-			   +localizado(robot, Z);
-               !localizado(robot, X).
++!tirado(papel_usado, papelera) : tirado(papel_usado, papelera) <- .print("Ha llegado a su destino").
+
++!tirado(papel_usado, papelera) : (not tirado(papel_usado, papelera)) &
+				localizado(robot, Y) & adyacente(Y, Z)
+			<- .print("mover de ", Y, " a ", Z);
+				-localizado(robot, Y);
+				+localizado(robot, Z);
+				!tirado(papel_usado, papelera).
+
++!tirado(papel_usado, papelera) : (not tirado(papel_usado, papelera)) & llevando(papel_usado) &
+				localizado(robot, Y) & adyacente(Z, Y)
+			<- .print("mover de ", Y, " a ", Z);
+				-localizado(robot, Y);
+				+localizado(robot, Z);
+				!tirado(papel_usado, papelera).

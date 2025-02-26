@@ -2,22 +2,29 @@
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
-
 using namespace std;
 
 #define UNDEF -1
 #define TRUE 1
 #define FALSE 0
 
+typedef unsigned int uint;
+
 uint numVars;
 uint numClauses;
 vector<vector<int>> clauses;
-vector<vector<int>> occur_list;
-vector<int> model; // Representa la funcio que envia variable a T/F
+vector<vector<int>> occur_list; // Lista de ocurrencias para cada literal
+vector<int> model;
 vector<int> modelStack;
 uint indexOfNextLitToPropagate;
 uint decisionLevel;
 
+// Nuevas variables globales para la heurística VSIDS
+vector<double> conflictCounter; // Contador de conflictos por variable
+uint conflictCount = 0;         // Contador global de conflictos
+const uint decayInterval = 100; // Intervalo de decaimiento (cada X conflictos)
+
+// Convierte un literal a su índice en occur_list
 int literalToIndex(int lit) { return (lit > 0) ? lit : numVars + abs(lit); }
 
 void readClauses() {
@@ -31,22 +38,17 @@ void readClauses() {
   // Read "cnf numVars numClauses"
   string aux;
   cin >> aux >> numVars >> numClauses;
-  clauses.resize(numClauses + 1);
-  // En que clausulas aparece cada literal
-  occur_list = vector<vector<int>>((numVars * 2) + 1);
+  clauses.resize(numClauses);
+  // Inicializamos las listas de ocurrencias
+  occur_list.resize(2 * numVars + 1);
+
   // Read clauses
   for (uint i = 0; i < numClauses; ++i) {
     int lit;
-    while (cin >> lit and lit != 0)
+    while (cin >> lit and lit != 0) {
       clauses[i].push_back(lit);
-  }
-  int clauses_size = clauses.size();
-
-  for (int i = 0; i < clauses_size; ++i) {
-    for (int j = 0; j < clauses[i].size(); ++j) {
-      int literal = clauses[i][j];
-      // if its negative we
-      occur_list[literalToIndex(literal)].push_back(i);
+      // Añadimos esta cláusula a la lista de ocurrencias del literal
+      occur_list[literalToIndex(lit)].push_back(i);
     }
   }
 }
@@ -70,30 +72,54 @@ void setLiteralToTrue(int lit) {
     model[-lit] = FALSE;
 }
 
+void processConflict(const vector<int> &conflictClause) {
+  ++conflictCount;
+  // Incrementar contadores para todas las variables en la cláusula conflictiva
+  for (int lit : conflictClause) {
+    conflictCounter[abs(lit)] += 1.0;
+  }
+
+  // Aplicar decaimiento cada decayInterval conflictos
+  if (conflictCount % decayInterval == 0) {
+    for (uint var = 1; var <= numVars; ++var) {
+      conflictCounter[var] /=
+          2.0; // Dividimos por 2 para dar más peso a conflictos recientes
+    }
+  }
+}
+
 bool propagateGivesConflict() {
   while (indexOfNextLitToPropagate < modelStack.size()) {
     int lit = modelStack[indexOfNextLitToPropagate];
     ++indexOfNextLitToPropagate;
-    // Solo se procesan las cláusulas que contienen la negación de 'lit'
+
+    // Propagar que el literal es cierto visitando cláusulas donde aparece la
+    // negación
     int negLit = -lit;
     int idx = literalToIndex(negLit);
-    for (int clauseIndex : occur_list[idx]) {
+
+    // Recorremos solo las cláusulas que contienen la negación del literal
+    for (uint i = 0; i < occur_list[idx].size(); ++i) {
+      int clauseIdx = occur_list[idx][i];
+
       bool someLitTrue = false;
       int numUndefs = 0;
       int lastLitUndef = 0;
-      // Procesar únicamente la cláusula afectada
-      for (uint k = 0; !someLitTrue && k < clauses[clauseIndex].size(); ++k) {
-        int val = currentValueInModel(clauses[clauseIndex][k]);
+
+      for (uint k = 0; not someLitTrue and k < clauses[clauseIdx].size(); ++k) {
+        int val = currentValueInModel(clauses[clauseIdx][k]);
         if (val == TRUE)
           someLitTrue = true;
         else if (val == UNDEF) {
           ++numUndefs;
-          lastLitUndef = clauses[clauseIndex][k];
+          lastLitUndef = clauses[clauseIdx][k];
         }
       }
-      if (!someLitTrue && numUndefs == 0)
-        return true; // conflicto, la cláusula no se puede satisfacer.
-      else if (!someLitTrue && numUndefs == 1)
+
+      if (not someLitTrue and numUndefs == 0) {
+        processConflict(clauses[clauseIdx]); // Procesar el conflicto
+        return true;                         // conflict! all lits false
+      } else if (not someLitTrue and numUndefs == 1)
         setLiteralToTrue(lastLitUndef);
     }
   }
@@ -116,54 +142,30 @@ void backtrack() {
   setLiteralToTrue(-lit); // reverse last decision
 }
 
-// Heuristic for finding the next decision literal:propagateGives
+// Heurística VSIDS mejorada
+// heurisitc
 int getNextDecisionLiteral() {
+  int bestVar = 0;
   double bestScore = -1.0;
-  int bestLit = 0;
-  // Recorre todas las variables (asumimos que las variables van del 1 a
-  // numVars)
+
   for (uint var = 1; var <= numVars; ++var) {
     if (model[var] == UNDEF) {
-      // Puntaje para la aparición positiva y negativa
-      double scorePos = 0.0;
-      double scoreNeg = 0.0;
-
-      // Literal positivo: índice es "var"
-      for (int clIdx : occur_list[var]) {
-        // Consideramos la cláusula solo si no está ya satisfecha
-        bool clauseSatisfied = false;
-        for (int lit : clauses[clIdx]) {
-          if (currentValueInModel(lit) == TRUE) {
-            clauseSatisfied = true;
-            break;
-          }
-        }
-        if (!clauseSatisfied)
-          scorePos += pow(2.0, -static_cast<double>(clauses[clIdx].size()));
+      // we use the conflict counter as a score
+      if (conflictCounter[var] > bestScore) {
+        bestScore = conflictCounter[var];
+        bestVar = var;
       }
-
-      // Literal negativo: índice es "numVars + var"
-      for (int clIdx : occur_list[numVars + var]) {
-        bool clauseSatisfied = false;
-        for (int lit : clauses[clIdx]) {
-          if (currentValueInModel(lit) == TRUE) {
-            clauseSatisfied = true;
-            break;
-          }
-        }
-        if (!clauseSatisfied)
-          scoreNeg += pow(2.0, -static_cast<double>(clauses[clIdx].size()));
-      }
-
-      double totalScore = scorePos + scoreNeg;
-      if (totalScore > bestScore) {
-        bestScore = totalScore;
-        // Elegimos la polaridad que tenga mayor puntaje
-        bestLit = (scorePos >= scoreNeg) ? var : -static_cast<int>(var);
+      // if there is no conflicts we use the number of occurences as a support
+      else if (conflictCounter[var] == 0 &&
+               occur_list[var].size() + occur_list[numVars + var].size() >
+                   bestScore) {
+        bestScore = occur_list[var].size() + occur_list[numVars + var].size();
+        bestVar = var;
       }
     }
   }
-  return bestLit;
+
+  return bestVar;
 }
 
 void checkmodel() {
@@ -175,7 +177,7 @@ void checkmodel() {
       cout << "Error in model, clause is not satisfied:";
       for (uint j = 0; j < clauses[i].size(); ++j)
         cout << clauses[i][j] << " ";
-      cout << "\n";
+      cout << endl;
       exit(1);
     }
   }
@@ -183,10 +185,11 @@ void checkmodel() {
 
 int main() {
   readClauses(); // reads numVars, numClauses and clauses
-  model.resize(numVars + 1,
-               UNDEF); // el +1 esta perque les variables començen per 1
+  model.resize(numVars + 1, UNDEF);
+  conflictCounter.resize(numVars + 1,
+                         0.0); // initialize conflict counter
   indexOfNextLitToPropagate = 0;
-  decisionLevel = 0; // nombre de decisions que hem pres fins al moment
+  decisionLevel = 0;
 
   // Take care of initial unit clauses, if any
   for (uint i = 0; i < numClauses; ++i)
@@ -194,7 +197,7 @@ int main() {
       int lit = clauses[i][0];
       int val = currentValueInModel(lit);
       if (val == FALSE) {
-        cout << "UNSATISFIABLE" << "\n";
+        cout << "UNSATISFIABLE" << endl;
         return 10;
       } else if (val == UNDEF)
         setLiteralToTrue(lit);
@@ -204,7 +207,7 @@ int main() {
   while (true) {
     while (propagateGivesConflict()) {
       if (decisionLevel == 0) {
-        cout << "UNSATISFIABLE" << "\n";
+        cout << "UNSATISFIABLE" << endl;
         return 10;
       }
       backtrack();
@@ -212,7 +215,7 @@ int main() {
     int decisionLit = getNextDecisionLiteral();
     if (decisionLit == 0) {
       checkmodel();
-      cout << "SATISFIABLE" << "\n";
+      cout << "SATISFIABLE" << endl;
       return 20;
     }
     // start new decision level:

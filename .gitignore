@@ -15,4 +15,5 @@ __pycache__/
 .idea/
 *.class
 **/sid/
+**/venv/
 *.tex

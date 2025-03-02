@@ -1,66 +1,121 @@
-//TEAM_AXIS
+// Estrategia para FieldOp - Soporte de munición y reconocimiento
 
-+flag (F): team(200) 
-  <-
-  .create_control_points(F,25,3,C);
-  +control_points(C);
-  .length(C,L);
-  +total_control_points(L);
-  +patrolling;
-  +patroll_point(0);
-  .print("Got control points").
+// Inicialización
++!setup_team <-
+    +mySoldiers([]);
+    +myMedics([]);
+    +ammo_requests([]);
+    +support_mode(0).
 
+// Registro de aliados
++friends_in_fov(ID, Type, Angle, Distance, Health, Position) <-
+    if (Type == "BDISoldier") {
+        ?mySoldiers(S);
+        if (.member(ID, S)) { } else {
+            .concat(S, [ID], NewS);
+            -+mySoldiers(NewS);
+        }
+    }
+    if (Type == "BDIMedic") {
+        ?myMedics(M);
+        if (.member(ID, M)) { } else {
+            .concat(M, [ID], NewM);
+            -+myMedics(NewM);
+        }
+    }
+    if (Distance < 10) {
+        .reload;
+    }.
 
-+target_reached(T): patrolling & team(200) 
-  <-
-  .print("AMMOPACK!");
-  .reload;
-  ?patroll_point(P);
-  -+patroll_point(P+1);
-  -target_reached(T).
+// AXIS - DEFENSOR
++flag(F): team(200) <-
+    !setup_team;
+    .create_control_points(F, 20, 6, AmmoPoints);
+    +control_points(AmmoPoints);
+    +total_points(6);
+    +current_point(0);
+    +defending;
+    !patrol_perimeter.
 
-+patroll_point(P): total_control_points(T) & P<T 
-  <-
-  ?control_points(C);
-  .nth(P,C,A);
-  .goto(A).
++!patrol_perimeter: defending & not support_mode(1) & not support_mode(2) <-
+    ?control_points(C);
+    ?current_point(P);
+    ?total_points(T);
+    .nth(P, C, Point);
+    .goto(Point);
+    -+current_point((P+1) mod T);
+    .wait(1000);
+    .reload.
 
-+patroll_point(P): total_control_points(T) & P==T
-  <-
-  -patroll_point(P);
-  +patroll_point(0).
++need_ammo(Agent)[source(A)] <-
+    ?position(Pos);
+    +target_to_resupply(A, Pos);
+    -+support_mode(1);
+    !provide_ammo.
 
++!provide_ammo: support_mode(Mode) & Mode > 0 <-
+    ?target_to_resupply(ID, Pos);
+    .goto(Pos);
+    .wait(500);
+    .reload;
+    -target_to_resupply(ID, Pos);
+    ?ammo_requests(AR);
+    if (.length(AR) > 0) {
+        true;
+    } else {
+        -+support_mode(0);
+        !patrol_perimeter;
+    }.
 
-//TEAM_ALLIED 
+// ALLIED - ATACANTE
++flag(F): team(100) <-
+    !setup_team;
+    +attacking;
+    // Ir directamente hacia la bandera al inicio
+    .goto(F);
+    !support_attack.
 
-+flag (F): team(100) 
-  <-
-  .goto(F).
++!support_attack: attacking <-
+    ?mySoldiers(S);
+    if (.length(S) > 0) {
+        .print("Siguiendo al soldado para dar soporte");
+        .nth(0, S, Leader);
+        .goto(Leader);
+        .wait(2000);
+        !support_attack;
+    } else {
+        ?flag(F);
+        .print("Aproximándome al objetivo para encontrar soldados");
+        .create_control_points(F, 15, 1, ApproachPoint);
+        .nth(0, ApproachPoint, SafePos);
+        .goto(SafePos);
+        .wait(3000);
+        !support_attack;
+    }.
 
-+flag_taken: team(100) 
-  <-
-  .print("In ASL, TEAM_ALLIED flag_taken");
-  ?base(B);
-  +returning;
-  .goto(B);
-  -exploring.
++flag_taken: team(100) <-
+    ?base(B);
+    +escorting;
+    -attacking;
+    .goto(B);
+    .reload.
 
-+heading(H): exploring
-  <-
-  .reload;
-  .wait(2000);
-  .turn(0.375).
++enemies_in_fov(ID, Type, Angle, Distance, Health, Position) <-
+    if (Distance < 10) {
+        ?mySoldiers(S);
+        .send(S, tell, enemy_detected(Position, ID));
+        ?position(MyPos);
+        +evading;
+        .create_control_points(MyPos, 15, 4, EvasionPoints);
+        .nth(2, EvasionPoints, SafePos);
+        .goto(SafePos);
+    } else {
+        .shoot(2, Position);
+        ?mySoldiers(S);
+        .send(S, tell, enemy_detected(Position, ID));
+    }.
 
-//+heading(H): returning
-//  <-
-//  .print("returning").
-
-+target_reached(T): team(100)
-  <- 
-  .print("target_reached");
-  +exploring;
-  .turn(0.375).
-
-+enemies_in_fov(ID,Type,Angle,Distance,Health,Position)
-  <- 
-  .shoot(3,Position).
++backup_required(Pos)[source(A)] <-
+    -+support_mode(2);
+    .goto(Pos);
+    .reload.

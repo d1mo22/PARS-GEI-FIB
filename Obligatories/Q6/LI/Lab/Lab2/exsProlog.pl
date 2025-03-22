@@ -41,10 +41,6 @@
 prod([], 1).
 prod([X|L1], P) :- prod(L1, P1), P is P1 * X.
 
-
-
-
-
 % PROB. B =========================================================
 % Escriu un predicat
 % pescalar(+L1,+L2,?P) que signifiqui: P és el producte escalar dels
@@ -55,10 +51,6 @@ prod([X|L1], P) :- prod(L1, P1), P is P1 * X.
 pescalar([],[],0).
 pescalar([X|L1], [Y|L2], P) :- pescalar(L1, L2, P1), P is P1+X*Y.
 
-
-
-
-
 % PROB. C =========================================================
 % Representant conjunts com llistes sense repeticions, escriu
 % predicats per les operacions d'intersecció i unió de conjunts donats
@@ -68,16 +60,11 @@ interseccio([],_,[]).
 interseccio([X|L1], L2, L3) :- member(X,L2), !, interseccio(L1, L2, L4), L3 = [X|L4].
 interseccio([_|L1], L2, L3) :- interseccio(L1,L2,L3).
 
- 
 % unio(+L1,+L2,?L3)
 
 unio([],L2,L2).
 unio([X|L1], L2, L3) :- not(member(X,L2)), !, unio(L1,L2,L4), L3 = [X|L4].
 unio([_|L1], L2, L3) :- unio(L1,L2,L3).
-
-
-
-
 
 % PROB. D =========================================================
 % Usant append/3, escriu un predicat per calcular l'últim 
@@ -87,12 +74,9 @@ unio([_|L1], L2, L3) :- unio(L1,L2,L3).
 % ultim(+L,?E)
 ultim(L1, E) :- append(_, [E], L1), !.
 
-
 % inversa(+L1,?L2)
 inversa([],[]).
 inversa([X|L1],L2) :- inversa(L1,L3), append(L3, [X], L2).
-
-
 
 % PROB. E =========================================================
 % Escriu un predicat
@@ -104,9 +88,6 @@ inversa([X|L1],L2) :- inversa(L1,L3), append(L3, [X], L2).
 fib(1,1) :- !.
 fib(2,1) :- !.
 fib(N,F) :- N1 is N-1, N2 is N-2, fib(N2,F2), fib(N1, F1), F is F1 + F2. 
-
-
-
 
 % PROB. F =========================================================
 % Escriu un predicat
@@ -121,10 +102,6 @@ fib(N,F) :- N1 is N-1, N2 is N-2, fib(N2,F2), fib(N1, F1), F is F1 + F2.
 % P = Resultat de sumar els valors dels daus
 dados(0,0,[]) :- !.
 dados(P, N, [X|L]) :- N>0, between(1,6,X), P1 is P - X, N1 is N - 1, dados(P1, N1, L).
-  
-
-
-
 
 % PROB. G =========================================================
 % Escriu un predicat
@@ -140,14 +117,8 @@ dados(P, N, [X|L]) :- N>0, between(1,6,X), P1 is P - X, N1 is N - 1, dados(P1, N
 suma([],0) :- !.
 suma([X|L], S) :- suma(L,S1), S is S1 + X.
 
-
-
-
 % suma_la_resta(+L)
 suma_la_resta(L) :- select(X,L,R), suma(R,S), X = S, !.
-
-
-
 
 % PROB. H =========================================================
 % Escriu un predicat
@@ -184,11 +155,9 @@ card_in_list(X, L, R):-
 % ?- esta_ordenada([3,67,45]).
 % respon no.
 
-
-
-
-
-
+esta_ordenada([]).
+esta_ordenada([_]).
+esta_ordenada([X,Y|L]):- X < Y, esta_ordenada([Y|L]).
 
 
 % PROB. J ========================================================
@@ -199,7 +168,14 @@ card_in_list(X, L, R):-
 % s'escriu [a,c,c,a] i [c,a,a,c]
 % (possiblement diverses vegades, no cal que eviteu les repeticions).
 
+isPalindrome(L) :- reverse(L,L).
 
+
+palindrom(L):- 
+    setof(P, (permutation(L,P), isPalindrome(P)), S),
+    member(P, S),
+    write(P), nl,
+    fail. 
 
 
 
@@ -229,13 +205,15 @@ card_in_list(X, L, R):-
 
 p([],[]).
 p(L,[X|P]) :- select(X,L,R), p(R,P).
+p(L,[f(D, C)|P]) :- select(f(C, D),L,R), p(R,P).
 
 dom(L) :- p(L,P), ok(P), write(P), nl.
 dom(_) :- write('no hi ha cadena'), nl.
 
 % a) Escriu el predicat ok(+P) que falta.
-
-
+ok([]).
+ok([_]).
+ok([f(_,A),f(A,B)|R]):- ok([f(A,B)|R]).
 
 
 
@@ -255,7 +233,12 @@ dom(_) :- write('no hi ha cadena'), nl.
 % ?- aplanada( [a,b,[c,[d],e,[]],f,[g,h]], F ).
 % F = [a,b,c,d,e,f,g,h]
 
-
+aplanada([], []).
+aplanada([H|T], F) :-
+    aplanada(H, FH),
+    aplanada(T, FT),
+    append(FH, FT, F), !.
+aplanada(X, [X]).
 
 
 
@@ -272,10 +255,34 @@ dom(_) :- write('no hi ha cadena'), nl.
 % Can this be true? Write a little Prolog program to find it out.
 
 %% Descomenteu i completeu les linies de codi que veieu a continuació:
-%% main :-
-%%     between(0,3,SC1),    % SC1:   "no.    smokers with    cancer group 1"
-%%     between(0,3,SNC1),   % SNC1:  "no.    smokers with no cancer group 1"
-%%     between(0,3,NSC1),   % NSC1:  "no. no smokers with    cancer group 1"
-%%     between(0,3,NSNC1),  % NSNC1: "no. no smokers with no cancer group 1"
-%%     10 is SC1+SNC1+NSC1+NSNC1,  
-%%     ...
+%SC1: Fumadores con cáncer
+%SNC1: Fumadores sin cáncer
+
+%NSC1: No fumadores con cáncer
+%NSNC1: No fumadores sin cáncer
+ main :-
+    between(0,3,SC1), between(0,3,SNC1), between(0,3,NSC1), between(0,3,NSNC1), 
+    10 is SC1+SNC1+NSC1+NSNC1,  
+    SMOKERS1 is SC1 + SNC1,
+    NO_SMOKERS1 is NSC1+NSNC1,
+    % Condición para grupo 1: porcentaje fumadores con cáncer > porcentaje no fumadores con cáncer
+    SC1/(SMOKERS1) > NSC1/(NO_SMOKERS1),
+
+    between(0,3,SC2), between(0,3,SNC2), between(0,3,NSC2), between(0,3,NSNC2), 
+    10 is SC2+SNC2+NSC2+NSNC2, 
+    SMOKERS2 is SC2 + SNC2,
+    NO_SMOKERS2 is NSC2+NSNC2, 
+    % Condición para grupo 2: porcentaje fumadores con cáncer > porcentaje no fumadores con cáncer
+    SC2/(SMOKERS2) > NSC2/(NO_SMOKERS2),
+
+    TOTAL_S is SMOKERS1 + SMOKERS2,
+    TOTAL_NS is NO_SMOKERS1 + NO_SMOKERS2,
+    TOTAL_SC is SC1 + SC2,
+    TOTAL_NC is 20-TOTAL_SC,
+    TOTAL_S > 0,
+    TOTAL_NS > 0,
+    TOTAL_SC/TOTAL_S < TOTAL_NC/TOTAL_NS,
+
+    write('Grupo 1: '), write([SC1,SNC1,NSC1,NSNC1]), nl,
+    write('Grupo 2: '), write([SC2,SNC2,NSC2,NSNC2]), nl.
+

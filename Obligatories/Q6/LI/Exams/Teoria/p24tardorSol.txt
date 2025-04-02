@@ -1,0 +1,154 @@
+
+--------------------------------------------------------------------------------------------------
+Logic in Computer Science, November 5th, 2024. Time: 1h45min. No books or lecture notes allowed.
+--------------------------------------------------------------------------------------------------
+ - Insert your answers on the dotted lines ... below, and only there.
+ - When finished, upload this file with the same name: exam.txt
+ - Use the text symbols:     &     v    -       ->          |=        A       E          ===
+   for                      AND   OR   NOT   IMPLIES   "SATISFIES"  FORALL  EXISTS  LOGICAL EQUIV., etc
+   like in:
+        I |=  p & (q v -r)     (the interpretation I satisfies the formula p & (q v -r) ).
+   You can write  not (I |= F)  to express "I does not satisfy F",  or
+                  not (F |= G)  to express "G is not a logical consequence of F"
+   Also you can use subindices with "_". For example write x_i to denote x-sub-i.
+--------------------------------------------------------------------------------------------------
+
+
+Problem 1. (2 points).
+
+1a) Let F and G be propositional formulas such that G |= F.  Is it true that then always  F |= G  or  F |= -G ?
+    Prove your answer as simply as you can using only the definition of propositional logic.
+
+>>> Answer:
+    ...
+    This is false.
+    Let F be the formula p v -p and let G be the formula p.
+    Then G |= F, because for the only model I of G, the interpretation I where I(p)=1,
+    we have I|=F (in fact, F is a tautology).
+    But not(F |= G):   if  I(p)=0  we have  I |= F  but  not(I |= G).
+    And not(F |= -G):  if  I(p)=1  we have  I |= F  but  not(I |= -G).
+    
+1b) Let F, G, H be formulas. Prove that if F v G |= H then F & -H is unsatisfiable,
+    using only the definition of propositional logic.
+
+>>> Answer:
+    ...
+        F v G |= H                                            ==>   [by def. of logical consequence]
+    AI, if I |= F v G then I |= H                             ==>   [by def. of |=]
+    AI, if eval_I(F v G) = 1 then eval_I (H) = 1              ==>   [by def. of eval_I(v)]
+    AI, if max(eval_I(F), eval_I(G)) = 1 then eval_I(H) = 1   ==>   [by def of max]
+    AI, if eval_I(F) = 1 then eval_I_(H) = 1                  ==>   [by arithmetic]
+    AI, if eval_I(F) = 1 then 1-eval_I(H) = 0                 ==>   [by def. of eval_I(-)]
+    AI, if eval_I(F) = 1 then eval_I(-H) = 0                  ==>   [by def. of min]
+    AI, min(eval_I(F), eval_I(-H)) = 0                        ==>   [by def. of eval_I(&)]
+    AI, eval_I(F & -H) = 0                                    ==>   [by def. of |=]
+    AI, not (I |= F & -H)                                     ==>   [by de.f of unsatisfiable]
+        F & -H is unsatisfiable.
+
+Another answer:
+        F v G |= H                                            ==>   [by def. of logical consequence]
+    AI, if I |= F v G then I |= H                             ==>   [by def. of |=]
+    AI, if eval_I(F v G) = 1 then eval_I(H) = 1               ==>   [by def. of eval_I(v)]
+    AI, if max(eval_I(F), eval_I(G)) = 1 then eval_I(H) = 1   ==>   [by def of max]
+    AI, if eval_I(F) = 1 then eval_I(H) = 1                   ==>   [with existential quantifier]
+    not EI such that eval_I(F) = 1 and eval_I(H) = 0	      ==>   [by def. of eval(-)]
+    not EI such that eval_I(F) = 1 and eval_I(-H) = 1	      ==>   [by def. of max]
+    not EI such that max(eval_I(F), eval_I(-H)) = 1	      ==>   [by def. of eval_I(&)]
+    not EI such that eval_I(F & -H) = 1                       ==>   [by def. of unsatisfiable]
+        F & -H unsat
+    
+		   
+--------------------------------------------------------------------------------------------------
+
+Problem 2. (3 points).
+
+Given S a set of clauses (CNF) over n propositional symbols, and Resolution the deductive rule:
+
+                 p v C          -p v D
+                 ---------------------      for some symbol p
+                         C v D
+
+2a) Is Resolution a correct deductive rule:  (p v C) & (-p v D) |= C v D  for any p, C, D?
+    Prove your answer.
+
+>>> Answer:
+    ...
+    Let I some model of (p v C) & (-p v D). There are two cases:
+      - I(p)=1 Then:  I |= (p v C) & (-p v D) ==> I |= -p v D ==> I |= D ==> I |= C v D
+      - I(p)=0 Then:  I |= (p v C) & (-p v D) ==> I |=  p v C ==> I |= C ==> I |= C v D.
+
+2b) Is Resolution a complete deductive rule? Prove your answer.
+
+>>> Answer:
+    ...
+    Complete: any logical consequence can be obtained through resolution.
+    Resolution is not a complete deductive rule.
+    Counterexample:
+    S = {p, q}, C = p v q 
+    S |= C  but C cannot be obtained from S applying Resolution: C not in Res(S). 
+
+2c) Explain what it means that Resolution is a refutationally complete deductive rule.
+
+>>> Answer:
+    ...
+    If a set of clauses S is unsatisfiable then the closure under Resolution Res(S)
+    will contain the empty clause [].
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 3. (2 points).
+
+Let us remember the Ladder encoding for at-most-one (amo), that is, for expressing in CNF
+that at most one of the literals x_1 ... x_n is true, also written x1 + ... + xn <= 1.
+It uses new auxiliary variables a_i that mean "some of x_1 ... x_i is true".
+
+3a) Depending on n, how many auxiliary variables a_i will be needed?
+
+>>> Answer:
+    ...
+    The ladder encoding of amo(x_1,...,x_n) needs n auxiliary variables a_i
+
+3b) Which clauses are generated by this encoding, and, in total, how many there are.
+
+>>> Answer:
+    ...
+    For each auxiliary variable a_i in 1..n-1, 3 clauses will be generated:
+       x_i -> a_i         (-x_i v a_i)
+       a_i -> -x_{i+1}    (-a_i v x_{i+1})
+       a_i -> a_{i+1}     (-a_i v a_{i+1})
+    For the last auxiliary variable:
+       x_n -> a_n         (-x_n v a_n)
+    In total, for amo(x_1,...,x_n), 3n-2 clauses are generated.
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 4. (3 points).
+
+4a) UNIQUE-SAT is the problem of determining whether a given set of clauses S has exactly one model.
+    Explain very briefly how you would use a SAT solver to decide UNIQUE-SAT.
+
+>>> Answer
+    We need at most two calls to the SAT solver:
+    ...
+    Call the solver with input S:
+       - if unsatisfiable, output "no".
+       - if   satisfiable with model I,
+         Add to S the clause forbidding just that model I, and call the solver again:
+           - if satisfiable,   output "no".
+           - if unsatisfiable, output "yes".
+
+    The clause forbidding I has the form  x_1 v...v x_n  v  -y_1 v...v -y_m   where the x_i are
+    all variables x_i with I(x_i)=0, and the y_j are the variables with I(y_j)=1.
+
+
+4b) Assuming you can use a SAT solver or any other algorithm, explain very briefly what you would do
+    and what the computational cost would be and why, to decide the following problem:
+    Given a formula F in disjunctive normal form (DNF), decide whether F is a satisfiable
+
+>>> Answer
+    ...
+    A DNF has the form C_1 v ... v C_n where each C_i is a "cube", a conjunction of literals.
+    It is satisfiable if some C_i is satisfiable, which is the case if it does not contain a literal
+    and its negation. This can be checked in linear time.

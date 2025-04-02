@@ -1,0 +1,148 @@
+
+--------------------------------------------------------------------------------------------------
+Logic in Computer Science, April 3rd, 2024. Time: 1h50min. No books or lecture notes allowed.
+--------------------------------------------------------------------------------------------------
+ - Insert your answers on the dotted lines ... below, and only there.
+ - When finished, upload this file with the same name: exam.txt
+ - Use the text symbols:     &     v    -       ->          |=        A       E          ===
+   for                      AND   OR   NOT   IMPLIES   "SATISFIES"  FORALL  EXISTS  LOGICAL EQUIV., etc
+   like in:
+        I |=  p & (q v -r)     (the interpretation I satisfies the formula p & (q v -r) ).
+   You can write  not (I |= F)  to express "I does not satisfy F",  or
+                  not (F |= G)  to express "G is not a logical consequence of F"
+   Also you can use subindices with "_". For example write x_i to denote x-sub-i.
+--------------------------------------------------------------------------------------------------
+
+
+Problem 1. (3 points).
+
+1a) Is it true that if F -> G is a tautology then G |= F? Prove using only the definition
+    of propositional logic.
+
+>>> Answer:
+    ...
+    
+1b) Let F be a tautology, and let G an unsatisfiable formula. Is it true that
+    F & -G is a tautology? Prove using only the definition of propositional logic.
+
+>>> Answer:
+    ...
+    
+1c) Using only the definition of propositional logic, prove the logical equivalence between
+    the formulas -(F v G) and -F & -G (De Morgan law 2)
+
+>>> Answer:
+    -(F v G) === -F & -G
+                                        iff [by ...]
+    ...
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 2. (2 points).
+
+We know that the "positive unit propagation" algorithm decides SAT for
+a set of Horn clauses S in polynomial time. Remember that if S does not contains the
+empty clause [], its clauses can be of these forms:
+    a) p
+    b) p v -q_1 v ... v -q_n     with n > 0
+    c) -q_1 v ... v -q_n         with n > 0
+    
+2a) Explain how "positive unit propagation" works, and prove that
+    if S is satisfiable, then the algorithm obtains an interpretation I
+    that satisfies all the clauses in S (I is a model of S).
+    Do it by completing these sentences:
+
+    a) The resulting interpretation I satisfies all the unitary clauses p because:
+>>> Answer:
+    ...
+      
+    b) The resulting interpretation I satisfies all the clauses of the form
+       p v -q_1 v ... v -q_n  because:
+>>> Answer:
+    ...
+      
+    c) The resulting interpretation I satisfies all the clauses of the form
+       -q_1 v ... v -q_n  because:
+>>> Answer:
+    ...
+
+2b) Which is the very interesting property of the obtained model?
+    Explain why it has this property.
+
+>>> Answer:
+    ...
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 3. (2.5 points).
+My friend John has implemented the Tseitin transformation of an arbitrary
+formula F, which produces a boolean formula in conjunctive normal form (CNF).
+Representing the formula F as a tree, he adds a new propositional variable e_i
+for each inner node. For example, for a node OR (v) with children nodes a and b,
+the equivalence e_i <-> a v b is expressed with these three clauses:
+-e_i v a v b, -a v e_i, and -b v e_i.
+
+3a) But in the final set of clauses, he has decided not to include the unitary
+    clause e_1 corresponding to the variable at the root node of the formula F.
+    He says that it is not strictly necessary to maintain equisatisfibiality.
+    Prove that what John says is not correct.
+
+>>> Answer:
+    ...
+
+3b) Explain two ways of producing fewer clauses than those in the standard
+    Tseitin transformation.
+
+>>> Answer:
+    ...
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 4. (2.5 points).
+
+4) Consider the following C++ code snippet:
+
+   1: int f(int i, int s, const vector<int>& v) {
+   2:    if (s == 0) return 1;
+   3:    while (i < 0 and s != 0) ++i;
+   4:    if (i >= v.size()) return -1;
+   5:    return v[i];
+   6: }
+
+Let us introduce propositional symbols p, q, r with the following meaning: 
+
+       p:  "i >= 0       at line 5"
+       q:  "i < v.size() at line 5"
+       r:  "s == 0"
+
+We note that the value of program variable s never changes in the code,
+so in the definition of propositional symbol r we do not need to indicate
+which line we are referring to.
+
+4a) Give a propositional formula in CNF such that if it is unsatisfiable then we can ensure that
+    the vector access v[i] at line 5 is correct.
+
+>>> Answer:
+    At line 5 we have -r, because if s == 0 we would have returned at line 2.
+    We also have
+    ...
+
+    On the other hand, the vector acces v[i] at line 5 is correct if and only if
+    ...
+
+    So if we prove that
+    ...  |=  ...
+    then the vector access will be correct.
+
+    But this is equivalent to proving that
+    ...
+    is unsatisfiable.
+
+4b) Prove that indeed the access v[i] at line 5 is correct.
+
+>>> Answer:
+    ...
+

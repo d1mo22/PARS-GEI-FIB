@@ -1,0 +1,279 @@
+
+--------------------------------------------------------------------------------------------------
+Logic in Computer Science, April 3rd, 2024. Time: 1h50min. No books or lecture notes allowed.
+--------------------------------------------------------------------------------------------------
+ - Insert your answers on the dotted lines ... below, and only there.
+ - When finished, upload this file with the same name: exam.txt
+ - Use the text symbols:     &     v    -       ->          |=        A       E          ===
+   for                      AND   OR   NOT   IMPLIES   "SATISFIES"  FORALL  EXISTS  LOGICAL EQUIV., etc
+   like in:
+        I |=  p & (q v -r)     (the interpretation I satisfies the formula p & (q v -r) ).
+   You can write  not (I |= F)  to express "I does not satisfy F",  or
+                  not (F |= G)  to express "G is not a logical consequence of F"
+   Also you can use subindices with "_". For example write x_i to denote x-sub-i.
+--------------------------------------------------------------------------------------------------
+
+
+Problem 1. (3 points).
+
+1a) Is it true that if F -> G is a tautology then G |= F? Prove using only the definition
+    of propositional logic.
+
+>>> Answer:
+    No. Counterexample: suppose F is p & -p and G is any satisfiable formula (for example
+    p). It is easy to verify that for these F and G the formula F -> G, that is,
+    the formula -F v G, is tautology: for any interpretation I, since F is unsatisfiable,
+    we have eval_I(-F v G) = max(1-eval_I(F), eval_I(G)) = 1. However, F is not a logical
+    consequence of G: there exists at least one model I of G (because G is satisfiable),
+    and this I is not a model of F (because F is unsatisfiable).
+
+1b) Let F be a tautology, and let G an unsatisfiable formula. Is it true that
+    F & -G is a tautology? Prove using only the definition of propositional logic.
+
+>>> Answer:
+    Yes.
+
+    F tautology and G unsatisﬁable
+                                             implies [by def. of tautology and unsatisfiable]
+    AI, I |= F and not(I |= G)
+                                             implies [by def. of |=]
+    AI, eval_I(F) = 1 and eval_I(G) = 0
+                                             implies [by arithmetic]
+    AI, eval_I(F) = 1 and 1 − eval_I(G) = 1
+                                             implies [by def. evaluation of not]
+    AI, eval_I(F) = 1 and eval_I(-G) = 1
+                                             implies [by arithmetic]
+    AI, min(eval_I(F), eval_I(-G)) = 1
+                                             implies [by def. evaluation of and]
+    AI, eval_I(F & -G) = 1
+                                             implies [by def. of |=]
+    AI, I |= F & -G
+                                             implies [by def. of tautology]
+    F & -G is a tautology
+
+1c) Using only the definition of propositional logic, prove the logical equivalence between
+    the formulas -(F v G) and -F & -G (De Morgan law 2)
+
+    -(F v G) === -F & -G
+                                        iff [by ...]
+    ...
+
+>>> Answer:
+    -(F v G) === -F & -G
+                                                           iff   [by def. of logical equivalence]
+    AI, I |= -(F v G)  iff  I |= -F & -G
+                                                           iff   [by def. of |=]
+    AI, eval_I(-(F v G)) = 1  iff  eval_I(-F & -G) = 1
+                                                           iff   [because eval_I returns 0 or 1]
+    AI, eval_I(-(F v G)) = eval_I(-F & -G)
+                                                           iff   [by def. evaluation not, and]
+    AI, 1 - eval_I(F v G) = min(eval_I(-F), eval_I(-G))
+                                                           iff   [by def. evaluation or, not]
+    AI, 1 - max(eval_I(F), eval(eval_I(G))) = min(1-eval_I(F), 1-eval_I(G))
+                                                           iff   [by case analysis on eval_I(F)
+                                                                  and eval_I(G),
+                                                                  OR by the following property
+                                                                  of min and max (for all K):
+                                                                    K-max(X,Y) = min(K-X,K-Y)
+    case analysis:
+         X=eval_I(F)  Y=eval_I(G)    1-max(X,Y)   min(1-X,1-Y)
+              0            0              1             1
+              0            1              0             0
+              1            0              0             0
+              1            1              0             0
+                                                                 [AI, columns 3 and 4 are equal]   
+    true
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 2. (2 points).
+
+We know that the "positive unit propagation" algorithm decides SAT for
+a set of Horn clauses S in polynomial time. Remember that if S does not contains the
+empty clause [], its clauses can be of these forms:
+    a) p
+    b) p v -q_1 v ... v -q_n     with n > 0
+    c) -q_1 v ... v -q_n         with n > 0
+    
+2a) Explain how "positive unit propagation" works, and prove that
+    if S is satisfiable, then the algorithm obtains an interpretation I
+    that satisfies all the clauses in S (I is a model of S).
+    Do it by completing these sentences:
+
+    a) The resulting interpretation I satisfies all the unitary clauses p because:
+>>> Answer:
+    "Positive unit propagation" had set I(p) = 1 for all these symbols p.
+      
+    b) The resulting interpretation I satisfies all the clauses of the form
+       p v -q_1 v ... v -q_n  because:
+>>> Answer:
+    There are two cases:
+    1) if the clause had *propagated* (I(q_i) = 1 for all i), i.e., the whole
+       clause had become a *positive unit*, then the algorithm had set I(p) = 1,
+       so the interpretation I satisfies the clause.
+    2) if the clause had NOT *propagated* (some q_i were not positive units),
+       then "positive unit propagation" finally had defined I(q_i) = 0 for
+       those q_i, so the interpretation I satisfies the clause.
+      
+    c) The resulting interpretation I satisfies all the clauses of the form
+       -q_1 v ... v -q_n  because:
+>>> Answer:
+    If S is satisfiable, then no conflict has been found in the clauses of
+    this form, i.e., in the clause there exists some q_i such that I(q_i) is not true.
+    In this case, when "positive unit propagation" finished, all these q_i
+    were set to false, so the clauses of this form are also satisfied.
+
+2b) Which is the very interesting property of the obtained model?
+    Explain why it has this property.
+
+>>> Answer:
+    If S is a satisfiable set of clauses, then the "positive unit propagation"
+    algorithm obtains a MINIMAL model I of S, i.e., a model where the number
+    of symbols set to true is minimal.
+    This is because only *positive* symbols p that belong to:
+    - unitary clauses a), or
+    - clauses that become unit b1)
+    are set to true, and *need to be* true in any model of S.
+    "Positive unit propagation" sets the rest of the symbols to false.
+    Moreover, this minimal model is *unique* for Horn clauses.
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 3. (2.5 points).
+My friend John has implemented the Tseitin transformation of an arbitrary
+formula F, which produces a boolean formula in conjunctive normal form (CNF).
+Representing the formula F as a tree, he adds a new propositional variable e_i
+for each inner node. For example, for a node OR (v) with children nodes a and b,
+the equivalence e_i <-> a v b is expressed with these three clauses:
+-e_i v a v b, -a v e_i, and -b v e_i.
+
+3a) But in the final set of clauses, he has decided not to include the unitary
+    clause e_1 corresponding to the variable at the root node of the formula F.
+    He says that it is not strictly necessary to maintain equisatisfibiality.
+    Prove that what John says is not correct.
+
+>>> Answer:
+    Counterexample:
+    Let F be the unsatisfiable formula  p & -p.
+    Below is the tree that represents F, and the set of clauses S obtained by
+    the John transformation:
+
+            & (e_1)              e_1 <-> p & e_2             1. -p v -e_2 v e_1
+          /   \                                              2. -e_1 v p
+         p     - (e_2)                                       3. -e_1 v e_2
+               |                 e_2 <-> -p                  4. -e_2 v -p
+               p                                             5. e_2 v p
+
+    F is unsatisfiable, but, conversely, the set of clauses S is satisfiable.
+    For example, these are two models:
+      1) I(e_1) = 0, I(p) = 1, I(e_2) = 0
+      2) I(e_1) = 0, I(p) = 0, I(e_2) = 1
+    So we conclude that the "John" transformation does not preserve equisatisfiability.
+
+3b) Explain two ways of producing fewer clauses than those in the standard
+    Tseitin transformation.
+
+>>> Answer:
+    1. Attaching no auxiliary variables e_i to some inner NOT nodes.
+       Keeping on the previous example:
+
+            & (e_1)              e_1 <-> p & -p              1. -p v p v e_1
+          /   \                                              2. -e_1 v p
+         p     -                                             3. -e_1 v -p
+               |
+               p
+
+    2. Grouping AND (or OR) connectives, and using fewer auxiliary variables:
+
+       Before:
+
+            & (e_1)              e_1 <-> p & e_2             1. -p v -e_2 v e_1
+          /   \                                              2. -e_1 v p
+         p     & (e_2)                                       3. -e_1 v e_2
+             /   \               e_2 <-> q & r               4. -q v -r v e_2
+            q     r                                          5. -e_2 v q
+                                                             6. -e_2 v r
+
+       Now:
+
+            & (e_1)              e_1 <-> p & q & r           1. -p v -q v -r v e_1
+         /  |  \                                             2. -e_1 v p
+        p   q   r                                            3. -e_1 v q
+                                                             4. -e_1 v r
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 4. (2.5 points).
+
+4) Consider the following C++ code snippet:
+
+   1: int f(int i, int s, const vector<int>& v) {
+   2:    if (s == 0) return 1;
+   3:    while (i < 0 and s != 0) ++i;
+   4:    if (i >= v.size()) return -1;
+   5:    return v[i];
+   6: }
+
+Let us introduce propositional symbols p, q, r with the following meaning: 
+
+       p:  "i >= 0       at line 5"
+       q:  "i < v.size() at line 5"
+       r:  "s == 0"
+
+We note that the value of program variable s never changes in the code,
+so in the definition of propositional symbol r we do not need to indicate
+which line we are referring to.
+
+4a) Give a propositional formula in CNF such that if it is unsatisfiable then we can ensure that
+    the vector access v[i] at line 5 is correct.
+
+>>> Answer:
+    At line 5 we have -r, because if s == 0 we would have returned at line 2.
+    We also have p v r, because after exiting the loop at line 3 we have -(i < 0 & s != 0).
+    Finally, at line 5 we have q too, because of the statement at line 4.
+
+    On the other hand, the vector acces v[i] at line 5 is correct if and only if
+    0 <= i < v.size(), that is, p & q.
+
+    So if we prove that
+    -r & (p v r) & q  |=  p & q
+    then the vector access will be correct.
+
+    But this is equivalent to proving that
+    -r & (p v r) & q & (-p v -q)
+    is unsatisfiable.
+
+4b) Prove that indeed the access v[i] at line 5 is correct.
+
+>>> Answer:
+    Let us apply a DPLL-based SAT solver to show that formula
+
+    -r & (p v r) & q & (-p v -q)
+
+    is unsatisfiable.
+
+    The clauses are:
+
+    1. -r
+    2. p v r
+    3. q
+    4. -p v -q
+
+    Then by applying DPLL we see the formula is indeed unsatisfiable:
+
+        up 1         up 3            up 2               fail 4
+    [] ------> [-r] ------> [-r, q] ------> [-r, q, p] --------> backtrack (but no backtracking is possible, so unsat)
+
+    We can also prove unsatisfiability through resolution:
+
+              p v r      -p v -q
+              ------------------
+                    r v -q         -r
+                    -----------------
+                            -q           q
+                            --------------
+                                  []
+    

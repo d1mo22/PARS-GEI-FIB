@@ -1,0 +1,147 @@
+
+--------------------------------------------------------------------------------------------------
+Logic in Computer Science, April 20th, 2023. Time: 1h45min. No books or lecture notes allowed.
+--------------------------------------------------------------------------------------------------
+ - Insert your answers on the dotted lines ... below, and only there.
+ - When finished, upload this file with the same name: exam.txt
+ - Use the text symbols:     &     v    -       ->          |=        A       E
+     for                    AND   OR   NOT   IMPLIES   "SATISFIES"  FORALL  EXISTS  etc.,  like in:
+    I |=  p & (q v -r)     (the interpretation I satisfies the formula p & (q v -r)  ).
+   You can write  not (I |= F)  to express "I does not satisfy F",  or
+                  not (F |= G)  to express "G is not a logical consequence of F"
+   Also you can use subindices with "_". For example write x_i to denote x-sub-i.
+--------------------------------------------------------------------------------------------------
+
+
+Problem 1. (2.5 points).
+
+1a) Let F, G, H be formulas. Prove that if F v G |= H then F & -H is unsatisfiable,
+    using only the definition of propositional logic.
+
+Answer:
+        F v G |= H                                 ==>   [by def. of logical consequence]
+    AI, if I |= F v G then I |= H                  ==>   [by def. of |=]
+    AI, if eval_I(F v G) = 1 then eval_I(H) = 1    ==>   [by def. of v]
+    AI, if max(eval_I(F),eval_I(G)) = 1 then eval_I(H) = 1 ==> [by def. of max]    
+    AI, if eval_I(F) = 1 then eval_I(H) = 1          ==> [by arithmetic]
+    AI, if eval_I(F) = 1 then 1-eval_I(H) = 0        ==> [by def. eval_I(-)]
+    AI, if eval_I(F) = 1 then eval_I(-H)             ==> [by def. min] 
+    AI, min(eval_I(F),eval_I(-H)) = 0                ==> [by def. &]
+    AI, eval_I(F & -H) = 0                   ==> [by def. of eval_I]
+    AI, not (I |= F & -H)                            ==> [by def. of unsatisfiable]
+      F & -H insat
+
+1b) Is it true that, for any two propositional formulas F and G, if F |= G
+    and G is satisfiable, then F is satisfiable?  If it is, prove it.
+    If it is not, give a concrete counterexample (and check it is so).
+    
+Answer:
+  Its false, because if we make F be p & -p and G be p, F is unsatisfiable and G is satisfiable.
+
+--------------------------------------------------------------------------------------------------
+
+Problem 2. (2.5 points).
+
+2a) Write all clauses (as disjuctions of literals) obtained by applying Tseitin’s
+    transformation to the formula (p & (q v -r)) v q.
+    Use auxiliary variables named e0, e1, e2, ... (where e0 is for the root).
+
+Answer:
+    -e2 v q v -r
+    e2 v -q
+    e2 v r
+
+    -e1 v p    
+    -e1 v e2
+    -p v -e2 v e1
+
+    -e0 v e1 v q 
+    -e1 v e0
+    -q v e0
+
+    e0
+
+2b) Prove that it is not true that for any propositional formula F, F and Tseitin(F) are
+    logically equivalent.
+
+Answer:
+    Let F = -p, then Tseitin(F) = {e0, -e0 v -p, e0 v p} then we evaluate all posibilities:
+
+    p   e0    F   TES(F)
+    0   0     1     0     We have a I(p) = 0 where its model of F but not of Tseitin(F).
+
+2c) Is 3-SAT NP-complete? Explain your answer very briefly, using the fact that SAT
+    (deciding the satisfiability of an arbitrary propositional formula F) is NP-complete
+
+
+Answer:
+    Yes is NP-complete, because we can:
+    A) 3-SAT is NP-hard because we can reduce SAT to 3-SAT: the Tseitin transformation in polynomical time 
+    reduces SAT for an F to a polynomial-sized 3-SAT set of clauses S that is equisatisfiable to F.
+    Since SAT is NP-hard, so is 3-SAT.
+    B) 3-SAT is NP, because we can reduce 3-SAT to SAT, its trivial because 3-SAT is a particular case of SAT.
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 3. (2.5 points).
+
+3) Given S a set of clauses (CNF) over *n* propositional symbols,
+   and Resolution the deductive rule:
+   
+     p v C          -p v D
+		 ---------------------      for some symbol p
+		         C v D
+
+   Let Res(S) be its closure under resolution. For each one of the
+   following cases, indicate whether Res(S) is infinite or finite,
+   and, if finite, express an accurate upper bound on its size in terms of n.
+   Very briefly explain why. Use the notation a^b to express exponentiation.
+
+3a) S is a set of Horn clauses.
+
+Answer:
+    Is finite, for the Horn clauses we can have 2 cases:
+    A) just negative literals -> 2^n
+    B) one positive literal and m negative literals -> n*2^(n-1)
+
+3b) If clauses in S have at most two literals.
+
+Answer:
+    If clauses have at most two literals we are talking about Krom clauses (2-SAT).
+    a) clauses with no literals -> 1
+    b) clauses with 1 literal -> 2n
+    c) clauses with 2 literals -> 2n(2n-1)/2
+
+3c) S is an arbitrary set of propositional clauses.
+
+Answer:
+    Resolution is colse under propositional clauses. We have at most 2^2^n (4^n) diferent 
+    propositional clauses
+
+
+--------------------------------------------------------------------------------------------------
+
+Problem 4. (2.5 points).
+
+4a) Prove that for any propositional formula F (that is, built up with AND (&), OR (v) and
+    NOT (-) connectives), there exists a logically equivalent formula G which is built up with
+    exclusively NAND connectives (and propositional symbols).
+
+    We recall that the NAND connective is defined as NAND(x, y) = -(x & y).
+
+Answer:
+    NOT(x) = -(AND(x,x)) = NAND(x,x)
+    AND(x,y) = -(NAND(x,y)) = NAND(NAND(x,y),NAND(x,y))
+    OR(x,y) = --(x v y) = -(-x & -y) = NAND(-x,-y) = NAND(NAND(x,x), NAND(y,y))
+
+4b) Let P be a fixed set of propositional symbols.
+    Given two interpretations I, I': P -> {0, 1}, we write
+        I <= I' iff I(p) <= I'(p) for all p in P.
+    We say a formula F is MONOTONIC iff I <= I' implies that eval_I(F) <= eval_I'(F).
+
+    Prove that any propositional formula F built up only with AND & and OR v connectives
+    is monotonic. Hint: use induction on F.
+
+Answer:
+    ...

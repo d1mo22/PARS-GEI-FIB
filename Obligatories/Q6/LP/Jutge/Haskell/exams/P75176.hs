@@ -4,15 +4,15 @@ myUntil :: (a -> Bool) -> (a -> a) -> a -> a
 myUntil p f x = head $ dropWhile p (iterate f x)
 
 egypt :: Rational -> [Rational]
-egypt r = fst $ myUntil (\(_, frac) -> frac /= 0) nextStep ([], r)
+egypt r = reverse $ fst $ myUntil (\(_, frac) -> frac /= 0) nextStep ([], r)
   where
     nextStep (acc, 0) = (acc, 0)
-    nextStep (acc, frac) = (acc ++ [unit], frac - unit)
+    nextStep (acc, frac) = (unit : acc, residuo)
       where
-        n = numerator frac
-        d = denominator frac
-        nextDenom = ceiling (fromIntegral d / fromIntegral n)
-        unit = 1 % nextDenom
+        x = numerator frac
+        y = denominator frac
+        unit = 1 % ceiling (y % x)
+        residuo = frac - unit
 
 main :: IO ()
 main = do

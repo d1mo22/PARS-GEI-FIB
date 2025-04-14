@@ -13,8 +13,8 @@
 __pycache__/
 .antlr/
 .idea/
-**/LP/Practica/
 *.class
-**/sid/
 **/venv/
 *.tex
+/Obligatories/Q6/LP/Practica/
+

@@ -9,3 +9,4 @@ Grau+Màster en Enginyeria Informàtica de la FIB-UPC 2022-2027
  - **🌺Q4** [🟡IDI](Obligatories/Q4/IDI) - [🔵AC](Obligatories/Q4/AC) - [🟤EEE](Obligatories/Q4/EEE) - [⚪IES](Obligatories/Q4/IES) - [🟣XC](Obligatories/Q4/XC)
  ### 📝 Especialitat: Computació
  - **🍁Q5** [🟡PROP](Obligatories/Q5/PROP) - [🔵PAR](Obligatories/Q5/PAR) - [🟡TC](Obligatories/Q5/TC) - [🟡IA](Obligatories/Q5/IA) - [🟡G](Obligatories/Q5/G) - [🟡LP](Obligatories/Q5/LP)
+ - **🌺Q6** [🟡A](Obligatories/Q6/A) - [🟡LI](Obligatories/Q6/LI) - [🟡SID](Obligatories/Q6/SID) - [⚪DBD](Obligatories/Q6/DBD) - [⚪ER](Obligatories/Q6/ER) - [🟠VC](Obligatories/Q6/VC)

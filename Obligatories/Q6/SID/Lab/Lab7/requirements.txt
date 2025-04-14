@@ -1,0 +1,5 @@
+jupyter
+gymnasium
+numpy
+pygame
+seabor

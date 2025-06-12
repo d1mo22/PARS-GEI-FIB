@@ -55,7 +55,7 @@ secondary(K,Cost,Path) :-
     write('  From: '), write(G), nl, write('    to: '), write(H), nl,
     write('  Trying cost:'),
     between(0, N, Cost), write(' '), write(Cost),
-    InitialState = ..., FinalState = ...,
+    InitialState = G, FinalState = H,
     computePath(Cost, InitialState, FinalState, [InitialState], Path),
     writeSolution(Cost, Path),
     !.
@@ -73,18 +73,29 @@ computePath(Cost, State, FinalState, PathSoFar, TotalPath) :-
 %                    The cost of each step is 1.
 oneStep(1,G,H) :-
     order(G,N),
-    ...
-    subs(...),
-    ...
+    between(1, N, X),
+    between(1, N, Y),
+    X \= Y,
+    subs([X,Y], G, TempH),
+    normalForm(TempH,H).
 
-% order(G,N): the number of vertices of G is N
+% order(G,N): the number of vertices of G is N 
+% DONE
 order(G,N) :-
-    ...
+    % Concatenar todas las sublistas
+    % sort para eliminar repetidos
+    flatten(G, L),
+    max_list(L, N).
 
 % subs([X,Y],G,H): H can be obtained from G with the exchange [X,Y]
-subs(...) :- ...
-...
-...
+subs([_,_], [], []).
+subs([X,Y], [[X,Y]|T1], [[Y,X]|T2]) :- subs([X,Y], T1, T2), !.
+subs([X,Y], [[Y,X]|T1], [[X,Y]|T2]) :- subs([X,Y], T1, T2), !.
+subs([X,Y], [[X,Z]|T1], [[Y,Z]|T2]) :- subs([X,Y], T1, T2), !.
+subs([X,Y], [[Y,Z]|T1], [[X,Z]|T2]) :- subs([X,Y], T1, T2), !.
+subs([X,Y], [[T,X]|T1], [[T,Y]|T2]) :- subs([X,Y], T1, T2), !.
+subs([X,Y], [[T,Y]|T1], [[T,X]|T2]) :- subs([X,Y], T1, T2), !.
+subs([X,Y], [[T,Z]|T1], [[T,Z]|T2]) :- subs([X,Y], T1, T2), !.  
 
 
 % the normal form of X is Y

@@ -87,7 +87,12 @@ blocked(G,H):-     notAvailable(G,L), member(H,L).
 available(G,H):-   hour(H), gangster(G), \+blocked(G,H).
 
 %% ADDED FOR THIS EXAM:
-threeConsecutiveHours(H1,H2,H3) :- ...    %% COMPLETE 1/5
+threeConsecutiveHours(H1,H2,H3) :-     %% COMPLETE 1/5
+    hour(H1), 
+    H2 is H1 + 1,
+    hour(H2),
+    H3 is H2 + 1,
+    hour(H3).
 
 %%%%%%% End helpful definitions ===============================================================
 
@@ -145,19 +150,33 @@ noMoreConsecutiveHoursThan(_).
 
 %%  NEW FOR THIS EXAM:
 twoRestHoursBetweenTasks :-
-    ...    %% COMPLETE 2/5
+    %% COMPLETE 2/5
+    gangster(G), threeConsecutiveHours(H1,H2,H3), available(G,H1), available(G,H3),
+    writeOneClause([ -busyAtHour(G,H1), busyAtHour(G, H2), -busyAtHour(G,H3)]), 
+    fail.
 twoRestHoursBetweenTasks.
 
 relateDoesVarsWithDoesTask :-
-    ...    %% COMPLETE 3/5
+    %% COMPLETE 3/5
+    gangster(G), task(T),
+    findall(does(G,T,H), available(G,H), Lits),
+    expressOr(doesTask(G,T), Lits ),
+    fail.
 relateDoesVarsWithDoesTask.
 
 someGangstersAtMostTwoDifferentTasks :-
-    ...    %% COMPLETE 4/5
+    maxTwoTaskGangsters(L),
+    member(G,L),
+    findall(doesTask(G,T), task(T), Lits),
+    atMost(2,Lits),
+    fail.
 someGangstersAtMostTwoDifferentTasks.
 
 someGangstersHaveProhibitedTasks :-
-    ...    %% COMPLETE 5/5
+    %% COMPLETE 5/5
+    notAllowedTask(G, T),
+    writeOneClause([ -doesTask(G,T) ]), 
+    fail.
 someGangstersHaveProhibitedTasks.
 
 

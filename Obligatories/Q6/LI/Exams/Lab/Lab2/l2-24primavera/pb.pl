@@ -90,9 +90,11 @@ does_not_imply(A >= R, B >= S, X) :-
   %1: Variables and domains:
     length(A, N),
     length(X, N),
-    ...
+    X ins 0..1,
   %2: Constraints:
-    ...
+    scalar_product(A, X, #>=, R),
+    scalar_product(B, X, #<, S),
+    
   %3: Labeling:
     label(X),
   %4: Result:
@@ -101,10 +103,13 @@ does_not_imply(A >= R, B >= S, X) :-
 
 % implies(A >= R, B >= S) holds iff B >= S is a logical consequence
 %     of A >= R
+% Hint: remember that, given two propositional formulas F anf G,
+% G is a logical consequence of F, denoted F |= G, iff the formula
+% F & -G is unsatisfiable. 
 implies(A >= R, B >= S) :-
     does_not_imply(A >= R, B >= S, _), !,
-    ...
-...
+    fail.
+implies(_,_).
 
 
 main(N) :-

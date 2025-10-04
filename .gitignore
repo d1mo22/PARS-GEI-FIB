@@ -15,6 +15,7 @@ __pycache__/
 .idea/
 *.class
 **/venv/
+**/arxiv/
 *.tex
 /Obligatories/Q6/LP/Practica/
 /Obligatories/Q5/LP/Practica/

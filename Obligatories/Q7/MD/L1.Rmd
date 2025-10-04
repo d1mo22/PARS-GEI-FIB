@@ -34,8 +34,8 @@ dataset<-"CREDSCO"
 Set the folder where the word file is going to be generated
 ```{r}
 
-setwd("D:/karina/docencia/01areferenciesPPT/0DadesPractiques/CREDSCO/")
-dd<- read.table("credscoCategoriques2.csv",header=T, sep=";", dec=",")
+setwd("/Users/davidmorais/Desktop/PARS-GEI-FIB/Obligatories/Q7/MD")
+dd<- read.table("hotel_sample_5000.csv",header=T, sep=",", dec=".")
 
 ```  
 
@@ -52,7 +52,7 @@ class(dd)
 ```
 
 Get dimensions of the dataset
-````{r}
+```{r}
 dim(dd)
 n<-dim(dd)[1]
 K<-dim(dd)[2]
@@ -105,10 +105,6 @@ descriptiva<-function(X, nom){
 dataset<-dd
 actives<-c(1:K)
 colDate<-1
-if (dataset=="platjaDaro")
-  {dd[,colDate]<-as.Date(dd[, colDate], format="%d/%m/%y %h:%m:%s")
-   actives<-c(3:44)
-   }
 
 ```
 

@@ -25,7 +25,7 @@ WARNING: data must have been properly declared before (factors, dates...)
 #dd<- read.table("2Formulari5TPlataDarov1.csv",header=T, sep=",", dec=".", na.strings="*");
 #dataset<-"planta"
 
-dataset<-"CREDSCO"
+dataset<-"Hotel"
 
 
 

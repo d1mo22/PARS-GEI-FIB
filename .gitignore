@@ -19,4 +19,6 @@ __pycache__/
 *.tex
 /Obligatories/Q6/LP/Practica/
 /Obligatories/Q5/LP/Practica/
+**/enwiki-2013-names.csv
+**/enwiki-2013.txt
 

@@ -1,9 +1,31 @@
-# Estructuras de Datos y Algoritmos
+# EDA - Estructures de Dades i Algorismes (Data Structures and Algorithms)
 
-Esta carpeta contiene la teoría, el juego y los problemas del jutge de la asignatura de Estructuras de Datos y Algoritmos.
+## About the Subject
 
-- La carpeta "Teoría" contiene las diapositivas usadas en clase.
+This 6-credit mandatory course introduces algorithm efficiency analysis and foundational data structures. Students learn to evaluate computational complexity using asymptotic notation, then study classic algorithms and implementations.
 
-- La carpeta "Juego" incluye un juego interactivo diseñado para poner en práctica los conocimientos adquiridos en la asignatura.
+### Main Topics
+- Algorithm analysis and asymptotic notation
+- Divide-and-conquer algorithms (mergesort, quicksort, matrix multiplication)
+- Dictionary implementations (arrays, linked lists, hash tables, balanced trees)
+- Priority queues and heaps
+- Graph algorithms (DFS, BFS, Dijkstra, Prim)
+- Backtracking and exhaustive search
+- Introduction to P, NP, and NP-completeness
 
-- La carpeta "Jutge" contiene la mayoría de problemas resueltos que hay en el Jutge de la asignatura.
+### Learning Objectives
+- Analyze algorithm cost across best, average, and worst cases
+- Design solutions using divide-and-conquer techniques
+- Implement dictionary structures (hash tables, BSTs, AVL trees)
+- Build graph algorithms
+- Understand computational limits through NP-completeness theory
+
+## Folder Contents
+
+| Folder | Description |
+|--------|-------------|
+| `Teoria/` | Theory slides (t1-t7) and problem sets |
+| `Jutge/` | Solutions to Jutge online judge exercises |
+| `Juego/` | Game programming project (AI players) |
+
+The `Juego/` folder contains a competitive game-programming project where students implement AI players.

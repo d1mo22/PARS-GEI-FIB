@@ -1,78 +1,42 @@
-# Cerebro comercial
+# PROP - Projectes de Programacio (Programming Projects)
 
-## Authors
-### Names
-- Bosque Huertas, Edgar
-- Escribano Sierra, Marc
-- Metcalf Quintana, Sergi
-- Morais Caldas, David
+## About the Subject
 
-### Email
-- edgar.bosque@estudiantat.upc.edu
-- marc.escribano.sierra@estudiantat.upc.edu
-- sergi.metcalf@estudiantat.upc.edu
-- david.morais@estudiantat.upc.edu
+This is a 6-credit mandatory course focused on executing a medium-scale programming project emphasizing the implementation phase of software development. Students work in teams of 3-4 people.
 
-## Description
-This is a software project developed as part of the PROP (Programming Projects) course. Uses the three-tier architecture.
+### Main Topics
+- Software lifecycle and UML specifications
+- Object-oriented programming concepts in Java
+- Three-layer architecture design and implementation
+- Program testing, debugging, and JUnit framework
+- Design patterns (decorator, state, singleton)
+- GUI design principles
+- Version control tools (Git)
 
-### Key Features
-- **Product Management**: Complete CRUD (Create, read, update and delete) operations for product catalog
-- **Similarity Management**: Handle and maintain product relationship metrics
-- **Distribution Algorithms**: 
-  - Basic solution (brute force approach)
-  - 2-Approximation algorithm
-  - Hill climbing algorithm
-  - Iterated local search algorithm
-- **Solution Modification**: Ability to modify proposed distributions
-- **Data Handling**: Support both manual input and file import/export
+### Learning Objectives
+- Apply prior programming knowledge to develop correctly functioning and efficient programs
+- Organize teamwork according to a predetermined schedule
+- Master object-oriented design principles and Java implementation
+- Handle anomalous situations through exception mechanisms
+- Create user interfaces using GUI libraries
 
-### Technical Approach
-The system calculates optimal product placement by considering:
-- Product relationships and similarity scores
-- Circular rack layout constraints
-- Customer purchase probability optimization 
+## Folder Contents
 
-## Getting Started
-### Prerequisites
-- Java Development Kit 22 (JDK)
-- Gradle (for building)
+| File | Description |
+|------|-------------|
+| `Entrega-1.zip` | First project deliverable |
+| `Entrega-3.zip` | Final project deliverable |
 
-## Project Structure
+## Course Project: Cerebro Comercial
+
+A product distribution optimization system using various algorithms (brute force, 2-approximation, hill climbing, iterated local search) for optimal shelf placement.
+
+**Authors**: Edgar Bosque, Marc Escribano, Sergi Metcalf, David Morais
+
+### Quick Start
+```bash
+./gradlew run --console plain  # Run the application
+./gradlew test                  # Run tests
+./gradlew build                 # Build the project
+./gradlew javadoc              # Generate documentation
 ```
-subgrup-prop32.3/
-├── DOCS/           # Project documentation
-├── EXE/            # Executable files and test data
-├── FONT/           # Source code
-│   ├── src/
-│   │   ├── main/java/    # Main source files
-│   │   └── test/java/    # Test files
-│   └── README.md
-├── build.gradle    # Gradle build configuration
-└── README.md      # Project overview
-```
-
-## Usage
-Go to the root directory of the project and run the following commands:
-
-- To run the application
-
-It's recommended to run the application with the following command to avoid any issues with the GUI:
-```
-./gradlew run --console plain
-```
-- To run the tests
-```
-./gradlew test
-```
-- To build the project
-```
-./gradlew build
-```
-It will create a folder called `build` on the `EXE` directory with the compiled classes and the JAR file.
-- To generate the documentation
-```
-./gradlew javadoc
-```
-It will create a folder called `javadoc` on the `DOCS` directory with the documentation.
-

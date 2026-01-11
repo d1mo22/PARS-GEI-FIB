@@ -1,7 +1,7 @@
 # IES - Introducció a l'Enginyeria del Software
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -35,7 +35,7 @@ Assignatura de 6 crèdits que proporciona una introducció completa a l'enginyer
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -69,7 +69,7 @@ Asignatura de 6 créditos que proporciona una introducción completa a la ingeni
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

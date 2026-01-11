@@ -1,7 +1,7 @@
 # PRO2 - Programació II
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -37,7 +37,7 @@ Tots els fitxers `.cc` són solucions C++ a exercicis del Jutge. La carpeta `Pra
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -73,7 +73,7 @@ Todos los archivos `.cc` son soluciones C++ a ejercicios del Jutge. La carpeta `
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

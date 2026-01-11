@@ -1,7 +1,7 @@
 # EC - Estructura de Computadors
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -35,7 +35,7 @@ Assignatura obligatòria de 7.5 crèdits que explora l'organització bàsica del
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -69,7 +69,7 @@ Asignatura obligatoria de 7.5 créditos que explora la organización básica de 
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

@@ -1,7 +1,7 @@
 # IDI - Interacció i Disseny d'Interfícies
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -42,7 +42,7 @@ Assignatura de 6 crèdits que cobreix dues àrees principals: disseny d'interfí
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -83,7 +83,7 @@ Asignatura de 6 créditos que cubre dos áreas principales: diseño de interface
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

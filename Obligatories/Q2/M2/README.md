@@ -1,7 +1,7 @@
 # M2 - Matemàtiques II
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -30,7 +30,7 @@ Assignatura obligatòria de 7.5 crèdits dissenyada per equipar els estudiants d
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -59,7 +59,7 @@ Asignatura obligatoria de 7.5 créditos diseñada para equipar a los estudiantes
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

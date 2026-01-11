@@ -1,7 +1,7 @@
 # VC - Visió per Computador (Computer Vision)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -33,7 +33,7 @@ Aquesta és una assignatura optativa de 6 crèdits enfocada a l'extracció i an�
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -65,7 +65,7 @@ Esta es una asignatura optativa de 6 créditos enfocada a la extracción y anál
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

@@ -1,7 +1,7 @@
 # GCS - Gestió de la Ciberseguretat (Cybersecurity Management)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -43,7 +43,7 @@ Aquesta és una assignatura optativa de 6 crèdits que proporciona coneixements 
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -85,7 +85,7 @@ Esta es una asignatura optativa de 6 créditos que proporciona conocimientos y r
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

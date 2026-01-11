@@ -1,7 +1,7 @@
 # LP - Llenguatges de Programació
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -36,7 +36,7 @@ Diapositives de teoria disponibles a: [gebakx.github.io/lp](https://gebakx.githu
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -71,7 +71,7 @@ Diapositivas de teoría disponibles en: [gebakx.github.io/lp](https://gebakx.git
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

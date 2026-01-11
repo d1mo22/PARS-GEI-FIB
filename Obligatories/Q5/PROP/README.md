@@ -1,7 +1,7 @@
 # PROP - Projectes de Programació
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -47,7 +47,7 @@ Sistema d'optimització de distribució de productes utilitzant diversos algoris
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -93,7 +93,7 @@ Sistema de optimización de distribución de productos utilizando diversos algor
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

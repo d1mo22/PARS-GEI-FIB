@@ -1,7 +1,7 @@
 # G - Gràfics
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -35,7 +35,7 @@ Assignatura obligatòria de 6 crèdits centrada en visualització interactiva 3D
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -69,7 +69,7 @@ Asignatura obligatoria de 6 créditos centrada en visualización interactiva 3D 
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

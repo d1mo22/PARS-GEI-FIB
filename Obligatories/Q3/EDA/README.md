@@ -1,7 +1,7 @@
 # EDA - Estructures de Dades i Algorismes
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -36,7 +36,7 @@ La carpeta `Juego/` conté un projecte competitiu de programació de jocs on els
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -71,7 +71,7 @@ La carpeta `Juego/` contiene un proyecto competitivo de programación de juegos 
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

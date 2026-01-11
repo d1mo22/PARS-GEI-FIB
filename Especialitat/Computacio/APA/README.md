@@ -1,7 +1,7 @@
 # APA - Aprenentatge Automàtic
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -42,7 +42,7 @@ Aquesta assignatura se centra en desenvolupar teories, tècniques i algorismes q
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -83,7 +83,7 @@ Esta asignatura se centra en desarrollar teorías, técnicas y algoritmos que pe
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

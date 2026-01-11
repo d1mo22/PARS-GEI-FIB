@@ -1,7 +1,7 @@
 # PARS GEI-FIB
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 Grau+Master en Enginyeria Informatica de la FIB-UPC 2022-2027
 
@@ -59,7 +59,7 @@ Grau+Master en Enginyeria Informatica de la FIB-UPC 2022-2027
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 Grado+Máster en Ingeniería Informática de la FIB-UPC 2022-2027
 
@@ -117,7 +117,7 @@ Grado+Máster en Ingeniería Informática de la FIB-UPC 2022-2027
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 Bachelor+Master in Computer Engineering at FIB-UPC 2022-2027
 

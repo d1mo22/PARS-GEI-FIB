@@ -1,7 +1,7 @@
 # PE - Probabilitat i Estadística
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -32,7 +32,7 @@ Assignatura obligatòria de 6 crèdits que ensenya als estudiants a treballar am
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -63,7 +63,7 @@ Asignatura obligatoria de 6 créditos que enseña a los estudiantes a trabajar c
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

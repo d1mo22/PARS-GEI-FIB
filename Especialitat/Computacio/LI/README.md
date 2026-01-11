@@ -1,7 +1,7 @@
 # LI - Lògica a la Informàtica
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -33,7 +33,7 @@ Assignatura obligatòria de 6 crèdits de l'especialitat de Computació que prop
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -65,7 +65,7 @@ Asignatura obligatoria de 6 créditos de la especialidad de Computación que pro
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

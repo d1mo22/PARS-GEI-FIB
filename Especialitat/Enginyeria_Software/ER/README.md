@@ -1,7 +1,7 @@
 # ER - Enginyeria de Requisits
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -35,7 +35,7 @@ El curs empra Aprenentatge Basat en Projectes on els estudiants treballen en un 
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -69,7 +69,7 @@ El curso emplea Aprendizaje Basado en Proyectos donde los estudiantes trabajan e
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

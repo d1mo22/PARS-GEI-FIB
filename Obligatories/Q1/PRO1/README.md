@@ -1,7 +1,7 @@
 # PRO1 - Programació I
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -34,7 +34,7 @@ Tots els fitxers `.cc` són solucions C++ a problemes de la plataforma [Jutge.or
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -67,7 +67,7 @@ Todos los archivos `.cc` son soluciones C++ a problemas de la plataforma [Jutge.
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

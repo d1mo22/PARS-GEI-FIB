@@ -1,7 +1,7 @@
 # FM - Fonaments Matemàtics
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -29,7 +29,7 @@ Assignatura obligatòria de 7.5 crèdits que cobreix dues àrees principals: lò
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -57,7 +57,7 @@ Asignatura obligatoria de 7.5 créditos que cubre dos áreas principales: lógic
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

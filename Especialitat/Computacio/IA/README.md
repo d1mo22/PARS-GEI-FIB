@@ -1,7 +1,7 @@
 # IA - Intel·ligència Artificial
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -32,7 +32,7 @@ Assignatura obligatòria d'especialitat de 6 crèdits que proporciona una visió
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -63,7 +63,7 @@ Asignatura obligatoria de especialidad de 6 créditos que proporciona una visió
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

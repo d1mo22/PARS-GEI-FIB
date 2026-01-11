@@ -1,7 +1,7 @@
 # XC - Xarxes de Computadors
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -34,7 +34,7 @@ Assignatura obligatòria fonamental de 6 crèdits en xarxes de computadors centr
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -67,7 +67,7 @@ Asignatura obligatoria fundamental de 6 créditos en redes de computadores centr
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

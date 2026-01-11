@@ -1,7 +1,7 @@
 # EEE - Empresa i Entorn Econòmic
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -37,7 +37,7 @@ Assignatura obligatòria de 6 crèdits que combina fonaments d'economia i empres
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -73,7 +73,7 @@ Asignatura obligatoria de 6 créditos que combina fundamentos de economía y emp
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

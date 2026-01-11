@@ -1,7 +1,7 @@
 # CAIM - Cerca i Anàlisi d'Informació Massiva
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -35,7 +35,7 @@ Aquest curs aborda els reptes d'organitzar i recuperar informació de col·lecci
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -69,7 +69,7 @@ Este curso aborda los retos de organizar y recuperar información de colecciones
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

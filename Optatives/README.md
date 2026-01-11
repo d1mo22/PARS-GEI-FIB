@@ -1,7 +1,7 @@
 # Optatives (Elective Subjects)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre les Optatives
 
@@ -28,7 +28,7 @@ Les assignatures optatives permeten als estudiants:
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre las Optativas
 
@@ -55,7 +55,7 @@ Las asignaturas optativas permiten a los estudiantes:
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About Electives
 

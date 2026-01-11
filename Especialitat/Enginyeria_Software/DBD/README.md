@@ -1,7 +1,7 @@
 # DBD - Disseny de Bases de Dades
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -38,7 +38,7 @@ Assignatura obligatòria de 6 crèdits que entrena els estudiants en el disseny 
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -75,7 +75,7 @@ Asignatura obligatoria de 6 créditos que entrena a los estudiantes en el diseñ
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

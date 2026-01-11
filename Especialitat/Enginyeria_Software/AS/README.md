@@ -1,7 +1,7 @@
 # AS - Arquitectura del Software
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -29,7 +29,7 @@ Assignatura obligatòria d'especialitat de 6 crèdits d'Enginyeria del Software 
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -57,7 +57,7 @@ Asignatura obligatoria de especialidad de 6 créditos de Ingeniería del Softwar
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

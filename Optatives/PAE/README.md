@@ -1,7 +1,7 @@
 # PAE - Projecte Aplicat d'Enginyeria (Applied Engineering Project)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -36,7 +36,7 @@ El curs segueix tres fases:
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -71,7 +71,7 @@ El curso sigue tres fases:
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

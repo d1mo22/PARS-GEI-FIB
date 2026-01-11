@@ -1,7 +1,7 @@
 # CI - Interfícies de Computadors
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -33,7 +33,7 @@ Assignatura obligatòria de 6 crèdits que examina el sistema d'entrada/sortida 
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -65,7 +65,7 @@ Asignatura obligatoria de 6 créditos que examina el sistema de entrada/salida d
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

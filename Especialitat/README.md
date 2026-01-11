@@ -1,7 +1,7 @@
 # Especialitat (Mencions)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 Aquesta carpeta conté assignatures de les especialitats (mencions) del grau de la FIB.
 
@@ -19,6 +19,7 @@ Enfocament en fonaments teòrics i tècniques algorítmiques avançades.
 | IA | Intel·ligència Artificial |
 | LI | Lògica a la Informàtica |
 | LP | Llenguatges de Programació |
+| SID| [Sistemes Intel·ligents Distribuïts] |
 | TC | Teoria de la Computació |
 
 ### [Enginyeria_Software](./Enginyeria_Software/)
@@ -42,7 +43,7 @@ El grau GEI de la FIB ofereix 5 especialitats:
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 Esta carpeta contiene asignaturas de las especialidades (menciones) del grado de la FIB.
 
@@ -60,6 +61,7 @@ Enfoque en fundamentos teóricos y técnicas algorítmicas avanzadas.
 | IA | Inteligencia Artificial |
 | LI | Lógica en la Informática |
 | LP | Lenguajes de Programación |
+| SID| [Sistemas Inteligentes Distribuidos] |
 | TC | Teoría de la Computación |
 
 ### [Enginyeria_Software](./Enginyeria_Software/)
@@ -83,7 +85,7 @@ El grado GEI de la FIB ofrece 5 especialidades:
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 This folder contains subjects from the FIB degree specializations (mencions).
 
@@ -101,6 +103,7 @@ Focus on theoretical foundations and advanced algorithmic techniques.
 | IA | Artificial Intelligence |
 | LI | Logic in Computer Science |
 | LP | Programming Languages |
+| SID| [Distributed Intelligent Systems] |
 | TC | Theory of Computation |
 
 ### [Enginyeria_Software](./Enginyeria_Software/) (Software Engineering)

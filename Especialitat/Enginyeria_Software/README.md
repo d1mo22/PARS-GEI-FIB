@@ -1,7 +1,7 @@
 # Enginyeria del Software (Especialitat)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 Aquesta carpeta conté assignatures de l'especialitat d'Enginyeria del Software de la FIB.
 
@@ -25,7 +25,7 @@ L'especialitat d'Enginyeria del Software emfatitza:
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 Esta carpeta contiene asignaturas de la especialidad de Ingeniería del Software de la FIB.
 
@@ -49,7 +49,7 @@ La especialidad de Ingeniería del Software enfatiza:
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 This folder contains subjects from the Software Engineering specialization at FIB.
 

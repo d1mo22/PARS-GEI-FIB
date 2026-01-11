@@ -1,7 +1,7 @@
 # MD - Mineria de Dades (Data Mining)
 
 <details open>
-<summary>🇪🇸 Català</summary>
+<summary>Català</summary>
 
 ## Sobre l'Assignatura
 
@@ -38,7 +38,7 @@ El curs utilitza aprenentatge basat en casos amb conjunts de dades reals, impart
 </details>
 
 <details>
-<summary>🇪🇸 Español</summary>
+<summary>Español</summary>
 
 ## Sobre la Asignatura
 
@@ -75,7 +75,7 @@ El curso utiliza aprendizaje basado en casos con conjuntos de datos reales, impa
 </details>
 
 <details>
-<summary>🇬🇧 English</summary>
+<summary>English</summary>
 
 ## About the Subject
 

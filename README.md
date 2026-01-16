@@ -36,7 +36,7 @@ Grau+Master en Enginyeria Informatica de la FIB-UPC 2022-2027
 | [IA](Especialitat/Computacio/IA) | Intel·ligència Artificial |
 | [LI](Especialitat/Computacio/LI) | Lògica a la Informàtica |
 | [LP](Especialitat/Computacio/LP) | Llenguatges de Programació |
-| [SID](Optatives/SID) | Sistemes Intel·ligents Distribuïts |
+| [SID](Especialitat/Computacio/SID) | Sistemes Intel·ligents Distribuïts |
 | [TC](Especialitat/Computacio/TC) | Teoria de la Computació |
 
 ## ⚪ Especialitat: Enginyeria del Software
@@ -94,7 +94,7 @@ Grado+Máster en Ingeniería Informática de la FIB-UPC 2022-2027
 | [IA](Especialitat/Computacio/IA) | Inteligencia Artificial |
 | [LI](Especialitat/Computacio/LI) | Lógica en la Informática |
 | [LP](Especialitat/Computacio/LP) | Lenguajes de Programación |
-| [SID](Optatives/SID) | Sistemas Inteligentes Distribuidos |
+| [SID](Especialitat/Computacio/SID) | Sistemas Inteligentes Distribuidos |
 | [TC](Especialitat/Computacio/TC) | Teoría de la Computación |
 
 ## ⚪ Especialidad: Ingeniería del Software
@@ -152,7 +152,7 @@ Bachelor+Master in Computer Engineering at FIB-UPC 2022-2027
 | [IA](Especialitat/Computacio/IA) | Artificial Intelligence |
 | [LI](Especialitat/Computacio/LI) | Logic in Computer Science |
 | [LP](Especialitat/Computacio/LP) | Programming Languages |
-| [SID](Optatives/SID) | Distributed Intelligent Systems |
+| [SID](Especialitat/Computacio/SID) | Distributed Intelligent Systems |
 | [TC](Especialitat/Computacio/TC) | Theory of Computation |
 
 ## ⚪ Specialization: Software Engineering
